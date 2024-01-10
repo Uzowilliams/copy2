@@ -22,5 +22,5 @@ typescript:
   inputModelSuffix: input
   maxMethodParams: 4
   outputModelSuffix: output
-  packageName: discoursejs
+  packageName: '@lukehagar/discoursejs'
   templateVersion: v1
