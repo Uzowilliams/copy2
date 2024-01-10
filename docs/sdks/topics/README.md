@@ -24,8 +24,8 @@ Bookmark topic
 ### Example Usage
 
 ```typescript
-import { SDK } from "openapi";
-import { BookmarkTopicRequest } from "openapi/dist/sdk/models/operations";
+import { SDK } from "discoursejs";
+import { BookmarkTopicRequest } from "discoursejs/dist/sdk/models/operations";
 
 async function run() {
   const sdk = new SDK();
@@ -69,7 +69,7 @@ Creates a new topic, a new post, or a private message
 ### Example Usage
 
 ```typescript
-import { SDK } from "openapi";
+import { SDK } from "discoursejs";
 
 async function run() {
   const sdk = new SDK();
@@ -112,8 +112,8 @@ Create topic timer
 ### Example Usage
 
 ```typescript
-import { SDK } from "openapi";
-import { CreateTopicTimerRequest, CreateTopicTimerRequestBody } from "openapi/dist/sdk/models/operations";
+import { SDK } from "discoursejs";
+import { CreateTopicTimerRequest, CreateTopicTimerRequestBody } from "discoursejs/dist/sdk/models/operations";
 
 async function run() {
   const sdk = new SDK();
@@ -161,8 +161,8 @@ Get a single topic
 ### Example Usage
 
 ```typescript
-import { SDK } from "openapi";
-import { GetTopicRequest } from "openapi/dist/sdk/models/operations";
+import { SDK } from "discoursejs";
+import { GetTopicRequest } from "discoursejs/dist/sdk/models/operations";
 
 async function run() {
   const sdk = new SDK();
@@ -206,8 +206,8 @@ Get topic by external_id
 ### Example Usage
 
 ```typescript
-import { SDK } from "openapi";
-import { GetTopicByExternalIdRequest } from "openapi/dist/sdk/models/operations";
+import { SDK } from "discoursejs";
+import { GetTopicByExternalIdRequest } from "discoursejs/dist/sdk/models/operations";
 
 async function run() {
   const sdk = new SDK();
@@ -247,8 +247,8 @@ Invite to topic
 ### Example Usage
 
 ```typescript
-import { SDK } from "openapi";
-import { InviteToTopicRequest, InviteToTopicRequestBody } from "openapi/dist/sdk/models/operations";
+import { SDK } from "discoursejs";
+import { InviteToTopicRequest, InviteToTopicRequestBody } from "discoursejs/dist/sdk/models/operations";
 
 async function run() {
   const sdk = new SDK();
@@ -294,8 +294,8 @@ Get the latest topics
 ### Example Usage
 
 ```typescript
-import { SDK } from "openapi";
-import { ListLatestTopicsRequest } from "openapi/dist/sdk/models/operations";
+import { SDK } from "discoursejs";
+import { ListLatestTopicsRequest } from "discoursejs/dist/sdk/models/operations";
 
 async function run() {
   const sdk = new SDK();
@@ -341,8 +341,8 @@ Get the top topics filtered by period
 ### Example Usage
 
 ```typescript
-import { SDK } from "openapi";
-import { ListTopTopicsRequest } from "openapi/dist/sdk/models/operations";
+import { SDK } from "discoursejs";
+import { ListTopTopicsRequest } from "discoursejs/dist/sdk/models/operations";
 
 async function run() {
   const sdk = new SDK();
@@ -386,8 +386,8 @@ Remove a topic
 ### Example Usage
 
 ```typescript
-import { SDK } from "openapi";
-import { RemoveTopicRequest } from "openapi/dist/sdk/models/operations";
+import { SDK } from "discoursejs";
+import { RemoveTopicRequest } from "discoursejs/dist/sdk/models/operations";
 
 async function run() {
   const sdk = new SDK();
@@ -431,8 +431,8 @@ Set notification level
 ### Example Usage
 
 ```typescript
-import { SDK } from "openapi";
-import { NotificationLevel, SetNotificationLevelRequest, SetNotificationLevelRequestBody } from "openapi/dist/sdk/models/operations";
+import { SDK } from "discoursejs";
+import { NotificationLevel, SetNotificationLevelRequest, SetNotificationLevelRequestBody } from "discoursejs/dist/sdk/models/operations";
 
 async function run() {
   const sdk = new SDK();
@@ -480,8 +480,8 @@ Update a topic
 ### Example Usage
 
 ```typescript
-import { SDK } from "openapi";
-import { Topic, UpdateTopicRequest, UpdateTopicRequestBody } from "openapi/dist/sdk/models/operations";
+import { SDK } from "discoursejs";
+import { Topic, UpdateTopicRequest, UpdateTopicRequestBody } from "discoursejs/dist/sdk/models/operations";
 
 async function run() {
   const sdk = new SDK();
@@ -529,8 +529,8 @@ Update the status of a topic
 ### Example Usage
 
 ```typescript
-import { SDK } from "openapi";
-import { Enabled, Status, UpdateTopicStatusRequest, UpdateTopicStatusRequestBody } from "openapi/dist/sdk/models/operations";
+import { SDK } from "discoursejs";
+import { Enabled, Status, UpdateTopicStatusRequest, UpdateTopicStatusRequestBody } from "discoursejs/dist/sdk/models/operations";
 
 async function run() {
   const sdk = new SDK();
@@ -580,8 +580,8 @@ Update topic timestamp
 ### Example Usage
 
 ```typescript
-import { SDK } from "openapi";
-import { UpdateTopicTimestampRequest, UpdateTopicTimestampRequestBody } from "openapi/dist/sdk/models/operations";
+import { SDK } from "discoursejs";
+import { UpdateTopicTimestampRequest, UpdateTopicTimestampRequestBody } from "discoursejs/dist/sdk/models/operations";
 
 async function run() {
   const sdk = new SDK();

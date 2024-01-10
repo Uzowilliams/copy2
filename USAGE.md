@@ -1,6 +1,6 @@
 <!-- Start SDK Example Usage [usage] -->
 ```typescript
-import { SDK } from "openapi";
+import { SDK } from "discoursejs";
 
 async function run() {
     const sdk = new SDK();

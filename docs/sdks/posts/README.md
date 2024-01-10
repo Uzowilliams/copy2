@@ -19,7 +19,7 @@ Creates a new topic, a new post, or a private message
 ### Example Usage
 
 ```typescript
-import { SDK } from "openapi";
+import { SDK } from "discoursejs";
 
 async function run() {
   const sdk = new SDK();
@@ -62,8 +62,8 @@ delete a single post
 ### Example Usage
 
 ```typescript
-import { SDK } from "openapi";
-import { DeletePostRequest, DeletePostRequestBody } from "openapi/dist/sdk/models/operations";
+import { SDK } from "discoursejs";
+import { DeletePostRequest, DeletePostRequestBody } from "discoursejs/dist/sdk/models/operations";
 
 async function run() {
   const sdk = new SDK();
@@ -112,8 +112,8 @@ refer to various different flag types.
 ### Example Usage
 
 ```typescript
-import { SDK } from "openapi";
-import { GetPostRequest } from "openapi/dist/sdk/models/operations";
+import { SDK } from "discoursejs";
+import { GetPostRequest } from "discoursejs/dist/sdk/models/operations";
 
 async function run() {
   const sdk = new SDK();
@@ -153,8 +153,8 @@ List latest posts across topics
 ### Example Usage
 
 ```typescript
-import { SDK } from "openapi";
-import { ListPostsRequest } from "openapi/dist/sdk/models/operations";
+import { SDK } from "discoursejs";
+import { ListPostsRequest } from "discoursejs/dist/sdk/models/operations";
 
 async function run() {
   const sdk = new SDK();
@@ -198,8 +198,8 @@ Lock a post from being edited
 ### Example Usage
 
 ```typescript
-import { SDK } from "openapi";
-import { LockPostRequest, LockPostRequestBody } from "openapi/dist/sdk/models/operations";
+import { SDK } from "discoursejs";
+import { LockPostRequest, LockPostRequestBody } from "discoursejs/dist/sdk/models/operations";
 
 async function run() {
   const sdk = new SDK();
@@ -247,8 +247,8 @@ Like a post and other actions
 ### Example Usage
 
 ```typescript
-import { SDK } from "openapi";
-import { PerformPostActionRequest, PerformPostActionRequestBody } from "openapi/dist/sdk/models/operations";
+import { SDK } from "discoursejs";
+import { PerformPostActionRequest, PerformPostActionRequestBody } from "discoursejs/dist/sdk/models/operations";
 
 async function run() {
   const sdk = new SDK();
@@ -295,8 +295,8 @@ List replies to a post
 ### Example Usage
 
 ```typescript
-import { SDK } from "openapi";
-import { PostRepliesRequest } from "openapi/dist/sdk/models/operations";
+import { SDK } from "discoursejs";
+import { PostRepliesRequest } from "discoursejs/dist/sdk/models/operations";
 
 async function run() {
   const sdk = new SDK();
@@ -336,8 +336,8 @@ Update a single post
 ### Example Usage
 
 ```typescript
-import { SDK } from "openapi";
-import { Post, UpdatePostRequest, UpdatePostRequestBody } from "openapi/dist/sdk/models/operations";
+import { SDK } from "discoursejs";
+import { Post, UpdatePostRequest, UpdatePostRequestBody } from "discoursejs/dist/sdk/models/operations";
 
 async function run() {
   const sdk = new SDK();

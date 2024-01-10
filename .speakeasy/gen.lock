@@ -5,8 +5,8 @@ management:
   docVersion: latest
   speakeasyVersion: internal
   generationVersion: 2.230.3
-  releaseVersion: 0.0.1
-  configChecksum: 34ec4128d780c0452236ce1cce92df9d
+  releaseVersion: 0.1.0
+  configChecksum: 3868c643b47ea0db51b98ad6c7722f3c
   repoURL: https://github.com/LukeHagar/discoursejs.git
   repoSubDirectory: .
   installationURL: https://github.com/LukeHagar/discoursejs

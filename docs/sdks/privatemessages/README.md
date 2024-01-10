@@ -14,7 +14,7 @@ Creates a new topic, a new post, or a private message
 ### Example Usage
 
 ```typescript
-import { SDK } from "openapi";
+import { SDK } from "discoursejs";
 
 async function run() {
   const sdk = new SDK();
@@ -57,8 +57,8 @@ Get a list of private messages sent for a user
 ### Example Usage
 
 ```typescript
-import { SDK } from "openapi";
-import { GetUserSentPrivateMessagesRequest } from "openapi/dist/sdk/models/operations";
+import { SDK } from "discoursejs";
+import { GetUserSentPrivateMessagesRequest } from "discoursejs/dist/sdk/models/operations";
 
 async function run() {
   const sdk = new SDK();
@@ -98,8 +98,8 @@ Get a list of private messages for a user
 ### Example Usage
 
 ```typescript
-import { SDK } from "openapi";
-import { ListUserPrivateMessagesRequest } from "openapi/dist/sdk/models/operations";
+import { SDK } from "discoursejs";
+import { ListUserPrivateMessagesRequest } from "discoursejs/dist/sdk/models/operations";
 
 async function run() {
   const sdk = new SDK();

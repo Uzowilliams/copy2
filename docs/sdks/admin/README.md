@@ -21,8 +21,8 @@ Activate a user
 ### Example Usage
 
 ```typescript
-import { SDK } from "openapi";
-import { ActivateUserRequest } from "openapi/dist/sdk/models/operations";
+import { SDK } from "discoursejs";
+import { ActivateUserRequest } from "discoursejs/dist/sdk/models/operations";
 
 async function run() {
   const sdk = new SDK();
@@ -62,8 +62,8 @@ Get a user by id
 ### Example Usage
 
 ```typescript
-import { SDK } from "openapi";
-import { AdminGetUserRequest } from "openapi/dist/sdk/models/operations";
+import { SDK } from "discoursejs";
+import { AdminGetUserRequest } from "discoursejs/dist/sdk/models/operations";
 
 async function run() {
   const sdk = new SDK();
@@ -103,8 +103,8 @@ Get a list of users
 ### Example Usage
 
 ```typescript
-import { SDK } from "openapi";
-import { Flag, QueryParamAsc, QueryParamOrder } from "openapi/dist/sdk/models/operations";
+import { SDK } from "discoursejs";
+import { Flag, QueryParamAsc, QueryParamOrder } from "discoursejs/dist/sdk/models/operations";
 
 async function run() {
   const sdk = new SDK();
@@ -145,8 +145,8 @@ Anonymize a user
 ### Example Usage
 
 ```typescript
-import { SDK } from "openapi";
-import { AnonymizeUserRequest } from "openapi/dist/sdk/models/operations";
+import { SDK } from "discoursejs";
+import { AnonymizeUserRequest } from "discoursejs/dist/sdk/models/operations";
 
 async function run() {
   const sdk = new SDK();
@@ -186,8 +186,8 @@ Deactivate a user
 ### Example Usage
 
 ```typescript
-import { SDK } from "openapi";
-import { DeactivateUserRequest } from "openapi/dist/sdk/models/operations";
+import { SDK } from "discoursejs";
+import { DeactivateUserRequest } from "discoursejs/dist/sdk/models/operations";
 
 async function run() {
   const sdk = new SDK();
@@ -227,8 +227,8 @@ Delete a user
 ### Example Usage
 
 ```typescript
-import { SDK } from "openapi";
-import { DeleteUserRequest, DeleteUserRequestBody } from "openapi/dist/sdk/models/operations";
+import { SDK } from "discoursejs";
+import { DeleteUserRequest, DeleteUserRequestBody } from "discoursejs/dist/sdk/models/operations";
 
 async function run() {
   const sdk = new SDK();
@@ -270,8 +270,8 @@ Log a user out
 ### Example Usage
 
 ```typescript
-import { SDK } from "openapi";
-import { LogOutUserRequest } from "openapi/dist/sdk/models/operations";
+import { SDK } from "discoursejs";
+import { LogOutUserRequest } from "discoursejs/dist/sdk/models/operations";
 
 async function run() {
   const sdk = new SDK();
@@ -311,8 +311,8 @@ Refresh gravatar
 ### Example Usage
 
 ```typescript
-import { SDK } from "openapi";
-import { RefreshGravatarRequest } from "openapi/dist/sdk/models/operations";
+import { SDK } from "discoursejs";
+import { RefreshGravatarRequest } from "discoursejs/dist/sdk/models/operations";
 
 async function run() {
   const sdk = new SDK();
@@ -352,8 +352,8 @@ Silence a user
 ### Example Usage
 
 ```typescript
-import { SDK } from "openapi";
-import { SilenceUserRequest, SilenceUserRequestBody } from "openapi/dist/sdk/models/operations";
+import { SDK } from "discoursejs";
+import { SilenceUserRequest, SilenceUserRequestBody } from "discoursejs/dist/sdk/models/operations";
 
 async function run() {
   const sdk = new SDK();
@@ -398,8 +398,8 @@ Suspend a user
 ### Example Usage
 
 ```typescript
-import { SDK } from "openapi";
-import { SuspendUserRequest, SuspendUserRequestBody } from "openapi/dist/sdk/models/operations";
+import { SDK } from "discoursejs";
+import { SuspendUserRequest, SuspendUserRequestBody } from "discoursejs/dist/sdk/models/operations";
 
 async function run() {
   const sdk = new SDK();
