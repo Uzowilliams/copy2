@@ -19,8 +19,8 @@ Add group members
 ### Example Usage
 
 ```typescript
-import { SDK } from "discoursejs";
-import { AddGroupMembersRequest, AddGroupMembersRequestBody } from "discoursejs/dist/sdk/models/operations";
+import { SDK } from "@lukehagar/discoursejs";
+import { AddGroupMembersRequest, AddGroupMembersRequestBody } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
   const sdk = new SDK();
@@ -64,7 +64,7 @@ Create a group
 ### Example Usage
 
 ```typescript
-import { SDK } from "discoursejs";
+import { SDK } from "@lukehagar/discoursejs";
 
 async function run() {
   const sdk = new SDK();
@@ -122,8 +122,8 @@ Delete a group
 ### Example Usage
 
 ```typescript
-import { SDK } from "discoursejs";
-import { DeleteGroupRequest } from "discoursejs/dist/sdk/models/operations";
+import { SDK } from "@lukehagar/discoursejs";
+import { DeleteGroupRequest } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
   const sdk = new SDK();
@@ -163,8 +163,8 @@ Get a group
 ### Example Usage
 
 ```typescript
-import { SDK } from "discoursejs";
-import { GetGroupRequest } from "discoursejs/dist/sdk/models/operations";
+import { SDK } from "@lukehagar/discoursejs";
+import { GetGroupRequest } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
   const sdk = new SDK();
@@ -204,8 +204,8 @@ List group members
 ### Example Usage
 
 ```typescript
-import { SDK } from "discoursejs";
-import { ListGroupMembersRequest } from "discoursejs/dist/sdk/models/operations";
+import { SDK } from "@lukehagar/discoursejs";
+import { ListGroupMembersRequest } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
   const sdk = new SDK();
@@ -245,7 +245,7 @@ List groups
 ### Example Usage
 
 ```typescript
-import { SDK } from "discoursejs";
+import { SDK } from "@lukehagar/discoursejs";
 
 async function run() {
   const sdk = new SDK();
@@ -283,8 +283,8 @@ Remove group members
 ### Example Usage
 
 ```typescript
-import { SDK } from "discoursejs";
-import { RemoveGroupMembersRequest, RemoveGroupMembersRequestBody } from "discoursejs/dist/sdk/models/operations";
+import { SDK } from "@lukehagar/discoursejs";
+import { RemoveGroupMembersRequest, RemoveGroupMembersRequestBody } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
   const sdk = new SDK();
@@ -328,8 +328,8 @@ Update a group
 ### Example Usage
 
 ```typescript
-import { SDK } from "discoursejs";
-import { UpdateGroupGroup, UpdateGroupRequest, UpdateGroupRequestBody } from "discoursejs/dist/sdk/models/operations";
+import { SDK } from "@lukehagar/discoursejs";
+import { UpdateGroupGroup, UpdateGroupRequest, UpdateGroupRequestBody } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
   const sdk = new SDK();

@@ -15,7 +15,7 @@ Create backup
 ### Example Usage
 
 ```typescript
-import { SDK } from "discoursejs";
+import { SDK } from "@lukehagar/discoursejs";
 
 async function run() {
   const sdk = new SDK();
@@ -56,8 +56,8 @@ Download backup
 ### Example Usage
 
 ```typescript
-import { SDK } from "discoursejs";
-import { DownloadBackupRequest } from "discoursejs/dist/sdk/models/operations";
+import { SDK } from "@lukehagar/discoursejs";
+import { DownloadBackupRequest } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
   const sdk = new SDK();
@@ -99,7 +99,7 @@ List backups
 ### Example Usage
 
 ```typescript
-import { SDK } from "discoursejs";
+import { SDK } from "@lukehagar/discoursejs";
 
 async function run() {
   const sdk = new SDK();
@@ -137,8 +137,8 @@ Send download backup email
 ### Example Usage
 
 ```typescript
-import { SDK } from "discoursejs";
-import { SendDownloadBackupEmailRequest } from "discoursejs/dist/sdk/models/operations";
+import { SDK } from "@lukehagar/discoursejs";
+import { SendDownloadBackupEmailRequest } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
   const sdk = new SDK();

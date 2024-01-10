@@ -12,8 +12,8 @@ Search for a term
 ### Example Usage
 
 ```typescript
-import { SDK } from "discoursejs";
-import { SearchRequest } from "discoursejs/dist/sdk/models/operations";
+import { SDK } from "@lukehagar/discoursejs";
+import { SearchRequest } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
   const sdk = new SDK();

@@ -12,7 +12,7 @@ Can be used to fetch all categories and subcategories
 ### Example Usage
 
 ```typescript
-import { SDK } from "discoursejs";
+import { SDK } from "@lukehagar/discoursejs";
 
 async function run() {
   const sdk = new SDK();

@@ -13,8 +13,8 @@ Create an invite
 ### Example Usage
 
 ```typescript
-import { SDK } from "discoursejs";
-import { CreateInviteRequest, CreateInviteRequestBody } from "discoursejs/dist/sdk/models/operations";
+import { SDK } from "@lukehagar/discoursejs";
+import { CreateInviteRequest, CreateInviteRequestBody } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
   const sdk = new SDK();
@@ -63,8 +63,8 @@ Invite to topic
 ### Example Usage
 
 ```typescript
-import { SDK } from "discoursejs";
-import { InviteToTopicRequest, InviteToTopicRequestBody } from "discoursejs/dist/sdk/models/operations";
+import { SDK } from "@lukehagar/discoursejs";
+import { InviteToTopicRequest, InviteToTopicRequestBody } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
   const sdk = new SDK();

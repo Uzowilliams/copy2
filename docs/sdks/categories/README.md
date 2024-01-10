@@ -17,7 +17,7 @@ Creates a category
 ### Example Usage
 
 ```typescript
-import { SDK } from "discoursejs";
+import { SDK } from "@lukehagar/discoursejs";
 
 async function run() {
   const sdk = new SDK();
@@ -66,8 +66,8 @@ Show category
 ### Example Usage
 
 ```typescript
-import { SDK } from "discoursejs";
-import { GetCategoryRequest } from "discoursejs/dist/sdk/models/operations";
+import { SDK } from "@lukehagar/discoursejs";
+import { GetCategoryRequest } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
   const sdk = new SDK();
@@ -107,7 +107,7 @@ Can be used to fetch all categories and subcategories
 ### Example Usage
 
 ```typescript
-import { SDK } from "discoursejs";
+import { SDK } from "@lukehagar/discoursejs";
 
 async function run() {
   const sdk = new SDK();
@@ -145,8 +145,8 @@ Retrieves a list of categories
 ### Example Usage
 
 ```typescript
-import { SDK } from "discoursejs";
-import { ListCategoriesRequest } from "discoursejs/dist/sdk/models/operations";
+import { SDK } from "@lukehagar/discoursejs";
+import { ListCategoriesRequest } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
   const sdk = new SDK();
@@ -186,8 +186,8 @@ List topics
 ### Example Usage
 
 ```typescript
-import { SDK } from "discoursejs";
-import { ListCategoryTopicsRequest } from "discoursejs/dist/sdk/models/operations";
+import { SDK } from "@lukehagar/discoursejs";
+import { ListCategoryTopicsRequest } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
   const sdk = new SDK();
@@ -229,8 +229,8 @@ Updates a category
 ### Example Usage
 
 ```typescript
-import { SDK } from "discoursejs";
-import { UpdateCategoryRequest, UpdateCategoryRequestBody } from "discoursejs/dist/sdk/models/operations";
+import { SDK } from "@lukehagar/discoursejs";
+import { UpdateCategoryRequest, UpdateCategoryRequestBody } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
   const sdk = new SDK();

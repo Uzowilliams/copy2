@@ -30,7 +30,7 @@ be set to true for this endpoint to function.
 ### Example Usage
 
 ```typescript
-import { SDK } from "discoursejs";
+import { SDK } from "@lukehagar/discoursejs";
 
 async function run() {
   const sdk = new SDK();
@@ -92,7 +92,7 @@ be set to true for this endpoint to function.
 ### Example Usage
 
 ```typescript
-import { SDK } from "discoursejs";
+import { SDK } from "@lukehagar/discoursejs";
 
 async function run() {
   const sdk = new SDK();
@@ -155,7 +155,7 @@ be set to true for this endpoint to function.
 ### Example Usage
 
 ```typescript
-import { SDK } from "discoursejs";
+import { SDK } from "@lukehagar/discoursejs";
 
 async function run() {
   const sdk = new SDK();
@@ -213,7 +213,7 @@ be set to true for this endpoint to function.
 ### Example Usage
 
 ```typescript
-import { SDK } from "discoursejs";
+import { SDK } from "@lukehagar/discoursejs";
 
 async function run() {
   const sdk = new SDK();
@@ -269,8 +269,8 @@ be set to true for this endpoint to function.
 ### Example Usage
 
 ```typescript
-import { SDK } from "discoursejs";
-import { UploadType } from "discoursejs/dist/sdk/models/operations";
+import { SDK } from "@lukehagar/discoursejs";
+import { UploadType } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
   const sdk = new SDK();
@@ -314,8 +314,8 @@ Creates an upload
 ### Example Usage
 
 ```typescript
-import { SDK } from "discoursejs";
-import { TypeT } from "discoursejs/dist/sdk/models/operations";
+import { SDK } from "@lukehagar/discoursejs";
+import { TypeT } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
   const sdk = new SDK();
@@ -380,8 +380,8 @@ be set to true for this endpoint to function.
 ### Example Usage
 
 ```typescript
-import { SDK } from "discoursejs";
-import { GeneratePresignedPutType } from "discoursejs/dist/sdk/models/operations";
+import { SDK } from "@lukehagar/discoursejs";
+import { GeneratePresignedPutType } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
   const sdk = new SDK();

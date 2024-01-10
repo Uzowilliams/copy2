@@ -17,7 +17,7 @@ Creates a tag group
 ### Example Usage
 
 ```typescript
-import { SDK } from "discoursejs";
+import { SDK } from "@lukehagar/discoursejs";
 
 async function run() {
   const sdk = new SDK();
@@ -58,8 +58,8 @@ Get a specific tag
 ### Example Usage
 
 ```typescript
-import { SDK } from "discoursejs";
-import { GetTagRequest } from "discoursejs/dist/sdk/models/operations";
+import { SDK } from "@lukehagar/discoursejs";
+import { GetTagRequest } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
   const sdk = new SDK();
@@ -99,8 +99,8 @@ Get a single tag group
 ### Example Usage
 
 ```typescript
-import { SDK } from "discoursejs";
-import { GetTagGroupRequest } from "discoursejs/dist/sdk/models/operations";
+import { SDK } from "@lukehagar/discoursejs";
+import { GetTagGroupRequest } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
   const sdk = new SDK();
@@ -140,7 +140,7 @@ Get a list of tag groups
 ### Example Usage
 
 ```typescript
-import { SDK } from "discoursejs";
+import { SDK } from "@lukehagar/discoursejs";
 
 async function run() {
   const sdk = new SDK();
@@ -178,7 +178,7 @@ Get a list of tags
 ### Example Usage
 
 ```typescript
-import { SDK } from "discoursejs";
+import { SDK } from "@lukehagar/discoursejs";
 
 async function run() {
   const sdk = new SDK();
@@ -216,8 +216,8 @@ Update tag group
 ### Example Usage
 
 ```typescript
-import { SDK } from "discoursejs";
-import { UpdateTagGroupRequest, UpdateTagGroupRequestBody } from "discoursejs/dist/sdk/models/operations";
+import { SDK } from "@lukehagar/discoursejs";
+import { UpdateTagGroupRequest, UpdateTagGroupRequestBody } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
   const sdk = new SDK();

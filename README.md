@@ -22,13 +22,13 @@ It has been generated successfully based on your OpenAPI spec. However, it is no
 ### NPM
 
 ```bash
-npm add discoursejs
+npm add @lukehagar/discoursejs
 ```
 
 ### Yarn
 
 ```bash
-yarn add discoursejs
+yarn add @lukehagar/discoursejs
 ```
 <!-- End SDK Installation [installation] -->
 
@@ -38,7 +38,7 @@ yarn add discoursejs
 ### Example
 
 ```typescript
-import { SDK } from "discoursejs";
+import { SDK } from "@lukehagar/discoursejs";
 
 async function run() {
     const sdk = new SDK();
@@ -218,7 +218,7 @@ Handling errors in this SDK should largely match your expectations.  All operati
 Example
 
 ```typescript
-import { SDK } from "discoursejs";
+import { SDK } from "@lukehagar/discoursejs";
 
 async function run() {
     const sdk = new SDK();
@@ -259,7 +259,7 @@ You can override the default server globally by passing a server index to the `s
 #### Example
 
 ```typescript
-import { SDK } from "discoursejs";
+import { SDK } from "@lukehagar/discoursejs";
 
 async function run() {
     const sdk = new SDK({
@@ -288,7 +288,7 @@ Some of the server options above contain variables. If you want to set the value
 
 The default server can also be overridden globally by passing a URL to the `serverURL: str` optional parameter when initializing the SDK client instance. For example:
 ```typescript
-import { SDK } from "discoursejs";
+import { SDK } from "@lukehagar/discoursejs";
 
 async function run() {
     const sdk = new SDK({
@@ -317,7 +317,7 @@ The Typescript SDK makes API calls using the [axios](https://axios-http.com/docs
 For example, you could specify a header for every request that your sdk makes as follows:
 
 ```typescript
-import { discoursejs } from "SDK";
+import { @lukehagar/discoursejs } from "SDK";
 import axios from "axios";
 
 const httpClient = axios.create({

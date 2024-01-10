@@ -35,8 +35,8 @@ Activate a user
 ### Example Usage
 
 ```typescript
-import { SDK } from "discoursejs";
-import { ActivateUserRequest } from "discoursejs/dist/sdk/models/operations";
+import { SDK } from "@lukehagar/discoursejs";
+import { ActivateUserRequest } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
   const sdk = new SDK();
@@ -76,8 +76,8 @@ Get a user by id
 ### Example Usage
 
 ```typescript
-import { SDK } from "discoursejs";
-import { AdminGetUserRequest } from "discoursejs/dist/sdk/models/operations";
+import { SDK } from "@lukehagar/discoursejs";
+import { AdminGetUserRequest } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
   const sdk = new SDK();
@@ -117,8 +117,8 @@ Get a list of users
 ### Example Usage
 
 ```typescript
-import { SDK } from "discoursejs";
-import { Flag, QueryParamAsc, QueryParamOrder } from "discoursejs/dist/sdk/models/operations";
+import { SDK } from "@lukehagar/discoursejs";
+import { Flag, QueryParamAsc, QueryParamOrder } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
   const sdk = new SDK();
@@ -159,8 +159,8 @@ Anonymize a user
 ### Example Usage
 
 ```typescript
-import { SDK } from "discoursejs";
-import { AnonymizeUserRequest } from "discoursejs/dist/sdk/models/operations";
+import { SDK } from "@lukehagar/discoursejs";
+import { AnonymizeUserRequest } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
   const sdk = new SDK();
@@ -200,8 +200,8 @@ Change password
 ### Example Usage
 
 ```typescript
-import { SDK } from "discoursejs";
-import { ChangePasswordRequest, ChangePasswordRequestBody } from "discoursejs/dist/sdk/models/operations";
+import { SDK } from "@lukehagar/discoursejs";
+import { ChangePasswordRequest, ChangePasswordRequestBody } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
   const sdk = new SDK();
@@ -246,8 +246,8 @@ Creates a user
 ### Example Usage
 
 ```typescript
-import { SDK } from "discoursejs";
-import { CreateUserRequest, CreateUserRequestBody, ExternalIds } from "discoursejs/dist/sdk/models/operations";
+import { SDK } from "@lukehagar/discoursejs";
+import { CreateUserRequest, CreateUserRequestBody, ExternalIds } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
   const sdk = new SDK();
@@ -297,8 +297,8 @@ Deactivate a user
 ### Example Usage
 
 ```typescript
-import { SDK } from "discoursejs";
-import { DeactivateUserRequest } from "discoursejs/dist/sdk/models/operations";
+import { SDK } from "@lukehagar/discoursejs";
+import { DeactivateUserRequest } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
   const sdk = new SDK();
@@ -338,8 +338,8 @@ Delete a user
 ### Example Usage
 
 ```typescript
-import { SDK } from "discoursejs";
-import { DeleteUserRequest, DeleteUserRequestBody } from "discoursejs/dist/sdk/models/operations";
+import { SDK } from "@lukehagar/discoursejs";
+import { DeleteUserRequest, DeleteUserRequestBody } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
   const sdk = new SDK();
@@ -381,8 +381,8 @@ Get a single user by username
 ### Example Usage
 
 ```typescript
-import { SDK } from "discoursejs";
-import { GetUserRequest } from "discoursejs/dist/sdk/models/operations";
+import { SDK } from "@lukehagar/discoursejs";
+import { GetUserRequest } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
   const sdk = new SDK();
@@ -426,8 +426,8 @@ Get email addresses belonging to a user
 ### Example Usage
 
 ```typescript
-import { SDK } from "discoursejs";
-import { GetUserEmailsRequest } from "discoursejs/dist/sdk/models/operations";
+import { SDK } from "@lukehagar/discoursejs";
+import { GetUserEmailsRequest } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
   const sdk = new SDK();
@@ -467,8 +467,8 @@ Get a user by external_id
 ### Example Usage
 
 ```typescript
-import { SDK } from "discoursejs";
-import { GetUserExternalIdRequest } from "discoursejs/dist/sdk/models/operations";
+import { SDK } from "@lukehagar/discoursejs";
+import { GetUserExternalIdRequest } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
   const sdk = new SDK();
@@ -512,8 +512,8 @@ Get a user by identity provider external ID
 ### Example Usage
 
 ```typescript
-import { SDK } from "discoursejs";
-import { GetUserIdentiyProviderExternalIdRequest } from "discoursejs/dist/sdk/models/operations";
+import { SDK } from "@lukehagar/discoursejs";
+import { GetUserIdentiyProviderExternalIdRequest } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
   const sdk = new SDK();
@@ -559,8 +559,8 @@ Get a list of user actions
 ### Example Usage
 
 ```typescript
-import { SDK } from "discoursejs";
-import { ListUserActionsRequest } from "discoursejs/dist/sdk/models/operations";
+import { SDK } from "@lukehagar/discoursejs";
+import { ListUserActionsRequest } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
   const sdk = new SDK();
@@ -604,8 +604,8 @@ List badges for a user
 ### Example Usage
 
 ```typescript
-import { SDK } from "discoursejs";
-import { ListUserBadgesRequest } from "discoursejs/dist/sdk/models/operations";
+import { SDK } from "@lukehagar/discoursejs";
+import { ListUserBadgesRequest } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
   const sdk = new SDK();
@@ -645,8 +645,8 @@ Get a public list of users
 ### Example Usage
 
 ```typescript
-import { SDK } from "discoursejs";
-import { Asc, ListUsersPublicRequest, Order, Period } from "discoursejs/dist/sdk/models/operations";
+import { SDK } from "@lukehagar/discoursejs";
+import { Asc, ListUsersPublicRequest, Order, Period } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
   const sdk = new SDK();
@@ -692,8 +692,8 @@ Log a user out
 ### Example Usage
 
 ```typescript
-import { SDK } from "discoursejs";
-import { LogOutUserRequest } from "discoursejs/dist/sdk/models/operations";
+import { SDK } from "@lukehagar/discoursejs";
+import { LogOutUserRequest } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
   const sdk = new SDK();
@@ -733,8 +733,8 @@ Refresh gravatar
 ### Example Usage
 
 ```typescript
-import { SDK } from "discoursejs";
-import { RefreshGravatarRequest } from "discoursejs/dist/sdk/models/operations";
+import { SDK } from "@lukehagar/discoursejs";
+import { RefreshGravatarRequest } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
   const sdk = new SDK();
@@ -774,7 +774,7 @@ Send password reset email
 ### Example Usage
 
 ```typescript
-import { SDK } from "discoursejs";
+import { SDK } from "@lukehagar/discoursejs";
 
 async function run() {
   const sdk = new SDK();
@@ -815,8 +815,8 @@ Silence a user
 ### Example Usage
 
 ```typescript
-import { SDK } from "discoursejs";
-import { SilenceUserRequest, SilenceUserRequestBody } from "discoursejs/dist/sdk/models/operations";
+import { SDK } from "@lukehagar/discoursejs";
+import { SilenceUserRequest, SilenceUserRequestBody } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
   const sdk = new SDK();
@@ -861,8 +861,8 @@ Suspend a user
 ### Example Usage
 
 ```typescript
-import { SDK } from "discoursejs";
-import { SuspendUserRequest, SuspendUserRequestBody } from "discoursejs/dist/sdk/models/operations";
+import { SDK } from "@lukehagar/discoursejs";
+import { SuspendUserRequest, SuspendUserRequestBody } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
   const sdk = new SDK();
@@ -908,8 +908,8 @@ Update avatar
 ### Example Usage
 
 ```typescript
-import { SDK } from "discoursejs";
-import { UpdateAvatarRequest, UpdateAvatarRequestBody, UpdateAvatarType } from "discoursejs/dist/sdk/models/operations";
+import { SDK } from "@lukehagar/discoursejs";
+import { UpdateAvatarRequest, UpdateAvatarRequestBody, UpdateAvatarType } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
   const sdk = new SDK();
@@ -954,8 +954,8 @@ Update email
 ### Example Usage
 
 ```typescript
-import { SDK } from "discoursejs";
-import { UpdateEmailRequest, UpdateEmailRequestBody } from "discoursejs/dist/sdk/models/operations";
+import { SDK } from "@lukehagar/discoursejs";
+import { UpdateEmailRequest, UpdateEmailRequestBody } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
   const sdk = new SDK();
@@ -999,8 +999,8 @@ Update a user
 ### Example Usage
 
 ```typescript
-import { SDK } from "discoursejs";
-import { UpdateUserExternalIds, UpdateUserRequest, UpdateUserRequestBody } from "discoursejs/dist/sdk/models/operations";
+import { SDK } from "@lukehagar/discoursejs";
+import { UpdateUserExternalIds, UpdateUserRequest, UpdateUserRequestBody } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
   const sdk = new SDK();
@@ -1048,8 +1048,8 @@ Update username
 ### Example Usage
 
 ```typescript
-import { SDK } from "discoursejs";
-import { UpdateUsernameRequest, UpdateUsernameRequestBody } from "discoursejs/dist/sdk/models/operations";
+import { SDK } from "@lukehagar/discoursejs";
+import { UpdateUsernameRequest, UpdateUsernameRequestBody } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
   const sdk = new SDK();

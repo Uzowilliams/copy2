@@ -16,7 +16,7 @@ List badges
 ### Example Usage
 
 ```typescript
-import { SDK } from "discoursejs";
+import { SDK } from "@lukehagar/discoursejs";
 
 async function run() {
   const sdk = new SDK();
@@ -54,7 +54,7 @@ Create badge
 ### Example Usage
 
 ```typescript
-import { SDK } from "discoursejs";
+import { SDK } from "@lukehagar/discoursejs";
 
 async function run() {
   const sdk = new SDK();
@@ -96,8 +96,8 @@ Delete badge
 ### Example Usage
 
 ```typescript
-import { SDK } from "discoursejs";
-import { DeleteBadgeRequest } from "discoursejs/dist/sdk/models/operations";
+import { SDK } from "@lukehagar/discoursejs";
+import { DeleteBadgeRequest } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
   const sdk = new SDK();
@@ -137,8 +137,8 @@ List badges for a user
 ### Example Usage
 
 ```typescript
-import { SDK } from "discoursejs";
-import { ListUserBadgesRequest } from "discoursejs/dist/sdk/models/operations";
+import { SDK } from "@lukehagar/discoursejs";
+import { ListUserBadgesRequest } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
   const sdk = new SDK();
@@ -178,8 +178,8 @@ Update badge
 ### Example Usage
 
 ```typescript
-import { SDK } from "discoursejs";
-import { UpdateBadgeRequest, UpdateBadgeRequestBody } from "discoursejs/dist/sdk/models/operations";
+import { SDK } from "@lukehagar/discoursejs";
+import { UpdateBadgeRequest, UpdateBadgeRequestBody } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
   const sdk = new SDK();
