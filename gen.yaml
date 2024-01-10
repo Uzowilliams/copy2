@@ -8,7 +8,7 @@ generation:
     nameResolutionDec2023: false
 typescript:
   version: 0.0.1
-  author: Speakeasy
+  author: LukeHagar
   clientServerStatusCodesAsErrors: false
   flattenGlobalSecurity: true
   imports:
