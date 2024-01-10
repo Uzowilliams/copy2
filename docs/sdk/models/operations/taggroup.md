@@ -1,0 +1,13 @@
+# TagGroup
+
+
+## Fields
+
+| Field                                                                   | Type                                                                    | Required                                                                | Description                                                             |
+| ----------------------------------------------------------------------- | ----------------------------------------------------------------------- | ----------------------------------------------------------------------- | ----------------------------------------------------------------------- |
+| `id`                                                                    | *number*                                                                | :heavy_check_mark:                                                      | N/A                                                                     |
+| `name`                                                                  | *string*                                                                | :heavy_check_mark:                                                      | N/A                                                                     |
+| `onePerTopic`                                                           | *boolean*                                                               | :heavy_check_mark:                                                      | N/A                                                                     |
+| `parentTagName`                                                         | *any*[]                                                                 | :heavy_check_mark:                                                      | N/A                                                                     |
+| `permissions`                                                           | [operations.Permissions](../../../sdk/models/operations/permissions.md) | :heavy_check_mark:                                                      | N/A                                                                     |
+| `tagNames`                                                              | *any*[]                                                                 | :heavy_check_mark:                                                      | N/A                                                                     |

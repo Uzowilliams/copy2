@@ -1,0 +1,10 @@
+# CreateUserRequest
+
+
+## Fields
+
+| Field                                                                                       | Type                                                                                        | Required                                                                                    | Description                                                                                 |
+| ------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
+| `apiKey`                                                                                    | *string*                                                                                    | :heavy_check_mark:                                                                          | N/A                                                                                         |
+| `apiUsername`                                                                               | *string*                                                                                    | :heavy_check_mark:                                                                          | N/A                                                                                         |
+| `requestBody`                                                                               | [operations.CreateUserRequestBody](../../../sdk/models/operations/createuserrequestbody.md) | :heavy_minus_sign:                                                                          | N/A                                                                                         |

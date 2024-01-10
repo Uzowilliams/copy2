@@ -1,0 +1,13 @@
+# ListUserBadgesResponseBody
+
+success response
+
+
+## Fields
+
+| Field                                                                                               | Type                                                                                                | Required                                                                                            | Description                                                                                         |
+| --------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
+| `badgeTypes`                                                                                        | [operations.ListUserBadgesBadgeTypes](../../../sdk/models/operations/listuserbadgesbadgetypes.md)[] | :heavy_minus_sign:                                                                                  | N/A                                                                                                 |
+| `badges`                                                                                            | [operations.ListUserBadgesBadges](../../../sdk/models/operations/listuserbadgesbadges.md)[]         | :heavy_minus_sign:                                                                                  | N/A                                                                                                 |
+| `grantedBies`                                                                                       | [operations.GrantedBies](../../../sdk/models/operations/grantedbies.md)[]                           | :heavy_minus_sign:                                                                                  | N/A                                                                                                 |
+| `userBadges`                                                                                        | [operations.UserBadges](../../../sdk/models/operations/userbadges.md)[]                             | :heavy_check_mark:                                                                                  | N/A                                                                                                 |

@@ -1,0 +1,10 @@
+# CreateInviteRequest
+
+
+## Fields
+
+| Field                                                                                           | Type                                                                                            | Required                                                                                        | Description                                                                                     |
+| ----------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| `apiKey`                                                                                        | *string*                                                                                        | :heavy_check_mark:                                                                              | N/A                                                                                             |
+| `apiUsername`                                                                                   | *string*                                                                                        | :heavy_check_mark:                                                                              | N/A                                                                                             |
+| `requestBody`                                                                                   | [operations.CreateInviteRequestBody](../../../sdk/models/operations/createinviterequestbody.md) | :heavy_minus_sign:                                                                              | N/A                                                                                             |

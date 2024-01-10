@@ -1,0 +1,12 @@
+# GetUserSentPrivateMessagesResponseBody
+
+private messages
+
+
+## Fields
+
+| Field                                                                                                                   | Type                                                                                                                    | Required                                                                                                                | Description                                                                                                             |
+| ----------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| `primaryGroups`                                                                                                         | *any*[]                                                                                                                 | :heavy_minus_sign:                                                                                                      | N/A                                                                                                                     |
+| `topicList`                                                                                                             | [operations.GetUserSentPrivateMessagesTopicList](../../../sdk/models/operations/getusersentprivatemessagestopiclist.md) | :heavy_minus_sign:                                                                                                      | N/A                                                                                                                     |
+| `users`                                                                                                                 | [operations.GetUserSentPrivateMessagesUsers](../../../sdk/models/operations/getusersentprivatemessagesusers.md)[]       | :heavy_minus_sign:                                                                                                      | N/A                                                                                                                     |
