@@ -22,5 +22,5 @@ typescript:
   inputModelSuffix: input
   maxMethodParams: 4
   outputModelSuffix: output
-  packageName: openapi
+  packageName: discoursejs
   templateVersion: v1
