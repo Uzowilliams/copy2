@@ -1,6 +1,6 @@
 {
   "name": "@lukehagar/discoursejs",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "author": "LukeHagar",
   "scripts": {
     "prepare": "tsc --build",
