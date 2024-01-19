@@ -32,7 +32,12 @@ yarn add @lukehagar/discoursejs
 import { SDK } from "@lukehagar/discoursejs";
 
 async function run() {
-    const sdk = new SDK();
+    const sdk = new SDK({
+        security: {
+            key: "<YOUR_API_KEY_HERE>",
+            username: "<YOUR_API_KEY_HERE>",
+        },
+    });
 
     const res = await sdk.backups.createBackup({
         withUploads: false,
@@ -212,7 +217,12 @@ Example
 import { SDK } from "@lukehagar/discoursejs";
 
 async function run() {
-    const sdk = new SDK();
+    const sdk = new SDK({
+        security: {
+            key: "<YOUR_API_KEY_HERE>",
+            username: "<YOUR_API_KEY_HERE>",
+        },
+    });
 
     let res;
     try {
@@ -255,6 +265,10 @@ import { SDK } from "@lukehagar/discoursejs";
 async function run() {
     const sdk = new SDK({
         serverIdx: 0,
+        security: {
+            key: "<YOUR_API_KEY_HERE>",
+            username: "<YOUR_API_KEY_HERE>",
+        },
     });
 
     const res = await sdk.backups.createBackup({
@@ -284,6 +298,10 @@ import { SDK } from "@lukehagar/discoursejs";
 async function run() {
     const sdk = new SDK({
         serverURL: "https://{defaultHost}",
+        security: {
+            key: "<YOUR_API_KEY_HERE>",
+            username: "<YOUR_API_KEY_HERE>",
+        },
     });
 
     const res = await sdk.backups.createBackup({
@@ -318,6 +336,44 @@ const httpClient = axios.create({
 const sdk = new SDK({defaultClient: httpClient});
 ```
 <!-- End Custom HTTP Client [http-client] -->
+
+<!-- Start Authentication [security] -->
+## Authentication
+
+### Per-Client Security Schemes
+
+This SDK supports the following security schemes globally:
+
+| Name       | Type       | Scheme     |
+| ---------- | ---------- | ---------- |
+| `key`      | apiKey     | API key    |
+| `username` | apiKey     | API key    |
+
+You can set the security parameters through the `security` optional parameter when initializing the SDK client instance. The selected scheme will be used by default to authenticate with the API for all operations that support it. For example:
+```typescript
+import { SDK } from "@lukehagar/discoursejs";
+
+async function run() {
+    const sdk = new SDK({
+        security: {
+            key: "<YOUR_API_KEY_HERE>",
+            username: "<YOUR_API_KEY_HERE>",
+        },
+    });
+
+    const res = await sdk.backups.createBackup({
+        withUploads: false,
+    });
+
+    if (res.statusCode == 200) {
+        // handle response
+    }
+}
+
+run();
+
+```
+<!-- End Authentication [security] -->
 
 <!-- Placeholder for Future Speakeasy SDK Sections -->
 

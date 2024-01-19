@@ -1,12 +1,12 @@
 lockVersion: 2.0.0
 id: 599a9576-4665-431e-be1e-44cc13ef28aa
 management:
-  docChecksum: 172e648f7bfe018e3bb1d9cbe1a74ac8
+  docChecksum: bff491e1e4058fd68bef5fc6e1674b33
   docVersion: latest
   speakeasyVersion: internal
   generationVersion: 2.237.2
-  releaseVersion: 0.2.2
-  configChecksum: 6cb272037727282881e08de46c1f70d7
+  releaseVersion: 0.3.0
+  configChecksum: 2d72986f082e2760e841b98f4feb609a
   repoURL: https://github.com/LukeHagar/discoursejs.git
   repoSubDirectory: .
   installationURL: https://github.com/LukeHagar/discoursejs
@@ -16,6 +16,7 @@ features:
     core: 3.4.6
     deprecations: 2.81.1
     flattening: 2.81.1
+    globalSecurity: 2.82.2
     globalServerURLs: 2.82.1
 generatedFiles:
   - src/sdk/backups.ts
@@ -138,8 +139,10 @@ generatedFiles:
   - src/sdk/models/operations/createmultipartupload.ts
   - src/sdk/models/operations/createupload.ts
   - src/sdk/models/operations/generatepresignedput.ts
+  - src/sdk/models/shared/security.ts
   - src/sdk/models/errors/index.ts
   - src/sdk/models/operations/index.ts
+  - src/sdk/models/shared/index.ts
   - docs/sdk/models/operations/createbackuprequestbody.md
   - docs/sdk/models/operations/createbackupresponsebody.md
   - docs/sdk/models/operations/createbackupresponse.md
@@ -585,6 +588,7 @@ generatedFiles:
   - docs/sdk/models/operations/signedheaders.md
   - docs/sdk/models/operations/generatepresignedputresponsebody.md
   - docs/sdk/models/operations/generatepresignedputresponse.md
+  - docs/sdk/models/shared/security.md
   - docs/sdks/sdk/README.md
   - docs/sdks/backups/README.md
   - docs/sdks/badges/README.md

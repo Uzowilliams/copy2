@@ -25,7 +25,12 @@ import { SDK } from "@lukehagar/discoursejs";
 import { ActivateUserRequest } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
-  const sdk = new SDK();
+  const sdk = new SDK({
+    security: {
+      key: "<YOUR_API_KEY_HERE>",
+      username: "<YOUR_API_KEY_HERE>",
+    },
+  });
 const id: number = 203554;
 
   const res = await sdk.admin.activateUser(id);
@@ -66,7 +71,12 @@ import { SDK } from "@lukehagar/discoursejs";
 import { AdminGetUserRequest } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
-  const sdk = new SDK();
+  const sdk = new SDK({
+    security: {
+      key: "<YOUR_API_KEY_HERE>",
+      username: "<YOUR_API_KEY_HERE>",
+    },
+  });
 const id: number = 386776;
 
   const res = await sdk.admin.adminGetUser(id);
@@ -107,7 +117,12 @@ import { SDK } from "@lukehagar/discoursejs";
 import { Flag, QueryParamAsc, QueryParamOrder } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
-  const sdk = new SDK();
+  const sdk = new SDK({
+    security: {
+      key: "<YOUR_API_KEY_HERE>",
+      username: "<YOUR_API_KEY_HERE>",
+    },
+  });
 
   const res = await sdk.admin.adminListUsers({
     flag: Flag.New,
@@ -149,7 +164,12 @@ import { SDK } from "@lukehagar/discoursejs";
 import { AnonymizeUserRequest } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
-  const sdk = new SDK();
+  const sdk = new SDK({
+    security: {
+      key: "<YOUR_API_KEY_HERE>",
+      username: "<YOUR_API_KEY_HERE>",
+    },
+  });
 const id: number = 418778;
 
   const res = await sdk.admin.anonymizeUser(id);
@@ -190,7 +210,12 @@ import { SDK } from "@lukehagar/discoursejs";
 import { DeactivateUserRequest } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
-  const sdk = new SDK();
+  const sdk = new SDK({
+    security: {
+      key: "<YOUR_API_KEY_HERE>",
+      username: "<YOUR_API_KEY_HERE>",
+    },
+  });
 const id: number = 143950;
 
   const res = await sdk.admin.deactivateUser(id);
@@ -231,7 +256,12 @@ import { SDK } from "@lukehagar/discoursejs";
 import { DeleteUserRequest, DeleteUserRequestBody } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
-  const sdk = new SDK();
+  const sdk = new SDK({
+    security: {
+      key: "<YOUR_API_KEY_HERE>",
+      username: "<YOUR_API_KEY_HERE>",
+    },
+  });
 const id: number = 251343;
 const requestBody: DeleteUserRequestBody = {};
 
@@ -274,7 +304,12 @@ import { SDK } from "@lukehagar/discoursejs";
 import { LogOutUserRequest } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
-  const sdk = new SDK();
+  const sdk = new SDK({
+    security: {
+      key: "<YOUR_API_KEY_HERE>",
+      username: "<YOUR_API_KEY_HERE>",
+    },
+  });
 const id: number = 379568;
 
   const res = await sdk.admin.logOutUser(id);
@@ -315,7 +350,12 @@ import { SDK } from "@lukehagar/discoursejs";
 import { RefreshGravatarRequest } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
-  const sdk = new SDK();
+  const sdk = new SDK({
+    security: {
+      key: "<YOUR_API_KEY_HERE>",
+      username: "<YOUR_API_KEY_HERE>",
+    },
+  });
 const username: string = "string";
 
   const res = await sdk.admin.refreshGravatar(username);
@@ -356,7 +396,12 @@ import { SDK } from "@lukehagar/discoursejs";
 import { SilenceUserRequest, SilenceUserRequestBody } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
-  const sdk = new SDK();
+  const sdk = new SDK({
+    security: {
+      key: "<YOUR_API_KEY_HERE>",
+      username: "<YOUR_API_KEY_HERE>",
+    },
+  });
 const id: number = 606247;
 const requestBody: SilenceUserRequestBody = {
   postAction: "delete",
@@ -402,7 +447,12 @@ import { SDK } from "@lukehagar/discoursejs";
 import { SuspendUserRequest, SuspendUserRequestBody } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
-  const sdk = new SDK();
+  const sdk = new SDK({
+    security: {
+      key: "<YOUR_API_KEY_HERE>",
+      username: "<YOUR_API_KEY_HERE>",
+    },
+  });
 const id: number = 970832;
 const requestBody: SuspendUserRequestBody = {
   postAction: "delete",

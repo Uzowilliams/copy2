@@ -17,7 +17,12 @@ Creates a new topic, a new post, or a private message
 import { SDK } from "@lukehagar/discoursejs";
 
 async function run() {
-  const sdk = new SDK();
+  const sdk = new SDK({
+    security: {
+      key: "<YOUR_API_KEY_HERE>",
+      username: "<YOUR_API_KEY_HERE>",
+    },
+  });
 
   const res = await sdk.privateMessages.createTopicPostPM({
     archetype: "private_message",
@@ -61,7 +66,12 @@ import { SDK } from "@lukehagar/discoursejs";
 import { GetUserSentPrivateMessagesRequest } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
-  const sdk = new SDK();
+  const sdk = new SDK({
+    security: {
+      key: "<YOUR_API_KEY_HERE>",
+      username: "<YOUR_API_KEY_HERE>",
+    },
+  });
 const username: string = "string";
 
   const res = await sdk.privateMessages.getUserSentPrivateMessages(username);
@@ -102,7 +112,12 @@ import { SDK } from "@lukehagar/discoursejs";
 import { ListUserPrivateMessagesRequest } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
-  const sdk = new SDK();
+  const sdk = new SDK({
+    security: {
+      key: "<YOUR_API_KEY_HERE>",
+      username: "<YOUR_API_KEY_HERE>",
+    },
+  });
 const username: string = "string";
 
   const res = await sdk.privateMessages.listUserPrivateMessages(username);

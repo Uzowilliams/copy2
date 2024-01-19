@@ -23,7 +23,12 @@ import { SDK } from "@lukehagar/discoursejs";
 import { AddGroupMembersRequest, AddGroupMembersRequestBody } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
-  const sdk = new SDK();
+  const sdk = new SDK({
+    security: {
+      key: "<YOUR_API_KEY_HERE>",
+      username: "<YOUR_API_KEY_HERE>",
+    },
+  });
 const id: number = 985975;
 const requestBody: AddGroupMembersRequestBody = {
   usernames: "username1,username2",
@@ -67,7 +72,12 @@ Create a group
 import { SDK } from "@lukehagar/discoursejs";
 
 async function run() {
-  const sdk = new SDK();
+  const sdk = new SDK({
+    security: {
+      key: "<YOUR_API_KEY_HERE>",
+      username: "<YOUR_API_KEY_HERE>",
+    },
+  });
 
   const res = await sdk.groups.createGroup({
     group: {
@@ -126,7 +136,12 @@ import { SDK } from "@lukehagar/discoursejs";
 import { DeleteGroupRequest } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
-  const sdk = new SDK();
+  const sdk = new SDK({
+    security: {
+      key: "<YOUR_API_KEY_HERE>",
+      username: "<YOUR_API_KEY_HERE>",
+    },
+  });
 const id: number = 21302;
 
   const res = await sdk.groups.deleteGroup(id);
@@ -167,7 +182,12 @@ import { SDK } from "@lukehagar/discoursejs";
 import { GetGroupRequest } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
-  const sdk = new SDK();
+  const sdk = new SDK({
+    security: {
+      key: "<YOUR_API_KEY_HERE>",
+      username: "<YOUR_API_KEY_HERE>",
+    },
+  });
 const id: string = "string";
 
   const res = await sdk.groups.getGroup(id);
@@ -208,7 +228,12 @@ import { SDK } from "@lukehagar/discoursejs";
 import { ListGroupMembersRequest } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
-  const sdk = new SDK();
+  const sdk = new SDK({
+    security: {
+      key: "<YOUR_API_KEY_HERE>",
+      username: "<YOUR_API_KEY_HERE>",
+    },
+  });
 const id: string = "string";
 
   const res = await sdk.groups.listGroupMembers(id);
@@ -248,7 +273,12 @@ List groups
 import { SDK } from "@lukehagar/discoursejs";
 
 async function run() {
-  const sdk = new SDK();
+  const sdk = new SDK({
+    security: {
+      key: "<YOUR_API_KEY_HERE>",
+      username: "<YOUR_API_KEY_HERE>",
+    },
+  });
 
   const res = await sdk.groups.listGroups();
 
@@ -287,7 +317,12 @@ import { SDK } from "@lukehagar/discoursejs";
 import { RemoveGroupMembersRequest, RemoveGroupMembersRequestBody } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
-  const sdk = new SDK();
+  const sdk = new SDK({
+    security: {
+      key: "<YOUR_API_KEY_HERE>",
+      username: "<YOUR_API_KEY_HERE>",
+    },
+  });
 const id: number = 649523;
 const requestBody: RemoveGroupMembersRequestBody = {
   usernames: "username1,username2",
@@ -332,7 +367,12 @@ import { SDK } from "@lukehagar/discoursejs";
 import { UpdateGroupGroup, UpdateGroupRequest, UpdateGroupRequestBody } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
-  const sdk = new SDK();
+  const sdk = new SDK({
+    security: {
+      key: "<YOUR_API_KEY_HERE>",
+      username: "<YOUR_API_KEY_HERE>",
+    },
+  });
 const id: number = 438471;
 const requestBody: UpdateGroupRequestBody = {
   group: {

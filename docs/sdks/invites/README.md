@@ -17,7 +17,12 @@ import { SDK } from "@lukehagar/discoursejs";
 import { CreateInviteRequest, CreateInviteRequestBody } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
-  const sdk = new SDK();
+  const sdk = new SDK({
+    security: {
+      key: "<YOUR_API_KEY_HERE>",
+      username: "<YOUR_API_KEY_HERE>",
+    },
+  });
 const apiKey: string = "string";
 const apiUsername: string = "string";
 const requestBody: CreateInviteRequestBody = {
@@ -67,7 +72,12 @@ import { SDK } from "@lukehagar/discoursejs";
 import { InviteToTopicRequest, InviteToTopicRequestBody } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
-  const sdk = new SDK();
+  const sdk = new SDK({
+    security: {
+      key: "<YOUR_API_KEY_HERE>",
+      username: "<YOUR_API_KEY_HERE>",
+    },
+  });
 const apiKey: string = "string";
 const apiUsername: string = "string";
 const id: string = "string";

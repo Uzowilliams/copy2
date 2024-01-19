@@ -28,7 +28,12 @@ import { SDK } from "@lukehagar/discoursejs";
 import { BookmarkTopicRequest } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
-  const sdk = new SDK();
+  const sdk = new SDK({
+    security: {
+      key: "<YOUR_API_KEY_HERE>",
+      username: "<YOUR_API_KEY_HERE>",
+    },
+  });
 const apiKey: string = "string";
 const apiUsername: string = "string";
 const id: string = "string";
@@ -72,7 +77,12 @@ Creates a new topic, a new post, or a private message
 import { SDK } from "@lukehagar/discoursejs";
 
 async function run() {
-  const sdk = new SDK();
+  const sdk = new SDK({
+    security: {
+      key: "<YOUR_API_KEY_HERE>",
+      username: "<YOUR_API_KEY_HERE>",
+    },
+  });
 
   const res = await sdk.topics.createTopicPostPM({
     archetype: "private_message",
@@ -116,7 +126,12 @@ import { SDK } from "@lukehagar/discoursejs";
 import { CreateTopicTimerRequest, CreateTopicTimerRequestBody } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
-  const sdk = new SDK();
+  const sdk = new SDK({
+    security: {
+      key: "<YOUR_API_KEY_HERE>",
+      username: "<YOUR_API_KEY_HERE>",
+    },
+  });
 const apiKey: string = "string";
 const apiUsername: string = "string";
 const id: string = "string";
@@ -165,7 +180,12 @@ import { SDK } from "@lukehagar/discoursejs";
 import { GetTopicRequest } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
-  const sdk = new SDK();
+  const sdk = new SDK({
+    security: {
+      key: "<YOUR_API_KEY_HERE>",
+      username: "<YOUR_API_KEY_HERE>",
+    },
+  });
 const apiKey: string = "string";
 const apiUsername: string = "string";
 const id: string = "string";
@@ -210,7 +230,12 @@ import { SDK } from "@lukehagar/discoursejs";
 import { GetTopicByExternalIdRequest } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
-  const sdk = new SDK();
+  const sdk = new SDK({
+    security: {
+      key: "<YOUR_API_KEY_HERE>",
+      username: "<YOUR_API_KEY_HERE>",
+    },
+  });
 const externalId: string = "string";
 
   const res = await sdk.topics.getTopicByExternalId(externalId);
@@ -251,7 +276,12 @@ import { SDK } from "@lukehagar/discoursejs";
 import { InviteToTopicRequest, InviteToTopicRequestBody } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
-  const sdk = new SDK();
+  const sdk = new SDK({
+    security: {
+      key: "<YOUR_API_KEY_HERE>",
+      username: "<YOUR_API_KEY_HERE>",
+    },
+  });
 const apiKey: string = "string";
 const apiUsername: string = "string";
 const id: string = "string";
@@ -298,7 +328,12 @@ import { SDK } from "@lukehagar/discoursejs";
 import { ListLatestTopicsRequest } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
-  const sdk = new SDK();
+  const sdk = new SDK({
+    security: {
+      key: "<YOUR_API_KEY_HERE>",
+      username: "<YOUR_API_KEY_HERE>",
+    },
+  });
 const apiKey: string = "string";
 const apiUsername: string = "string";
 const ascending: string = "string";
@@ -345,7 +380,12 @@ import { SDK } from "@lukehagar/discoursejs";
 import { ListTopTopicsRequest } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
-  const sdk = new SDK();
+  const sdk = new SDK({
+    security: {
+      key: "<YOUR_API_KEY_HERE>",
+      username: "<YOUR_API_KEY_HERE>",
+    },
+  });
 const apiKey: string = "string";
 const apiUsername: string = "string";
 const period: string = "string";
@@ -390,7 +430,12 @@ import { SDK } from "@lukehagar/discoursejs";
 import { RemoveTopicRequest } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
-  const sdk = new SDK();
+  const sdk = new SDK({
+    security: {
+      key: "<YOUR_API_KEY_HERE>",
+      username: "<YOUR_API_KEY_HERE>",
+    },
+  });
 const apiKey: string = "string";
 const apiUsername: string = "string";
 const id: string = "string";
@@ -435,7 +480,12 @@ import { SDK } from "@lukehagar/discoursejs";
 import { NotificationLevel, SetNotificationLevelRequest, SetNotificationLevelRequestBody } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
-  const sdk = new SDK();
+  const sdk = new SDK({
+    security: {
+      key: "<YOUR_API_KEY_HERE>",
+      username: "<YOUR_API_KEY_HERE>",
+    },
+  });
 const apiKey: string = "string";
 const apiUsername: string = "string";
 const id: string = "string";
@@ -484,7 +534,12 @@ import { SDK } from "@lukehagar/discoursejs";
 import { Topic, UpdateTopicRequest, UpdateTopicRequestBody } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
-  const sdk = new SDK();
+  const sdk = new SDK({
+    security: {
+      key: "<YOUR_API_KEY_HERE>",
+      username: "<YOUR_API_KEY_HERE>",
+    },
+  });
 const apiKey: string = "string";
 const apiUsername: string = "string";
 const id: string = "string";
@@ -533,7 +588,12 @@ import { SDK } from "@lukehagar/discoursejs";
 import { Enabled, Status, UpdateTopicStatusRequest, UpdateTopicStatusRequestBody } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
-  const sdk = new SDK();
+  const sdk = new SDK({
+    security: {
+      key: "<YOUR_API_KEY_HERE>",
+      username: "<YOUR_API_KEY_HERE>",
+    },
+  });
 const apiKey: string = "string";
 const apiUsername: string = "string";
 const id: string = "string";
@@ -584,7 +644,12 @@ import { SDK } from "@lukehagar/discoursejs";
 import { UpdateTopicTimestampRequest, UpdateTopicTimestampRequestBody } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
-  const sdk = new SDK();
+  const sdk = new SDK({
+    security: {
+      key: "<YOUR_API_KEY_HERE>",
+      username: "<YOUR_API_KEY_HERE>",
+    },
+  });
 const apiKey: string = "string";
 const apiUsername: string = "string";
 const id: string = "string";

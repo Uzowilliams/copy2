@@ -18,7 +18,12 @@ Create backup
 import { SDK } from "@lukehagar/discoursejs";
 
 async function run() {
-  const sdk = new SDK();
+  const sdk = new SDK({
+    security: {
+      key: "<YOUR_API_KEY_HERE>",
+      username: "<YOUR_API_KEY_HERE>",
+    },
+  });
 
   const res = await sdk.backups.createBackup({
     withUploads: false,
@@ -60,7 +65,12 @@ import { SDK } from "@lukehagar/discoursejs";
 import { DownloadBackupRequest } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
-  const sdk = new SDK();
+  const sdk = new SDK({
+    security: {
+      key: "<YOUR_API_KEY_HERE>",
+      username: "<YOUR_API_KEY_HERE>",
+    },
+  });
 const filename: string = "string";
 const token: string = "string";
 
@@ -102,7 +112,12 @@ List backups
 import { SDK } from "@lukehagar/discoursejs";
 
 async function run() {
-  const sdk = new SDK();
+  const sdk = new SDK({
+    security: {
+      key: "<YOUR_API_KEY_HERE>",
+      username: "<YOUR_API_KEY_HERE>",
+    },
+  });
 
   const res = await sdk.backups.getBackups();
 
@@ -141,7 +156,12 @@ import { SDK } from "@lukehagar/discoursejs";
 import { SendDownloadBackupEmailRequest } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
-  const sdk = new SDK();
+  const sdk = new SDK({
+    security: {
+      key: "<YOUR_API_KEY_HERE>",
+      username: "<YOUR_API_KEY_HERE>",
+    },
+  });
 const filename: string = "string";
 
   const res = await sdk.backups.sendDownloadBackupEmail(filename);

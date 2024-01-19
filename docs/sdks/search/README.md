@@ -16,7 +16,12 @@ import { SDK } from "@lukehagar/discoursejs";
 import { SearchRequest } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
-  const sdk = new SDK();
+  const sdk = new SDK({
+    security: {
+      key: "<YOUR_API_KEY_HERE>",
+      username: "<YOUR_API_KEY_HERE>",
+    },
+  });
 const page: number = 307631;
 const q: string = "string";
 

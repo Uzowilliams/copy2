@@ -39,7 +39,12 @@ import { SDK } from "@lukehagar/discoursejs";
 import { ActivateUserRequest } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
-  const sdk = new SDK();
+  const sdk = new SDK({
+    security: {
+      key: "<YOUR_API_KEY_HERE>",
+      username: "<YOUR_API_KEY_HERE>",
+    },
+  });
 const id: number = 203554;
 
   const res = await sdk.users.activateUser(id);
@@ -80,7 +85,12 @@ import { SDK } from "@lukehagar/discoursejs";
 import { AdminGetUserRequest } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
-  const sdk = new SDK();
+  const sdk = new SDK({
+    security: {
+      key: "<YOUR_API_KEY_HERE>",
+      username: "<YOUR_API_KEY_HERE>",
+    },
+  });
 const id: number = 386776;
 
   const res = await sdk.users.adminGetUser(id);
@@ -121,7 +131,12 @@ import { SDK } from "@lukehagar/discoursejs";
 import { Flag, QueryParamAsc, QueryParamOrder } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
-  const sdk = new SDK();
+  const sdk = new SDK({
+    security: {
+      key: "<YOUR_API_KEY_HERE>",
+      username: "<YOUR_API_KEY_HERE>",
+    },
+  });
 
   const res = await sdk.users.adminListUsers({
     flag: Flag.New,
@@ -163,7 +178,12 @@ import { SDK } from "@lukehagar/discoursejs";
 import { AnonymizeUserRequest } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
-  const sdk = new SDK();
+  const sdk = new SDK({
+    security: {
+      key: "<YOUR_API_KEY_HERE>",
+      username: "<YOUR_API_KEY_HERE>",
+    },
+  });
 const id: number = 418778;
 
   const res = await sdk.users.anonymizeUser(id);
@@ -204,7 +224,12 @@ import { SDK } from "@lukehagar/discoursejs";
 import { ChangePasswordRequest, ChangePasswordRequestBody } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
-  const sdk = new SDK();
+  const sdk = new SDK({
+    security: {
+      key: "<YOUR_API_KEY_HERE>",
+      username: "<YOUR_API_KEY_HERE>",
+    },
+  });
 const token: string = "string";
 const requestBody: ChangePasswordRequestBody = {
   password: "Gm1zHM7WngzsMbv",
@@ -250,7 +275,12 @@ import { SDK } from "@lukehagar/discoursejs";
 import { CreateUserRequest, CreateUserRequestBody, ExternalIds } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
-  const sdk = new SDK();
+  const sdk = new SDK({
+    security: {
+      key: "<YOUR_API_KEY_HERE>",
+      username: "<YOUR_API_KEY_HERE>",
+    },
+  });
 const apiKey: string = "string";
 const apiUsername: string = "string";
 const requestBody: CreateUserRequestBody = {
@@ -301,7 +331,12 @@ import { SDK } from "@lukehagar/discoursejs";
 import { DeactivateUserRequest } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
-  const sdk = new SDK();
+  const sdk = new SDK({
+    security: {
+      key: "<YOUR_API_KEY_HERE>",
+      username: "<YOUR_API_KEY_HERE>",
+    },
+  });
 const id: number = 143950;
 
   const res = await sdk.users.deactivateUser(id);
@@ -342,7 +377,12 @@ import { SDK } from "@lukehagar/discoursejs";
 import { DeleteUserRequest, DeleteUserRequestBody } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
-  const sdk = new SDK();
+  const sdk = new SDK({
+    security: {
+      key: "<YOUR_API_KEY_HERE>",
+      username: "<YOUR_API_KEY_HERE>",
+    },
+  });
 const id: number = 251343;
 const requestBody: DeleteUserRequestBody = {};
 
@@ -385,7 +425,12 @@ import { SDK } from "@lukehagar/discoursejs";
 import { GetUserRequest } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
-  const sdk = new SDK();
+  const sdk = new SDK({
+    security: {
+      key: "<YOUR_API_KEY_HERE>",
+      username: "<YOUR_API_KEY_HERE>",
+    },
+  });
 const apiKey: string = "string";
 const apiUsername: string = "string";
 const username: string = "string";
@@ -430,7 +475,12 @@ import { SDK } from "@lukehagar/discoursejs";
 import { GetUserEmailsRequest } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
-  const sdk = new SDK();
+  const sdk = new SDK({
+    security: {
+      key: "<YOUR_API_KEY_HERE>",
+      username: "<YOUR_API_KEY_HERE>",
+    },
+  });
 const username: string = "string";
 
   const res = await sdk.users.getUserEmails(username);
@@ -471,7 +521,12 @@ import { SDK } from "@lukehagar/discoursejs";
 import { GetUserExternalIdRequest } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
-  const sdk = new SDK();
+  const sdk = new SDK({
+    security: {
+      key: "<YOUR_API_KEY_HERE>",
+      username: "<YOUR_API_KEY_HERE>",
+    },
+  });
 const apiKey: string = "string";
 const apiUsername: string = "string";
 const externalId: string = "string";
@@ -516,7 +571,12 @@ import { SDK } from "@lukehagar/discoursejs";
 import { GetUserIdentiyProviderExternalIdRequest } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
-  const sdk = new SDK();
+  const sdk = new SDK({
+    security: {
+      key: "<YOUR_API_KEY_HERE>",
+      username: "<YOUR_API_KEY_HERE>",
+    },
+  });
 const apiKey: string = "string";
 const apiUsername: string = "string";
 const externalId: string = "string";
@@ -563,7 +623,12 @@ import { SDK } from "@lukehagar/discoursejs";
 import { ListUserActionsRequest } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
-  const sdk = new SDK();
+  const sdk = new SDK({
+    security: {
+      key: "<YOUR_API_KEY_HERE>",
+      username: "<YOUR_API_KEY_HERE>",
+    },
+  });
 const filter: string = "string";
 const offset: number = 620550;
 const username: string = "string";
@@ -608,7 +673,12 @@ import { SDK } from "@lukehagar/discoursejs";
 import { ListUserBadgesRequest } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
-  const sdk = new SDK();
+  const sdk = new SDK({
+    security: {
+      key: "<YOUR_API_KEY_HERE>",
+      username: "<YOUR_API_KEY_HERE>",
+    },
+  });
 const username: string = "string";
 
   const res = await sdk.users.listUserBadges(username);
@@ -649,7 +719,12 @@ import { SDK } from "@lukehagar/discoursejs";
 import { Asc, ListUsersPublicRequest, Order, Period } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
-  const sdk = new SDK();
+  const sdk = new SDK({
+    security: {
+      key: "<YOUR_API_KEY_HERE>",
+      username: "<YOUR_API_KEY_HERE>",
+    },
+  });
 const order: Order = Order.TopicCount;
 const period: Period = Period.Monthly;
 const asc: Asc = Asc.True;
@@ -696,7 +771,12 @@ import { SDK } from "@lukehagar/discoursejs";
 import { LogOutUserRequest } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
-  const sdk = new SDK();
+  const sdk = new SDK({
+    security: {
+      key: "<YOUR_API_KEY_HERE>",
+      username: "<YOUR_API_KEY_HERE>",
+    },
+  });
 const id: number = 379568;
 
   const res = await sdk.users.logOutUser(id);
@@ -737,7 +817,12 @@ import { SDK } from "@lukehagar/discoursejs";
 import { RefreshGravatarRequest } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
-  const sdk = new SDK();
+  const sdk = new SDK({
+    security: {
+      key: "<YOUR_API_KEY_HERE>",
+      username: "<YOUR_API_KEY_HERE>",
+    },
+  });
 const username: string = "string";
 
   const res = await sdk.users.refreshGravatar(username);
@@ -777,7 +862,12 @@ Send password reset email
 import { SDK } from "@lukehagar/discoursejs";
 
 async function run() {
-  const sdk = new SDK();
+  const sdk = new SDK({
+    security: {
+      key: "<YOUR_API_KEY_HERE>",
+      username: "<YOUR_API_KEY_HERE>",
+    },
+  });
 
   const res = await sdk.users.sendPasswordResetEmail({
     login: "string",
@@ -819,7 +909,12 @@ import { SDK } from "@lukehagar/discoursejs";
 import { SilenceUserRequest, SilenceUserRequestBody } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
-  const sdk = new SDK();
+  const sdk = new SDK({
+    security: {
+      key: "<YOUR_API_KEY_HERE>",
+      username: "<YOUR_API_KEY_HERE>",
+    },
+  });
 const id: number = 606247;
 const requestBody: SilenceUserRequestBody = {
   postAction: "delete",
@@ -865,7 +960,12 @@ import { SDK } from "@lukehagar/discoursejs";
 import { SuspendUserRequest, SuspendUserRequestBody } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
-  const sdk = new SDK();
+  const sdk = new SDK({
+    security: {
+      key: "<YOUR_API_KEY_HERE>",
+      username: "<YOUR_API_KEY_HERE>",
+    },
+  });
 const id: number = 970832;
 const requestBody: SuspendUserRequestBody = {
   postAction: "delete",
@@ -912,7 +1012,12 @@ import { SDK } from "@lukehagar/discoursejs";
 import { UpdateAvatarRequest, UpdateAvatarRequestBody, UpdateAvatarType } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
-  const sdk = new SDK();
+  const sdk = new SDK({
+    security: {
+      key: "<YOUR_API_KEY_HERE>",
+      username: "<YOUR_API_KEY_HERE>",
+    },
+  });
 const username: string = "string";
 const requestBody: UpdateAvatarRequestBody = {
   type: UpdateAvatarType.Gravatar,
@@ -958,7 +1063,12 @@ import { SDK } from "@lukehagar/discoursejs";
 import { UpdateEmailRequest, UpdateEmailRequestBody } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
-  const sdk = new SDK();
+  const sdk = new SDK({
+    security: {
+      key: "<YOUR_API_KEY_HERE>",
+      username: "<YOUR_API_KEY_HERE>",
+    },
+  });
 const username: string = "string";
 const requestBody: UpdateEmailRequestBody = {
   email: "Jodie.Reichel79@yahoo.com",
@@ -1003,7 +1113,12 @@ import { SDK } from "@lukehagar/discoursejs";
 import { UpdateUserExternalIds, UpdateUserRequest, UpdateUserRequestBody } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
-  const sdk = new SDK();
+  const sdk = new SDK({
+    security: {
+      key: "<YOUR_API_KEY_HERE>",
+      username: "<YOUR_API_KEY_HERE>",
+    },
+  });
 const apiKey: string = "string";
 const apiUsername: string = "string";
 const username: string = "string";
@@ -1052,7 +1167,12 @@ import { SDK } from "@lukehagar/discoursejs";
 import { UpdateUsernameRequest, UpdateUsernameRequestBody } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
-  const sdk = new SDK();
+  const sdk = new SDK({
+    security: {
+      key: "<YOUR_API_KEY_HERE>",
+      username: "<YOUR_API_KEY_HERE>",
+    },
+  });
 const username: string = "string";
 const requestBody: UpdateUsernameRequestBody = {
   newUsername: "string",
