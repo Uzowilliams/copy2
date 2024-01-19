@@ -19,12 +19,7 @@ List badges
 import { SDK } from "@lukehagar/discoursejs";
 
 async function run() {
-  const sdk = new SDK({
-    security: {
-      key: "<YOUR_API_KEY_HERE>",
-      username: "<YOUR_API_KEY_HERE>",
-    },
-  });
+  const sdk = new SDK();
 
   const res = await sdk.badges.adminListBadges();
 
@@ -62,12 +57,7 @@ Create badge
 import { SDK } from "@lukehagar/discoursejs";
 
 async function run() {
-  const sdk = new SDK({
-    security: {
-      key: "<YOUR_API_KEY_HERE>",
-      username: "<YOUR_API_KEY_HERE>",
-    },
-  });
+  const sdk = new SDK();
 
   const res = await sdk.badges.createBadge({
     badgeTypeId: 190613,
@@ -110,12 +100,7 @@ import { SDK } from "@lukehagar/discoursejs";
 import { DeleteBadgeRequest } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
-  const sdk = new SDK({
-    security: {
-      key: "<YOUR_API_KEY_HERE>",
-      username: "<YOUR_API_KEY_HERE>",
-    },
-  });
+  const sdk = new SDK();
 const id: number = 32345;
 
   const res = await sdk.badges.deleteBadge(id);
@@ -156,12 +141,7 @@ import { SDK } from "@lukehagar/discoursejs";
 import { ListUserBadgesRequest } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
-  const sdk = new SDK({
-    security: {
-      key: "<YOUR_API_KEY_HERE>",
-      username: "<YOUR_API_KEY_HERE>",
-    },
-  });
+  const sdk = new SDK();
 const username: string = "string";
 
   const res = await sdk.badges.listUserBadges(username);
@@ -202,12 +182,7 @@ import { SDK } from "@lukehagar/discoursejs";
 import { UpdateBadgeRequest, UpdateBadgeRequestBody } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
-  const sdk = new SDK({
-    security: {
-      key: "<YOUR_API_KEY_HERE>",
-      username: "<YOUR_API_KEY_HERE>",
-    },
-  });
+  const sdk = new SDK();
 const id: number = 280628;
 const requestBody: UpdateBadgeRequestBody = {
   badgeTypeId: 568845,

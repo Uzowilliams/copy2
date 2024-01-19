@@ -15,12 +15,7 @@ Can be used to fetch all categories and subcategories
 import { SDK } from "@lukehagar/discoursejs";
 
 async function run() {
-  const sdk = new SDK({
-    security: {
-      key: "<YOUR_API_KEY_HERE>",
-      username: "<YOUR_API_KEY_HERE>",
-    },
-  });
+  const sdk = new SDK();
 
   const res = await sdk.site.getSite();
 

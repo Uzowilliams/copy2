@@ -16,12 +16,7 @@ Get the notifications that belong to the current user
 import { SDK } from "@lukehagar/discoursejs";
 
 async function run() {
-  const sdk = new SDK({
-    security: {
-      key: "<YOUR_API_KEY_HERE>",
-      username: "<YOUR_API_KEY_HERE>",
-    },
-  });
+  const sdk = new SDK();
 
   const res = await sdk.notifications.getNotifications();
 
@@ -59,12 +54,7 @@ Mark notifications as read
 import { SDK } from "@lukehagar/discoursejs";
 
 async function run() {
-  const sdk = new SDK({
-    security: {
-      key: "<YOUR_API_KEY_HERE>",
-      username: "<YOUR_API_KEY_HERE>",
-    },
-  });
+  const sdk = new SDK();
 
   const res = await sdk.notifications.markNotificationsAsRead({});
 

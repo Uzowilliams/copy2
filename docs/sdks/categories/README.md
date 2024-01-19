@@ -20,12 +20,7 @@ Creates a category
 import { SDK } from "@lukehagar/discoursejs";
 
 async function run() {
-  const sdk = new SDK({
-    security: {
-      key: "<YOUR_API_KEY_HERE>",
-      username: "<YOUR_API_KEY_HERE>",
-    },
-  });
+  const sdk = new SDK();
 
   const res = await sdk.categories.createCategory({
     color: "49d9e9",
@@ -75,12 +70,7 @@ import { SDK } from "@lukehagar/discoursejs";
 import { GetCategoryRequest } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
-  const sdk = new SDK({
-    security: {
-      key: "<YOUR_API_KEY_HERE>",
-      username: "<YOUR_API_KEY_HERE>",
-    },
-  });
+  const sdk = new SDK();
 const id: number = 39147;
 
   const res = await sdk.categories.getCategory(id);
@@ -120,12 +110,7 @@ Can be used to fetch all categories and subcategories
 import { SDK } from "@lukehagar/discoursejs";
 
 async function run() {
-  const sdk = new SDK({
-    security: {
-      key: "<YOUR_API_KEY_HERE>",
-      username: "<YOUR_API_KEY_HERE>",
-    },
-  });
+  const sdk = new SDK();
 
   const res = await sdk.categories.getSite();
 
@@ -164,12 +149,7 @@ import { SDK } from "@lukehagar/discoursejs";
 import { ListCategoriesRequest } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
-  const sdk = new SDK({
-    security: {
-      key: "<YOUR_API_KEY_HERE>",
-      username: "<YOUR_API_KEY_HERE>",
-    },
-  });
+  const sdk = new SDK();
 const includeSubcategories: boolean = false;
 
   const res = await sdk.categories.listCategories(includeSubcategories);
@@ -210,12 +190,7 @@ import { SDK } from "@lukehagar/discoursejs";
 import { ListCategoryTopicsRequest } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
-  const sdk = new SDK({
-    security: {
-      key: "<YOUR_API_KEY_HERE>",
-      username: "<YOUR_API_KEY_HERE>",
-    },
-  });
+  const sdk = new SDK();
 const id: number = 394133;
 const slug: string = "string";
 
@@ -258,12 +233,7 @@ import { SDK } from "@lukehagar/discoursejs";
 import { UpdateCategoryRequest, UpdateCategoryRequestBody } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
-  const sdk = new SDK({
-    security: {
-      key: "<YOUR_API_KEY_HERE>",
-      username: "<YOUR_API_KEY_HERE>",
-    },
-  });
+  const sdk = new SDK();
 const id: number = 353500;
 const requestBody: UpdateCategoryRequestBody = {
   color: "49d9e9",

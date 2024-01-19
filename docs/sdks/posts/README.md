@@ -22,12 +22,7 @@ Creates a new topic, a new post, or a private message
 import { SDK } from "@lukehagar/discoursejs";
 
 async function run() {
-  const sdk = new SDK({
-    security: {
-      key: "<YOUR_API_KEY_HERE>",
-      username: "<YOUR_API_KEY_HERE>",
-    },
-  });
+  const sdk = new SDK();
 
   const res = await sdk.posts.createTopicPostPM({
     archetype: "private_message",
@@ -71,12 +66,7 @@ import { SDK } from "@lukehagar/discoursejs";
 import { DeletePostRequest, DeletePostRequestBody } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
-  const sdk = new SDK({
-    security: {
-      key: "<YOUR_API_KEY_HERE>",
-      username: "<YOUR_API_KEY_HERE>",
-    },
-  });
+  const sdk = new SDK();
 const id: number = 188146;
 const requestBody: DeletePostRequestBody = {
   forceDestroy: true,
@@ -126,12 +116,7 @@ import { SDK } from "@lukehagar/discoursejs";
 import { GetPostRequest } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
-  const sdk = new SDK({
-    security: {
-      key: "<YOUR_API_KEY_HERE>",
-      username: "<YOUR_API_KEY_HERE>",
-    },
-  });
+  const sdk = new SDK();
 const id: string = "string";
 
   const res = await sdk.posts.getPost(id);
@@ -172,12 +157,7 @@ import { SDK } from "@lukehagar/discoursejs";
 import { ListPostsRequest } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
-  const sdk = new SDK({
-    security: {
-      key: "<YOUR_API_KEY_HERE>",
-      username: "<YOUR_API_KEY_HERE>",
-    },
-  });
+  const sdk = new SDK();
 const apiKey: string = "string";
 const apiUsername: string = "string";
 const before: string = "string";
@@ -222,12 +202,7 @@ import { SDK } from "@lukehagar/discoursejs";
 import { LockPostRequest, LockPostRequestBody } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
-  const sdk = new SDK({
-    security: {
-      key: "<YOUR_API_KEY_HERE>",
-      username: "<YOUR_API_KEY_HERE>",
-    },
-  });
+  const sdk = new SDK();
 const apiKey: string = "string";
 const apiUsername: string = "string";
 const id: string = "string";
@@ -276,12 +251,7 @@ import { SDK } from "@lukehagar/discoursejs";
 import { PerformPostActionRequest, PerformPostActionRequestBody } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
-  const sdk = new SDK({
-    security: {
-      key: "<YOUR_API_KEY_HERE>",
-      username: "<YOUR_API_KEY_HERE>",
-    },
-  });
+  const sdk = new SDK();
 const apiKey: string = "string";
 const apiUsername: string = "string";
 const requestBody: PerformPostActionRequestBody = {
@@ -329,12 +299,7 @@ import { SDK } from "@lukehagar/discoursejs";
 import { PostRepliesRequest } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
-  const sdk = new SDK({
-    security: {
-      key: "<YOUR_API_KEY_HERE>",
-      username: "<YOUR_API_KEY_HERE>",
-    },
-  });
+  const sdk = new SDK();
 const id: string = "string";
 
   const res = await sdk.posts.postReplies(id);
@@ -375,12 +340,7 @@ import { SDK } from "@lukehagar/discoursejs";
 import { Post, UpdatePostRequest, UpdatePostRequestBody } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
-  const sdk = new SDK({
-    security: {
-      key: "<YOUR_API_KEY_HERE>",
-      username: "<YOUR_API_KEY_HERE>",
-    },
-  });
+  const sdk = new SDK();
 const id: string = "string";
 const requestBody: UpdatePostRequestBody = {
   post: {

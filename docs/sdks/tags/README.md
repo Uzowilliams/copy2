@@ -20,12 +20,7 @@ Creates a tag group
 import { SDK } from "@lukehagar/discoursejs";
 
 async function run() {
-  const sdk = new SDK({
-    security: {
-      key: "<YOUR_API_KEY_HERE>",
-      username: "<YOUR_API_KEY_HERE>",
-    },
-  });
+  const sdk = new SDK();
 
   const res = await sdk.tags.createTagGroup({
     name: "string",
@@ -67,12 +62,7 @@ import { SDK } from "@lukehagar/discoursejs";
 import { GetTagRequest } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
-  const sdk = new SDK({
-    security: {
-      key: "<YOUR_API_KEY_HERE>",
-      username: "<YOUR_API_KEY_HERE>",
-    },
-  });
+  const sdk = new SDK();
 const name: string = "string";
 
   const res = await sdk.tags.getTag(name);
@@ -113,12 +103,7 @@ import { SDK } from "@lukehagar/discoursejs";
 import { GetTagGroupRequest } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
-  const sdk = new SDK({
-    security: {
-      key: "<YOUR_API_KEY_HERE>",
-      username: "<YOUR_API_KEY_HERE>",
-    },
-  });
+  const sdk = new SDK();
 const id: string = "string";
 
   const res = await sdk.tags.getTagGroup(id);
@@ -158,12 +143,7 @@ Get a list of tag groups
 import { SDK } from "@lukehagar/discoursejs";
 
 async function run() {
-  const sdk = new SDK({
-    security: {
-      key: "<YOUR_API_KEY_HERE>",
-      username: "<YOUR_API_KEY_HERE>",
-    },
-  });
+  const sdk = new SDK();
 
   const res = await sdk.tags.listTagGroups();
 
@@ -201,12 +181,7 @@ Get a list of tags
 import { SDK } from "@lukehagar/discoursejs";
 
 async function run() {
-  const sdk = new SDK({
-    security: {
-      key: "<YOUR_API_KEY_HERE>",
-      username: "<YOUR_API_KEY_HERE>",
-    },
-  });
+  const sdk = new SDK();
 
   const res = await sdk.tags.listTags();
 
@@ -245,12 +220,7 @@ import { SDK } from "@lukehagar/discoursejs";
 import { UpdateTagGroupRequest, UpdateTagGroupRequestBody } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
-  const sdk = new SDK({
-    security: {
-      key: "<YOUR_API_KEY_HERE>",
-      username: "<YOUR_API_KEY_HERE>",
-    },
-  });
+  const sdk = new SDK();
 const id: string = "string";
 const requestBody: UpdateTagGroupRequestBody = {};
 

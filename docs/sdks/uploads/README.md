@@ -33,12 +33,7 @@ be set to true for this endpoint to function.
 import { SDK } from "@lukehagar/discoursejs";
 
 async function run() {
-  const sdk = new SDK({
-    security: {
-      key: "<YOUR_API_KEY_HERE>",
-      username: "<YOUR_API_KEY_HERE>",
-    },
-  });
+  const sdk = new SDK();
 
   const res = await sdk.uploads.abortMultipart({
     externalUploadIdentifier: "84x83tmxy398t3y._Q_z8CoJYVr69bE6D7f8J6Oo0434QquLFoYdGVerWFx9X5HDEI_TP_95c34n853495x35345394.d.ghQ",
@@ -100,12 +95,7 @@ be set to true for this endpoint to function.
 import { SDK } from "@lukehagar/discoursejs";
 
 async function run() {
-  const sdk = new SDK({
-    security: {
-      key: "<YOUR_API_KEY_HERE>",
-      username: "<YOUR_API_KEY_HERE>",
-    },
-  });
+  const sdk = new SDK();
 
   const res = await sdk.uploads.batchPresignMultipartParts({
     partNumbers: [
@@ -168,12 +158,7 @@ be set to true for this endpoint to function.
 import { SDK } from "@lukehagar/discoursejs";
 
 async function run() {
-  const sdk = new SDK({
-    security: {
-      key: "<YOUR_API_KEY_HERE>",
-      username: "<YOUR_API_KEY_HERE>",
-    },
-  });
+  const sdk = new SDK();
 
   const res = await sdk.uploads.completeExternalUpload({
     forPrivateMessage: "true",
@@ -231,12 +216,7 @@ be set to true for this endpoint to function.
 import { SDK } from "@lukehagar/discoursejs";
 
 async function run() {
-  const sdk = new SDK({
-    security: {
-      key: "<YOUR_API_KEY_HERE>",
-      username: "<YOUR_API_KEY_HERE>",
-    },
-  });
+  const sdk = new SDK();
 
   const res = await sdk.uploads.completeMultipart({
     parts: [
@@ -293,12 +273,7 @@ import { SDK } from "@lukehagar/discoursejs";
 import { UploadType } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
-  const sdk = new SDK({
-    security: {
-      key: "<YOUR_API_KEY_HERE>",
-      username: "<YOUR_API_KEY_HERE>",
-    },
-  });
+  const sdk = new SDK();
 
   const res = await sdk.uploads.createMultipartUpload({
     fileName: "IMG_2021.jpeg",
@@ -343,12 +318,7 @@ import { SDK } from "@lukehagar/discoursejs";
 import { TypeT } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
-  const sdk = new SDK({
-    security: {
-      key: "<YOUR_API_KEY_HERE>",
-      username: "<YOUR_API_KEY_HERE>",
-    },
-  });
+  const sdk = new SDK();
 
   const res = await sdk.uploads.createUpload({
     file: {
@@ -414,12 +384,7 @@ import { SDK } from "@lukehagar/discoursejs";
 import { GeneratePresignedPutType } from "@lukehagar/discoursejs/dist/sdk/models/operations";
 
 async function run() {
-  const sdk = new SDK({
-    security: {
-      key: "<YOUR_API_KEY_HERE>",
-      username: "<YOUR_API_KEY_HERE>",
-    },
-  });
+  const sdk = new SDK();
 
   const res = await sdk.uploads.generatePresignedPut({
     fileName: "IMG_2021.jpeg",
