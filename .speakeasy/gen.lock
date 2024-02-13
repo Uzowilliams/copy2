@@ -4,9 +4,9 @@ management:
   docChecksum: dd4d04e62622de8f631720b5be68964d
   docVersion: latest
   speakeasyVersion: internal
-  generationVersion: 2.237.3
-  releaseVersion: 0.4.0
-  configChecksum: 0757161c605cbd250db3b4e7c570efff
+  generationVersion: 2.253.0
+  releaseVersion: 0.4.1
+  configChecksum: 1da325d148fe2fccc89aea4ace43e139
   repoURL: https://github.com/LukeHagar/discoursejs.git
   repoSubDirectory: .
   installationURL: https://github.com/LukeHagar/discoursejs

@@ -121,7 +121,7 @@ const apiKey: string = "string";
 const apiUsername: string = "string";
 const id: string = "string";
 const requestBody: CreateTopicTimerRequestBody = {
-  time: "string",
+  time: "",
 };
 
   const res = await sdk.topics.createTopicTimer(apiKey, apiUsername, id, requestBody);

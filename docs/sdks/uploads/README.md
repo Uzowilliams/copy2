@@ -99,9 +99,9 @@ async function run() {
 
   const res = await sdk.uploads.batchPresignMultipartParts({
     partNumbers: [
-      "string",
-      "string",
-      "string",
+      1,
+      2,
+      3,
     ],
     uniqueIdentifier: "66e86218-80d9-4bda-b4d5-2b6def968705",
   });
