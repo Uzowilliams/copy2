@@ -26,7 +26,7 @@ async function run() {
 
   const res = await sdk.posts.createTopicPostPM({
     archetype: "private_message",
-    raw: "string",
+    raw: "<value>",
     targetRecipients: "blake,sam",
   });
 
@@ -117,7 +117,7 @@ import { GetPostRequest } from "@lukehagar/discoursejs/dist/sdk/models/operation
 
 async function run() {
   const sdk = new SDK();
-const id: string = "string";
+const id: string = "<value>";
 
   const res = await sdk.posts.getPost(id);
 
@@ -158,9 +158,9 @@ import { ListPostsRequest } from "@lukehagar/discoursejs/dist/sdk/models/operati
 
 async function run() {
   const sdk = new SDK();
-const apiKey: string = "string";
-const apiUsername: string = "string";
-const before: string = "string";
+const apiKey: string = "<value>";
+const apiUsername: string = "<value>";
+const before: string = "<value>";
 
   const res = await sdk.posts.listPosts(apiKey, apiUsername, before);
 
@@ -203,11 +203,11 @@ import { LockPostRequest, LockPostRequestBody } from "@lukehagar/discoursejs/dis
 
 async function run() {
   const sdk = new SDK();
-const apiKey: string = "string";
-const apiUsername: string = "string";
-const id: string = "string";
+const apiKey: string = "<value>";
+const apiUsername: string = "<value>";
+const id: string = "<value>";
 const requestBody: LockPostRequestBody = {
-  locked: "string",
+  locked: "<value>",
 };
 
   const res = await sdk.posts.lockPost(apiKey, apiUsername, id, requestBody);
@@ -252,8 +252,8 @@ import { PerformPostActionRequest, PerformPostActionRequestBody } from "@lukehag
 
 async function run() {
   const sdk = new SDK();
-const apiKey: string = "string";
-const apiUsername: string = "string";
+const apiKey: string = "<value>";
+const apiUsername: string = "<value>";
 const requestBody: PerformPostActionRequestBody = {
   id: 315075,
   postActionTypeId: 159481,
@@ -300,7 +300,7 @@ import { PostRepliesRequest } from "@lukehagar/discoursejs/dist/sdk/models/opera
 
 async function run() {
   const sdk = new SDK();
-const id: string = "string";
+const id: string = "<value>";
 
   const res = await sdk.posts.postReplies(id);
 
@@ -341,10 +341,10 @@ import { Post, UpdatePostRequest, UpdatePostRequestBody } from "@lukehagar/disco
 
 async function run() {
   const sdk = new SDK();
-const id: string = "string";
+const id: string = "<value>";
 const requestBody: UpdatePostRequestBody = {
   post: {
-    raw: "string",
+    raw: "<value>",
   },
 };
 

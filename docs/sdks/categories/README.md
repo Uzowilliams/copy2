@@ -25,11 +25,11 @@ async function run() {
   const res = await sdk.categories.createCategory({
     color: "49d9e9",
     formTemplateIds: [
-      "string",
+      "<value>",
     ],
-    name: "string",
+    name: "<value>",
     permissions: {
-      "key": "string",
+      "key": "<value>",
     },
     textColor: "f0fcfd",
   });
@@ -192,7 +192,7 @@ import { ListCategoryTopicsRequest } from "@lukehagar/discoursejs/dist/sdk/model
 async function run() {
   const sdk = new SDK();
 const id: number = 394133;
-const slug: string = "string";
+const slug: string = "<value>";
 
   const res = await sdk.categories.listCategoryTopics(id, slug);
 
@@ -238,11 +238,11 @@ const id: number = 353500;
 const requestBody: UpdateCategoryRequestBody = {
   color: "49d9e9",
   formTemplateIds: [
-    "string",
+    "<value>",
   ],
-  name: "string",
+  name: "<value>",
   permissions: {
-    "key": "string",
+    "key": "<value>",
   },
   textColor: "f0fcfd",
 };

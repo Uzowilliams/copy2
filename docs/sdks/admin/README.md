@@ -316,7 +316,7 @@ import { RefreshGravatarRequest } from "@lukehagar/discoursejs/dist/sdk/models/o
 
 async function run() {
   const sdk = new SDK();
-const username: string = "string";
+const username: string = "<value>";
 
   const res = await sdk.admin.refreshGravatar(username);
 
@@ -406,7 +406,7 @@ async function run() {
 const id: number = 970832;
 const requestBody: SuspendUserRequestBody = {
   postAction: "delete",
-  reason: "string",
+  reason: "<value>",
   suspendUntil: "2121-02-22",
 };
 

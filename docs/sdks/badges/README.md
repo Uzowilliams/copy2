@@ -61,7 +61,7 @@ async function run() {
 
   const res = await sdk.badges.createBadge({
     badgeTypeId: 190613,
-    name: "string",
+    name: "<value>",
   });
 
   if (res.statusCode == 200) {
@@ -142,7 +142,7 @@ import { ListUserBadgesRequest } from "@lukehagar/discoursejs/dist/sdk/models/op
 
 async function run() {
   const sdk = new SDK();
-const username: string = "string";
+const username: string = "<value>";
 
   const res = await sdk.badges.listUserBadges(username);
 
@@ -186,7 +186,7 @@ async function run() {
 const id: number = 280628;
 const requestBody: UpdateBadgeRequestBody = {
   badgeTypeId: 568845,
-  name: "string",
+  name: "<value>",
 };
 
   const res = await sdk.badges.updateBadge(id, requestBody);

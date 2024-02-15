@@ -74,7 +74,7 @@ async function run() {
       mutedCategoryIds: [
         385163,
       ],
-      name: "string",
+      name: "<value>",
       regularCategoryIds: [
         723588,
       ],
@@ -168,7 +168,7 @@ import { GetGroupRequest } from "@lukehagar/discoursejs/dist/sdk/models/operatio
 
 async function run() {
   const sdk = new SDK();
-const id: string = "string";
+const id: string = "<value>";
 
   const res = await sdk.groups.getGroup(id);
 
@@ -209,7 +209,7 @@ import { ListGroupMembersRequest } from "@lukehagar/discoursejs/dist/sdk/models/
 
 async function run() {
   const sdk = new SDK();
-const id: string = "string";
+const id: string = "<value>";
 
   const res = await sdk.groups.listGroupMembers(id);
 
@@ -339,7 +339,7 @@ const requestBody: UpdateGroupRequestBody = {
     mutedCategoryIds: [
       244551,
     ],
-    name: "string",
+    name: "<value>",
     regularCategoryIds: [
       750192,
     ],

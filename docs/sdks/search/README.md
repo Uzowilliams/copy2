@@ -18,7 +18,7 @@ import { SearchRequest } from "@lukehagar/discoursejs/dist/sdk/models/operations
 async function run() {
   const sdk = new SDK();
 const page: number = 307631;
-const q: string = "string";
+const q: string = "<value>";
 
   const res = await sdk.search.search(page, q);
 

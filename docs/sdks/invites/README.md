@@ -18,8 +18,8 @@ import { CreateInviteRequest, CreateInviteRequestBody } from "@lukehagar/discour
 
 async function run() {
   const sdk = new SDK();
-const apiKey: string = "string";
-const apiUsername: string = "string";
+const apiKey: string = "<value>";
+const apiUsername: string = "<value>";
 const requestBody: CreateInviteRequestBody = {
   email: "not-a-user-yet@example.com",
   groupIds: "42,43",
@@ -68,9 +68,9 @@ import { InviteToTopicRequest, InviteToTopicRequestBody } from "@lukehagar/disco
 
 async function run() {
   const sdk = new SDK();
-const apiKey: string = "string";
-const apiUsername: string = "string";
-const id: string = "string";
+const apiKey: string = "<value>";
+const apiUsername: string = "<value>";
+const id: string = "<value>";
 const requestBody: InviteToTopicRequestBody = {};
 
   const res = await sdk.invites.inviteToTopic(apiKey, apiUsername, id, requestBody);

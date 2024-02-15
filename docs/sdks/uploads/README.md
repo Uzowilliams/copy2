@@ -220,8 +220,8 @@ async function run() {
 
   const res = await sdk.uploads.completeMultipart({
     parts: [
-      "string",
-      "string",
+      "<value>",
+      "<value>",
     ],
     uniqueIdentifier: "66e86218-80d9-4bda-b4d5-2b6def968705",
   });

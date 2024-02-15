@@ -205,7 +205,7 @@ import { ChangePasswordRequest, ChangePasswordRequestBody } from "@lukehagar/dis
 
 async function run() {
   const sdk = new SDK();
-const token: string = "string";
+const token: string = "<value>";
 const requestBody: ChangePasswordRequestBody = {
   password: "Gm1zHM7WngzsMbv",
   username: "Ines.Grady",
@@ -251,12 +251,12 @@ import { CreateUserRequest, CreateUserRequestBody, ExternalIds } from "@lukehaga
 
 async function run() {
   const sdk = new SDK();
-const apiKey: string = "string";
-const apiUsername: string = "string";
+const apiKey: string = "<value>";
+const apiUsername: string = "<value>";
 const requestBody: CreateUserRequestBody = {
   email: "Hailey.Effertz62@yahoo.com",
   externalIds: {},
-  name: "string",
+  name: "<value>",
   password: "Pd4wq13VrTPEl8B",
   username: "Domenico_Gottlieb",
 };
@@ -386,9 +386,9 @@ import { GetUserRequest } from "@lukehagar/discoursejs/dist/sdk/models/operation
 
 async function run() {
   const sdk = new SDK();
-const apiKey: string = "string";
-const apiUsername: string = "string";
-const username: string = "string";
+const apiKey: string = "<value>";
+const apiUsername: string = "<value>";
+const username: string = "<value>";
 
   const res = await sdk.users.getUser(apiKey, apiUsername, username);
 
@@ -431,7 +431,7 @@ import { GetUserEmailsRequest } from "@lukehagar/discoursejs/dist/sdk/models/ope
 
 async function run() {
   const sdk = new SDK();
-const username: string = "string";
+const username: string = "<value>";
 
   const res = await sdk.users.getUserEmails(username);
 
@@ -472,9 +472,9 @@ import { GetUserExternalIdRequest } from "@lukehagar/discoursejs/dist/sdk/models
 
 async function run() {
   const sdk = new SDK();
-const apiKey: string = "string";
-const apiUsername: string = "string";
-const externalId: string = "string";
+const apiKey: string = "<value>";
+const apiUsername: string = "<value>";
+const externalId: string = "<value>";
 
   const res = await sdk.users.getUserExternalId(apiKey, apiUsername, externalId);
 
@@ -517,10 +517,10 @@ import { GetUserIdentiyProviderExternalIdRequest } from "@lukehagar/discoursejs/
 
 async function run() {
   const sdk = new SDK();
-const apiKey: string = "string";
-const apiUsername: string = "string";
-const externalId: string = "string";
-const provider: string = "string";
+const apiKey: string = "<value>";
+const apiUsername: string = "<value>";
+const externalId: string = "<value>";
+const provider: string = "<value>";
 
   const res = await sdk.users.getUserIdentiyProviderExternalId(apiKey, apiUsername, externalId, provider);
 
@@ -564,9 +564,9 @@ import { ListUserActionsRequest } from "@lukehagar/discoursejs/dist/sdk/models/o
 
 async function run() {
   const sdk = new SDK();
-const filter: string = "string";
+const filter: string = "<value>";
 const offset: number = 620550;
-const username: string = "string";
+const username: string = "<value>";
 
   const res = await sdk.users.listUserActions(filter, offset, username);
 
@@ -609,7 +609,7 @@ import { ListUserBadgesRequest } from "@lukehagar/discoursejs/dist/sdk/models/op
 
 async function run() {
   const sdk = new SDK();
-const username: string = "string";
+const username: string = "<value>";
 
   const res = await sdk.users.listUserBadges(username);
 
@@ -738,7 +738,7 @@ import { RefreshGravatarRequest } from "@lukehagar/discoursejs/dist/sdk/models/o
 
 async function run() {
   const sdk = new SDK();
-const username: string = "string";
+const username: string = "<value>";
 
   const res = await sdk.users.refreshGravatar(username);
 
@@ -780,7 +780,7 @@ async function run() {
   const sdk = new SDK();
 
   const res = await sdk.users.sendPasswordResetEmail({
-    login: "string",
+    login: "Bert.Kohler48",
   });
 
   if (res.statusCode == 200) {
@@ -869,7 +869,7 @@ async function run() {
 const id: number = 970832;
 const requestBody: SuspendUserRequestBody = {
   postAction: "delete",
-  reason: "string",
+  reason: "<value>",
   suspendUntil: "2121-02-22",
 };
 
@@ -913,7 +913,7 @@ import { UpdateAvatarRequest, UpdateAvatarRequestBody, UpdateAvatarType } from "
 
 async function run() {
   const sdk = new SDK();
-const username: string = "string";
+const username: string = "<value>";
 const requestBody: UpdateAvatarRequestBody = {
   type: UpdateAvatarType.Gravatar,
   uploadId: 261978,
@@ -959,7 +959,7 @@ import { UpdateEmailRequest, UpdateEmailRequestBody } from "@lukehagar/discourse
 
 async function run() {
   const sdk = new SDK();
-const username: string = "string";
+const username: string = "<value>";
 const requestBody: UpdateEmailRequestBody = {
   email: "Jodie.Reichel79@yahoo.com",
 };
@@ -1004,9 +1004,9 @@ import { UpdateUserExternalIds, UpdateUserRequest, UpdateUserRequestBody } from 
 
 async function run() {
   const sdk = new SDK();
-const apiKey: string = "string";
-const apiUsername: string = "string";
-const username: string = "string";
+const apiKey: string = "<value>";
+const apiUsername: string = "<value>";
+const username: string = "<value>";
 const requestBody: UpdateUserRequestBody = {
   externalIds: {},
 };
@@ -1053,9 +1053,9 @@ import { UpdateUsernameRequest, UpdateUsernameRequestBody } from "@lukehagar/dis
 
 async function run() {
   const sdk = new SDK();
-const username: string = "string";
+const username: string = "<value>";
 const requestBody: UpdateUsernameRequestBody = {
-  newUsername: "string",
+  newUsername: "<value>",
 };
 
   const res = await sdk.users.updateUsername(username, requestBody);

@@ -29,9 +29,9 @@ import { BookmarkTopicRequest } from "@lukehagar/discoursejs/dist/sdk/models/ope
 
 async function run() {
   const sdk = new SDK();
-const apiKey: string = "string";
-const apiUsername: string = "string";
-const id: string = "string";
+const apiKey: string = "<value>";
+const apiUsername: string = "<value>";
+const id: string = "<value>";
 
   const res = await sdk.topics.bookmarkTopic(apiKey, apiUsername, id);
 
@@ -76,7 +76,7 @@ async function run() {
 
   const res = await sdk.topics.createTopicPostPM({
     archetype: "private_message",
-    raw: "string",
+    raw: "<value>",
     targetRecipients: "blake,sam",
   });
 
@@ -117,9 +117,9 @@ import { CreateTopicTimerRequest, CreateTopicTimerRequestBody } from "@lukehagar
 
 async function run() {
   const sdk = new SDK();
-const apiKey: string = "string";
-const apiUsername: string = "string";
-const id: string = "string";
+const apiKey: string = "<value>";
+const apiUsername: string = "<value>";
+const id: string = "<value>";
 const requestBody: CreateTopicTimerRequestBody = {
   time: "",
 };
@@ -166,9 +166,9 @@ import { GetTopicRequest } from "@lukehagar/discoursejs/dist/sdk/models/operatio
 
 async function run() {
   const sdk = new SDK();
-const apiKey: string = "string";
-const apiUsername: string = "string";
-const id: string = "string";
+const apiKey: string = "<value>";
+const apiUsername: string = "<value>";
+const id: string = "<value>";
 
   const res = await sdk.topics.getTopic(apiKey, apiUsername, id);
 
@@ -211,7 +211,7 @@ import { GetTopicByExternalIdRequest } from "@lukehagar/discoursejs/dist/sdk/mod
 
 async function run() {
   const sdk = new SDK();
-const externalId: string = "string";
+const externalId: string = "<value>";
 
   const res = await sdk.topics.getTopicByExternalId(externalId);
 
@@ -252,9 +252,9 @@ import { InviteToTopicRequest, InviteToTopicRequestBody } from "@lukehagar/disco
 
 async function run() {
   const sdk = new SDK();
-const apiKey: string = "string";
-const apiUsername: string = "string";
-const id: string = "string";
+const apiKey: string = "<value>";
+const apiUsername: string = "<value>";
+const id: string = "<value>";
 const requestBody: InviteToTopicRequestBody = {};
 
   const res = await sdk.topics.inviteToTopic(apiKey, apiUsername, id, requestBody);
@@ -299,10 +299,10 @@ import { ListLatestTopicsRequest } from "@lukehagar/discoursejs/dist/sdk/models/
 
 async function run() {
   const sdk = new SDK();
-const apiKey: string = "string";
-const apiUsername: string = "string";
-const ascending: string = "string";
-const order: string = "string";
+const apiKey: string = "<value>";
+const apiUsername: string = "<value>";
+const ascending: string = "<value>";
+const order: string = "<value>";
 
   const res = await sdk.topics.listLatestTopics(apiKey, apiUsername, ascending, order);
 
@@ -346,9 +346,9 @@ import { ListTopTopicsRequest } from "@lukehagar/discoursejs/dist/sdk/models/ope
 
 async function run() {
   const sdk = new SDK();
-const apiKey: string = "string";
-const apiUsername: string = "string";
-const period: string = "string";
+const apiKey: string = "<value>";
+const apiUsername: string = "<value>";
+const period: string = "<value>";
 
   const res = await sdk.topics.listTopTopics(apiKey, apiUsername, period);
 
@@ -391,9 +391,9 @@ import { RemoveTopicRequest } from "@lukehagar/discoursejs/dist/sdk/models/opera
 
 async function run() {
   const sdk = new SDK();
-const apiKey: string = "string";
-const apiUsername: string = "string";
-const id: string = "string";
+const apiKey: string = "<value>";
+const apiUsername: string = "<value>";
+const id: string = "<value>";
 
   const res = await sdk.topics.removeTopic(apiKey, apiUsername, id);
 
@@ -436,9 +436,9 @@ import { NotificationLevel, SetNotificationLevelRequest, SetNotificationLevelReq
 
 async function run() {
   const sdk = new SDK();
-const apiKey: string = "string";
-const apiUsername: string = "string";
-const id: string = "string";
+const apiKey: string = "<value>";
+const apiUsername: string = "<value>";
+const id: string = "<value>";
 const requestBody: SetNotificationLevelRequestBody = {
   notificationLevel: NotificationLevel.Two,
 };
@@ -485,9 +485,9 @@ import { Topic, UpdateTopicRequest, UpdateTopicRequestBody } from "@lukehagar/di
 
 async function run() {
   const sdk = new SDK();
-const apiKey: string = "string";
-const apiUsername: string = "string";
-const id: string = "string";
+const apiKey: string = "<value>";
+const apiUsername: string = "<value>";
+const id: string = "<value>";
 const requestBody: UpdateTopicRequestBody = {
   topic: {},
 };
@@ -534,9 +534,9 @@ import { Enabled, Status, UpdateTopicStatusRequest, UpdateTopicStatusRequestBody
 
 async function run() {
   const sdk = new SDK();
-const apiKey: string = "string";
-const apiUsername: string = "string";
-const id: string = "string";
+const apiKey: string = "<value>";
+const apiUsername: string = "<value>";
+const id: string = "<value>";
 const requestBody: UpdateTopicStatusRequestBody = {
   enabled: Enabled.False,
   status: Status.PinnedGlobally,
@@ -585,9 +585,9 @@ import { UpdateTopicTimestampRequest, UpdateTopicTimestampRequestBody } from "@l
 
 async function run() {
   const sdk = new SDK();
-const apiKey: string = "string";
-const apiUsername: string = "string";
-const id: string = "string";
+const apiKey: string = "<value>";
+const apiUsername: string = "<value>";
+const id: string = "<value>";
 const requestBody: UpdateTopicTimestampRequestBody = {
   timestamp: "1594291380",
 };

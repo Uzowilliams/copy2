@@ -61,8 +61,8 @@ import { DownloadBackupRequest } from "@lukehagar/discoursejs/dist/sdk/models/op
 
 async function run() {
   const sdk = new SDK();
-const filename: string = "string";
-const token: string = "string";
+const filename: string = "<value>";
+const token: string = "<value>";
 
   const res = await sdk.backups.downloadBackup(filename, token);
 
@@ -142,7 +142,7 @@ import { SendDownloadBackupEmailRequest } from "@lukehagar/discoursejs/dist/sdk/
 
 async function run() {
   const sdk = new SDK();
-const filename: string = "string";
+const filename: string = "<value>";
 
   const res = await sdk.backups.sendDownloadBackupEmail(filename);
 

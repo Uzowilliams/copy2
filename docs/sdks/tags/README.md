@@ -23,7 +23,7 @@ async function run() {
   const sdk = new SDK();
 
   const res = await sdk.tags.createTagGroup({
-    name: "string",
+    name: "<value>",
   });
 
   if (res.statusCode == 200) {
@@ -63,7 +63,7 @@ import { GetTagRequest } from "@lukehagar/discoursejs/dist/sdk/models/operations
 
 async function run() {
   const sdk = new SDK();
-const name: string = "string";
+const name: string = "<value>";
 
   const res = await sdk.tags.getTag(name);
 
@@ -104,7 +104,7 @@ import { GetTagGroupRequest } from "@lukehagar/discoursejs/dist/sdk/models/opera
 
 async function run() {
   const sdk = new SDK();
-const id: string = "string";
+const id: string = "<value>";
 
   const res = await sdk.tags.getTagGroup(id);
 
@@ -221,7 +221,7 @@ import { UpdateTagGroupRequest, UpdateTagGroupRequestBody } from "@lukehagar/dis
 
 async function run() {
   const sdk = new SDK();
-const id: string = "string";
+const id: string = "<value>";
 const requestBody: UpdateTagGroupRequestBody = {};
 
   const res = await sdk.tags.updateTagGroup(id, requestBody);

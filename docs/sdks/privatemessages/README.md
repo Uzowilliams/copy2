@@ -21,7 +21,7 @@ async function run() {
 
   const res = await sdk.privateMessages.createTopicPostPM({
     archetype: "private_message",
-    raw: "string",
+    raw: "<value>",
     targetRecipients: "blake,sam",
   });
 
@@ -62,7 +62,7 @@ import { GetUserSentPrivateMessagesRequest } from "@lukehagar/discoursejs/dist/s
 
 async function run() {
   const sdk = new SDK();
-const username: string = "string";
+const username: string = "<value>";
 
   const res = await sdk.privateMessages.getUserSentPrivateMessages(username);
 
@@ -103,7 +103,7 @@ import { ListUserPrivateMessagesRequest } from "@lukehagar/discoursejs/dist/sdk/
 
 async function run() {
   const sdk = new SDK();
-const username: string = "string";
+const username: string = "<value>";
 
   const res = await sdk.privateMessages.listUserPrivateMessages(username);
 
