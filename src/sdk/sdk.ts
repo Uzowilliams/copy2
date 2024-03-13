@@ -61,9 +61,9 @@ export class SDKConfiguration {
     serverDefaults: any;
     language = "typescript";
     openapiDocVersion = "latest";
-    sdkVersion = "0.4.3";
-    genVersion = "2.272.4";
-    userAgent = "speakeasy-sdk/typescript 0.4.3 2.272.4 latest @lukehagar/discoursejs";
+    sdkVersion = "0.4.4";
+    genVersion = "2.280.6";
+    userAgent = "speakeasy-sdk/typescript 0.4.4 2.280.6 latest @lukehagar/discoursejs";
     retryConfig?: utils.RetryConfig;
     public constructor(init?: Partial<SDKConfiguration>) {
         Object.assign(this, init);
@@ -159,9 +159,12 @@ export class SDK {
                 defaultHost: props?.defaultHost?.toString() ?? "discourse.example.com",
             },
         ];
-        const serverIdx = props?.serverIdx ?? 0;
 
         if (!serverURL) {
+            const serverIdx = props?.serverIdx ?? 0;
+            if (serverIdx < 0 || serverIdx >= ServerList.length) {
+                throw new Error(`Invalid server index ${serverIdx}`);
+            }
             serverURL = ServerList[serverIdx];
             defaults = serverDefaults[serverIdx];
         }
