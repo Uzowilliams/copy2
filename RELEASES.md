@@ -109,3 +109,13 @@ Based on:
 - [typescript v0.4.4] .
 ### Releases
 - [NPM v0.4.4] https://www.npmjs.com/package/@lukehagar/discoursejs/v/0.4.4 - .
+
+## 2024-05-03 01:14:30
+### Changes
+Based on:
+- OpenAPI Doc latest 
+- Speakeasy CLI 1.277.8 (2.319.10) https://github.com/speakeasy-api/speakeasy
+### Generated
+- [typescript v0.4.5] .
+### Releases
+- [NPM v0.4.5] https://www.npmjs.com/package/@lukehagar/discoursejs/v/0.4.5 - .
