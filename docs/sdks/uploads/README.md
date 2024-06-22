@@ -220,8 +220,14 @@ async function run() {
 
   const res = await sdk.uploads.completeMultipart({
     parts: [
-      "<value>",
-      "<value>",
+      {
+        "part_number": 1,
+        "etag": "0c376dcfcc2606f4335bbc732de93344",
+      },
+      {
+        "part_number": 2,
+        "etag": "09ert8cfcc2606f4335bbc732de91122",
+      },
     ],
     uniqueIdentifier: "66e86218-80d9-4bda-b4d5-2b6def968705",
   });
@@ -323,9 +329,9 @@ async function run() {
   const res = await sdk.uploads.createUpload({
     file: {
       content: new TextEncoder().encode("0x5d6beD2Fe2"),
-      fileName: "blanche_centro_white.jpe",
+      fileName: "your_file_here",
     },
-    type: TypeT.CardBackground,
+    type: TypeT.Composer,
   });
 
   if (res.statusCode == 200) {
