@@ -3,17 +3,17 @@ id: 599a9576-4665-431e-be1e-44cc13ef28aa
 management:
   docChecksum: dd4d04e62622de8f631720b5be68964d
   docVersion: latest
-  speakeasyVersion: 1.314.2
-  generationVersion: 2.349.6
-  releaseVersion: 0.4.6
-  configChecksum: a70c78dae324fea828e705cdeba17ded
+  speakeasyVersion: 1.331.0
+  generationVersion: 2.365.0
+  releaseVersion: 0.4.7
+  configChecksum: 53b2c82b01b832d8bce8bb3eab9c41ed
   repoURL: https://github.com/LukeHagar/discoursejs.git
   repoSubDirectory: .
   installationURL: https://github.com/LukeHagar/discoursejs
   published: true
 features:
   typescript:
-    core: 3.4.10
+    core: 3.4.11
     deprecations: 2.81.1
     flattening: 2.81.1
     globalServerURLs: 2.82.2
