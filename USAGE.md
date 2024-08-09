@@ -2,16 +2,13 @@
 ```typescript
 import { SDK } from "@lukehagar/discoursejs";
 
+const sdk = new SDK();
+
 async function run() {
-    const sdk = new SDK();
+    const result = await sdk.backups.createBackup();
 
-    const res = await sdk.backups.createBackup({
-        withUploads: false,
-    });
-
-    if (res.statusCode == 200) {
-        // handle response
-    }
+    // Handle the result
+    console.log(result);
 }
 
 run();
