@@ -1,5 +1,18 @@
 # LinkCounts
 
+## Example Usage
+
+```typescript
+import { LinkCounts } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: LinkCounts = {
+    clicks: 46806,
+    internal: false,
+    reflection: false,
+    title: "<value>",
+    url: "https://wild-retrospectivity.com",
+};
+```
 
 ## Fields
 

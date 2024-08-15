@@ -1,5 +1,14 @@
 # UpdateGroupGroup
 
+## Example Usage
+
+```typescript
+import { UpdateGroupGroup } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: UpdateGroupGroup = {
+    name: "<value>",
+};
+```
 
 ## Fields
 

@@ -2,6 +2,13 @@
 
 notifications marked read
 
+## Example Usage
+
+```typescript
+import { MarkNotificationsAsReadResponseBody } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: MarkNotificationsAsReadResponseBody = {};
+```
 
 ## Fields
 

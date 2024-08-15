@@ -1,5 +1,15 @@
 # CreateBadgeRequestBody
 
+## Example Usage
+
+```typescript
+import { CreateBadgeRequestBody } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: CreateBadgeRequestBody = {
+    badgeTypeId: 780529,
+    name: "<value>",
+};
+```
 
 ## Fields
 

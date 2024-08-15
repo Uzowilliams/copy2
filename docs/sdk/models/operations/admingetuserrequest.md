@@ -1,5 +1,14 @@
 # AdminGetUserRequest
 
+## Example Usage
+
+```typescript
+import { AdminGetUserRequest } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: AdminGetUserRequest = {
+    id: 965417,
+};
+```
 
 ## Fields
 

@@ -1,5 +1,19 @@
 # UpdateCategoryRequestBody
 
+## Example Usage
+
+```typescript
+import { UpdateCategoryRequestBody } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: UpdateCategoryRequestBody = {
+    color: "49d9e9",
+    name: "<value>",
+    permissions: {
+        everyone: 1,
+    },
+    textColor: "f0fcfd",
+};
+```
 
 ## Fields
 

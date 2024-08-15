@@ -1,5 +1,34 @@
 # UpdateBadgeBadge
 
+## Example Usage
+
+```typescript
+import { UpdateBadgeBadge } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: UpdateBadgeBadge = {
+    allowTitle: false,
+    autoRevoke: false,
+    badgeGroupingId: 315428,
+    badgeTypeId: 607831,
+    description: "Horizontal eco-centric local area network",
+    enabled: false,
+    grantCount: 38425,
+    icon: "<value>",
+    id: 438601,
+    imageUrl: "<value>",
+    listable: false,
+    longDescription: "<value>",
+    manuallyGrantable: false,
+    multipleGrant: false,
+    name: "<value>",
+    query: "<value>",
+    showPosts: false,
+    slug: "<value>",
+    system: false,
+    targetPosts: false,
+    trigger: "<value>",
+};
+```
 
 ## Fields
 

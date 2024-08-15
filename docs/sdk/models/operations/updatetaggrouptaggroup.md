@@ -1,5 +1,12 @@
 # UpdateTagGroupTagGroup
 
+## Example Usage
+
+```typescript
+import { UpdateTagGroupTagGroup } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: UpdateTagGroupTagGroup = {};
+```
 
 ## Fields
 

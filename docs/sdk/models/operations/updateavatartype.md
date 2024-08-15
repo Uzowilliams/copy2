@@ -1,11 +1,15 @@
 # UpdateAvatarType
 
+## Example Usage
+
+```typescript
+import { UpdateAvatarType } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: UpdateAvatarType = "custom";
+```
 
 ## Values
 
-| Name       | Value      |
-| ---------- | ---------- |
-| `Uploaded` | uploaded   |
-| `Custom`   | custom     |
-| `Gravatar` | gravatar   |
-| `System`   | system     |
+```typescript
+"uploaded" | "custom" | "gravatar" | "system"
+```

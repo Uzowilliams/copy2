@@ -1,5 +1,72 @@
 # GetCategoryCategory
 
+## Example Usage
+
+```typescript
+import { GetCategoryCategory } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: GetCategoryCategory = {
+    allTopicsWiki: false,
+    allowBadges: false,
+    allowUnlimitedOwnerEditsOnFirstPost: false,
+    autoCloseBasedOnLastPost: false,
+    autoCloseHours: "<value>",
+    availableGroups: ["<value>"],
+    canDelete: false,
+    canEdit: false,
+    color: "orchid",
+    customFields: {},
+    defaultListFilter: "<value>",
+    defaultSlowModeSeconds: "<value>",
+    defaultTopPeriod: "<value>",
+    defaultView: "<value>",
+    description: "Object-based exuding synergy",
+    descriptionExcerpt: "<value>",
+    descriptionText: "<value>",
+    emailIn: "<value>",
+    emailInAllowStrangers: false,
+    groupPermissions: [
+        {
+            groupName: "<value>",
+            permissionType: 542129,
+        },
+    ],
+    hasChildren: false,
+    id: 541381,
+    mailinglistMirror: false,
+    minimumRequiredTags: 120919,
+    name: "<value>",
+    navigateToFirstPostAfterRead: false,
+    notificationLevel: 923306,
+    numFeaturedTopics: 680697,
+    permission: 829898,
+    position: 287119,
+    postCount: 968287,
+    readOnlyBanner: "<value>",
+    readRestricted: false,
+    requiredTagGroups: [
+        {
+            minCount: 42976,
+            name: "<value>",
+        },
+    ],
+    searchPriority: 919783,
+    showSubcategoryList: false,
+    slug: "<value>",
+    sortAscending: "<value>",
+    sortOrder: "<value>",
+    subcategoryListStyle: "<value>",
+    textColor: "<value>",
+    topicCount: 116098,
+    topicFeaturedLinkAllowed: false,
+    topicTemplate: "<value>",
+    topicUrl: "<value>",
+    uploadedBackground: "<value>",
+    uploadedBackgroundDark: "<value>",
+    uploadedLogo: "<value>",
+    uploadedLogoDark: "<value>",
+};
+```
 
 ## Fields
 

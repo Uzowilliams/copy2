@@ -1,5 +1,12 @@
 # GeneratePresignedPutMetadata
 
+## Example Usage
+
+```typescript
+import { GeneratePresignedPutMetadata } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: GeneratePresignedPutMetadata = {};
+```
 
 ## Fields
 

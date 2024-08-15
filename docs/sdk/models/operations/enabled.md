@@ -1,9 +1,15 @@
 # Enabled
 
+## Example Usage
+
+```typescript
+import { Enabled } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: Enabled = "false";
+```
 
 ## Values
 
-| Name    | Value   |
-| ------- | ------- |
-| `True`  | true    |
-| `False` | false   |
+```typescript
+"true" | "false"
+```

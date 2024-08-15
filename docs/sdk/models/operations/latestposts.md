@@ -1,5 +1,12 @@
 # LatestPosts
 
+## Example Usage
+
+```typescript
+import { LatestPosts } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: LatestPosts = {};
+```
 
 ## Fields
 

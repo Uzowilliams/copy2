@@ -475,6 +475,126 @@ const sdk = new SDK({ debugLogger: console });
 ```
 <!-- End Debugging [debug] -->
 
+<!-- Start Standalone functions [standalone-funcs] -->
+## Standalone functions
+
+All the methods listed above are available as standalone functions. These
+functions are ideal for use in applications running in the browser, serverless
+runtimes or other environments where application bundle size is a primary
+concern. When using a bundler to build your application, all unused
+functionality will be either excluded from the final bundle or tree-shaken away.
+
+To read more about standalone functions, check [FUNCTIONS.md](./FUNCTIONS.md).
+
+<details>
+
+<summary>Available standalone functions</summary>
+
+- [adminActivateUser](docs/sdks/admin/README.md#activateuser)
+- [adminAdminGetUser](docs/sdks/admin/README.md#admingetuser)
+- [adminAdminListUsers](docs/sdks/admin/README.md#adminlistusers)
+- [adminAnonymizeUser](docs/sdks/admin/README.md#anonymizeuser)
+- [adminDeactivateUser](docs/sdks/admin/README.md#deactivateuser)
+- [adminDeleteUser](docs/sdks/admin/README.md#deleteuser)
+- [adminLogOutUser](docs/sdks/admin/README.md#logoutuser)
+- [adminRefreshGravatar](docs/sdks/admin/README.md#refreshgravatar)
+- [adminSilenceUser](docs/sdks/admin/README.md#silenceuser)
+- [adminSuspendUser](docs/sdks/admin/README.md#suspenduser)
+- [backupsCreateBackup](docs/sdks/backups/README.md#createbackup)
+- [backupsDownloadBackup](docs/sdks/backups/README.md#downloadbackup)
+- [backupsGetBackups](docs/sdks/backups/README.md#getbackups)
+- [backupsSendDownloadBackupEmail](docs/sdks/backups/README.md#senddownloadbackupemail)
+- [badgesAdminListBadges](docs/sdks/badges/README.md#adminlistbadges)
+- [badgesCreateBadge](docs/sdks/badges/README.md#createbadge)
+- [badgesDeleteBadge](docs/sdks/badges/README.md#deletebadge)
+- [badgesListUserBadges](docs/sdks/badges/README.md#listuserbadges)
+- [badgesUpdateBadge](docs/sdks/badges/README.md#updatebadge)
+- [categoriesCreateCategory](docs/sdks/categories/README.md#createcategory)
+- [categoriesGetCategory](docs/sdks/categories/README.md#getcategory)
+- [categoriesGetSite](docs/sdks/categories/README.md#getsite)
+- [categoriesListCategories](docs/sdks/categories/README.md#listcategories)
+- [categoriesListCategoryTopics](docs/sdks/categories/README.md#listcategorytopics)
+- [categoriesUpdateCategory](docs/sdks/categories/README.md#updatecategory)
+- [groupsAddGroupMembers](docs/sdks/groups/README.md#addgroupmembers)
+- [groupsCreateGroup](docs/sdks/groups/README.md#creategroup)
+- [groupsDeleteGroup](docs/sdks/groups/README.md#deletegroup)
+- [groupsGetGroup](docs/sdks/groups/README.md#getgroup)
+- [groupsListGroupMembers](docs/sdks/groups/README.md#listgroupmembers)
+- [groupsListGroups](docs/sdks/groups/README.md#listgroups)
+- [groupsRemoveGroupMembers](docs/sdks/groups/README.md#removegroupmembers)
+- [groupsUpdateGroup](docs/sdks/groups/README.md#updategroup)
+- [invitesCreateInvite](docs/sdks/invites/README.md#createinvite)
+- [invitesInviteToTopic](docs/sdks/invites/README.md#invitetotopic)
+- [notificationsGetNotifications](docs/sdks/notifications/README.md#getnotifications)
+- [notificationsMarkNotificationsAsRead](docs/sdks/notifications/README.md#marknotificationsasread)
+- [postsCreateTopicPostPM](docs/sdks/posts/README.md#createtopicpostpm)
+- [postsDeletePost](docs/sdks/posts/README.md#deletepost)
+- [postsGetPost](docs/sdks/posts/README.md#getpost)
+- [postsListPosts](docs/sdks/posts/README.md#listposts)
+- [postsLockPost](docs/sdks/posts/README.md#lockpost)
+- [postsPerformPostAction](docs/sdks/posts/README.md#performpostaction)
+- [postsPostReplies](docs/sdks/posts/README.md#postreplies)
+- [postsUpdatePost](docs/sdks/posts/README.md#updatepost)
+- [privateMessagesCreateTopicPostPM](docs/sdks/privatemessages/README.md#createtopicpostpm)
+- [privateMessagesGetUserSentPrivateMessages](docs/sdks/privatemessages/README.md#getusersentprivatemessages)
+- [privateMessagesListUserPrivateMessages](docs/sdks/privatemessages/README.md#listuserprivatemessages)
+- [searchSearch](docs/sdks/search/README.md#search)
+- [siteGetSite](docs/sdks/site/README.md#getsite)
+- [tagsCreateTagGroup](docs/sdks/tags/README.md#createtaggroup)
+- [tagsGetTagGroup](docs/sdks/tags/README.md#gettaggroup)
+- [tagsGetTag](docs/sdks/tags/README.md#gettag)
+- [tagsListTagGroups](docs/sdks/tags/README.md#listtaggroups)
+- [tagsListTags](docs/sdks/tags/README.md#listtags)
+- [tagsUpdateTagGroup](docs/sdks/tags/README.md#updatetaggroup)
+- [topicsBookmarkTopic](docs/sdks/topics/README.md#bookmarktopic)
+- [topicsCreateTopicPostPM](docs/sdks/topics/README.md#createtopicpostpm)
+- [topicsCreateTopicTimer](docs/sdks/topics/README.md#createtopictimer)
+- [topicsGetTopicByExternalId](docs/sdks/topics/README.md#gettopicbyexternalid)
+- [topicsGetTopic](docs/sdks/topics/README.md#gettopic)
+- [topicsInviteToTopic](docs/sdks/topics/README.md#invitetotopic)
+- [topicsListLatestTopics](docs/sdks/topics/README.md#listlatesttopics)
+- [topicsListTopTopics](docs/sdks/topics/README.md#listtoptopics)
+- [topicsRemoveTopic](docs/sdks/topics/README.md#removetopic)
+- [topicsSetNotificationLevel](docs/sdks/topics/README.md#setnotificationlevel)
+- [topicsUpdateTopicStatus](docs/sdks/topics/README.md#updatetopicstatus)
+- [topicsUpdateTopicTimestamp](docs/sdks/topics/README.md#updatetopictimestamp)
+- [topicsUpdateTopic](docs/sdks/topics/README.md#updatetopic)
+- [uploadsAbortMultipart](docs/sdks/uploads/README.md#abortmultipart)
+- [uploadsBatchPresignMultipartParts](docs/sdks/uploads/README.md#batchpresignmultipartparts)
+- [uploadsCompleteExternalUpload](docs/sdks/uploads/README.md#completeexternalupload)
+- [uploadsCompleteMultipart](docs/sdks/uploads/README.md#completemultipart)
+- [uploadsCreateMultipartUpload](docs/sdks/uploads/README.md#createmultipartupload)
+- [uploadsCreateUpload](docs/sdks/uploads/README.md#createupload)
+- [uploadsGeneratePresignedPut](docs/sdks/uploads/README.md#generatepresignedput)
+- [usersActivateUser](docs/sdks/users/README.md#activateuser)
+- [usersAdminGetUser](docs/sdks/users/README.md#admingetuser)
+- [usersAdminListUsers](docs/sdks/users/README.md#adminlistusers)
+- [usersAnonymizeUser](docs/sdks/users/README.md#anonymizeuser)
+- [usersChangePassword](docs/sdks/users/README.md#changepassword)
+- [usersCreateUser](docs/sdks/users/README.md#createuser)
+- [usersDeactivateUser](docs/sdks/users/README.md#deactivateuser)
+- [usersDeleteUser](docs/sdks/users/README.md#deleteuser)
+- [usersGetUserEmails](docs/sdks/users/README.md#getuseremails)
+- [usersGetUserExternalId](docs/sdks/users/README.md#getuserexternalid)
+- [usersGetUserIdentiyProviderExternalId](docs/sdks/users/README.md#getuseridentiyproviderexternalid)
+- [usersGetUser](docs/sdks/users/README.md#getuser)
+- [usersListUserActions](docs/sdks/users/README.md#listuseractions)
+- [usersListUserBadges](docs/sdks/users/README.md#listuserbadges)
+- [usersListUsersPublic](docs/sdks/users/README.md#listuserspublic)
+- [usersLogOutUser](docs/sdks/users/README.md#logoutuser)
+- [usersRefreshGravatar](docs/sdks/users/README.md#refreshgravatar)
+- [usersSendPasswordResetEmail](docs/sdks/users/README.md#sendpasswordresetemail)
+- [usersSilenceUser](docs/sdks/users/README.md#silenceuser)
+- [usersSuspendUser](docs/sdks/users/README.md#suspenduser)
+- [usersUpdateAvatar](docs/sdks/users/README.md#updateavatar)
+- [usersUpdateEmail](docs/sdks/users/README.md#updateemail)
+- [usersUpdateUser](docs/sdks/users/README.md#updateuser)
+- [usersUpdateUsername](docs/sdks/users/README.md#updateusername)
+
+
+</details>
+<!-- End Standalone functions [standalone-funcs] -->
+
 <!-- Placeholder for Future Speakeasy SDK Sections -->
 
 # Development

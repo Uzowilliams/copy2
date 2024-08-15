@@ -1,5 +1,12 @@
 # GetTagUsers
 
+## Example Usage
+
+```typescript
+import { GetTagUsers } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: GetTagUsers = {};
+```
 
 ## Fields
 

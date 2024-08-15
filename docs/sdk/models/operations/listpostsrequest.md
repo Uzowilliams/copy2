@@ -1,5 +1,15 @@
 # ListPostsRequest
 
+## Example Usage
+
+```typescript
+import { ListPostsRequest } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: ListPostsRequest = {
+    apiKey: "<value>",
+    apiUsername: "<value>",
+};
+```
 
 ## Fields
 

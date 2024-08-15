@@ -37,6 +37,39 @@ async function run() {
 run();
 ```
 
+
+### Standalone function
+
+The standalone function version of this method:
+
+```typescript
+import { SDKCore } from "@lukehagar/discoursejs/core.js";
+import { postsCreateTopicPostPM } from "@lukehagar/discoursejs/funcs/postsCreateTopicPostPM.js";
+
+// Use `SDKCore` for best tree-shaking performance.
+// You can create one instance of it to use across an application.
+const sdk = new SDKCore();
+
+async function run() {
+  const res = await postsCreateTopicPostPM(sdk, {
+    archetype: "private_message",
+    raw: "<value>",
+    targetRecipients: "blake,sam",
+  });
+
+  if (!res.ok) {
+    throw res.error;
+  }
+
+  const { value: result } = res;
+
+  // Handle the result
+  console.log(result)
+}
+
+run();
+```
+
 ### Parameters
 
 | Parameter                                                                                                                                                                      | Type                                                                                                                                                                           | Required                                                                                                                                                                       | Description                                                                                                                                                                    |
@@ -71,6 +104,36 @@ async function run() {
   await sdk.posts.deletePost(188146, {
     forceDestroy: true,
   });
+
+  
+}
+
+run();
+```
+
+
+### Standalone function
+
+The standalone function version of this method:
+
+```typescript
+import { SDKCore } from "@lukehagar/discoursejs/core.js";
+import { postsDeletePost } from "@lukehagar/discoursejs/funcs/postsDeletePost.js";
+
+// Use `SDKCore` for best tree-shaking performance.
+// You can create one instance of it to use across an application.
+const sdk = new SDKCore();
+
+async function run() {
+  const res = await postsDeletePost(sdk, 928159, {
+    forceDestroy: true,
+  });
+
+  if (!res.ok) {
+    throw res.error;
+  }
+
+  const { value: result } = res;
 
   
 }
@@ -124,6 +187,35 @@ async function run() {
 run();
 ```
 
+
+### Standalone function
+
+The standalone function version of this method:
+
+```typescript
+import { SDKCore } from "@lukehagar/discoursejs/core.js";
+import { postsGetPost } from "@lukehagar/discoursejs/funcs/postsGetPost.js";
+
+// Use `SDKCore` for best tree-shaking performance.
+// You can create one instance of it to use across an application.
+const sdk = new SDKCore();
+
+async function run() {
+  const res = await postsGetPost(sdk, "<value>");
+
+  if (!res.ok) {
+    throw res.error;
+  }
+
+  const { value: result } = res;
+
+  // Handle the result
+  console.log(result)
+}
+
+run();
+```
+
 ### Parameters
 
 | Parameter                                                                                                                                                                      | Type                                                                                                                                                                           | Required                                                                                                                                                                       | Description                                                                                                                                                                    |
@@ -156,6 +248,35 @@ const sdk = new SDK();
 
 async function run() {
   const result = await sdk.posts.listPosts("<value>", "<value>");
+
+  // Handle the result
+  console.log(result)
+}
+
+run();
+```
+
+
+### Standalone function
+
+The standalone function version of this method:
+
+```typescript
+import { SDKCore } from "@lukehagar/discoursejs/core.js";
+import { postsListPosts } from "@lukehagar/discoursejs/funcs/postsListPosts.js";
+
+// Use `SDKCore` for best tree-shaking performance.
+// You can create one instance of it to use across an application.
+const sdk = new SDKCore();
+
+async function run() {
+  const res = await postsListPosts(sdk, "<value>", "<value>");
+
+  if (!res.ok) {
+    throw res.error;
+  }
+
+  const { value: result } = res;
 
   // Handle the result
   console.log(result)
@@ -198,6 +319,35 @@ const sdk = new SDK();
 
 async function run() {
   const result = await sdk.posts.lockPost("<value>", "<value>", "<value>");
+
+  // Handle the result
+  console.log(result)
+}
+
+run();
+```
+
+
+### Standalone function
+
+The standalone function version of this method:
+
+```typescript
+import { SDKCore } from "@lukehagar/discoursejs/core.js";
+import { postsLockPost } from "@lukehagar/discoursejs/funcs/postsLockPost.js";
+
+// Use `SDKCore` for best tree-shaking performance.
+// You can create one instance of it to use across an application.
+const sdk = new SDKCore();
+
+async function run() {
+  const res = await postsLockPost(sdk, "<value>", "<value>", "<value>");
+
+  if (!res.ok) {
+    throw res.error;
+  }
+
+  const { value: result } = res;
 
   // Handle the result
   console.log(result)
@@ -249,6 +399,35 @@ async function run() {
 run();
 ```
 
+
+### Standalone function
+
+The standalone function version of this method:
+
+```typescript
+import { SDKCore } from "@lukehagar/discoursejs/core.js";
+import { postsPerformPostAction } from "@lukehagar/discoursejs/funcs/postsPerformPostAction.js";
+
+// Use `SDKCore` for best tree-shaking performance.
+// You can create one instance of it to use across an application.
+const sdk = new SDKCore();
+
+async function run() {
+  const res = await postsPerformPostAction(sdk, "<value>", "<value>");
+
+  if (!res.ok) {
+    throw res.error;
+  }
+
+  const { value: result } = res;
+
+  // Handle the result
+  console.log(result)
+}
+
+run();
+```
+
 ### Parameters
 
 | Parameter                                                                                                                                                                      | Type                                                                                                                                                                           | Required                                                                                                                                                                       | Description                                                                                                                                                                    |
@@ -291,6 +470,35 @@ async function run() {
 run();
 ```
 
+
+### Standalone function
+
+The standalone function version of this method:
+
+```typescript
+import { SDKCore } from "@lukehagar/discoursejs/core.js";
+import { postsPostReplies } from "@lukehagar/discoursejs/funcs/postsPostReplies.js";
+
+// Use `SDKCore` for best tree-shaking performance.
+// You can create one instance of it to use across an application.
+const sdk = new SDKCore();
+
+async function run() {
+  const res = await postsPostReplies(sdk, "<value>");
+
+  if (!res.ok) {
+    throw res.error;
+  }
+
+  const { value: result } = res;
+
+  // Handle the result
+  console.log(result)
+}
+
+run();
+```
+
 ### Parameters
 
 | Parameter                                                                                                                                                                      | Type                                                                                                                                                                           | Required                                                                                                                                                                       | Description                                                                                                                                                                    |
@@ -323,6 +531,35 @@ const sdk = new SDK();
 
 async function run() {
   const result = await sdk.posts.updatePost("<value>");
+
+  // Handle the result
+  console.log(result)
+}
+
+run();
+```
+
+
+### Standalone function
+
+The standalone function version of this method:
+
+```typescript
+import { SDKCore } from "@lukehagar/discoursejs/core.js";
+import { postsUpdatePost } from "@lukehagar/discoursejs/funcs/postsUpdatePost.js";
+
+// Use `SDKCore` for best tree-shaking performance.
+// You can create one instance of it to use across an application.
+const sdk = new SDKCore();
+
+async function run() {
+  const res = await postsUpdatePost(sdk, "<value>");
+
+  if (!res.ok) {
+    throw res.error;
+  }
+
+  const { value: result } = res;
 
   // Handle the result
   console.log(result)

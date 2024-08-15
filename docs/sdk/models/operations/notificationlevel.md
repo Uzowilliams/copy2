@@ -1,11 +1,15 @@
 # NotificationLevel
 
+## Example Usage
+
+```typescript
+import { NotificationLevel } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: NotificationLevel = "2";
+```
 
 ## Values
 
-| Name    | Value   |
-| ------- | ------- |
-| `Zero`  | 0       |
-| `One`   | 1       |
-| `Two`   | 2       |
-| `Three` | 3       |
+```typescript
+"0" | "1" | "2" | "3"
+```

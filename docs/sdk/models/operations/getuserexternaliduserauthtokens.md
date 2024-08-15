@@ -1,5 +1,23 @@
 # GetUserExternalIdUserAuthTokens
 
+## Example Usage
+
+```typescript
+import { GetUserExternalIdUserAuthTokens } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: GetUserExternalIdUserAuthTokens = {
+    browser: "<value>",
+    clientIp: "<value>",
+    createdAt: "<value>",
+    device: "<value>",
+    icon: "<value>",
+    id: 677412,
+    isActive: false,
+    location: "<value>",
+    os: "<value>",
+    seenAt: "<value>",
+};
+```
 
 ## Fields
 

@@ -1,5 +1,12 @@
 # InviteToTopicUser
 
+## Example Usage
+
+```typescript
+import { InviteToTopicUser } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: InviteToTopicUser = {};
+```
 
 ## Fields
 

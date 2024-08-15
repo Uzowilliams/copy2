@@ -1,5 +1,16 @@
 # Archetypes
 
+## Example Usage
+
+```typescript
+import { Archetypes } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: Archetypes = {
+    id: "<id>",
+    name: "<value>",
+    options: ["<value>"],
+};
+```
 
 ## Fields
 

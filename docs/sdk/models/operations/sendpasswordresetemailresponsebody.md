@@ -2,6 +2,16 @@
 
 success response
 
+## Example Usage
+
+```typescript
+import { SendPasswordResetEmailResponseBody } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: SendPasswordResetEmailResponseBody = {
+    success: "<value>",
+    userFound: false,
+};
+```
 
 ## Fields
 

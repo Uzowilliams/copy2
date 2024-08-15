@@ -1,5 +1,12 @@
 # GetUserSentPrivateMessagesTopics
 
+## Example Usage
+
+```typescript
+import { GetUserSentPrivateMessagesTopics } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: GetUserSentPrivateMessagesTopics = {};
+```
 
 ## Fields
 

@@ -1,5 +1,23 @@
 # Suspension
 
+## Example Usage
+
+```typescript
+import { Suspension } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: Suspension = {
+    fullSuspendReason: "<value>",
+    suspendReason: "<value>",
+    suspendedAt: "<value>",
+    suspendedBy: {
+        avatarTemplate: "<value>",
+        id: 361151,
+        name: "<value>",
+        username: "Asia.Kuvalis",
+    },
+    suspendedTill: "<value>",
+};
+```
 
 ## Fields
 

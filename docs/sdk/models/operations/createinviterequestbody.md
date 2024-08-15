@@ -1,5 +1,17 @@
 # CreateInviteRequestBody
 
+## Example Usage
+
+```typescript
+import { CreateInviteRequestBody } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: CreateInviteRequestBody = {
+    email: "not-a-user-yet@example.com",
+    groupIds: "42,43",
+    groupNames: "foo,bar",
+    maxRedemptionsAllowed: 5,
+};
+```
 
 ## Fields
 

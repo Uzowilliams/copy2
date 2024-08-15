@@ -1,5 +1,15 @@
 # PerformPostActionRequestBody
 
+## Example Usage
+
+```typescript
+import { PerformPostActionRequestBody } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: PerformPostActionRequestBody = {
+    id: 811939,
+    postActionTypeId: 25756,
+};
+```
 
 ## Fields
 

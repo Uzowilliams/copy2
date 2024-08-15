@@ -1,5 +1,14 @@
 # CreateTagGroupRequestBody
 
+## Example Usage
+
+```typescript
+import { CreateTagGroupRequestBody } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: CreateTagGroupRequestBody = {
+    name: "<value>",
+};
+```
 
 ## Fields
 

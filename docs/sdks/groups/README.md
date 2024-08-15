@@ -35,6 +35,37 @@ async function run() {
 run();
 ```
 
+
+### Standalone function
+
+The standalone function version of this method:
+
+```typescript
+import { SDKCore } from "@lukehagar/discoursejs/core.js";
+import { groupsAddGroupMembers } from "@lukehagar/discoursejs/funcs/groupsAddGroupMembers.js";
+
+// Use `SDKCore` for best tree-shaking performance.
+// You can create one instance of it to use across an application.
+const sdk = new SDKCore();
+
+async function run() {
+  const res = await groupsAddGroupMembers(sdk, 946323, {
+    usernames: "username1,username2",
+  });
+
+  if (!res.ok) {
+    throw res.error;
+  }
+
+  const { value: result } = res;
+
+  // Handle the result
+  console.log(result)
+}
+
+run();
+```
+
 ### Parameters
 
 | Parameter                                                                                                                                                                      | Type                                                                                                                                                                           | Required                                                                                                                                                                       | Description                                                                                                                                                                    |
@@ -68,6 +99,35 @@ const sdk = new SDK();
 
 async function run() {
   const result = await sdk.groups.createGroup();
+
+  // Handle the result
+  console.log(result)
+}
+
+run();
+```
+
+
+### Standalone function
+
+The standalone function version of this method:
+
+```typescript
+import { SDKCore } from "@lukehagar/discoursejs/core.js";
+import { groupsCreateGroup } from "@lukehagar/discoursejs/funcs/groupsCreateGroup.js";
+
+// Use `SDKCore` for best tree-shaking performance.
+// You can create one instance of it to use across an application.
+const sdk = new SDKCore();
+
+async function run() {
+  const res = await groupsCreateGroup(sdk);
+
+  if (!res.ok) {
+    throw res.error;
+  }
+
+  const { value: result } = res;
 
   // Handle the result
   console.log(result)
@@ -116,6 +176,35 @@ async function run() {
 run();
 ```
 
+
+### Standalone function
+
+The standalone function version of this method:
+
+```typescript
+import { SDKCore } from "@lukehagar/discoursejs/core.js";
+import { groupsDeleteGroup } from "@lukehagar/discoursejs/funcs/groupsDeleteGroup.js";
+
+// Use `SDKCore` for best tree-shaking performance.
+// You can create one instance of it to use across an application.
+const sdk = new SDKCore();
+
+async function run() {
+  const res = await groupsDeleteGroup(sdk, 114822);
+
+  if (!res.ok) {
+    throw res.error;
+  }
+
+  const { value: result } = res;
+
+  // Handle the result
+  console.log(result)
+}
+
+run();
+```
+
 ### Parameters
 
 | Parameter                                                                                                                                                                      | Type                                                                                                                                                                           | Required                                                                                                                                                                       | Description                                                                                                                                                                    |
@@ -148,6 +237,35 @@ const sdk = new SDK();
 
 async function run() {
   const result = await sdk.groups.getGroup("name");
+
+  // Handle the result
+  console.log(result)
+}
+
+run();
+```
+
+
+### Standalone function
+
+The standalone function version of this method:
+
+```typescript
+import { SDKCore } from "@lukehagar/discoursejs/core.js";
+import { groupsGetGroup } from "@lukehagar/discoursejs/funcs/groupsGetGroup.js";
+
+// Use `SDKCore` for best tree-shaking performance.
+// You can create one instance of it to use across an application.
+const sdk = new SDKCore();
+
+async function run() {
+  const res = await groupsGetGroup(sdk, "name");
+
+  if (!res.ok) {
+    throw res.error;
+  }
+
+  const { value: result } = res;
 
   // Handle the result
   console.log(result)
@@ -196,6 +314,35 @@ async function run() {
 run();
 ```
 
+
+### Standalone function
+
+The standalone function version of this method:
+
+```typescript
+import { SDKCore } from "@lukehagar/discoursejs/core.js";
+import { groupsListGroupMembers } from "@lukehagar/discoursejs/funcs/groupsListGroupMembers.js";
+
+// Use `SDKCore` for best tree-shaking performance.
+// You can create one instance of it to use across an application.
+const sdk = new SDKCore();
+
+async function run() {
+  const res = await groupsListGroupMembers(sdk, "name");
+
+  if (!res.ok) {
+    throw res.error;
+  }
+
+  const { value: result } = res;
+
+  // Handle the result
+  console.log(result)
+}
+
+run();
+```
+
 ### Parameters
 
 | Parameter                                                                                                                                                                      | Type                                                                                                                                                                           | Required                                                                                                                                                                       | Description                                                                                                                                                                    | Example                                                                                                                                                                        |
@@ -228,6 +375,35 @@ const sdk = new SDK();
 
 async function run() {
   const result = await sdk.groups.listGroups();
+
+  // Handle the result
+  console.log(result)
+}
+
+run();
+```
+
+
+### Standalone function
+
+The standalone function version of this method:
+
+```typescript
+import { SDKCore } from "@lukehagar/discoursejs/core.js";
+import { groupsListGroups } from "@lukehagar/discoursejs/funcs/groupsListGroups.js";
+
+// Use `SDKCore` for best tree-shaking performance.
+// You can create one instance of it to use across an application.
+const sdk = new SDKCore();
+
+async function run() {
+  const res = await groupsListGroups(sdk);
+
+  if (!res.ok) {
+    throw res.error;
+  }
+
+  const { value: result } = res;
 
   // Handle the result
   console.log(result)
@@ -277,6 +453,37 @@ async function run() {
 run();
 ```
 
+
+### Standalone function
+
+The standalone function version of this method:
+
+```typescript
+import { SDKCore } from "@lukehagar/discoursejs/core.js";
+import { groupsRemoveGroupMembers } from "@lukehagar/discoursejs/funcs/groupsRemoveGroupMembers.js";
+
+// Use `SDKCore` for best tree-shaking performance.
+// You can create one instance of it to use across an application.
+const sdk = new SDKCore();
+
+async function run() {
+  const res = await groupsRemoveGroupMembers(sdk, 699656, {
+    usernames: "username1,username2",
+  });
+
+  if (!res.ok) {
+    throw res.error;
+  }
+
+  const { value: result } = res;
+
+  // Handle the result
+  console.log(result)
+}
+
+run();
+```
+
 ### Parameters
 
 | Parameter                                                                                                                                                                      | Type                                                                                                                                                                           | Required                                                                                                                                                                       | Description                                                                                                                                                                    |
@@ -310,6 +517,35 @@ const sdk = new SDK();
 
 async function run() {
   const result = await sdk.groups.updateGroup(438471);
+
+  // Handle the result
+  console.log(result)
+}
+
+run();
+```
+
+
+### Standalone function
+
+The standalone function version of this method:
+
+```typescript
+import { SDKCore } from "@lukehagar/discoursejs/core.js";
+import { groupsUpdateGroup } from "@lukehagar/discoursejs/funcs/groupsUpdateGroup.js";
+
+// Use `SDKCore` for best tree-shaking performance.
+// You can create one instance of it to use across an application.
+const sdk = new SDKCore();
+
+async function run() {
+  const res = await groupsUpdateGroup(sdk, 750192);
+
+  if (!res.ok) {
+    throw res.error;
+  }
+
+  const { value: result } = res;
 
   // Handle the result
   console.log(result)

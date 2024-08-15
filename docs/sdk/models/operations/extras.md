@@ -1,5 +1,14 @@
 # Extras
 
+## Example Usage
+
+```typescript
+import { Extras } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: Extras = {
+    visibleGroupNames: ["<value>"],
+};
+```
 
 ## Fields
 

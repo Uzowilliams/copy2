@@ -1,5 +1,23 @@
 # UserAuthTokens
 
+## Example Usage
+
+```typescript
+import { UserAuthTokens } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: UserAuthTokens = {
+    browser: "<value>",
+    clientIp: "<value>",
+    createdAt: "<value>",
+    device: "<value>",
+    icon: "<value>",
+    id: 885338,
+    isActive: false,
+    location: "<value>",
+    os: "<value>",
+    seenAt: "<value>",
+};
+```
 
 ## Fields
 

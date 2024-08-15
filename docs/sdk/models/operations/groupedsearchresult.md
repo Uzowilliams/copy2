@@ -1,5 +1,26 @@
 # GroupedSearchResult
 
+## Example Usage
+
+```typescript
+import { GroupedSearchResult } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: GroupedSearchResult = {
+    canCreateTopic: false,
+    categoryIds: ["<value>"],
+    error: "<value>",
+    groupIds: ["<value>"],
+    moreCategories: "<value>",
+    moreFullPageResults: "<value>",
+    morePosts: "<value>",
+    moreUsers: "<value>",
+    postIds: ["<value>"],
+    searchLogId: 357347,
+    tagIds: ["<value>"],
+    term: "<value>",
+    userIds: ["<value>"],
+};
+```
 
 ## Fields
 

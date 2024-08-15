@@ -1,5 +1,66 @@
 # GetGroupGroup
 
+## Example Usage
+
+```typescript
+import { GetGroupGroup } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: GetGroupGroup = {
+    allowMembershipRequests: false,
+    allowUnknownSenderTopicReplies: false,
+    automatic: false,
+    automaticMembershipEmailDomains: "<value>",
+    bioCooked: "<value>",
+    bioExcerpt: "<value>",
+    bioRaw: "<value>",
+    canAdminGroup: false,
+    canSeeMembers: false,
+    defaultNotificationLevel: 976460,
+    emailPassword: "<value>",
+    emailUsername: "<value>",
+    flairBgColor: "<value>",
+    flairColor: "<value>",
+    flairUrl: "<value>",
+    fullName: "Jessie Langosh V",
+    grantTrustLevel: "<value>",
+    hasMessages: false,
+    id: 451159,
+    imapLastError: "<value>",
+    imapMailboxName: "<value>",
+    imapMailboxes: ["<value>"],
+    imapNewEmails: "<value>",
+    imapOldEmails: "<value>",
+    imapPort: "<value>",
+    imapServer: "<value>",
+    imapSsl: "<value>",
+    incomingEmail: "<value>",
+    isGroupOwnerDisplay: false,
+    isGroupUser: false,
+    membersVisibilityLevel: 739264,
+    membershipRequestTemplate: "<value>",
+    mentionable: false,
+    mentionableLevel: 19987,
+    messageCount: 39187,
+    messageable: false,
+    messageableLevel: 441711,
+    mutedCategoryIds: ["<value>"],
+    name: "<value>",
+    primaryGroup: false,
+    publicAdmission: false,
+    publicExit: false,
+    publishReadState: false,
+    regularCategoryIds: ["<value>"],
+    smtpPort: "<value>",
+    smtpServer: "<value>",
+    smtpSsl: "<value>",
+    title: "<value>",
+    trackingCategoryIds: ["<value>"],
+    userCount: 282807,
+    visibilityLevel: 979587,
+    watchingCategoryIds: ["<value>"],
+    watchingFirstPostCategoryIds: ["<value>"],
+};
+```
 
 ## Fields
 

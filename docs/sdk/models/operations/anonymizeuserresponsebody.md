@@ -2,6 +2,16 @@
 
 response
 
+## Example Usage
+
+```typescript
+import { AnonymizeUserResponseBody } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: AnonymizeUserResponseBody = {
+    success: "<value>",
+    username: "Casimer.Kutch",
+};
+```
 
 ## Fields
 

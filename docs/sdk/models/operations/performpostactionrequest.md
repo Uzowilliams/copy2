@@ -1,5 +1,15 @@
 # PerformPostActionRequest
 
+## Example Usage
+
+```typescript
+import { PerformPostActionRequest } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: PerformPostActionRequest = {
+    apiKey: "<value>",
+    apiUsername: "<value>",
+};
+```
 
 ## Fields
 

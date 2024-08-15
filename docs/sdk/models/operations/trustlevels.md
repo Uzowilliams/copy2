@@ -1,5 +1,18 @@
 # TrustLevels
 
+## Example Usage
+
+```typescript
+import { TrustLevels } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: TrustLevels = {
+    basic: 238413,
+    leader: 890653,
+    member: 514513,
+    newuser: 432606,
+    regular: 367927,
+};
+```
 
 ## Fields
 

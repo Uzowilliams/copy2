@@ -2,6 +2,27 @@
 
 external upload initialized
 
+## Example Usage
+
+```typescript
+import { CompleteMultipartResponseBody } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: CompleteMultipartResponseBody = {
+    extension: "png",
+    filesize: 669237,
+    height: 770873,
+    humanFilesize: "<value>",
+    id: 963741,
+    originalFilename: "<value>",
+    retainHours: "<value>",
+    shortPath: "<value>",
+    shortUrl: "<value>",
+    thumbnailHeight: 735894,
+    thumbnailWidth: 878601,
+    url: "http://zany-subsidy.info",
+    width: 441321,
+};
+```
 
 ## Fields
 

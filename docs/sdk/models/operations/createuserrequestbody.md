@@ -1,5 +1,17 @@
 # CreateUserRequestBody
 
+## Example Usage
+
+```typescript
+import { CreateUserRequestBody } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: CreateUserRequestBody = {
+    email: "Jennifer68@yahoo.com",
+    name: "<value>",
+    password: "9JOtcD2TrgaNLaS",
+    username: "Lenny_Treutel46",
+};
+```
 
 ## Fields
 

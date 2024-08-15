@@ -1,5 +1,53 @@
 # SuggestedTopics
 
+## Example Usage
+
+```typescript
+import { SuggestedTopics } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: SuggestedTopics = {
+    archetype: "<value>",
+    archived: false,
+    bookmarked: "<value>",
+    bumped: false,
+    bumpedAt: "<value>",
+    categoryId: 453094,
+    closed: false,
+    createdAt: "<value>",
+    excerpt: "<value>",
+    fancyTitle: "<value>",
+    featuredLink: "<value>",
+    highestPostNumber: 194023,
+    id: 493958,
+    imageUrl: "<value>",
+    lastPostedAt: "<value>",
+    likeCount: 205566,
+    liked: "<value>",
+    pinned: false,
+    posters: [
+        {
+            description: "Robust interactive software",
+            extras: "<value>",
+            user: {
+                avatarTemplate: "<value>",
+                id: 437814,
+                name: "<value>",
+                username: "Brock.Wolf",
+            },
+        },
+    ],
+    postsCount: 842855,
+    replyCount: 78969,
+    slug: "<value>",
+    tags: ["<value>"],
+    tagsDescriptions: {},
+    title: "<value>",
+    unpinned: "<value>",
+    unseen: false,
+    views: 818034,
+    visible: false,
+};
+```
 
 ## Fields
 

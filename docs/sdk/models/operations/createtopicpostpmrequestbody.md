@@ -1,5 +1,16 @@
 # CreateTopicPostPMRequestBody
 
+## Example Usage
+
+```typescript
+import { CreateTopicPostPMRequestBody } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: CreateTopicPostPMRequestBody = {
+    archetype: "private_message",
+    raw: "<value>",
+    targetRecipients: "blake,sam",
+};
+```
 
 ## Fields
 

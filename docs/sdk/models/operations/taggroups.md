@@ -1,5 +1,12 @@
 # TagGroups
 
+## Example Usage
+
+```typescript
+import { TagGroups } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: TagGroups = {};
+```
 
 ## Fields
 

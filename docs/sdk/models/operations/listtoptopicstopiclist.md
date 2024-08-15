@@ -1,5 +1,12 @@
 # ListTopTopicsTopicList
 
+## Example Usage
+
+```typescript
+import { ListTopTopicsTopicList } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: ListTopTopicsTopicList = {};
+```
 
 ## Fields
 

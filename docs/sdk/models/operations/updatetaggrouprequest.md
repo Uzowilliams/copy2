@@ -1,5 +1,14 @@
 # UpdateTagGroupRequest
 
+## Example Usage
+
+```typescript
+import { UpdateTagGroupRequest } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: UpdateTagGroupRequest = {
+    id: "<id>",
+};
+```
 
 ## Fields
 

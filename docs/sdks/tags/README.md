@@ -31,6 +31,35 @@ async function run() {
 run();
 ```
 
+
+### Standalone function
+
+The standalone function version of this method:
+
+```typescript
+import { SDKCore } from "@lukehagar/discoursejs/core.js";
+import { tagsCreateTagGroup } from "@lukehagar/discoursejs/funcs/tagsCreateTagGroup.js";
+
+// Use `SDKCore` for best tree-shaking performance.
+// You can create one instance of it to use across an application.
+const sdk = new SDKCore();
+
+async function run() {
+  const res = await tagsCreateTagGroup(sdk);
+
+  if (!res.ok) {
+    throw res.error;
+  }
+
+  const { value: result } = res;
+
+  // Handle the result
+  console.log(result)
+}
+
+run();
+```
+
 ### Parameters
 
 | Parameter                                                                                                                                                                      | Type                                                                                                                                                                           | Required                                                                                                                                                                       | Description                                                                                                                                                                    |
@@ -63,6 +92,35 @@ const sdk = new SDK();
 
 async function run() {
   const result = await sdk.tags.getTag("<value>");
+
+  // Handle the result
+  console.log(result)
+}
+
+run();
+```
+
+
+### Standalone function
+
+The standalone function version of this method:
+
+```typescript
+import { SDKCore } from "@lukehagar/discoursejs/core.js";
+import { tagsGetTag } from "@lukehagar/discoursejs/funcs/tagsGetTag.js";
+
+// Use `SDKCore` for best tree-shaking performance.
+// You can create one instance of it to use across an application.
+const sdk = new SDKCore();
+
+async function run() {
+  const res = await tagsGetTag(sdk, "<value>");
+
+  if (!res.ok) {
+    throw res.error;
+  }
+
+  const { value: result } = res;
 
   // Handle the result
   console.log(result)
@@ -111,6 +169,35 @@ async function run() {
 run();
 ```
 
+
+### Standalone function
+
+The standalone function version of this method:
+
+```typescript
+import { SDKCore } from "@lukehagar/discoursejs/core.js";
+import { tagsGetTagGroup } from "@lukehagar/discoursejs/funcs/tagsGetTagGroup.js";
+
+// Use `SDKCore` for best tree-shaking performance.
+// You can create one instance of it to use across an application.
+const sdk = new SDKCore();
+
+async function run() {
+  const res = await tagsGetTagGroup(sdk, "<value>");
+
+  if (!res.ok) {
+    throw res.error;
+  }
+
+  const { value: result } = res;
+
+  // Handle the result
+  console.log(result)
+}
+
+run();
+```
+
 ### Parameters
 
 | Parameter                                                                                                                                                                      | Type                                                                                                                                                                           | Required                                                                                                                                                                       | Description                                                                                                                                                                    |
@@ -143,6 +230,35 @@ const sdk = new SDK();
 
 async function run() {
   const result = await sdk.tags.listTagGroups();
+
+  // Handle the result
+  console.log(result)
+}
+
+run();
+```
+
+
+### Standalone function
+
+The standalone function version of this method:
+
+```typescript
+import { SDKCore } from "@lukehagar/discoursejs/core.js";
+import { tagsListTagGroups } from "@lukehagar/discoursejs/funcs/tagsListTagGroups.js";
+
+// Use `SDKCore` for best tree-shaking performance.
+// You can create one instance of it to use across an application.
+const sdk = new SDKCore();
+
+async function run() {
+  const res = await tagsListTagGroups(sdk);
+
+  if (!res.ok) {
+    throw res.error;
+  }
+
+  const { value: result } = res;
 
   // Handle the result
   console.log(result)
@@ -190,6 +306,35 @@ async function run() {
 run();
 ```
 
+
+### Standalone function
+
+The standalone function version of this method:
+
+```typescript
+import { SDKCore } from "@lukehagar/discoursejs/core.js";
+import { tagsListTags } from "@lukehagar/discoursejs/funcs/tagsListTags.js";
+
+// Use `SDKCore` for best tree-shaking performance.
+// You can create one instance of it to use across an application.
+const sdk = new SDKCore();
+
+async function run() {
+  const res = await tagsListTags(sdk);
+
+  if (!res.ok) {
+    throw res.error;
+  }
+
+  const { value: result } = res;
+
+  // Handle the result
+  console.log(result)
+}
+
+run();
+```
+
 ### Parameters
 
 | Parameter                                                                                                                                                                      | Type                                                                                                                                                                           | Required                                                                                                                                                                       | Description                                                                                                                                                                    |
@@ -221,6 +366,35 @@ const sdk = new SDK();
 
 async function run() {
   const result = await sdk.tags.updateTagGroup("<value>");
+
+  // Handle the result
+  console.log(result)
+}
+
+run();
+```
+
+
+### Standalone function
+
+The standalone function version of this method:
+
+```typescript
+import { SDKCore } from "@lukehagar/discoursejs/core.js";
+import { tagsUpdateTagGroup } from "@lukehagar/discoursejs/funcs/tagsUpdateTagGroup.js";
+
+// Use `SDKCore` for best tree-shaking performance.
+// You can create one instance of it to use across an application.
+const sdk = new SDKCore();
+
+async function run() {
+  const res = await tagsUpdateTagGroup(sdk, "<value>");
+
+  if (!res.ok) {
+    throw res.error;
+  }
+
+  const { value: result } = res;
 
   // Handle the result
   console.log(result)

@@ -2,6 +2,18 @@
 
 external upload initialized
 
+## Example Usage
+
+```typescript
+import { CreateMultipartUploadResponseBody } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: CreateMultipartUploadResponseBody = {
+    externalUploadIdentifier:
+        "84x83tmxy398t3y._Q_z8CoJYVr69bE6D7f8J6Oo0434QquLFoYdGVerWFx9X5HDEI_TP_95c34n853495x35345394.d.ghQ",
+    key: "temp/site/uploads/default/12345/67890.jpg",
+    uniqueIdentifier: "66e86218-80d9-4bda-b4d5-2b6def968705",
+};
+```
 
 ## Fields
 

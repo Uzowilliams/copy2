@@ -26,6 +26,35 @@ async function run() {
 run();
 ```
 
+
+### Standalone function
+
+The standalone function version of this method:
+
+```typescript
+import { SDKCore } from "@lukehagar/discoursejs/core.js";
+import { siteGetSite } from "@lukehagar/discoursejs/funcs/siteGetSite.js";
+
+// Use `SDKCore` for best tree-shaking performance.
+// You can create one instance of it to use across an application.
+const sdk = new SDKCore();
+
+async function run() {
+  const res = await siteGetSite(sdk);
+
+  if (!res.ok) {
+    throw res.error;
+  }
+
+  const { value: result } = res;
+
+  // Handle the result
+  console.log(result)
+}
+
+run();
+```
+
 ### Parameters
 
 | Parameter                                                                                                                                                                      | Type                                                                                                                                                                           | Required                                                                                                                                                                       | Description                                                                                                                                                                    |

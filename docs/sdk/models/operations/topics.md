@@ -1,5 +1,50 @@
 # Topics
 
+## Example Usage
+
+```typescript
+import { Topics } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: Topics = {
+    archetype: "<value>",
+    archived: false,
+    bookmarked: "<value>",
+    bumped: false,
+    bumpedAt: "<value>",
+    categoryId: 653421,
+    closed: false,
+    createdAt: "<value>",
+    excerpt: "<value>",
+    fancyTitle: "<value>",
+    featuredLink: "<value>",
+    hasSummary: false,
+    highestPostNumber: 671794,
+    id: 726343,
+    imageUrl: "<value>",
+    lastPostedAt: "<value>",
+    lastPosterUsername: "<value>",
+    likeCount: 324083,
+    liked: "<value>",
+    pinned: false,
+    pinnedGlobally: false,
+    posters: [
+        {
+            description: "Operative dynamic array",
+            extras: "<value>",
+            primaryGroupId: "<value>",
+            userId: 833316,
+        },
+    ],
+    postsCount: 405036,
+    replyCount: 775803,
+    slug: "<value>",
+    title: "<value>",
+    unpinned: "<value>",
+    unseen: false,
+    views: 405373,
+    visible: false,
+};
+```
 
 ## Fields
 

@@ -1,5 +1,12 @@
 # ListUserPrivateMessagesTopicList
 
+## Example Usage
+
+```typescript
+import { ListUserPrivateMessagesTopicList } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: ListUserPrivateMessagesTopicList = {};
+```
 
 ## Fields
 

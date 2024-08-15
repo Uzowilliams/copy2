@@ -1,5 +1,16 @@
 # GeneratePresignedPutRequestBody
 
+## Example Usage
+
+```typescript
+import { GeneratePresignedPutRequestBody } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: GeneratePresignedPutRequestBody = {
+    fileName: "IMG_2021.jpeg",
+    fileSize: 4096,
+    type: "composer",
+};
+```
 
 ## Fields
 

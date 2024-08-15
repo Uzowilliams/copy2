@@ -1,5 +1,17 @@
 # CompleteExternalUploadRequestBody
 
+## Example Usage
+
+```typescript
+import { CompleteExternalUploadRequestBody } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: CompleteExternalUploadRequestBody = {
+    forPrivateMessage: "true",
+    forSiteSetting: "true",
+    pasted: "true",
+    uniqueIdentifier: "66e86218-80d9-4bda-b4d5-2b6def968705",
+};
+```
 
 ## Fields
 

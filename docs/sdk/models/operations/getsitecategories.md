@@ -1,5 +1,52 @@
 # GetSiteCategories
 
+## Example Usage
+
+```typescript
+import { GetSiteCategories } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: GetSiteCategories = {
+    allowGlobalTags: false,
+    allowedTagGroups: ["<value>"],
+    allowedTags: ["<value>"],
+    canEdit: false,
+    color: "azure",
+    defaultListFilter: "<value>",
+    defaultTopPeriod: "<value>",
+    defaultView: "<value>",
+    hasChildren: false,
+    id: 580887,
+    minimumRequiredTags: 160230,
+    name: "<value>",
+    navigateToFirstPostAfterRead: false,
+    notificationLevel: 145870,
+    numFeaturedTopics: 661118,
+    permission: 335631,
+    position: 440264,
+    postCount: 625528,
+    readOnlyBanner: "<value>",
+    readRestricted: false,
+    requiredTagGroups: [
+        {
+            minCount: 76486,
+            name: "<value>",
+        },
+    ],
+    showSubcategoryList: false,
+    slug: "<value>",
+    sortAscending: "<value>",
+    sortOrder: "<value>",
+    subcategoryListStyle: "<value>",
+    textColor: "<value>",
+    topicCount: 361306,
+    topicTemplate: "<value>",
+    topicUrl: "<value>",
+    uploadedBackground: "<value>",
+    uploadedBackgroundDark: "<value>",
+    uploadedLogo: "<value>",
+    uploadedLogoDark: "<value>",
+};
+```
 
 ## Fields
 

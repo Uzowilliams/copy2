@@ -1,5 +1,72 @@
 # Category
 
+## Example Usage
+
+```typescript
+import { Category } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: Category = {
+    allTopicsWiki: false,
+    allowBadges: false,
+    allowUnlimitedOwnerEditsOnFirstPost: false,
+    autoCloseBasedOnLastPost: false,
+    autoCloseHours: "<value>",
+    availableGroups: ["<value>"],
+    canDelete: false,
+    canEdit: false,
+    color: "gold",
+    customFields: {},
+    defaultListFilter: "<value>",
+    defaultSlowModeSeconds: "<value>",
+    defaultTopPeriod: "<value>",
+    defaultView: "<value>",
+    description: "Public-key impactful moderator",
+    descriptionExcerpt: "<value>",
+    descriptionText: "<value>",
+    emailIn: "<value>",
+    emailInAllowStrangers: false,
+    groupPermissions: [
+        {
+            groupName: "<value>",
+            permissionType: 333965,
+        },
+    ],
+    hasChildren: false,
+    id: 29100,
+    mailinglistMirror: false,
+    minimumRequiredTags: 790840,
+    name: "<value>",
+    navigateToFirstPostAfterRead: false,
+    notificationLevel: 919532,
+    numFeaturedTopics: 97243,
+    permission: 542457,
+    position: 442036,
+    postCount: 991142,
+    readOnlyBanner: "<value>",
+    readRestricted: false,
+    requiredTagGroups: [
+        {
+            minCount: 519952,
+            name: "<value>",
+        },
+    ],
+    searchPriority: 383103,
+    showSubcategoryList: false,
+    slug: "<value>",
+    sortAscending: "<value>",
+    sortOrder: "<value>",
+    subcategoryListStyle: "<value>",
+    textColor: "<value>",
+    topicCount: 693957,
+    topicFeaturedLinkAllowed: false,
+    topicTemplate: "<value>",
+    topicUrl: "<value>",
+    uploadedBackground: "<value>",
+    uploadedBackgroundDark: "<value>",
+    uploadedLogo: "<value>",
+    uploadedLogoDark: "<value>",
+};
+```
 
 ## Fields
 

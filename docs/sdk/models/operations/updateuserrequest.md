@@ -1,5 +1,16 @@
 # UpdateUserRequest
 
+## Example Usage
+
+```typescript
+import { UpdateUserRequest } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: UpdateUserRequest = {
+    apiKey: "<value>",
+    apiUsername: "<value>",
+    username: "Jackeline_Miller83",
+};
+```
 
 ## Fields
 

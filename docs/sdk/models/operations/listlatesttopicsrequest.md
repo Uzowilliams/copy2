@@ -1,5 +1,15 @@
 # ListLatestTopicsRequest
 
+## Example Usage
+
+```typescript
+import { ListLatestTopicsRequest } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: ListLatestTopicsRequest = {
+    apiKey: "<value>",
+    apiUsername: "<value>",
+};
+```
 
 ## Fields
 

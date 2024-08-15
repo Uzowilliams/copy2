@@ -1,5 +1,12 @@
 # Notifications
 
+## Example Usage
+
+```typescript
+import { Notifications } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: Notifications = {};
+```
 
 ## Fields
 

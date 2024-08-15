@@ -1,5 +1,12 @@
 # ListTagGroupsPermissions
 
+## Example Usage
+
+```typescript
+import { ListTagGroupsPermissions } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: ListTagGroupsPermissions = {};
+```
 
 ## Fields
 

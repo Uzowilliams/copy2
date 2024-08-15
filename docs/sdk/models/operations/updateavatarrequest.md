@@ -1,5 +1,14 @@
 # UpdateAvatarRequest
 
+## Example Usage
+
+```typescript
+import { UpdateAvatarRequest } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: UpdateAvatarRequest = {
+    username: "Mason57",
+};
+```
 
 ## Fields
 

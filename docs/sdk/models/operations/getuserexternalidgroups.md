@@ -1,5 +1,42 @@
 # GetUserExternalIdGroups
 
+## Example Usage
+
+```typescript
+import { GetUserExternalIdGroups } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: GetUserExternalIdGroups = {
+    allowMembershipRequests: false,
+    automatic: false,
+    bioCooked: "<value>",
+    bioExcerpt: "<value>",
+    bioRaw: "<value>",
+    canAdminGroup: false,
+    canSeeMembers: false,
+    defaultNotificationLevel: 232234,
+    displayName: "Tierra5",
+    flairBgColor: "<value>",
+    flairColor: "<value>",
+    flairUrl: "<value>",
+    fullName: "Ms. Marco Ankunding",
+    grantTrustLevel: "<value>",
+    hasMessages: false,
+    id: 304582,
+    incomingEmail: "<value>",
+    membersVisibilityLevel: 146946,
+    membershipRequestTemplate: "<value>",
+    mentionableLevel: 882860,
+    messageableLevel: 79522,
+    name: "<value>",
+    primaryGroup: false,
+    publicAdmission: false,
+    publicExit: false,
+    publishReadState: false,
+    title: "<value>",
+    userCount: 250622,
+    visibilityLevel: 89603,
+};
+```
 
 ## Fields
 

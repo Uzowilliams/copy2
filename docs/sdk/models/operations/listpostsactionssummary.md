@@ -1,5 +1,12 @@
 # ListPostsActionsSummary
 
+## Example Usage
+
+```typescript
+import { ListPostsActionsSummary } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: ListPostsActionsSummary = {};
+```
 
 ## Fields
 

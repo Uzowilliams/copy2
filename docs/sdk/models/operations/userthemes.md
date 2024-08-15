@@ -1,5 +1,17 @@
 # UserThemes
 
+## Example Usage
+
+```typescript
+import { UserThemes } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: UserThemes = {
+    colorSchemeId: 456520,
+    default: false,
+    name: "<value>",
+    themeId: 592081,
+};
+```
 
 ## Fields
 

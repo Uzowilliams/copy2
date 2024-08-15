@@ -1,5 +1,14 @@
 # Permissions
 
+## Example Usage
+
+```typescript
+import { Permissions } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: Permissions = {
+    everyone: 1,
+};
+```
 
 ## Fields
 

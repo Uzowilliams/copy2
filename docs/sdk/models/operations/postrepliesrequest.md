@@ -1,5 +1,14 @@
 # PostRepliesRequest
 
+## Example Usage
+
+```typescript
+import { PostRepliesRequest } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: PostRepliesRequest = {
+    id: "<id>",
+};
+```
 
 ## Fields
 

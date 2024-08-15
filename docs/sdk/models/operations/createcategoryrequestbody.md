@@ -1,5 +1,19 @@
 # CreateCategoryRequestBody
 
+## Example Usage
+
+```typescript
+import { CreateCategoryRequestBody } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: CreateCategoryRequestBody = {
+    color: "49d9e9",
+    name: "<value>",
+    permissions: {
+        everyone: 1,
+    },
+    textColor: "f0fcfd",
+};
+```
 
 ## Fields
 

@@ -1,5 +1,17 @@
 # PostTypes
 
+## Example Usage
+
+```typescript
+import { PostTypes } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: PostTypes = {
+    moderatorAction: 63207,
+    regular: 925703,
+    smallAction: 607249,
+    whisper: 309251,
+};
+```
 
 ## Fields
 

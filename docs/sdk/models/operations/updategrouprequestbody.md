@@ -1,5 +1,16 @@
 # UpdateGroupRequestBody
 
+## Example Usage
+
+```typescript
+import { UpdateGroupRequestBody } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: UpdateGroupRequestBody = {
+    group: {
+        name: "<value>",
+    },
+};
+```
 
 ## Fields
 

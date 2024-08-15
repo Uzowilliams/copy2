@@ -2,6 +2,17 @@
 
 success response
 
+## Example Usage
+
+```typescript
+import { RemoveGroupMembersResponseBody } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: RemoveGroupMembersResponseBody = {
+    skippedUsernames: ["<value>"],
+    success: "<value>",
+    usernames: ["<value>"],
+};
+```
 
 ## Fields
 

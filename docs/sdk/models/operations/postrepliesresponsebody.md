@@ -1,5 +1,70 @@
 # PostRepliesResponseBody
 
+## Example Usage
+
+```typescript
+import { PostRepliesResponseBody } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: PostRepliesResponseBody = {
+    actionsSummary: [
+        {
+            canAct: false,
+            id: 517137,
+        },
+    ],
+    admin: false,
+    avatarTemplate: "<value>",
+    bookmarked: false,
+    canDelete: false,
+    canEdit: false,
+    canRecover: false,
+    canSeeHiddenPost: false,
+    canViewEditHistory: false,
+    canWiki: false,
+    cooked: "<value>",
+    createdAt: "<value>",
+    deletedAt: "<value>",
+    displayUsername: "<value>",
+    editReason: "<value>",
+    flairBgColor: "<value>",
+    flairColor: "<value>",
+    flairName: "<value>",
+    flairUrl: "<value>",
+    hidden: false,
+    id: 292888,
+    incomingLinkCount: 755106,
+    moderator: false,
+    name: "<value>",
+    postNumber: 715053,
+    postType: 32273,
+    primaryGroupName: "<value>",
+    quoteCount: 418109,
+    readersCount: 456688,
+    reads: 172951,
+    replyCount: 824798,
+    replyToPostNumber: 107210,
+    replyToUser: {
+        avatarTemplate: "<value>",
+        username: "Marcella.Schumm",
+    },
+    reviewableId: "<value>",
+    reviewableScoreCount: 588812,
+    reviewableScorePendingCount: 882284,
+    score: 896480,
+    staff: false,
+    topicId: 733289,
+    topicSlug: "<value>",
+    trustLevel: 575078,
+    updatedAt: "<value>",
+    userDeleted: false,
+    userId: 409726,
+    userTitle: "<value>",
+    username: "Hellen_Hintz35",
+    version: 889060,
+    wiki: false,
+    yours: false,
+};
+```
 
 ## Fields
 

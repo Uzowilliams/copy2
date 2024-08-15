@@ -1,5 +1,14 @@
 # CreateUploadRequestBody
 
+## Example Usage
+
+```typescript
+import { CreateUploadRequestBody } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: CreateUploadRequestBody = {
+    type: "custom_emoji",
+};
+```
 
 ## Fields
 

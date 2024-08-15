@@ -1,5 +1,14 @@
 # ChangePasswordRequest
 
+## Example Usage
+
+```typescript
+import { ChangePasswordRequest } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: ChangePasswordRequest = {
+    token: "<value>",
+};
+```
 
 ## Fields
 

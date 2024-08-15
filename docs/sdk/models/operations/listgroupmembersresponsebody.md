@@ -2,6 +2,45 @@
 
 success response
 
+## Example Usage
+
+```typescript
+import { ListGroupMembersResponseBody } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: ListGroupMembersResponseBody = {
+    members: [
+        {
+            addedAt: "<value>",
+            avatarTemplate: "<value>",
+            id: 842342,
+            lastPostedAt: "<value>",
+            lastSeenAt: "<value>",
+            name: "<value>",
+            timezone: "America/Indiana/Indianapolis",
+            title: "<value>",
+            username: "Luther.Rau26",
+        },
+    ],
+    meta: {
+        limit: 183191,
+        offset: 397821,
+        total: 586513,
+    },
+    owners: [
+        {
+            addedAt: "<value>",
+            avatarTemplate: "<value>",
+            id: 552822,
+            lastPostedAt: "<value>",
+            lastSeenAt: "<value>",
+            name: "<value>",
+            timezone: "Pacific/Honolulu",
+            title: "<value>",
+            username: "Casimir.Simonis",
+        },
+    ],
+};
+```
 
 ## Fields
 

@@ -1,5 +1,14 @@
 # GetPostRequest
 
+## Example Usage
+
+```typescript
+import { GetPostRequest } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: GetPostRequest = {
+    id: "<id>",
+};
+```
 
 ## Fields
 

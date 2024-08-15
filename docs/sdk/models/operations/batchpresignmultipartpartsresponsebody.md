@@ -2,6 +2,15 @@
 
 external upload initialized
 
+## Example Usage
+
+```typescript
+import { BatchPresignMultipartPartsResponseBody } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: BatchPresignMultipartPartsResponseBody = {
+    presignedUrls: {},
+};
+```
 
 ## Fields
 

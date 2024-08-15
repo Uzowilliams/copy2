@@ -1,5 +1,16 @@
 # GetUserExternalIdRequest
 
+## Example Usage
+
+```typescript
+import { GetUserExternalIdRequest } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: GetUserExternalIdRequest = {
+    apiKey: "<value>",
+    apiUsername: "<value>",
+    externalId: "<value>",
+};
+```
 
 ## Fields
 

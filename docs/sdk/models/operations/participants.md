@@ -1,5 +1,26 @@
 # Participants
 
+## Example Usage
+
+```typescript
+import { Participants } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: Participants = {
+    admin: false,
+    avatarTemplate: "<value>",
+    flairBgColor: "<value>",
+    flairColor: "<value>",
+    flairName: "<value>",
+    flairUrl: "<value>",
+    id: 455898,
+    moderator: false,
+    name: "<value>",
+    postCount: 501063,
+    primaryGroupName: "<value>",
+    trustLevel: 642352,
+    username: "Garry_Funk",
+};
+```
 
 ## Fields
 

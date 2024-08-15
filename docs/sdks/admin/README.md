@@ -35,6 +35,35 @@ async function run() {
 run();
 ```
 
+
+### Standalone function
+
+The standalone function version of this method:
+
+```typescript
+import { SDKCore } from "@lukehagar/discoursejs/core.js";
+import { adminActivateUser } from "@lukehagar/discoursejs/funcs/adminActivateUser.js";
+
+// Use `SDKCore` for best tree-shaking performance.
+// You can create one instance of it to use across an application.
+const sdk = new SDKCore();
+
+async function run() {
+  const res = await adminActivateUser(sdk, 458565);
+
+  if (!res.ok) {
+    throw res.error;
+  }
+
+  const { value: result } = res;
+
+  // Handle the result
+  console.log(result)
+}
+
+run();
+```
+
 ### Parameters
 
 | Parameter                                                                                                                                                                      | Type                                                                                                                                                                           | Required                                                                                                                                                                       | Description                                                                                                                                                                    |
@@ -67,6 +96,35 @@ const sdk = new SDK();
 
 async function run() {
   const result = await sdk.admin.adminGetUser(386776);
+
+  // Handle the result
+  console.log(result)
+}
+
+run();
+```
+
+
+### Standalone function
+
+The standalone function version of this method:
+
+```typescript
+import { SDKCore } from "@lukehagar/discoursejs/core.js";
+import { adminAdminGetUser } from "@lukehagar/discoursejs/funcs/adminAdminGetUser.js";
+
+// Use `SDKCore` for best tree-shaking performance.
+// You can create one instance of it to use across an application.
+const sdk = new SDKCore();
+
+async function run() {
+  const res = await adminAdminGetUser(sdk, 641278);
+
+  if (!res.ok) {
+    throw res.error;
+  }
+
+  const { value: result } = res;
 
   // Handle the result
   console.log(result)
@@ -117,6 +175,37 @@ async function run() {
 run();
 ```
 
+
+### Standalone function
+
+The standalone function version of this method:
+
+```typescript
+import { SDKCore } from "@lukehagar/discoursejs/core.js";
+import { adminAdminListUsers } from "@lukehagar/discoursejs/funcs/adminAdminListUsers.js";
+
+// Use `SDKCore` for best tree-shaking performance.
+// You can create one instance of it to use across an application.
+const sdk = new SDKCore();
+
+async function run() {
+  const res = await adminAdminListUsers(sdk, {
+    flag: "blocked",
+  });
+
+  if (!res.ok) {
+    throw res.error;
+  }
+
+  const { value: result } = res;
+
+  // Handle the result
+  console.log(result)
+}
+
+run();
+```
+
 ### Parameters
 
 | Parameter                                                                                                                                                                      | Type                                                                                                                                                                           | Required                                                                                                                                                                       | Description                                                                                                                                                                    |
@@ -149,6 +238,35 @@ const sdk = new SDK();
 
 async function run() {
   const result = await sdk.admin.anonymizeUser(418778);
+
+  // Handle the result
+  console.log(result)
+}
+
+run();
+```
+
+
+### Standalone function
+
+The standalone function version of this method:
+
+```typescript
+import { SDKCore } from "@lukehagar/discoursejs/core.js";
+import { adminAnonymizeUser } from "@lukehagar/discoursejs/funcs/adminAnonymizeUser.js";
+
+// Use `SDKCore` for best tree-shaking performance.
+// You can create one instance of it to use across an application.
+const sdk = new SDKCore();
+
+async function run() {
+  const res = await adminAnonymizeUser(sdk, 976366);
+
+  if (!res.ok) {
+    throw res.error;
+  }
+
+  const { value: result } = res;
 
   // Handle the result
   console.log(result)
@@ -197,6 +315,35 @@ async function run() {
 run();
 ```
 
+
+### Standalone function
+
+The standalone function version of this method:
+
+```typescript
+import { SDKCore } from "@lukehagar/discoursejs/core.js";
+import { adminDeactivateUser } from "@lukehagar/discoursejs/funcs/adminDeactivateUser.js";
+
+// Use `SDKCore` for best tree-shaking performance.
+// You can create one instance of it to use across an application.
+const sdk = new SDKCore();
+
+async function run() {
+  const res = await adminDeactivateUser(sdk, 495555);
+
+  if (!res.ok) {
+    throw res.error;
+  }
+
+  const { value: result } = res;
+
+  // Handle the result
+  console.log(result)
+}
+
+run();
+```
+
 ### Parameters
 
 | Parameter                                                                                                                                                                      | Type                                                                                                                                                                           | Required                                                                                                                                                                       | Description                                                                                                                                                                    |
@@ -229,6 +376,35 @@ const sdk = new SDK();
 
 async function run() {
   const result = await sdk.admin.deleteUser(251343);
+
+  // Handle the result
+  console.log(result)
+}
+
+run();
+```
+
+
+### Standalone function
+
+The standalone function version of this method:
+
+```typescript
+import { SDKCore } from "@lukehagar/discoursejs/core.js";
+import { adminDeleteUser } from "@lukehagar/discoursejs/funcs/adminDeleteUser.js";
+
+// Use `SDKCore` for best tree-shaking performance.
+// You can create one instance of it to use across an application.
+const sdk = new SDKCore();
+
+async function run() {
+  const res = await adminDeleteUser(sdk, 335223);
+
+  if (!res.ok) {
+    throw res.error;
+  }
+
+  const { value: result } = res;
 
   // Handle the result
   console.log(result)
@@ -278,6 +454,35 @@ async function run() {
 run();
 ```
 
+
+### Standalone function
+
+The standalone function version of this method:
+
+```typescript
+import { SDKCore } from "@lukehagar/discoursejs/core.js";
+import { adminLogOutUser } from "@lukehagar/discoursejs/funcs/adminLogOutUser.js";
+
+// Use `SDKCore` for best tree-shaking performance.
+// You can create one instance of it to use across an application.
+const sdk = new SDKCore();
+
+async function run() {
+  const res = await adminLogOutUser(sdk, 141178);
+
+  if (!res.ok) {
+    throw res.error;
+  }
+
+  const { value: result } = res;
+
+  // Handle the result
+  console.log(result)
+}
+
+run();
+```
+
 ### Parameters
 
 | Parameter                                                                                                                                                                      | Type                                                                                                                                                                           | Required                                                                                                                                                                       | Description                                                                                                                                                                    |
@@ -310,6 +515,35 @@ const sdk = new SDK();
 
 async function run() {
   const result = await sdk.admin.refreshGravatar("<value>");
+
+  // Handle the result
+  console.log(result)
+}
+
+run();
+```
+
+
+### Standalone function
+
+The standalone function version of this method:
+
+```typescript
+import { SDKCore } from "@lukehagar/discoursejs/core.js";
+import { adminRefreshGravatar } from "@lukehagar/discoursejs/funcs/adminRefreshGravatar.js";
+
+// Use `SDKCore` for best tree-shaking performance.
+// You can create one instance of it to use across an application.
+const sdk = new SDKCore();
+
+async function run() {
+  const res = await adminRefreshGravatar(sdk, "<value>");
+
+  if (!res.ok) {
+    throw res.error;
+  }
+
+  const { value: result } = res;
 
   // Handle the result
   console.log(result)
@@ -361,6 +595,38 @@ async function run() {
 run();
 ```
 
+
+### Standalone function
+
+The standalone function version of this method:
+
+```typescript
+import { SDKCore } from "@lukehagar/discoursejs/core.js";
+import { adminSilenceUser } from "@lukehagar/discoursejs/funcs/adminSilenceUser.js";
+
+// Use `SDKCore` for best tree-shaking performance.
+// You can create one instance of it to use across an application.
+const sdk = new SDKCore();
+
+async function run() {
+  const res = await adminSilenceUser(sdk, 212223, {
+    postAction: "delete",
+    silencedTill: "2022-06-01T08:00:00.000Z",
+  });
+
+  if (!res.ok) {
+    throw res.error;
+  }
+
+  const { value: result } = res;
+
+  // Handle the result
+  console.log(result)
+}
+
+run();
+```
+
 ### Parameters
 
 | Parameter                                                                                                                                                                      | Type                                                                                                                                                                           | Required                                                                                                                                                                       | Description                                                                                                                                                                    |
@@ -398,6 +664,39 @@ async function run() {
     reason: "<value>",
     suspendUntil: "2121-02-22",
   });
+
+  // Handle the result
+  console.log(result)
+}
+
+run();
+```
+
+
+### Standalone function
+
+The standalone function version of this method:
+
+```typescript
+import { SDKCore } from "@lukehagar/discoursejs/core.js";
+import { adminSuspendUser } from "@lukehagar/discoursejs/funcs/adminSuspendUser.js";
+
+// Use `SDKCore` for best tree-shaking performance.
+// You can create one instance of it to use across an application.
+const sdk = new SDKCore();
+
+async function run() {
+  const res = await adminSuspendUser(sdk, 192215, {
+    postAction: "delete",
+    reason: "<value>",
+    suspendUntil: "2121-02-22",
+  });
+
+  if (!res.ok) {
+    throw res.error;
+  }
+
+  const { value: result } = res;
 
   // Handle the result
   console.log(result)

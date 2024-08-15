@@ -1,5 +1,12 @@
 # Data
 
+## Example Usage
+
+```typescript
+import { Data } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: Data = {};
+```
 
 ## Fields
 

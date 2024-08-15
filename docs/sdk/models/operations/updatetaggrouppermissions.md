@@ -1,5 +1,12 @@
 # UpdateTagGroupPermissions
 
+## Example Usage
+
+```typescript
+import { UpdateTagGroupPermissions } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: UpdateTagGroupPermissions = {};
+```
 
 ## Fields
 

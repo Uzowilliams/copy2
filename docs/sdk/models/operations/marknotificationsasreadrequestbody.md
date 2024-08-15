@@ -1,5 +1,12 @@
 # MarkNotificationsAsReadRequestBody
 
+## Example Usage
+
+```typescript
+import { MarkNotificationsAsReadRequestBody } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: MarkNotificationsAsReadRequestBody = {};
+```
 
 ## Fields
 

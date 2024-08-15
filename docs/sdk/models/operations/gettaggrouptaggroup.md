@@ -1,5 +1,12 @@
 # GetTagGroupTagGroup
 
+## Example Usage
+
+```typescript
+import { GetTagGroupTagGroup } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: GetTagGroupTagGroup = {};
+```
 
 ## Fields
 

@@ -2,6 +2,15 @@
 
 topic updated
 
+## Example Usage
+
+```typescript
+import { CreateTopicTimerResponseBody } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: CreateTopicTimerResponseBody = {
+    success: "OK",
+};
+```
 
 ## Fields
 

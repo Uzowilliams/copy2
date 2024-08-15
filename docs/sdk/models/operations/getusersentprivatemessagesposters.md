@@ -1,5 +1,12 @@
 # GetUserSentPrivateMessagesPosters
 
+## Example Usage
+
+```typescript
+import { GetUserSentPrivateMessagesPosters } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: GetUserSentPrivateMessagesPosters = {};
+```
 
 ## Fields
 

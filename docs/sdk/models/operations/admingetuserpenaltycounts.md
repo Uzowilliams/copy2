@@ -1,5 +1,16 @@
 # AdminGetUserPenaltyCounts
 
+## Example Usage
+
+```typescript
+import { AdminGetUserPenaltyCounts } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: AdminGetUserPenaltyCounts = {
+    silenced: 428769,
+    suspended: 878453,
+    total: 135474,
+};
+```
 
 ## Fields
 

@@ -1,5 +1,45 @@
 # GetUserExternalIdUserOption
 
+## Example Usage
+
+```typescript
+import { GetUserExternalIdUserOption } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: GetUserExternalIdUserOption = {
+    allowPrivateMessages: false,
+    autoTrackTopicsAfterMsecs: 131482,
+    automaticallyUnpinTopics: false,
+    colorSchemeId: "<value>",
+    darkSchemeId: "<value>",
+    digestAfterMinutes: 591935,
+    dynamicFavicon: false,
+    emailDigests: false,
+    emailInReplyTo: false,
+    emailLevel: 55374,
+    emailMessagesLevel: 476477,
+    emailPreviousReplies: 301598,
+    enableAllowedPmUsers: false,
+    enableDefer: false,
+    enableQuoting: false,
+    externalLinksInNewTab: false,
+    hideProfileAndPresence: false,
+    homepageId: "<value>",
+    includeTl0InDigests: false,
+    likeNotificationFrequency: 487935,
+    mailingListMode: false,
+    mailingListModeFrequency: 262118,
+    newTopicDurationMinutes: 458515,
+    notificationLevelWhenReplying: 456141,
+    skipNewUserTips: false,
+    textSize: "<value>",
+    textSizeSeq: 524593,
+    themeIds: ["<value>"],
+    themeKeySeq: 683282,
+    timezone: "Africa/Algiers",
+    titleCountMode: "<value>",
+    userId: 695626,
+};
+```
 
 ## Fields
 

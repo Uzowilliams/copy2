@@ -1,5 +1,15 @@
 # CreateUserRequest
 
+## Example Usage
+
+```typescript
+import { CreateUserRequest } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: CreateUserRequest = {
+    apiKey: "<value>",
+    apiUsername: "<value>",
+};
+```
 
 ## Fields
 

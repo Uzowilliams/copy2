@@ -2,6 +2,13 @@
 
 private messages
 
+## Example Usage
+
+```typescript
+import { ListUserPrivateMessagesResponseBody } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: ListUserPrivateMessagesResponseBody = {};
+```
 
 ## Fields
 

@@ -2,6 +2,22 @@
 
 tag group created
 
+## Example Usage
+
+```typescript
+import { CreateTagGroupResponseBody } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: CreateTagGroupResponseBody = {
+    tagGroup: {
+        id: 978173,
+        name: "<value>",
+        onePerTopic: false,
+        parentTagName: ["<value>"],
+        permissions: {},
+        tagNames: ["<value>"],
+    },
+};
+```
 
 ## Fields
 

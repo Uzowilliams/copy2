@@ -1,5 +1,14 @@
 # Group
 
+## Example Usage
+
+```typescript
+import { Group } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: Group = {
+    name: "<value>",
+};
+```
 
 ## Fields
 

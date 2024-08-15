@@ -1,5 +1,14 @@
 # CreateTopicTimerRequestBody
 
+## Example Usage
+
+```typescript
+import { CreateTopicTimerRequestBody } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: CreateTopicTimerRequestBody = {
+    time: "",
+};
+```
 
 ## Fields
 

@@ -1,5 +1,15 @@
 # UpdateBadgeRequestBody
 
+## Example Usage
+
+```typescript
+import { UpdateBadgeRequestBody } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: UpdateBadgeRequestBody = {
+    badgeTypeId: 128926,
+    name: "<value>",
+};
+```
 
 ## Fields
 

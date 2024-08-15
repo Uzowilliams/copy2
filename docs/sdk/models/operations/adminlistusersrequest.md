@@ -1,5 +1,14 @@
 # AdminListUsersRequest
 
+## Example Usage
+
+```typescript
+import { AdminListUsersRequest } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: AdminListUsersRequest = {
+    flag: "new",
+};
+```
 
 ## Fields
 

@@ -2,6 +2,16 @@
 
 user updated
 
+## Example Usage
+
+```typescript
+import { UpdateUserResponseBody } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: UpdateUserResponseBody = {
+    success: "<value>",
+    user: {},
+};
+```
 
 ## Fields
 

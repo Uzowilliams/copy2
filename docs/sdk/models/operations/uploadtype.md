@@ -1,12 +1,15 @@
 # UploadType
 
+## Example Usage
+
+```typescript
+import { UploadType } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: UploadType = "avatar";
+```
 
 ## Values
 
-| Name                | Value               |
-| ------------------- | ------------------- |
-| `Avatar`            | avatar              |
-| `ProfileBackground` | profile_background  |
-| `CardBackground`    | card_background     |
-| `CustomEmoji`       | custom_emoji        |
-| `Composer`          | composer            |
+```typescript
+"avatar" | "profile_background" | "card_background" | "custom_emoji" | "composer"
+```

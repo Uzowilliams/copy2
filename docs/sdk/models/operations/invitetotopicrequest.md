@@ -1,5 +1,16 @@
 # InviteToTopicRequest
 
+## Example Usage
+
+```typescript
+import { InviteToTopicRequest } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: InviteToTopicRequest = {
+    apiKey: "<value>",
+    apiUsername: "<value>",
+    id: "<id>",
+};
+```
 
 ## Fields
 

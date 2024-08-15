@@ -1,5 +1,16 @@
 # BadgeTypes
 
+## Example Usage
+
+```typescript
+import { BadgeTypes } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: BadgeTypes = {
+    id: 963663,
+    name: "<value>",
+    sortOrder: 272656,
+};
+```
 
 ## Fields
 

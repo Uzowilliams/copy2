@@ -1,5 +1,45 @@
 # UserOption
 
+## Example Usage
+
+```typescript
+import { UserOption } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: UserOption = {
+    allowPrivateMessages: false,
+    autoTrackTopicsAfterMsecs: 213312,
+    automaticallyUnpinTopics: false,
+    colorSchemeId: "<value>",
+    darkSchemeId: "<value>",
+    digestAfterMinutes: 957451,
+    dynamicFavicon: false,
+    emailDigests: false,
+    emailInReplyTo: false,
+    emailLevel: 518201,
+    emailMessagesLevel: 471752,
+    emailPreviousReplies: 25662,
+    enableAllowedPmUsers: false,
+    enableDefer: false,
+    enableQuoting: false,
+    externalLinksInNewTab: false,
+    hideProfileAndPresence: false,
+    homepageId: "<value>",
+    includeTl0InDigests: false,
+    likeNotificationFrequency: 711584,
+    mailingListMode: false,
+    mailingListModeFrequency: 207470,
+    newTopicDurationMinutes: 153694,
+    notificationLevelWhenReplying: 424685,
+    skipNewUserTips: false,
+    textSize: "<value>",
+    textSizeSeq: 730442,
+    themeIds: ["<value>"],
+    themeKeySeq: 374170,
+    timezone: "Asia/Kabul",
+    titleCountMode: "<value>",
+    userId: 463575,
+};
+```
 
 ## Fields
 

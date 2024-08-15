@@ -1,5 +1,12 @@
 # UpdatePostRequestBody
 
+## Example Usage
+
+```typescript
+import { UpdatePostRequestBody } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: UpdatePostRequestBody = {};
+```
 
 ## Fields
 

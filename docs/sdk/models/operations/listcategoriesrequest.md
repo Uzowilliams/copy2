@@ -1,5 +1,12 @@
 # ListCategoriesRequest
 
+## Example Usage
+
+```typescript
+import { ListCategoriesRequest } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: ListCategoriesRequest = {};
+```
 
 ## Fields
 

@@ -1,5 +1,12 @@
 # Tags
 
+## Example Usage
+
+```typescript
+import { Tags } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: Tags = {};
+```
 
 ## Fields
 

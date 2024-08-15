@@ -1,5 +1,16 @@
 # CreateMultipartUploadRequestBody
 
+## Example Usage
+
+```typescript
+import { CreateMultipartUploadRequestBody } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: CreateMultipartUploadRequestBody = {
+    fileName: "IMG_2021.jpeg",
+    fileSize: 4096,
+    uploadType: "card_background",
+};
+```
 
 ## Fields
 

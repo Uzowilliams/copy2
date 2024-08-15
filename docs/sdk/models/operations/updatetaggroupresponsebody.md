@@ -2,6 +2,13 @@
 
 Tag group updated
 
+## Example Usage
+
+```typescript
+import { UpdateTagGroupResponseBody } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: UpdateTagGroupResponseBody = {};
+```
 
 ## Fields
 

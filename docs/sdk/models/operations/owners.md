@@ -1,5 +1,22 @@
 # Owners
 
+## Example Usage
+
+```typescript
+import { Owners } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: Owners = {
+    addedAt: "<value>",
+    avatarTemplate: "<value>",
+    id: 83112,
+    lastPostedAt: "<value>",
+    lastSeenAt: "<value>",
+    name: "<value>",
+    timezone: "Asia/Magadan",
+    title: "<value>",
+    username: "Drew66",
+};
+```
 
 ## Fields
 

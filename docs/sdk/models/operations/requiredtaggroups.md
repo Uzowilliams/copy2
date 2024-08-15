@@ -1,5 +1,15 @@
 # RequiredTagGroups
 
+## Example Usage
+
+```typescript
+import { RequiredTagGroups } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: RequiredTagGroups = {
+    minCount: 440666,
+    name: "<value>",
+};
+```
 
 ## Fields
 

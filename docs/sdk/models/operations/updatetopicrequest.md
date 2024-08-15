@@ -1,5 +1,16 @@
 # UpdateTopicRequest
 
+## Example Usage
+
+```typescript
+import { UpdateTopicRequest } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: UpdateTopicRequest = {
+    apiKey: "<value>",
+    apiUsername: "<value>",
+    id: "<id>",
+};
+```
 
 ## Fields
 

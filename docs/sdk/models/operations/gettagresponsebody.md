@@ -2,6 +2,13 @@
 
 notifications
 
+## Example Usage
+
+```typescript
+import { GetTagResponseBody } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: GetTagResponseBody = {};
+```
 
 ## Fields
 

@@ -1,5 +1,16 @@
 # SuspendUserRequestBody
 
+## Example Usage
+
+```typescript
+import { SuspendUserRequestBody } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: SuspendUserRequestBody = {
+    postAction: "delete",
+    reason: "<value>",
+    suspendUntil: "2121-02-22",
+};
+```
 
 ## Fields
 

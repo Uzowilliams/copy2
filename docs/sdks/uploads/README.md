@@ -46,6 +46,37 @@ async function run() {
 run();
 ```
 
+
+### Standalone function
+
+The standalone function version of this method:
+
+```typescript
+import { SDKCore } from "@lukehagar/discoursejs/core.js";
+import { uploadsAbortMultipart } from "@lukehagar/discoursejs/funcs/uploadsAbortMultipart.js";
+
+// Use `SDKCore` for best tree-shaking performance.
+// You can create one instance of it to use across an application.
+const sdk = new SDKCore();
+
+async function run() {
+  const res = await uploadsAbortMultipart(sdk, {
+    externalUploadIdentifier: "84x83tmxy398t3y._Q_z8CoJYVr69bE6D7f8J6Oo0434QquLFoYdGVerWFx9X5HDEI_TP_95c34n853495x35345394.d.ghQ",
+  });
+
+  if (!res.ok) {
+    throw res.error;
+  }
+
+  const { value: result } = res;
+
+  // Handle the result
+  console.log(result)
+}
+
+run();
+```
+
 ### Parameters
 
 | Parameter                                                                                                                                                                      | Type                                                                                                                                                                           | Required                                                                                                                                                                       | Description                                                                                                                                                                    |
@@ -114,6 +145,42 @@ async function run() {
 run();
 ```
 
+
+### Standalone function
+
+The standalone function version of this method:
+
+```typescript
+import { SDKCore } from "@lukehagar/discoursejs/core.js";
+import { uploadsBatchPresignMultipartParts } from "@lukehagar/discoursejs/funcs/uploadsBatchPresignMultipartParts.js";
+
+// Use `SDKCore` for best tree-shaking performance.
+// You can create one instance of it to use across an application.
+const sdk = new SDKCore();
+
+async function run() {
+  const res = await uploadsBatchPresignMultipartParts(sdk, {
+    partNumbers: [
+      1,
+      2,
+      3,
+    ],
+    uniqueIdentifier: "66e86218-80d9-4bda-b4d5-2b6def968705",
+  });
+
+  if (!res.ok) {
+    throw res.error;
+  }
+
+  const { value: result } = res;
+
+  // Handle the result
+  console.log(result)
+}
+
+run();
+```
+
 ### Parameters
 
 | Parameter                                                                                                                                                                      | Type                                                                                                                                                                           | Required                                                                                                                                                                       | Description                                                                                                                                                                    |
@@ -168,6 +235,40 @@ async function run() {
     pasted: "true",
     uniqueIdentifier: "66e86218-80d9-4bda-b4d5-2b6def968705",
   });
+
+  // Handle the result
+  console.log(result)
+}
+
+run();
+```
+
+
+### Standalone function
+
+The standalone function version of this method:
+
+```typescript
+import { SDKCore } from "@lukehagar/discoursejs/core.js";
+import { uploadsCompleteExternalUpload } from "@lukehagar/discoursejs/funcs/uploadsCompleteExternalUpload.js";
+
+// Use `SDKCore` for best tree-shaking performance.
+// You can create one instance of it to use across an application.
+const sdk = new SDKCore();
+
+async function run() {
+  const res = await uploadsCompleteExternalUpload(sdk, {
+    forPrivateMessage: "true",
+    forSiteSetting: "true",
+    pasted: "true",
+    uniqueIdentifier: "66e86218-80d9-4bda-b4d5-2b6def968705",
+  });
+
+  if (!res.ok) {
+    throw res.error;
+  }
+
+  const { value: result } = res;
 
   // Handle the result
   console.log(result)
@@ -242,6 +343,47 @@ async function run() {
 run();
 ```
 
+
+### Standalone function
+
+The standalone function version of this method:
+
+```typescript
+import { SDKCore } from "@lukehagar/discoursejs/core.js";
+import { uploadsCompleteMultipart } from "@lukehagar/discoursejs/funcs/uploadsCompleteMultipart.js";
+
+// Use `SDKCore` for best tree-shaking performance.
+// You can create one instance of it to use across an application.
+const sdk = new SDKCore();
+
+async function run() {
+  const res = await uploadsCompleteMultipart(sdk, {
+    parts: [
+      {
+        "part_number": 1,
+        "etag": "0c376dcfcc2606f4335bbc732de93344",
+      },
+      {
+        "part_number": 2,
+        "etag": "09ert8cfcc2606f4335bbc732de91122",
+      },
+    ],
+    uniqueIdentifier: "66e86218-80d9-4bda-b4d5-2b6def968705",
+  });
+
+  if (!res.ok) {
+    throw res.error;
+  }
+
+  const { value: result } = res;
+
+  // Handle the result
+  console.log(result)
+}
+
+run();
+```
+
 ### Parameters
 
 | Parameter                                                                                                                                                                      | Type                                                                                                                                                                           | Required                                                                                                                                                                       | Description                                                                                                                                                                    |
@@ -297,6 +439,39 @@ async function run() {
 run();
 ```
 
+
+### Standalone function
+
+The standalone function version of this method:
+
+```typescript
+import { SDKCore } from "@lukehagar/discoursejs/core.js";
+import { uploadsCreateMultipartUpload } from "@lukehagar/discoursejs/funcs/uploadsCreateMultipartUpload.js";
+
+// Use `SDKCore` for best tree-shaking performance.
+// You can create one instance of it to use across an application.
+const sdk = new SDKCore();
+
+async function run() {
+  const res = await uploadsCreateMultipartUpload(sdk, {
+    fileName: "IMG_2021.jpeg",
+    fileSize: 4096,
+    uploadType: "card_background",
+  });
+
+  if (!res.ok) {
+    throw res.error;
+  }
+
+  const { value: result } = res;
+
+  // Handle the result
+  console.log(result)
+}
+
+run();
+```
+
 ### Parameters
 
 | Parameter                                                                                                                                                                      | Type                                                                                                                                                                           | Required                                                                                                                                                                       | Description                                                                                                                                                                    |
@@ -329,6 +504,35 @@ const sdk = new SDK();
 
 async function run() {
   const result = await sdk.uploads.createUpload();
+
+  // Handle the result
+  console.log(result)
+}
+
+run();
+```
+
+
+### Standalone function
+
+The standalone function version of this method:
+
+```typescript
+import { SDKCore } from "@lukehagar/discoursejs/core.js";
+import { uploadsCreateUpload } from "@lukehagar/discoursejs/funcs/uploadsCreateUpload.js";
+
+// Use `SDKCore` for best tree-shaking performance.
+// You can create one instance of it to use across an application.
+const sdk = new SDKCore();
+
+async function run() {
+  const res = await uploadsCreateUpload(sdk);
+
+  if (!res.ok) {
+    throw res.error;
+  }
+
+  const { value: result } = res;
 
   // Handle the result
   console.log(result)
@@ -393,6 +597,39 @@ async function run() {
     fileSize: 4096,
     type: "card_background",
   });
+
+  // Handle the result
+  console.log(result)
+}
+
+run();
+```
+
+
+### Standalone function
+
+The standalone function version of this method:
+
+```typescript
+import { SDKCore } from "@lukehagar/discoursejs/core.js";
+import { uploadsGeneratePresignedPut } from "@lukehagar/discoursejs/funcs/uploadsGeneratePresignedPut.js";
+
+// Use `SDKCore` for best tree-shaking performance.
+// You can create one instance of it to use across an application.
+const sdk = new SDKCore();
+
+async function run() {
+  const res = await uploadsGeneratePresignedPut(sdk, {
+    fileName: "IMG_2021.jpeg",
+    fileSize: 4096,
+    type: "avatar",
+  });
+
+  if (!res.ok) {
+    throw res.error;
+  }
+
+  const { value: result } = res;
 
   // Handle the result
   console.log(result)

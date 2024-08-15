@@ -2,6 +2,18 @@
 
 success response
 
+## Example Usage
+
+```typescript
+import { GetUserEmailsResponseBody } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: GetUserEmailsResponseBody = {
+    associatedAccounts: ["<value>"],
+    email: "Flossie.Hartmann@hotmail.com",
+    secondaryEmails: ["<value>"],
+    unconfirmedEmails: ["<value>"],
+};
+```
 
 ## Fields
 

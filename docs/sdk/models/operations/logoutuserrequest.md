@@ -1,5 +1,14 @@
 # LogOutUserRequest
 
+## Example Usage
+
+```typescript
+import { LogOutUserRequest } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: LogOutUserRequest = {
+    id: 512452,
+};
+```
 
 ## Fields
 

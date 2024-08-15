@@ -1,5 +1,15 @@
 # ListTopTopicsRequest
 
+## Example Usage
+
+```typescript
+import { ListTopTopicsRequest } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: ListTopTopicsRequest = {
+    apiKey: "<value>",
+    apiUsername: "<value>",
+};
+```
 
 ## Fields
 

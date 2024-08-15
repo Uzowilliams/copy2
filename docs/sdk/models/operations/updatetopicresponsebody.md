@@ -2,6 +2,13 @@
 
 topic updated
 
+## Example Usage
+
+```typescript
+import { UpdateTopicResponseBody } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: UpdateTopicResponseBody = {};
+```
 
 ## Fields
 

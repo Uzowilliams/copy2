@@ -1,5 +1,15 @@
 # BatchPresignMultipartPartsRequestBody
 
+## Example Usage
+
+```typescript
+import { BatchPresignMultipartPartsRequestBody } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: BatchPresignMultipartPartsRequestBody = {
+    partNumbers: [1, 2, 3],
+    uniqueIdentifier: "66e86218-80d9-4bda-b4d5-2b6def968705",
+};
+```
 
 ## Fields
 

@@ -1,5 +1,17 @@
 # AddGroupMembersRequest
 
+## Example Usage
+
+```typescript
+import { AddGroupMembersRequest } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: AddGroupMembersRequest = {
+    requestBody: {
+        usernames: "username1,username2",
+    },
+    id: 253291,
+};
+```
 
 ## Fields
 

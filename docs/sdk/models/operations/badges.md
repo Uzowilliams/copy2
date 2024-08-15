@@ -1,5 +1,34 @@
 # Badges
 
+## Example Usage
+
+```typescript
+import { Badges } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: Badges = {
+    allowTitle: false,
+    autoRevoke: false,
+    badgeGroupingId: 383441,
+    badgeTypeId: 477665,
+    description: "Secured secondary internet solution",
+    enabled: false,
+    grantCount: 479977,
+    icon: "<value>",
+    id: 568045,
+    imageUrl: "<value>",
+    listable: false,
+    longDescription: "<value>",
+    manuallyGrantable: false,
+    multipleGrant: false,
+    name: "<value>",
+    query: "<value>",
+    showPosts: false,
+    slug: "<value>",
+    system: false,
+    targetPosts: false,
+    trigger: 392785,
+};
+```
 
 ## Fields
 

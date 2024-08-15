@@ -2,6 +2,13 @@
 
 topic updated
 
+## Example Usage
+
+```typescript
+import { InviteToTopicResponseBody } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: InviteToTopicResponseBody = {};
+```
 
 ## Fields
 

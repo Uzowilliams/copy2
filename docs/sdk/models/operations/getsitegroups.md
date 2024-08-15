@@ -1,5 +1,18 @@
 # GetSiteGroups
 
+## Example Usage
+
+```typescript
+import { GetSiteGroups } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: GetSiteGroups = {
+    flairBgColor: "<value>",
+    flairColor: "<value>",
+    flairUrl: "<value>",
+    id: 696463,
+    name: "<value>",
+};
+```
 
 ## Fields
 

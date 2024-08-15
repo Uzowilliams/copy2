@@ -1,5 +1,16 @@
 # GetTopicRequest
 
+## Example Usage
+
+```typescript
+import { GetTopicRequest } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: GetTopicRequest = {
+    apiKey: "<value>",
+    apiUsername: "<value>",
+    id: "<id>",
+};
+```
 
 ## Fields
 

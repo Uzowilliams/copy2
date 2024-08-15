@@ -1,5 +1,14 @@
 # UpdateCategoryPermissions
 
+## Example Usage
+
+```typescript
+import { UpdateCategoryPermissions } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: UpdateCategoryPermissions = {
+    everyone: 1,
+};
+```
 
 ## Fields
 

@@ -1,5 +1,12 @@
 # GetTagPosters
 
+## Example Usage
+
+```typescript
+import { GetTagPosters } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: GetTagPosters = {};
+```
 
 ## Fields
 

@@ -1,5 +1,14 @@
 # DeletePostRequestBody
 
+## Example Usage
+
+```typescript
+import { DeletePostRequestBody } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: DeletePostRequestBody = {
+    forceDestroy: true,
+};
+```
 
 ## Fields
 

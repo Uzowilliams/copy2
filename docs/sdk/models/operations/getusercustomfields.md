@@ -1,5 +1,12 @@
 # GetUserCustomFields
 
+## Example Usage
+
+```typescript
+import { GetUserCustomFields } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: GetUserCustomFields = {};
+```
 
 ## Fields
 

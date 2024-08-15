@@ -1,5 +1,42 @@
 # GetUserGroups
 
+## Example Usage
+
+```typescript
+import { GetUserGroups } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: GetUserGroups = {
+    allowMembershipRequests: false,
+    automatic: false,
+    bioCooked: "<value>",
+    bioExcerpt: "<value>",
+    bioRaw: "<value>",
+    canAdminGroup: false,
+    canSeeMembers: false,
+    defaultNotificationLevel: 881586,
+    displayName: "Emmanuelle_Turner",
+    flairBgColor: "<value>",
+    flairColor: "<value>",
+    flairUrl: "<value>",
+    fullName: "Derek Sipes",
+    grantTrustLevel: "<value>",
+    hasMessages: false,
+    id: 55,
+    incomingEmail: "<value>",
+    membersVisibilityLevel: 872651,
+    membershipRequestTemplate: "<value>",
+    mentionableLevel: 311860,
+    messageableLevel: 273542,
+    name: "<value>",
+    primaryGroup: false,
+    publicAdmission: false,
+    publicExit: false,
+    publishReadState: false,
+    title: "<value>",
+    userCount: 425451,
+    visibilityLevel: 798047,
+};
+```
 
 ## Fields
 

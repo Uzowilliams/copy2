@@ -2,6 +2,13 @@
 
 notifications
 
+## Example Usage
+
+```typescript
+import { GetNotificationsResponseBody } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: GetNotificationsResponseBody = {};
+```
 
 ## Fields
 

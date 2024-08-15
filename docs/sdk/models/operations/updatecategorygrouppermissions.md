@@ -1,5 +1,15 @@
 # UpdateCategoryGroupPermissions
 
+## Example Usage
+
+```typescript
+import { UpdateCategoryGroupPermissions } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: UpdateCategoryGroupPermissions = {
+    groupName: "<value>",
+    permissionType: 190567,
+};
+```
 
 ## Fields
 

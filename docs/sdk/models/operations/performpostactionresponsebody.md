@@ -2,6 +2,13 @@
 
 post updated
 
+## Example Usage
+
+```typescript
+import { PerformPostActionResponseBody } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: PerformPostActionResponseBody = {};
+```
 
 ## Fields
 

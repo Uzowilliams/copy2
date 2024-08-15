@@ -1,5 +1,41 @@
 # BasicGroup
 
+## Example Usage
+
+```typescript
+import { BasicGroup } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: BasicGroup = {
+    allowMembershipRequests: false,
+    automatic: false,
+    bioCooked: "<value>",
+    bioExcerpt: "<value>",
+    bioRaw: "<value>",
+    canAdminGroup: false,
+    canSeeMembers: false,
+    defaultNotificationLevel: 414369,
+    flairBgColor: "<value>",
+    flairColor: "<value>",
+    flairUrl: "<value>",
+    fullName: "Nellie Frami",
+    grantTrustLevel: "<value>",
+    hasMessages: false,
+    id: 338007,
+    incomingEmail: "<value>",
+    membersVisibilityLevel: 110375,
+    membershipRequestTemplate: "<value>",
+    mentionableLevel: 674752,
+    messageableLevel: 656330,
+    name: "<value>",
+    primaryGroup: false,
+    publicAdmission: false,
+    publicExit: false,
+    publishReadState: false,
+    title: "<value>",
+    userCount: 317202,
+    visibilityLevel: 138183,
+};
+```
 
 ## Fields
 

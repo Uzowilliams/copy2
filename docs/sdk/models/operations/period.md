@@ -1,13 +1,15 @@
 # Period
 
+## Example Usage
+
+```typescript
+import { Period } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: Period = "weekly";
+```
 
 ## Values
 
-| Name        | Value       |
-| ----------- | ----------- |
-| `Daily`     | daily       |
-| `Weekly`    | weekly      |
-| `Monthly`   | monthly     |
-| `Quarterly` | quarterly   |
-| `Yearly`    | yearly      |
-| `All`       | all         |
+```typescript
+"daily" | "weekly" | "monthly" | "quarterly" | "yearly" | "all"
+```

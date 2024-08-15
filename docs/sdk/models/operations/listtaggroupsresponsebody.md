@@ -2,6 +2,13 @@
 
 tags
 
+## Example Usage
+
+```typescript
+import { ListTagGroupsResponseBody } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: ListTagGroupsResponseBody = {};
+```
 
 ## Fields
 

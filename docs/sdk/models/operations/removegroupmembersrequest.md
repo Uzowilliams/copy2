@@ -1,5 +1,17 @@
 # RemoveGroupMembersRequest
 
+## Example Usage
+
+```typescript
+import { RemoveGroupMembersRequest } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: RemoveGroupMembersRequest = {
+    requestBody: {
+        usernames: "username1,username2",
+    },
+    id: 581273,
+};
+```
 
 ## Fields
 

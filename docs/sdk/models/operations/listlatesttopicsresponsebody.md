@@ -2,6 +2,13 @@
 
 topic updated
 
+## Example Usage
+
+```typescript
+import { ListLatestTopicsResponseBody } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: ListLatestTopicsResponseBody = {};
+```
 
 ## Fields
 

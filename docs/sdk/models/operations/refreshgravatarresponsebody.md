@@ -2,6 +2,16 @@
 
 response
 
+## Example Usage
+
+```typescript
+import { RefreshGravatarResponseBody } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: RefreshGravatarResponseBody = {
+    gravatarAvatarTemplate: "<value>",
+    gravatarUploadId: 530089,
+};
+```
 
 ## Fields
 

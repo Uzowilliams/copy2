@@ -2,6 +2,15 @@
 
 topic updated
 
+## Example Usage
+
+```typescript
+import { UpdateTopicStatusResponseBody } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: UpdateTopicStatusResponseBody = {
+    success: "OK",
+};
+```
 
 ## Fields
 

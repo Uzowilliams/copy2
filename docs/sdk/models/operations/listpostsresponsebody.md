@@ -2,6 +2,13 @@
 
 latest posts
 
+## Example Usage
+
+```typescript
+import { ListPostsResponseBody } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: ListPostsResponseBody = {};
+```
 
 ## Fields
 

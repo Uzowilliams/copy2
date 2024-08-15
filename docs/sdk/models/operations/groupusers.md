@@ -1,5 +1,16 @@
 # GroupUsers
 
+## Example Usage
+
+```typescript
+import { GroupUsers } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: GroupUsers = {
+    groupId: 20651,
+    notificationLevel: 229219,
+    userId: 758379,
+};
+```
 
 ## Fields
 

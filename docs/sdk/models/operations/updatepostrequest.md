@@ -1,5 +1,14 @@
 # UpdatePostRequest
 
+## Example Usage
+
+```typescript
+import { UpdatePostRequest } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: UpdatePostRequest = {
+    id: "<id>",
+};
+```
 
 ## Fields
 

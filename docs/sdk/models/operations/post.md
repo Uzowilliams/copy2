@@ -1,5 +1,14 @@
 # Post
 
+## Example Usage
+
+```typescript
+import { Post } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: Post = {
+    raw: "<value>",
+};
+```
 
 ## Fields
 

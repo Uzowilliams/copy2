@@ -1,5 +1,12 @@
 # Topic
 
+## Example Usage
+
+```typescript
+import { Topic } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: Topic = {};
+```
 
 ## Fields
 

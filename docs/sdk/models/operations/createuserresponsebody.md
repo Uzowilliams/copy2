@@ -2,6 +2,17 @@
 
 user created
 
+## Example Usage
+
+```typescript
+import { CreateUserResponseBody } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: CreateUserResponseBody = {
+    active: false,
+    message: "<value>",
+    success: false,
+};
+```
 
 ## Fields
 

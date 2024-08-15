@@ -2,6 +2,15 @@
 
 response
 
+## Example Usage
+
+```typescript
+import { ActivateUserResponseBody } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: ActivateUserResponseBody = {
+    success: "OK",
+};
+```
 
 ## Fields
 

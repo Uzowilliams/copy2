@@ -1,5 +1,12 @@
 # DeleteUserRequestBody
 
+## Example Usage
+
+```typescript
+import { DeleteUserRequestBody } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: DeleteUserRequestBody = {};
+```
 
 ## Fields
 

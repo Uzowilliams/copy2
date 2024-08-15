@@ -1,5 +1,42 @@
 # Details
 
+## Example Usage
+
+```typescript
+import { Details } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: Details = {
+    canArchiveTopic: false,
+    canCloseTopic: false,
+    canConvertTopic: false,
+    canCreatePost: false,
+    canDelete: false,
+    canEdit: false,
+    canEditStaffNotes: false,
+    canModerateCategory: false,
+    canMovePosts: false,
+    canPinUnpinTopic: false,
+    canRemoveAllowedUsers: false,
+    canRemoveSelfId: 260904,
+    canReplyAsNewTopic: false,
+    canReviewTopic: false,
+    canSplitMergeTopic: false,
+    canToggleTopicVisibility: false,
+    createdBy: {
+        avatarTemplate: "<value>",
+        id: 131903,
+        name: "<value>",
+        username: "Jerrell_Dooley27",
+    },
+    lastPoster: {
+        avatarTemplate: "<value>",
+        id: 97493,
+        name: "<value>",
+        username: "Judge39",
+    },
+    notificationLevel: 159845,
+};
+```
 
 ## Fields
 

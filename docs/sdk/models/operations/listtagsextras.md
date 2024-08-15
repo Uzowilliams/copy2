@@ -1,5 +1,12 @@
 # ListTagsExtras
 
+## Example Usage
+
+```typescript
+import { ListTagsExtras } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: ListTagsExtras = {};
+```
 
 ## Fields
 

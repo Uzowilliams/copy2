@@ -2,6 +2,15 @@
 
 response
 
+## Example Usage
+
+```typescript
+import { DeleteUserResponseBody } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: DeleteUserResponseBody = {
+    deleted: false,
+};
+```
 
 ## Fields
 

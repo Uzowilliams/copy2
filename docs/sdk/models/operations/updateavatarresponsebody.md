@@ -2,6 +2,15 @@
 
 avatar updated
 
+## Example Usage
+
+```typescript
+import { UpdateAvatarResponseBody } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: UpdateAvatarResponseBody = {
+    success: "OK",
+};
+```
 
 ## Fields
 

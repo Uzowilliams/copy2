@@ -2,6 +2,15 @@
 
 external upload initialized
 
+## Example Usage
+
+```typescript
+import { AbortMultipartResponseBody } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: AbortMultipartResponseBody = {
+    success: "OK",
+};
+```
 
 ## Fields
 

@@ -1,5 +1,16 @@
 # ListUserActionsRequest
 
+## Example Usage
+
+```typescript
+import { ListUserActionsRequest } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: ListUserActionsRequest = {
+    filter: "<value>",
+    offset: 148829,
+    username: "Viviane_Cole45",
+};
+```
 
 ## Fields
 

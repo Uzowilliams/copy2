@@ -1,5 +1,17 @@
 # GetTopicUser
 
+## Example Usage
+
+```typescript
+import { GetTopicUser } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: GetTopicUser = {
+    avatarTemplate: "<value>",
+    id: 65082,
+    name: "<value>",
+    username: "Paxton.Pfannerstill24",
+};
+```
 
 ## Fields
 

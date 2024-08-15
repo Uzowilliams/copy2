@@ -1,5 +1,51 @@
 # Categories
 
+## Example Usage
+
+```typescript
+import { Categories } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: Categories = {
+    canEdit: false,
+    color: "olive",
+    defaultListFilter: "<value>",
+    defaultTopPeriod: "<value>",
+    defaultView: "<value>",
+    description: "Total systemic ability",
+    descriptionExcerpt: "<value>",
+    descriptionText: "<value>",
+    hasChildren: false,
+    id: 97258,
+    minimumRequiredTags: 90233,
+    name: "<value>",
+    navigateToFirstPostAfterRead: false,
+    notificationLevel: 497777,
+    numFeaturedTopics: 619183,
+    permission: 581082,
+    position: 382440,
+    postCount: 241557,
+    readRestricted: false,
+    showSubcategoryList: false,
+    slug: "<value>",
+    sortAscending: "<value>",
+    sortOrder: "<value>",
+    subcategoryIds: ["<value>"],
+    subcategoryListStyle: "<value>",
+    textColor: "<value>",
+    topicCount: 96562,
+    topicTemplate: "<value>",
+    topicUrl: "<value>",
+    topicsAllTime: 169025,
+    topicsDay: 984934,
+    topicsMonth: 859581,
+    topicsWeek: 896582,
+    topicsYear: 58534,
+    uploadedBackground: "<value>",
+    uploadedBackgroundDark: "<value>",
+    uploadedLogo: "<value>",
+    uploadedLogoDark: "<value>",
+};
+```
 
 ## Fields
 

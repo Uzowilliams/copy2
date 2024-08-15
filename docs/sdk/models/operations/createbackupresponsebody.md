@@ -2,6 +2,15 @@
 
 success response
 
+## Example Usage
+
+```typescript
+import { CreateBackupResponseBody } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: CreateBackupResponseBody = {
+    success: "OK",
+};
+```
 
 ## Fields
 

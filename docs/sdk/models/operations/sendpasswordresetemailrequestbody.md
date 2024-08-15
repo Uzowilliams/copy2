@@ -1,5 +1,14 @@
 # SendPasswordResetEmailRequestBody
 
+## Example Usage
+
+```typescript
+import { SendPasswordResetEmailRequestBody } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: SendPasswordResetEmailRequestBody = {
+    login: "Lilyan_Welch20",
+};
+```
 
 ## Fields
 

@@ -1,12 +1,15 @@
 # Type
 
+## Example Usage
+
+```typescript
+import { Type } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: Type = "composer";
+```
 
 ## Values
 
-| Name                | Value               |
-| ------------------- | ------------------- |
-| `Avatar`            | avatar              |
-| `ProfileBackground` | profile_background  |
-| `CardBackground`    | card_background     |
-| `CustomEmoji`       | custom_emoji        |
-| `Composer`          | composer            |
+```typescript
+"avatar" | "profile_background" | "card_background" | "custom_emoji" | "composer"
+```

@@ -1,5 +1,46 @@
 # NotificationTypes
 
+## Example Usage
+
+```typescript
+import { NotificationTypes } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: NotificationTypes = {
+    bookmarkReminder: 910994,
+    chatGroupMention: 247399,
+    chatInvitation: 878493,
+    chatMention: 39615,
+    chatMessage: 434156,
+    codeReviewCommitApproved: 59944,
+    custom: 517612,
+    edited: 61078,
+    eventInvitation: 474668,
+    eventReminder: 907733,
+    grantedBadge: 184362,
+    groupMentioned: 739884,
+    groupMessageSummary: 434761,
+    invitedToPrivateMessage: 898063,
+    invitedToTopic: 187552,
+    inviteeAccepted: 672582,
+    liked: 715208,
+    likedConsolidated: 528940,
+    linked: 523006,
+    membershipRequestAccepted: 304446,
+    membershipRequestConsolidated: 320565,
+    mentioned: 997963,
+    movedPost: 3099,
+    postApproved: 362189,
+    posted: 597303,
+    privateMessage: 470649,
+    quoted: 649078,
+    reaction: 378245,
+    replied: 5189,
+    topicReminder: 979527,
+    votesReleased: 970222,
+    watchingCategoryOrTag: 174658,
+    watchingFirstPost: 663866,
+};
+```
 
 ## Fields
 

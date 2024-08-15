@@ -32,6 +32,40 @@ async function run() {
 run();
 ```
 
+
+### Standalone function
+
+The standalone function version of this method:
+
+```typescript
+import { SDKCore } from "@lukehagar/discoursejs/core.js";
+import { invitesCreateInvite } from "@lukehagar/discoursejs/funcs/invitesCreateInvite.js";
+
+// Use `SDKCore` for best tree-shaking performance.
+// You can create one instance of it to use across an application.
+const sdk = new SDKCore();
+
+async function run() {
+  const res = await invitesCreateInvite(sdk, "<value>", "<value>", {
+    email: "not-a-user-yet@example.com",
+    groupIds: "42,43",
+    groupNames: "foo,bar",
+    maxRedemptionsAllowed: 5,
+  });
+
+  if (!res.ok) {
+    throw res.error;
+  }
+
+  const { value: result } = res;
+
+  // Handle the result
+  console.log(result)
+}
+
+run();
+```
+
 ### Parameters
 
 | Parameter                                                                                                                                                                      | Type                                                                                                                                                                           | Required                                                                                                                                                                       | Description                                                                                                                                                                    |
@@ -66,6 +100,35 @@ const sdk = new SDK();
 
 async function run() {
   const result = await sdk.invites.inviteToTopic("<value>", "<value>", "<value>");
+
+  // Handle the result
+  console.log(result)
+}
+
+run();
+```
+
+
+### Standalone function
+
+The standalone function version of this method:
+
+```typescript
+import { SDKCore } from "@lukehagar/discoursejs/core.js";
+import { invitesInviteToTopic } from "@lukehagar/discoursejs/funcs/invitesInviteToTopic.js";
+
+// Use `SDKCore` for best tree-shaking performance.
+// You can create one instance of it to use across an application.
+const sdk = new SDKCore();
+
+async function run() {
+  const res = await invitesInviteToTopic(sdk, "<value>", "<value>", "<value>");
+
+  if (!res.ok) {
+    throw res.error;
+  }
+
+  const { value: result } = res;
 
   // Handle the result
   console.log(result)

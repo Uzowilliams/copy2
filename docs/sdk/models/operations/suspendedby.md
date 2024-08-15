@@ -1,5 +1,17 @@
 # SuspendedBy
 
+## Example Usage
+
+```typescript
+import { SuspendedBy } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: SuspendedBy = {
+    avatarTemplate: "<value>",
+    id: 372679,
+    name: "<value>",
+    username: "Alberto_Lehner",
+};
+```
 
 ## Fields
 

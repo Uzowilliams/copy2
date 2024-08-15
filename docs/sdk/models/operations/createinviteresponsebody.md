@@ -2,6 +2,25 @@
 
 success response
 
+## Example Usage
+
+```typescript
+import { CreateInviteResponseBody } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: CreateInviteResponseBody = {
+    createdAt: "2021-01-01T12:00:00.000Z",
+    customMessage: "Hello world!",
+    email: "not-a-user-yet@example.com",
+    emailed: false,
+    expired: false,
+    expiresAt: "2021-02-01T12:00:00.000Z",
+    groups: ["<value>"],
+    id: 42,
+    link: "http://example.com/invites/9045fd767efe201ca60c6658bcf14158",
+    topics: ["<value>"],
+    updatedAt: "2021-01-01T12:00:00.000Z",
+};
+```
 
 ## Fields
 

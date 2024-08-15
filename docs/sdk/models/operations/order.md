@@ -1,14 +1,15 @@
 # Order
 
+## Example Usage
+
+```typescript
+import { Order } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: Order = "topics_entered";
+```
 
 ## Values
 
-| Name            | Value           |
-| --------------- | --------------- |
-| `LikesReceived` | likes_received  |
-| `LikesGiven`    | likes_given     |
-| `TopicCount`    | topic_count     |
-| `PostCount`     | post_count      |
-| `TopicsEntered` | topics_entered  |
-| `PostsRead`     | posts_read      |
-| `DaysVisited`   | days_visited    |
+```typescript
+"likes_received" | "likes_given" | "topic_count" | "post_count" | "topics_entered" | "posts_read" | "days_visited"
+```

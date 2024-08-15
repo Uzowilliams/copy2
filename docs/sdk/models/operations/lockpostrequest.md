@@ -1,5 +1,16 @@
 # LockPostRequest
 
+## Example Usage
+
+```typescript
+import { LockPostRequest } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: LockPostRequest = {
+    apiKey: "<value>",
+    apiUsername: "<value>",
+    id: "<id>",
+};
+```
 
 ## Fields
 

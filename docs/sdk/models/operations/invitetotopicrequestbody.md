@@ -1,5 +1,12 @@
 # InviteToTopicRequestBody
 
+## Example Usage
+
+```typescript
+import { InviteToTopicRequestBody } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: InviteToTopicRequestBody = {};
+```
 
 ## Fields
 

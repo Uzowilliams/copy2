@@ -1,5 +1,12 @@
 # GetTagTags
 
+## Example Usage
+
+```typescript
+import { GetTagTags } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: GetTagTags = {};
+```
 
 ## Fields
 

@@ -1,5 +1,12 @@
 # PerformPostActionActionsSummary
 
+## Example Usage
+
+```typescript
+import { PerformPostActionActionsSummary } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: PerformPostActionActionsSummary = {};
+```
 
 ## Fields
 

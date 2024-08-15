@@ -1,18 +1,15 @@
 # QueryParamOrder
 
+## Example Usage
+
+```typescript
+import { QueryParamOrder } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: QueryParamOrder = "username";
+```
 
 ## Values
 
-| Name           | Value          |
-| -------------- | -------------- |
-| `Created`      | created        |
-| `LastEmailed`  | last_emailed   |
-| `Seen`         | seen           |
-| `Username`     | username       |
-| `Email`        | email          |
-| `TrustLevel`   | trust_level    |
-| `DaysVisited`  | days_visited   |
-| `PostsRead`    | posts_read     |
-| `TopicsViewed` | topics_viewed  |
-| `Posts`        | posts          |
-| `ReadTime`     | read_time      |
+```typescript
+"created" | "last_emailed" | "seen" | "username" | "email" | "trust_level" | "days_visited" | "posts_read" | "topics_viewed" | "posts" | "read_time"
+```

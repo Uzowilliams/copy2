@@ -2,6 +2,15 @@
 
 success response
 
+## Example Usage
+
+```typescript
+import { UpdateGroupResponseBody } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: UpdateGroupResponseBody = {
+    success: "OK",
+};
+```
 
 ## Fields
 

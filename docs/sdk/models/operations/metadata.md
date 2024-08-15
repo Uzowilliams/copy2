@@ -1,5 +1,12 @@
 # Metadata
 
+## Example Usage
+
+```typescript
+import { Metadata } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: Metadata = {};
+```
 
 ## Fields
 

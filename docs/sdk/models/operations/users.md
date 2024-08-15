@@ -1,5 +1,17 @@
 # Users
 
+## Example Usage
+
+```typescript
+import { Users } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: Users = {
+    avatarTemplate: "<value>",
+    id: 665678,
+    name: "<value>",
+    username: "Lori_Bartell10",
+};
+```
 
 ## Fields
 

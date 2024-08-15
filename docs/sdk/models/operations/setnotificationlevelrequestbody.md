@@ -1,5 +1,14 @@
 # SetNotificationLevelRequestBody
 
+## Example Usage
+
+```typescript
+import { SetNotificationLevelRequestBody } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: SetNotificationLevelRequestBody = {
+    notificationLevel: "2",
+};
+```
 
 ## Fields
 

@@ -1,13 +1,15 @@
 # Flag
 
+## Example Usage
+
+```typescript
+import { Flag } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: Flag = "active";
+```
 
 ## Values
 
-| Name        | Value       |
-| ----------- | ----------- |
-| `Active`    | active      |
-| `New`       | new         |
-| `Staff`     | staff       |
-| `Suspended` | suspended   |
-| `Blocked`   | blocked     |
-| `Suspect`   | suspect     |
+```typescript
+"active" | "new" | "staff" | "suspended" | "blocked" | "suspect"
+```

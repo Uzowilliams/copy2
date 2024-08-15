@@ -1,5 +1,73 @@
 # UpdateCategoryCategory
 
+## Example Usage
+
+```typescript
+import { UpdateCategoryCategory } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: UpdateCategoryCategory = {
+    allTopicsWiki: false,
+    allowBadges: false,
+    allowUnlimitedOwnerEditsOnFirstPost: false,
+    autoCloseBasedOnLastPost: false,
+    autoCloseHours: "<value>",
+    availableGroups: ["<value>"],
+    canDelete: false,
+    canEdit: false,
+    color: "red",
+    customFields: {},
+    defaultListFilter: "<value>",
+    defaultSlowModeSeconds: "<value>",
+    defaultTopPeriod: "<value>",
+    defaultView: "<value>",
+    description: "Switchable incremental product",
+    descriptionExcerpt: "<value>",
+    descriptionText: "<value>",
+    emailIn: "<value>",
+    emailInAllowStrangers: false,
+    formTemplateIds: ["<value>"],
+    groupPermissions: [
+        {
+            groupName: "<value>",
+            permissionType: 842777,
+        },
+    ],
+    hasChildren: false,
+    id: 720528,
+    mailinglistMirror: false,
+    minimumRequiredTags: 373216,
+    name: "<value>",
+    navigateToFirstPostAfterRead: false,
+    notificationLevel: 633415,
+    numFeaturedTopics: 222864,
+    permission: 307376,
+    position: 80532,
+    postCount: 537279,
+    readOnlyBanner: "<value>",
+    readRestricted: false,
+    requiredTagGroups: [
+        {
+            minCount: 85311,
+            name: "<value>",
+        },
+    ],
+    searchPriority: 274575,
+    showSubcategoryList: false,
+    slug: "<value>",
+    sortAscending: "<value>",
+    sortOrder: "<value>",
+    subcategoryListStyle: "<value>",
+    textColor: "<value>",
+    topicCount: 221396,
+    topicFeaturedLinkAllowed: false,
+    topicTemplate: "<value>",
+    topicUrl: "<value>",
+    uploadedBackground: "<value>",
+    uploadedBackgroundDark: "<value>",
+    uploadedLogo: "<value>",
+    uploadedLogoDark: "<value>",
+};
+```
 
 ## Fields
 

@@ -1,5 +1,12 @@
 # UpdateTagGroupRequestBody
 
+## Example Usage
+
+```typescript
+import { UpdateTagGroupRequestBody } from "@lukehagar/discoursejs/sdk/models/operations";
+
+let value: UpdateTagGroupRequestBody = {};
+```
 
 ## Fields
 
