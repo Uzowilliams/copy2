@@ -70,7 +70,7 @@ export const CreateInviteRequestBody$inboundSchema: z.ZodType<
         group_ids: z.string().optional(),
         group_names: z.string().optional(),
         max_redemptions_allowed: z.number().int().default(1),
-        skip_email: z.boolean().default(false),
+        skip_email: z.boolean(),
         topic_id: z.number().int().optional(),
     })
     .transform((v) => {
