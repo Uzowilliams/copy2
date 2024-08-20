@@ -1,6 +1,6 @@
 {
   "name": "@lukehagar/discoursejs",
-  "version": "0.6.3",
+  "version": "0.7.0",
   "author": "LukeHagar",
   "main": "./index.js",
   "sideEffects": false,
