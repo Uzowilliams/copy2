@@ -1,6 +1,5 @@
 # SDK
 
-
 ## Overview
 
 Discourse API Documentation: This page contains the documentation on how to use Discourse through API calls.
@@ -59,7 +58,3 @@ curl -X POST "http://127.0.0.1:3000/categories" \
 
 If an endpoint accepts a boolean be sure to specify it as a lowercase
 `true` or `false` value unless noted otherwise.
-
-
-### Available Operations
-

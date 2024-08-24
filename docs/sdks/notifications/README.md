@@ -1,6 +1,8 @@
 # Notifications
 (*notifications*)
 
+## Overview
+
 ### Available Operations
 
 * [getNotifications](#getnotifications) - Get the notifications that belong to the current user
@@ -26,7 +28,6 @@ async function run() {
 
 run();
 ```
-
 
 ### Standalone function
 
@@ -64,15 +65,16 @@ run();
 | `options.fetchOptions`                                                                                                                                                         | [RequestInit](https://developer.mozilla.org/en-US/docs/Web/API/Request/Request#options)                                                                                        | :heavy_minus_sign:                                                                                                                                                             | Options that are passed to the underlying HTTP request. This can be used to inject extra headers for examples. All `Request` options, except `method` and `body`, are allowed. |
 | `options.retries`                                                                                                                                                              | [RetryConfig](../../lib/utils/retryconfig.md)                                                                                                                                  | :heavy_minus_sign:                                                                                                                                                             | Enables retrying HTTP requests under certain failure conditions.                                                                                                               |
 
-
 ### Response
 
 **Promise\<[operations.GetNotificationsResponseBody](../../sdk/models/operations/getnotificationsresponsebody.md)\>**
+
 ### Errors
 
 | Error Object    | Status Code     | Content Type    |
 | --------------- | --------------- | --------------- |
 | errors.SDKError | 4xx-5xx         | */*             |
+
 
 ## markNotificationsAsRead
 
@@ -94,7 +96,6 @@ async function run() {
 
 run();
 ```
-
 
 ### Standalone function
 
@@ -133,10 +134,10 @@ run();
 | `options.fetchOptions`                                                                                                                                                         | [RequestInit](https://developer.mozilla.org/en-US/docs/Web/API/Request/Request#options)                                                                                        | :heavy_minus_sign:                                                                                                                                                             | Options that are passed to the underlying HTTP request. This can be used to inject extra headers for examples. All `Request` options, except `method` and `body`, are allowed. |
 | `options.retries`                                                                                                                                                              | [RetryConfig](../../lib/utils/retryconfig.md)                                                                                                                                  | :heavy_minus_sign:                                                                                                                                                             | Enables retrying HTTP requests under certain failure conditions.                                                                                                               |
 
-
 ### Response
 
 **Promise\<[operations.MarkNotificationsAsReadResponseBody](../../sdk/models/operations/marknotificationsasreadresponsebody.md)\>**
+
 ### Errors
 
 | Error Object    | Status Code     | Content Type    |
