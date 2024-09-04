@@ -516,7 +516,7 @@ import { SDK } from "@lukehagar/discoursejs";
 const sdk = new SDK();
 
 async function run() {
-  const result = await sdk.admin.refreshGravatar("<value>");
+  const result = await sdk.admin.refreshGravatar("Frances39");
 
   // Handle the result
   console.log(result)
@@ -538,7 +538,7 @@ import { adminRefreshGravatar } from "@lukehagar/discoursejs/funcs/adminRefreshG
 const sdk = new SDKCore();
 
 async function run() {
-  const res = await adminRefreshGravatar(sdk, "<value>");
+  const res = await adminRefreshGravatar(sdk, "Jody_Pfannerstill");
 
   if (!res.ok) {
     throw res.error;

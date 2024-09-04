@@ -101,7 +101,7 @@ import { SDK } from "@lukehagar/discoursejs";
 const sdk = new SDK();
 
 async function run() {
-  const result = await sdk.invites.inviteToTopic("<value>", "<value>", "<value>");
+  const result = await sdk.invites.inviteToTopic("<value>", "<value>", "<id>");
 
   // Handle the result
   console.log(result)
@@ -123,7 +123,7 @@ import { invitesInviteToTopic } from "@lukehagar/discoursejs/funcs/invitesInvite
 const sdk = new SDKCore();
 
 async function run() {
-  const res = await invitesInviteToTopic(sdk, "<value>", "<value>", "<value>");
+  const res = await invitesInviteToTopic(sdk, "<value>", "<value>", "<id>");
 
   if (!res.ok) {
     throw res.error;

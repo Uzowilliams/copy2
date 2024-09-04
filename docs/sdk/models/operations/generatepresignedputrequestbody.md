@@ -8,7 +8,7 @@ import { GeneratePresignedPutRequestBody } from "@lukehagar/discoursejs/sdk/mode
 let value: GeneratePresignedPutRequestBody = {
     fileName: "IMG_2021.jpeg",
     fileSize: 4096,
-    type: "composer",
+    type: "profile_background",
 };
 ```
 

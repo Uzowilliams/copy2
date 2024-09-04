@@ -5,9 +5,7 @@
 ```typescript
 import { CreateUploadRequestBody } from "@lukehagar/discoursejs/sdk/models/operations";
 
-let value: CreateUploadRequestBody = {
-    type: "custom_emoji",
-};
+// No examples available for this model
 ```
 
 ## Fields

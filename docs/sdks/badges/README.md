@@ -227,7 +227,7 @@ import { SDK } from "@lukehagar/discoursejs";
 const sdk = new SDK();
 
 async function run() {
-  const result = await sdk.badges.listUserBadges("<value>");
+  const result = await sdk.badges.listUserBadges("Faustino28");
 
   // Handle the result
   console.log(result)
@@ -249,7 +249,7 @@ import { badgesListUserBadges } from "@lukehagar/discoursejs/funcs/badgesListUse
 const sdk = new SDKCore();
 
 async function run() {
-  const res = await badgesListUserBadges(sdk, "<value>");
+  const res = await badgesListUserBadges(sdk, "Eloisa_Davis");
 
   if (!res.ok) {
     throw res.error;

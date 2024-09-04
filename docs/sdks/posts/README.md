@@ -180,7 +180,7 @@ import { SDK } from "@lukehagar/discoursejs";
 const sdk = new SDK();
 
 async function run() {
-  const result = await sdk.posts.getPost("<value>");
+  const result = await sdk.posts.getPost("<id>");
 
   // Handle the result
   console.log(result)
@@ -202,7 +202,7 @@ import { postsGetPost } from "@lukehagar/discoursejs/funcs/postsGetPost.js";
 const sdk = new SDKCore();
 
 async function run() {
-  const res = await postsGetPost(sdk, "<value>");
+  const res = await postsGetPost(sdk, "<id>");
 
   if (!res.ok) {
     throw res.error;
@@ -320,7 +320,7 @@ import { SDK } from "@lukehagar/discoursejs";
 const sdk = new SDK();
 
 async function run() {
-  const result = await sdk.posts.lockPost("<value>", "<value>", "<value>");
+  const result = await sdk.posts.lockPost("<value>", "<value>", "<id>");
 
   // Handle the result
   console.log(result)
@@ -342,7 +342,7 @@ import { postsLockPost } from "@lukehagar/discoursejs/funcs/postsLockPost.js";
 const sdk = new SDKCore();
 
 async function run() {
-  const res = await postsLockPost(sdk, "<value>", "<value>", "<value>");
+  const res = await postsLockPost(sdk, "<value>", "<value>", "<id>");
 
   if (!res.ok) {
     throw res.error;
@@ -463,7 +463,7 @@ import { SDK } from "@lukehagar/discoursejs";
 const sdk = new SDK();
 
 async function run() {
-  const result = await sdk.posts.postReplies("<value>");
+  const result = await sdk.posts.postReplies("<id>");
 
   // Handle the result
   console.log(result)
@@ -485,7 +485,7 @@ import { postsPostReplies } from "@lukehagar/discoursejs/funcs/postsPostReplies.
 const sdk = new SDKCore();
 
 async function run() {
-  const res = await postsPostReplies(sdk, "<value>");
+  const res = await postsPostReplies(sdk, "<id>");
 
   if (!res.ok) {
     throw res.error;
@@ -532,7 +532,7 @@ import { SDK } from "@lukehagar/discoursejs";
 const sdk = new SDK();
 
 async function run() {
-  const result = await sdk.posts.updatePost("<value>");
+  const result = await sdk.posts.updatePost("<id>");
 
   // Handle the result
   console.log(result)
@@ -554,7 +554,7 @@ import { postsUpdatePost } from "@lukehagar/discoursejs/funcs/postsUpdatePost.js
 const sdk = new SDKCore();
 
 async function run() {
-  const res = await postsUpdatePost(sdk, "<value>");
+  const res = await postsUpdatePost(sdk, "<id>");
 
   if (!res.ok) {
     throw res.error;

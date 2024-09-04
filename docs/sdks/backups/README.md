@@ -91,7 +91,7 @@ import { SDK } from "@lukehagar/discoursejs";
 const sdk = new SDK();
 
 async function run() {
-  await sdk.backups.downloadBackup("<value>", "<value>");
+  await sdk.backups.downloadBackup("your_file_here", "<value>");
 
   
 }
@@ -112,7 +112,7 @@ import { backupsDownloadBackup } from "@lukehagar/discoursejs/funcs/backupsDownl
 const sdk = new SDKCore();
 
 async function run() {
-  const res = await backupsDownloadBackup(sdk, "<value>", "<value>");
+  const res = await backupsDownloadBackup(sdk, "your_file_here", "<value>");
 
   if (!res.ok) {
     throw res.error;
@@ -227,7 +227,7 @@ import { SDK } from "@lukehagar/discoursejs";
 const sdk = new SDK();
 
 async function run() {
-  await sdk.backups.sendDownloadBackupEmail("<value>");
+  await sdk.backups.sendDownloadBackupEmail("your_file_here");
 
   
 }
@@ -248,7 +248,7 @@ import { backupsSendDownloadBackupEmail } from "@lukehagar/discoursejs/funcs/bac
 const sdk = new SDKCore();
 
 async function run() {
-  const res = await backupsSendDownloadBackupEmail(sdk, "<value>");
+  const res = await backupsSendDownloadBackupEmail(sdk, "your_file_here");
 
   if (!res.ok) {
     throw res.error;

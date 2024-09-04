@@ -98,7 +98,7 @@ import { SDK } from "@lukehagar/discoursejs";
 const sdk = new SDK();
 
 async function run() {
-  const result = await sdk.privateMessages.getUserSentPrivateMessages("<value>");
+  const result = await sdk.privateMessages.getUserSentPrivateMessages("Nathanial38");
 
   // Handle the result
   console.log(result)
@@ -120,7 +120,7 @@ import { privateMessagesGetUserSentPrivateMessages } from "@lukehagar/discoursej
 const sdk = new SDKCore();
 
 async function run() {
-  const res = await privateMessagesGetUserSentPrivateMessages(sdk, "<value>");
+  const res = await privateMessagesGetUserSentPrivateMessages(sdk, "Ebba.Grant22");
 
   if (!res.ok) {
     throw res.error;
@@ -167,7 +167,7 @@ import { SDK } from "@lukehagar/discoursejs";
 const sdk = new SDK();
 
 async function run() {
-  const result = await sdk.privateMessages.listUserPrivateMessages("<value>");
+  const result = await sdk.privateMessages.listUserPrivateMessages("Liliana_West71");
 
   // Handle the result
   console.log(result)
@@ -189,7 +189,7 @@ import { privateMessagesListUserPrivateMessages } from "@lukehagar/discoursejs/f
 const sdk = new SDKCore();
 
 async function run() {
-  const res = await privateMessagesListUserPrivateMessages(sdk, "<value>");
+  const res = await privateMessagesListUserPrivateMessages(sdk, "Bonnie55");
 
   if (!res.ok) {
     throw res.error;

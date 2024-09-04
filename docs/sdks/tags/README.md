@@ -162,7 +162,7 @@ import { SDK } from "@lukehagar/discoursejs";
 const sdk = new SDK();
 
 async function run() {
-  const result = await sdk.tags.getTagGroup("<value>");
+  const result = await sdk.tags.getTagGroup("<id>");
 
   // Handle the result
   console.log(result)
@@ -184,7 +184,7 @@ import { tagsGetTagGroup } from "@lukehagar/discoursejs/funcs/tagsGetTagGroup.js
 const sdk = new SDKCore();
 
 async function run() {
-  const res = await tagsGetTagGroup(sdk, "<value>");
+  const res = await tagsGetTagGroup(sdk, "<id>");
 
   if (!res.ok) {
     throw res.error;
@@ -367,7 +367,7 @@ import { SDK } from "@lukehagar/discoursejs";
 const sdk = new SDK();
 
 async function run() {
-  const result = await sdk.tags.updateTagGroup("<value>");
+  const result = await sdk.tags.updateTagGroup("<id>");
 
   // Handle the result
   console.log(result)
@@ -389,7 +389,7 @@ import { tagsUpdateTagGroup } from "@lukehagar/discoursejs/funcs/tagsUpdateTagGr
 const sdk = new SDKCore();
 
 async function run() {
-  const res = await tagsUpdateTagGroup(sdk, "<value>");
+  const res = await tagsUpdateTagGroup(sdk, "<id>");
 
   if (!res.ok) {
     throw res.error;

@@ -31,7 +31,7 @@ import { SDK } from "@lukehagar/discoursejs";
 const sdk = new SDK();
 
 async function run() {
-  await sdk.topics.bookmarkTopic("<value>", "<value>", "<value>");
+  await sdk.topics.bookmarkTopic("<value>", "<value>", "<id>");
 
   
 }
@@ -52,7 +52,7 @@ import { topicsBookmarkTopic } from "@lukehagar/discoursejs/funcs/topicsBookmark
 const sdk = new SDKCore();
 
 async function run() {
-  const res = await topicsBookmarkTopic(sdk, "<value>", "<value>", "<value>");
+  const res = await topicsBookmarkTopic(sdk, "<value>", "<value>", "<id>");
 
   if (!res.ok) {
     throw res.error;
@@ -177,7 +177,7 @@ import { SDK } from "@lukehagar/discoursejs";
 const sdk = new SDK();
 
 async function run() {
-  const result = await sdk.topics.createTopicTimer("<value>", "<value>", "<value>", {
+  const result = await sdk.topics.createTopicTimer("<value>", "<value>", "<id>", {
     time: "",
   });
 
@@ -201,7 +201,7 @@ import { topicsCreateTopicTimer } from "@lukehagar/discoursejs/funcs/topicsCreat
 const sdk = new SDKCore();
 
 async function run() {
-  const res = await topicsCreateTopicTimer(sdk, "<value>", "<value>", "<value>", {
+  const res = await topicsCreateTopicTimer(sdk, "<value>", "<value>", "<id>", {
     time: "",
   });
 
@@ -253,7 +253,7 @@ import { SDK } from "@lukehagar/discoursejs";
 const sdk = new SDK();
 
 async function run() {
-  const result = await sdk.topics.getTopic("<value>", "<value>", "<value>");
+  const result = await sdk.topics.getTopic("<value>", "<value>", "<id>");
 
   // Handle the result
   console.log(result)
@@ -275,7 +275,7 @@ import { topicsGetTopic } from "@lukehagar/discoursejs/funcs/topicsGetTopic.js";
 const sdk = new SDKCore();
 
 async function run() {
-  const res = await topicsGetTopic(sdk, "<value>", "<value>", "<value>");
+  const res = await topicsGetTopic(sdk, "<value>", "<value>", "<id>");
 
   if (!res.ok) {
     throw res.error;
@@ -391,7 +391,7 @@ import { SDK } from "@lukehagar/discoursejs";
 const sdk = new SDK();
 
 async function run() {
-  const result = await sdk.topics.inviteToTopic("<value>", "<value>", "<value>");
+  const result = await sdk.topics.inviteToTopic("<value>", "<value>", "<id>");
 
   // Handle the result
   console.log(result)
@@ -413,7 +413,7 @@ import { topicsInviteToTopic } from "@lukehagar/discoursejs/funcs/topicsInviteTo
 const sdk = new SDKCore();
 
 async function run() {
-  const res = await topicsInviteToTopic(sdk, "<value>", "<value>", "<value>");
+  const res = await topicsInviteToTopic(sdk, "<value>", "<value>", "<id>");
 
   if (!res.ok) {
     throw res.error;
@@ -606,7 +606,7 @@ import { SDK } from "@lukehagar/discoursejs";
 const sdk = new SDK();
 
 async function run() {
-  await sdk.topics.removeTopic("<value>", "<value>", "<value>");
+  await sdk.topics.removeTopic("<value>", "<value>", "<id>");
 
   
 }
@@ -627,7 +627,7 @@ import { topicsRemoveTopic } from "@lukehagar/discoursejs/funcs/topicsRemoveTopi
 const sdk = new SDKCore();
 
 async function run() {
-  const res = await topicsRemoveTopic(sdk, "<value>", "<value>", "<value>");
+  const res = await topicsRemoveTopic(sdk, "<value>", "<value>", "<id>");
 
   if (!res.ok) {
     throw res.error;
@@ -675,7 +675,7 @@ import { SDK } from "@lukehagar/discoursejs";
 const sdk = new SDK();
 
 async function run() {
-  const result = await sdk.topics.setNotificationLevel("<value>", "<value>", "<value>");
+  const result = await sdk.topics.setNotificationLevel("<value>", "<value>", "<id>");
 
   // Handle the result
   console.log(result)
@@ -697,7 +697,7 @@ import { topicsSetNotificationLevel } from "@lukehagar/discoursejs/funcs/topicsS
 const sdk = new SDKCore();
 
 async function run() {
-  const res = await topicsSetNotificationLevel(sdk, "<value>", "<value>", "<value>");
+  const res = await topicsSetNotificationLevel(sdk, "<value>", "<value>", "<id>");
 
   if (!res.ok) {
     throw res.error;
@@ -747,7 +747,7 @@ import { SDK } from "@lukehagar/discoursejs";
 const sdk = new SDK();
 
 async function run() {
-  const result = await sdk.topics.updateTopic("<value>", "<value>", "<value>");
+  const result = await sdk.topics.updateTopic("<value>", "<value>", "<id>");
 
   // Handle the result
   console.log(result)
@@ -769,7 +769,7 @@ import { topicsUpdateTopic } from "@lukehagar/discoursejs/funcs/topicsUpdateTopi
 const sdk = new SDKCore();
 
 async function run() {
-  const res = await topicsUpdateTopic(sdk, "<value>", "<value>", "<value>");
+  const res = await topicsUpdateTopic(sdk, "<value>", "<value>", "<id>");
 
   if (!res.ok) {
     throw res.error;
@@ -819,7 +819,7 @@ import { SDK } from "@lukehagar/discoursejs";
 const sdk = new SDK();
 
 async function run() {
-  const result = await sdk.topics.updateTopicStatus("<value>", "<value>", "<value>", {
+  const result = await sdk.topics.updateTopicStatus("<value>", "<value>", "<id>", {
     enabled: "false",
     status: "pinned_globally",
     until: "2030-12-31",
@@ -845,7 +845,7 @@ import { topicsUpdateTopicStatus } from "@lukehagar/discoursejs/funcs/topicsUpda
 const sdk = new SDKCore();
 
 async function run() {
-  const res = await topicsUpdateTopicStatus(sdk, "<value>", "<value>", "<value>", {
+  const res = await topicsUpdateTopicStatus(sdk, "<value>", "<value>", "<id>", {
     enabled: "true",
     status: "visible",
     until: "2030-12-31",
@@ -899,7 +899,7 @@ import { SDK } from "@lukehagar/discoursejs";
 const sdk = new SDK();
 
 async function run() {
-  const result = await sdk.topics.updateTopicTimestamp("<value>", "<value>", "<value>", {
+  const result = await sdk.topics.updateTopicTimestamp("<value>", "<value>", "<id>", {
     timestamp: "1594291380",
   });
 
@@ -923,7 +923,7 @@ import { topicsUpdateTopicTimestamp } from "@lukehagar/discoursejs/funcs/topicsU
 const sdk = new SDKCore();
 
 async function run() {
-  const res = await topicsUpdateTopicTimestamp(sdk, "<value>", "<value>", "<value>", {
+  const res = await topicsUpdateTopicTimestamp(sdk, "<value>", "<value>", "<id>", {
     timestamp: "1594291380",
   });
 

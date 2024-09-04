@@ -5,7 +5,7 @@
 ```typescript
 import { Type } from "@lukehagar/discoursejs/sdk/models/operations";
 
-let value: Type = "composer";
+let value: Type = "profile_background";
 ```
 
 ## Values

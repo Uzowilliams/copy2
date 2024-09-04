@@ -600,7 +600,7 @@ import { SDK } from "@lukehagar/discoursejs";
 const sdk = new SDK();
 
 async function run() {
-  const result = await sdk.users.getUser("<value>", "<value>", "<value>");
+  const result = await sdk.users.getUser("<value>", "<value>", "Ned56");
 
   // Handle the result
   console.log(result)
@@ -622,7 +622,7 @@ import { usersGetUser } from "@lukehagar/discoursejs/funcs/usersGetUser.js";
 const sdk = new SDKCore();
 
 async function run() {
-  const res = await usersGetUser(sdk, "<value>", "<value>", "<value>");
+  const res = await usersGetUser(sdk, "<value>", "<value>", "Herta61");
 
   if (!res.ok) {
     throw res.error;
@@ -671,7 +671,7 @@ import { SDK } from "@lukehagar/discoursejs";
 const sdk = new SDK();
 
 async function run() {
-  const result = await sdk.users.getUserEmails("<value>");
+  const result = await sdk.users.getUserEmails("Winifred_OConner64");
 
   // Handle the result
   console.log(result)
@@ -693,7 +693,7 @@ import { usersGetUserEmails } from "@lukehagar/discoursejs/funcs/usersGetUserEma
 const sdk = new SDKCore();
 
 async function run() {
-  const res = await usersGetUserEmails(sdk, "<value>");
+  const res = await usersGetUserEmails(sdk, "Blair_Luettgen46");
 
   if (!res.ok) {
     throw res.error;
@@ -883,7 +883,7 @@ import { SDK } from "@lukehagar/discoursejs";
 const sdk = new SDK();
 
 async function run() {
-  const result = await sdk.users.listUserActions("<value>", 620550, "<value>");
+  const result = await sdk.users.listUserActions("<value>", 620550, "Deondre75");
 
   // Handle the result
   console.log(result)
@@ -905,7 +905,7 @@ import { usersListUserActions } from "@lukehagar/discoursejs/funcs/usersListUser
 const sdk = new SDKCore();
 
 async function run() {
-  const res = await usersListUserActions(sdk, "<value>", 257087, "<value>");
+  const res = await usersListUserActions(sdk, "<value>", 13410, "Augustus_Wuckert48");
 
   if (!res.ok) {
     throw res.error;
@@ -954,7 +954,7 @@ import { SDK } from "@lukehagar/discoursejs";
 const sdk = new SDK();
 
 async function run() {
-  const result = await sdk.users.listUserBadges("<value>");
+  const result = await sdk.users.listUserBadges("Faustino28");
 
   // Handle the result
   console.log(result)
@@ -976,7 +976,7 @@ import { usersListUserBadges } from "@lukehagar/discoursejs/funcs/usersListUserB
 const sdk = new SDKCore();
 
 async function run() {
-  const res = await usersListUserBadges(sdk, "<value>");
+  const res = await usersListUserBadges(sdk, "Eloisa_Davis");
 
   if (!res.ok) {
     throw res.error;
@@ -1164,7 +1164,7 @@ import { SDK } from "@lukehagar/discoursejs";
 const sdk = new SDK();
 
 async function run() {
-  const result = await sdk.users.refreshGravatar("<value>");
+  const result = await sdk.users.refreshGravatar("Frances39");
 
   // Handle the result
   console.log(result)
@@ -1186,7 +1186,7 @@ import { usersRefreshGravatar } from "@lukehagar/discoursejs/funcs/usersRefreshG
 const sdk = new SDKCore();
 
 async function run() {
-  const res = await usersRefreshGravatar(sdk, "<value>");
+  const res = await usersRefreshGravatar(sdk, "Jody_Pfannerstill");
 
   if (!res.ok) {
     throw res.error;
@@ -1456,7 +1456,7 @@ import { SDK } from "@lukehagar/discoursejs";
 const sdk = new SDK();
 
 async function run() {
-  const result = await sdk.users.updateAvatar("<value>");
+  const result = await sdk.users.updateAvatar("Kadin32");
 
   // Handle the result
   console.log(result)
@@ -1478,7 +1478,7 @@ import { usersUpdateAvatar } from "@lukehagar/discoursejs/funcs/usersUpdateAvata
 const sdk = new SDKCore();
 
 async function run() {
-  const res = await usersUpdateAvatar(sdk, "<value>");
+  const res = await usersUpdateAvatar(sdk, "Zion66");
 
   if (!res.ok) {
     throw res.error;
@@ -1526,7 +1526,7 @@ import { SDK } from "@lukehagar/discoursejs";
 const sdk = new SDK();
 
 async function run() {
-  await sdk.users.updateEmail("<value>");
+  await sdk.users.updateEmail("Hobart_Lakin34");
 
   
 }
@@ -1547,7 +1547,7 @@ import { usersUpdateEmail } from "@lukehagar/discoursejs/funcs/usersUpdateEmail.
 const sdk = new SDKCore();
 
 async function run() {
-  const res = await usersUpdateEmail(sdk, "<value>");
+  const res = await usersUpdateEmail(sdk, "Madalyn90");
 
   if (!res.ok) {
     throw res.error;
@@ -1594,7 +1594,7 @@ import { SDK } from "@lukehagar/discoursejs";
 const sdk = new SDK();
 
 async function run() {
-  const result = await sdk.users.updateUser("<value>", "<value>", "<value>");
+  const result = await sdk.users.updateUser("<value>", "<value>", "Dandre.Jast32");
 
   // Handle the result
   console.log(result)
@@ -1616,7 +1616,7 @@ import { usersUpdateUser } from "@lukehagar/discoursejs/funcs/usersUpdateUser.js
 const sdk = new SDKCore();
 
 async function run() {
-  const res = await usersUpdateUser(sdk, "<value>", "<value>", "<value>");
+  const res = await usersUpdateUser(sdk, "<value>", "<value>", "Cora.Gislason");
 
   if (!res.ok) {
     throw res.error;
@@ -1666,7 +1666,7 @@ import { SDK } from "@lukehagar/discoursejs";
 const sdk = new SDK();
 
 async function run() {
-  await sdk.users.updateUsername("<value>");
+  await sdk.users.updateUsername("Avis_Tremblay74");
 
   
 }
@@ -1687,7 +1687,7 @@ import { usersUpdateUsername } from "@lukehagar/discoursejs/funcs/usersUpdateUse
 const sdk = new SDKCore();
 
 async function run() {
-  const res = await usersUpdateUsername(sdk, "<value>");
+  const res = await usersUpdateUsername(sdk, "Taurean_Flatley");
 
   if (!res.ok) {
     throw res.error;
