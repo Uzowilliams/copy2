@@ -32,8 +32,6 @@ const sdk = new SDK();
 
 async function run() {
   await sdk.topics.bookmarkTopic("<value>", "<value>", "<id>");
-
-  
 }
 
 run();
@@ -105,7 +103,7 @@ async function run() {
     raw: "<value>",
     targetRecipients: "blake,sam",
   });
-
+  
   // Handle the result
   console.log(result)
 }
@@ -180,7 +178,7 @@ async function run() {
   const result = await sdk.topics.createTopicTimer("<value>", "<value>", "<id>", {
     time: "",
   });
-
+  
   // Handle the result
   console.log(result)
 }
@@ -254,7 +252,7 @@ const sdk = new SDK();
 
 async function run() {
   const result = await sdk.topics.getTopic("<value>", "<value>", "<id>");
-
+  
   // Handle the result
   console.log(result)
 }
@@ -325,8 +323,6 @@ const sdk = new SDK();
 
 async function run() {
   await sdk.topics.getTopicByExternalId("<value>");
-
-  
 }
 
 run();
@@ -392,7 +388,7 @@ const sdk = new SDK();
 
 async function run() {
   const result = await sdk.topics.inviteToTopic("<value>", "<value>", "<id>");
-
+  
   // Handle the result
   console.log(result)
 }
@@ -464,7 +460,7 @@ const sdk = new SDK();
 
 async function run() {
   const result = await sdk.topics.listLatestTopics("<value>", "<value>");
-
+  
   // Handle the result
   console.log(result)
 }
@@ -536,7 +532,7 @@ const sdk = new SDK();
 
 async function run() {
   const result = await sdk.topics.listTopTopics("<value>", "<value>");
-
+  
   // Handle the result
   console.log(result)
 }
@@ -607,8 +603,6 @@ const sdk = new SDK();
 
 async function run() {
   await sdk.topics.removeTopic("<value>", "<value>", "<id>");
-
-  
 }
 
 run();
@@ -676,7 +670,7 @@ const sdk = new SDK();
 
 async function run() {
   const result = await sdk.topics.setNotificationLevel("<value>", "<value>", "<id>");
-
+  
   // Handle the result
   console.log(result)
 }
@@ -748,7 +742,7 @@ const sdk = new SDK();
 
 async function run() {
   const result = await sdk.topics.updateTopic("<value>", "<value>", "<id>");
-
+  
   // Handle the result
   console.log(result)
 }
@@ -824,7 +818,7 @@ async function run() {
     status: "pinned_globally",
     until: "2030-12-31",
   });
-
+  
   // Handle the result
   console.log(result)
 }
@@ -902,7 +896,7 @@ async function run() {
   const result = await sdk.topics.updateTopicTimestamp("<value>", "<value>", "<id>", {
     timestamp: "1594291380",
   });
-
+  
   // Handle the result
   console.log(result)
 }

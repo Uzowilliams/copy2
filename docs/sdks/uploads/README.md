@@ -40,7 +40,7 @@ async function run() {
   const result = await sdk.uploads.abortMultipart({
     externalUploadIdentifier: "84x83tmxy398t3y._Q_z8CoJYVr69bE6D7f8J6Oo0434QquLFoYdGVerWFx9X5HDEI_TP_95c34n853495x35345394.d.ghQ",
   });
-
+  
   // Handle the result
   console.log(result)
 }
@@ -139,7 +139,7 @@ async function run() {
     ],
     uniqueIdentifier: "66e86218-80d9-4bda-b4d5-2b6def968705",
   });
-
+  
   // Handle the result
   console.log(result)
 }
@@ -237,7 +237,7 @@ async function run() {
     pasted: "true",
     uniqueIdentifier: "66e86218-80d9-4bda-b4d5-2b6def968705",
   });
-
+  
   // Handle the result
   console.log(result)
 }
@@ -337,7 +337,7 @@ async function run() {
     ],
     uniqueIdentifier: "66e86218-80d9-4bda-b4d5-2b6def968705",
   });
-
+  
   // Handle the result
   console.log(result)
 }
@@ -433,7 +433,7 @@ async function run() {
     fileSize: 4096,
     uploadType: "card_background",
   });
-
+  
   // Handle the result
   console.log(result)
 }
@@ -506,7 +506,7 @@ const sdk = new SDK();
 
 async function run() {
   const result = await sdk.uploads.createUpload();
-
+  
   // Handle the result
   console.log(result)
 }
@@ -599,7 +599,7 @@ async function run() {
     fileSize: 4096,
     type: "card_background",
   });
-
+  
   // Handle the result
   console.log(result)
 }

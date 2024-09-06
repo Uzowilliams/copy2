@@ -21,7 +21,7 @@ const sdk = new SDK();
 
 async function run() {
   const result = await sdk.notifications.getNotifications();
-
+  
   // Handle the result
   console.log(result)
 }
@@ -89,7 +89,7 @@ const sdk = new SDK();
 
 async function run() {
   const result = await sdk.notifications.markNotificationsAsRead();
-
+  
   // Handle the result
   console.log(result)
 }

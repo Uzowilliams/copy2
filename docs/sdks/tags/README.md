@@ -25,7 +25,7 @@ const sdk = new SDK();
 
 async function run() {
   const result = await sdk.tags.createTagGroup();
-
+  
   // Handle the result
   console.log(result)
 }
@@ -94,7 +94,7 @@ const sdk = new SDK();
 
 async function run() {
   const result = await sdk.tags.getTag("<value>");
-
+  
   // Handle the result
   console.log(result)
 }
@@ -163,7 +163,7 @@ const sdk = new SDK();
 
 async function run() {
   const result = await sdk.tags.getTagGroup("<id>");
-
+  
   // Handle the result
   console.log(result)
 }
@@ -232,7 +232,7 @@ const sdk = new SDK();
 
 async function run() {
   const result = await sdk.tags.listTagGroups();
-
+  
   // Handle the result
   console.log(result)
 }
@@ -300,7 +300,7 @@ const sdk = new SDK();
 
 async function run() {
   const result = await sdk.tags.listTags();
-
+  
   // Handle the result
   console.log(result)
 }
@@ -368,7 +368,7 @@ const sdk = new SDK();
 
 async function run() {
   const result = await sdk.tags.updateTagGroup("<id>");
-
+  
   // Handle the result
   console.log(result)
 }

@@ -26,7 +26,7 @@ async function run() {
     groupNames: "foo,bar",
     maxRedemptionsAllowed: 5,
   });
-
+  
   // Handle the result
   console.log(result)
 }
@@ -102,7 +102,7 @@ const sdk = new SDK();
 
 async function run() {
   const result = await sdk.invites.inviteToTopic("<value>", "<value>", "<id>");
-
+  
   // Handle the result
   console.log(result)
 }

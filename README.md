@@ -310,6 +310,9 @@ async function run() {
     let result;
     try {
         result = await sdk.backups.createBackup();
+
+        // Handle the result
+        console.log(result);
     } catch (err) {
         switch (true) {
             case err instanceof SDKValidationError: {
@@ -324,9 +327,6 @@ async function run() {
             }
         }
     }
-
-    // Handle the result
-    console.log(result);
 }
 
 run();

@@ -20,7 +20,7 @@ const sdk = new SDK();
 
 async function run() {
   const result = await sdk.site.getSite();
-
+  
   // Handle the result
   console.log(result)
 }

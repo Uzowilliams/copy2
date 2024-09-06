@@ -32,7 +32,7 @@ async function run() {
     },
     textColor: "f0fcfd",
   });
-
+  
   // Handle the result
   console.log(result)
 }
@@ -108,7 +108,7 @@ const sdk = new SDK();
 
 async function run() {
   const result = await sdk.categories.getCategory(39147);
-
+  
   // Handle the result
   console.log(result)
 }
@@ -177,7 +177,7 @@ const sdk = new SDK();
 
 async function run() {
   const result = await sdk.categories.getSite();
-
+  
   // Handle the result
   console.log(result)
 }
@@ -245,7 +245,7 @@ const sdk = new SDK();
 
 async function run() {
   const result = await sdk.categories.listCategories();
-
+  
   // Handle the result
   console.log(result)
 }
@@ -314,7 +314,7 @@ const sdk = new SDK();
 
 async function run() {
   const result = await sdk.categories.listCategoryTopics(394133, "<value>");
-
+  
   // Handle the result
   console.log(result)
 }
@@ -391,7 +391,7 @@ async function run() {
     },
     textColor: "f0fcfd",
   });
-
+  
   // Handle the result
   console.log(result)
 }

@@ -20,7 +20,7 @@ const sdk = new SDK();
 
 async function run() {
   const result = await sdk.search.search(1, "api @blake #support tags:api after:2021-06-04 in:unseen in:open order:latest_topic");
-
+  
   // Handle the result
   console.log(result)
 }

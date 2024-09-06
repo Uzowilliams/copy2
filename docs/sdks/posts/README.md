@@ -31,7 +31,7 @@ async function run() {
     raw: "<value>",
     targetRecipients: "blake,sam",
   });
-
+  
   // Handle the result
   console.log(result)
 }
@@ -106,8 +106,6 @@ async function run() {
   await sdk.posts.deletePost(188146, {
     forceDestroy: true,
   });
-
-  
 }
 
 run();
@@ -181,7 +179,7 @@ const sdk = new SDK();
 
 async function run() {
   const result = await sdk.posts.getPost("<id>");
-
+  
   // Handle the result
   console.log(result)
 }
@@ -250,7 +248,7 @@ const sdk = new SDK();
 
 async function run() {
   const result = await sdk.posts.listPosts("<value>", "<value>");
-
+  
   // Handle the result
   console.log(result)
 }
@@ -321,7 +319,7 @@ const sdk = new SDK();
 
 async function run() {
   const result = await sdk.posts.lockPost("<value>", "<value>", "<id>");
-
+  
   // Handle the result
   console.log(result)
 }
@@ -393,7 +391,7 @@ const sdk = new SDK();
 
 async function run() {
   const result = await sdk.posts.performPostAction("<value>", "<value>");
-
+  
   // Handle the result
   console.log(result)
 }
@@ -464,7 +462,7 @@ const sdk = new SDK();
 
 async function run() {
   const result = await sdk.posts.postReplies("<id>");
-
+  
   // Handle the result
   console.log(result)
 }
@@ -533,7 +531,7 @@ const sdk = new SDK();
 
 async function run() {
   const result = await sdk.posts.updatePost("<id>");
-
+  
   // Handle the result
   console.log(result)
 }

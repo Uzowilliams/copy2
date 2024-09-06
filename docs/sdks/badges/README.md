@@ -24,7 +24,7 @@ const sdk = new SDK();
 
 async function run() {
   const result = await sdk.badges.adminListBadges();
-
+  
   // Handle the result
   console.log(result)
 }
@@ -92,7 +92,7 @@ const sdk = new SDK();
 
 async function run() {
   const result = await sdk.badges.createBadge();
-
+  
   // Handle the result
   console.log(result)
 }
@@ -161,8 +161,6 @@ const sdk = new SDK();
 
 async function run() {
   await sdk.badges.deleteBadge(32345);
-
-  
 }
 
 run();
@@ -228,7 +226,7 @@ const sdk = new SDK();
 
 async function run() {
   const result = await sdk.badges.listUserBadges("Faustino28");
-
+  
   // Handle the result
   console.log(result)
 }
@@ -297,7 +295,7 @@ const sdk = new SDK();
 
 async function run() {
   const result = await sdk.badges.updateBadge(280628);
-
+  
   // Handle the result
   console.log(result)
 }

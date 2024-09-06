@@ -29,7 +29,7 @@ async function run() {
   const result = await sdk.groups.addGroupMembers(985975, {
     usernames: "username1,username2",
   });
-
+  
   // Handle the result
   console.log(result)
 }
@@ -101,7 +101,7 @@ const sdk = new SDK();
 
 async function run() {
   const result = await sdk.groups.createGroup();
-
+  
   // Handle the result
   console.log(result)
 }
@@ -170,7 +170,7 @@ const sdk = new SDK();
 
 async function run() {
   const result = await sdk.groups.deleteGroup(21302);
-
+  
   // Handle the result
   console.log(result)
 }
@@ -239,7 +239,7 @@ const sdk = new SDK();
 
 async function run() {
   const result = await sdk.groups.getGroup("name");
-
+  
   // Handle the result
   console.log(result)
 }
@@ -308,7 +308,7 @@ const sdk = new SDK();
 
 async function run() {
   const result = await sdk.groups.listGroupMembers("name");
-
+  
   // Handle the result
   console.log(result)
 }
@@ -377,7 +377,7 @@ const sdk = new SDK();
 
 async function run() {
   const result = await sdk.groups.listGroups();
-
+  
   // Handle the result
   console.log(result)
 }
@@ -447,7 +447,7 @@ async function run() {
   const result = await sdk.groups.removeGroupMembers(649523, {
     usernames: "username1,username2",
   });
-
+  
   // Handle the result
   console.log(result)
 }
@@ -519,7 +519,7 @@ const sdk = new SDK();
 
 async function run() {
   const result = await sdk.groups.updateGroup(438471);
-
+  
   // Handle the result
   console.log(result)
 }

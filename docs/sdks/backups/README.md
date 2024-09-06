@@ -23,7 +23,7 @@ const sdk = new SDK();
 
 async function run() {
   const result = await sdk.backups.createBackup();
-
+  
   // Handle the result
   console.log(result)
 }
@@ -92,8 +92,6 @@ const sdk = new SDK();
 
 async function run() {
   await sdk.backups.downloadBackup("your_file_here", "<value>");
-
-  
 }
 
 run();
@@ -160,7 +158,7 @@ const sdk = new SDK();
 
 async function run() {
   const result = await sdk.backups.getBackups();
-
+  
   // Handle the result
   console.log(result)
 }
@@ -228,8 +226,6 @@ const sdk = new SDK();
 
 async function run() {
   await sdk.backups.sendDownloadBackupEmail("your_file_here");
-
-  
 }
 
 run();

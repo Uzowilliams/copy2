@@ -29,7 +29,7 @@ const sdk = new SDK();
 
 async function run() {
   const result = await sdk.admin.activateUser(203554);
-
+  
   // Handle the result
   console.log(result)
 }
@@ -98,7 +98,7 @@ const sdk = new SDK();
 
 async function run() {
   const result = await sdk.admin.adminGetUser(386776);
-
+  
   // Handle the result
   console.log(result)
 }
@@ -169,7 +169,7 @@ async function run() {
   const result = await sdk.admin.adminListUsers({
     flag: "new",
   });
-
+  
   // Handle the result
   console.log(result)
 }
@@ -240,7 +240,7 @@ const sdk = new SDK();
 
 async function run() {
   const result = await sdk.admin.anonymizeUser(418778);
-
+  
   // Handle the result
   console.log(result)
 }
@@ -309,7 +309,7 @@ const sdk = new SDK();
 
 async function run() {
   const result = await sdk.admin.deactivateUser(143950);
-
+  
   // Handle the result
   console.log(result)
 }
@@ -378,7 +378,7 @@ const sdk = new SDK();
 
 async function run() {
   const result = await sdk.admin.deleteUser(251343);
-
+  
   // Handle the result
   console.log(result)
 }
@@ -448,7 +448,7 @@ const sdk = new SDK();
 
 async function run() {
   const result = await sdk.admin.logOutUser(379568);
-
+  
   // Handle the result
   console.log(result)
 }
@@ -517,7 +517,7 @@ const sdk = new SDK();
 
 async function run() {
   const result = await sdk.admin.refreshGravatar("Frances39");
-
+  
   // Handle the result
   console.log(result)
 }
@@ -589,7 +589,7 @@ async function run() {
     postAction: "delete",
     silencedTill: "2022-06-01T08:00:00.000Z",
   });
-
+  
   // Handle the result
   console.log(result)
 }
@@ -666,7 +666,7 @@ async function run() {
     reason: "<value>",
     suspendUntil: "2121-02-22",
   });
-
+  
   // Handle the result
   console.log(result)
 }

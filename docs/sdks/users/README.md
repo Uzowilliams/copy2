@@ -43,7 +43,7 @@ const sdk = new SDK();
 
 async function run() {
   const result = await sdk.users.activateUser(203554);
-
+  
   // Handle the result
   console.log(result)
 }
@@ -112,7 +112,7 @@ const sdk = new SDK();
 
 async function run() {
   const result = await sdk.users.adminGetUser(386776);
-
+  
   // Handle the result
   console.log(result)
 }
@@ -183,7 +183,7 @@ async function run() {
   const result = await sdk.users.adminListUsers({
     flag: "new",
   });
-
+  
   // Handle the result
   console.log(result)
 }
@@ -254,7 +254,7 @@ const sdk = new SDK();
 
 async function run() {
   const result = await sdk.users.anonymizeUser(418778);
-
+  
   // Handle the result
   console.log(result)
 }
@@ -323,8 +323,6 @@ const sdk = new SDK();
 
 async function run() {
   await sdk.users.changePassword("<value>");
-
-  
 }
 
 run();
@@ -391,7 +389,7 @@ const sdk = new SDK();
 
 async function run() {
   const result = await sdk.users.createUser("<value>", "<value>");
-
+  
   // Handle the result
   console.log(result)
 }
@@ -462,7 +460,7 @@ const sdk = new SDK();
 
 async function run() {
   const result = await sdk.users.deactivateUser(143950);
-
+  
   // Handle the result
   console.log(result)
 }
@@ -531,7 +529,7 @@ const sdk = new SDK();
 
 async function run() {
   const result = await sdk.users.deleteUser(251343);
-
+  
   // Handle the result
   console.log(result)
 }
@@ -601,7 +599,7 @@ const sdk = new SDK();
 
 async function run() {
   const result = await sdk.users.getUser("<value>", "<value>", "Ned56");
-
+  
   // Handle the result
   console.log(result)
 }
@@ -672,7 +670,7 @@ const sdk = new SDK();
 
 async function run() {
   const result = await sdk.users.getUserEmails("Winifred_OConner64");
-
+  
   // Handle the result
   console.log(result)
 }
@@ -741,7 +739,7 @@ const sdk = new SDK();
 
 async function run() {
   const result = await sdk.users.getUserExternalId("<value>", "<value>", "<value>");
-
+  
   // Handle the result
   console.log(result)
 }
@@ -812,7 +810,7 @@ const sdk = new SDK();
 
 async function run() {
   const result = await sdk.users.getUserIdentiyProviderExternalId("<value>", "<value>", "<value>", "<value>");
-
+  
   // Handle the result
   console.log(result)
 }
@@ -884,7 +882,7 @@ const sdk = new SDK();
 
 async function run() {
   const result = await sdk.users.listUserActions("<value>", 620550, "Deondre75");
-
+  
   // Handle the result
   console.log(result)
 }
@@ -955,7 +953,7 @@ const sdk = new SDK();
 
 async function run() {
   const result = await sdk.users.listUserBadges("Faustino28");
-
+  
   // Handle the result
   console.log(result)
 }
@@ -1024,7 +1022,7 @@ const sdk = new SDK();
 
 async function run() {
   const result = await sdk.users.listUsersPublic("topic_count", "monthly");
-
+  
   // Handle the result
   console.log(result)
 }
@@ -1096,7 +1094,7 @@ const sdk = new SDK();
 
 async function run() {
   const result = await sdk.users.logOutUser(379568);
-
+  
   // Handle the result
   console.log(result)
 }
@@ -1165,7 +1163,7 @@ const sdk = new SDK();
 
 async function run() {
   const result = await sdk.users.refreshGravatar("Frances39");
-
+  
   // Handle the result
   console.log(result)
 }
@@ -1234,7 +1232,7 @@ const sdk = new SDK();
 
 async function run() {
   const result = await sdk.users.sendPasswordResetEmail();
-
+  
   // Handle the result
   console.log(result)
 }
@@ -1306,7 +1304,7 @@ async function run() {
     postAction: "delete",
     silencedTill: "2022-06-01T08:00:00.000Z",
   });
-
+  
   // Handle the result
   console.log(result)
 }
@@ -1383,7 +1381,7 @@ async function run() {
     reason: "<value>",
     suspendUntil: "2121-02-22",
   });
-
+  
   // Handle the result
   console.log(result)
 }
@@ -1457,7 +1455,7 @@ const sdk = new SDK();
 
 async function run() {
   const result = await sdk.users.updateAvatar("Kadin32");
-
+  
   // Handle the result
   console.log(result)
 }
@@ -1527,8 +1525,6 @@ const sdk = new SDK();
 
 async function run() {
   await sdk.users.updateEmail("Hobart_Lakin34");
-
-  
 }
 
 run();
@@ -1595,7 +1591,7 @@ const sdk = new SDK();
 
 async function run() {
   const result = await sdk.users.updateUser("<value>", "<value>", "Dandre.Jast32");
-
+  
   // Handle the result
   console.log(result)
 }
@@ -1667,8 +1663,6 @@ const sdk = new SDK();
 
 async function run() {
   await sdk.users.updateUsername("Avis_Tremblay74");
-
-  
 }
 
 run();

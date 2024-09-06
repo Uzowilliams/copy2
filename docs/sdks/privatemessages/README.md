@@ -26,7 +26,7 @@ async function run() {
     raw: "<value>",
     targetRecipients: "blake,sam",
   });
-
+  
   // Handle the result
   console.log(result)
 }
@@ -99,7 +99,7 @@ const sdk = new SDK();
 
 async function run() {
   const result = await sdk.privateMessages.getUserSentPrivateMessages("Nathanial38");
-
+  
   // Handle the result
   console.log(result)
 }
@@ -168,7 +168,7 @@ const sdk = new SDK();
 
 async function run() {
   const result = await sdk.privateMessages.listUserPrivateMessages("Liliana_West71");
-
+  
   // Handle the result
   console.log(result)
 }
