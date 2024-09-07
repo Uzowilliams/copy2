@@ -840,8 +840,8 @@ const sdk = new SDKCore();
 
 async function run() {
   const res = await topicsUpdateTopicStatus(sdk, "<value>", "<value>", "<id>", {
-    enabled: "true",
-    status: "visible",
+    enabled: "false",
+    status: "pinned_globally",
     until: "2030-12-31",
   });
 

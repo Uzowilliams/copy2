@@ -120,7 +120,7 @@ import { privateMessagesGetUserSentPrivateMessages } from "@lukehagar/discoursej
 const sdk = new SDKCore();
 
 async function run() {
-  const res = await privateMessagesGetUserSentPrivateMessages(sdk, "Ebba.Grant22");
+  const res = await privateMessagesGetUserSentPrivateMessages(sdk, "Nathanial38");
 
   if (!res.ok) {
     throw res.error;
@@ -189,7 +189,7 @@ import { privateMessagesListUserPrivateMessages } from "@lukehagar/discoursejs/f
 const sdk = new SDKCore();
 
 async function run() {
-  const res = await privateMessagesListUserPrivateMessages(sdk, "Bonnie55");
+  const res = await privateMessagesListUserPrivateMessages(sdk, "Liliana_West71");
 
   if (!res.ok) {
     throw res.error;

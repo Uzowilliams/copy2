@@ -50,7 +50,7 @@ import { groupsAddGroupMembers } from "@lukehagar/discoursejs/funcs/groupsAddGro
 const sdk = new SDKCore();
 
 async function run() {
-  const res = await groupsAddGroupMembers(sdk, 946323, {
+  const res = await groupsAddGroupMembers(sdk, 985975, {
     usernames: "username1,username2",
   });
 
@@ -191,7 +191,7 @@ import { groupsDeleteGroup } from "@lukehagar/discoursejs/funcs/groupsDeleteGrou
 const sdk = new SDKCore();
 
 async function run() {
-  const res = await groupsDeleteGroup(sdk, 114822);
+  const res = await groupsDeleteGroup(sdk, 21302);
 
   if (!res.ok) {
     throw res.error;
@@ -468,7 +468,7 @@ import { groupsRemoveGroupMembers } from "@lukehagar/discoursejs/funcs/groupsRem
 const sdk = new SDKCore();
 
 async function run() {
-  const res = await groupsRemoveGroupMembers(sdk, 699656, {
+  const res = await groupsRemoveGroupMembers(sdk, 649523, {
     usernames: "username1,username2",
   });
 
@@ -540,7 +540,7 @@ import { groupsUpdateGroup } from "@lukehagar/discoursejs/funcs/groupsUpdateGrou
 const sdk = new SDKCore();
 
 async function run() {
-  const res = await groupsUpdateGroup(sdk, 750192);
+  const res = await groupsUpdateGroup(sdk, 438471);
 
   if (!res.ok) {
     throw res.error;

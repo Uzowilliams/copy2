@@ -623,7 +623,7 @@ async function run() {
   const res = await uploadsGeneratePresignedPut(sdk, {
     fileName: "IMG_2021.jpeg",
     fileSize: 4096,
-    type: "avatar",
+    type: "card_background",
   });
 
   if (!res.ok) {

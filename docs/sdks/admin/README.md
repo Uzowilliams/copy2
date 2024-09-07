@@ -50,7 +50,7 @@ import { adminActivateUser } from "@lukehagar/discoursejs/funcs/adminActivateUse
 const sdk = new SDKCore();
 
 async function run() {
-  const res = await adminActivateUser(sdk, 458565);
+  const res = await adminActivateUser(sdk, 203554);
 
   if (!res.ok) {
     throw res.error;
@@ -119,7 +119,7 @@ import { adminAdminGetUser } from "@lukehagar/discoursejs/funcs/adminAdminGetUse
 const sdk = new SDKCore();
 
 async function run() {
-  const res = await adminAdminGetUser(sdk, 641278);
+  const res = await adminAdminGetUser(sdk, 386776);
 
   if (!res.ok) {
     throw res.error;
@@ -191,7 +191,7 @@ const sdk = new SDKCore();
 
 async function run() {
   const res = await adminAdminListUsers(sdk, {
-    flag: "blocked",
+    flag: "new",
   });
 
   if (!res.ok) {
@@ -261,7 +261,7 @@ import { adminAnonymizeUser } from "@lukehagar/discoursejs/funcs/adminAnonymizeU
 const sdk = new SDKCore();
 
 async function run() {
-  const res = await adminAnonymizeUser(sdk, 976366);
+  const res = await adminAnonymizeUser(sdk, 418778);
 
   if (!res.ok) {
     throw res.error;
@@ -330,7 +330,7 @@ import { adminDeactivateUser } from "@lukehagar/discoursejs/funcs/adminDeactivat
 const sdk = new SDKCore();
 
 async function run() {
-  const res = await adminDeactivateUser(sdk, 495555);
+  const res = await adminDeactivateUser(sdk, 143950);
 
   if (!res.ok) {
     throw res.error;
@@ -399,7 +399,7 @@ import { adminDeleteUser } from "@lukehagar/discoursejs/funcs/adminDeleteUser.js
 const sdk = new SDKCore();
 
 async function run() {
-  const res = await adminDeleteUser(sdk, 335223);
+  const res = await adminDeleteUser(sdk, 251343);
 
   if (!res.ok) {
     throw res.error;
@@ -469,7 +469,7 @@ import { adminLogOutUser } from "@lukehagar/discoursejs/funcs/adminLogOutUser.js
 const sdk = new SDKCore();
 
 async function run() {
-  const res = await adminLogOutUser(sdk, 141178);
+  const res = await adminLogOutUser(sdk, 379568);
 
   if (!res.ok) {
     throw res.error;
@@ -538,7 +538,7 @@ import { adminRefreshGravatar } from "@lukehagar/discoursejs/funcs/adminRefreshG
 const sdk = new SDKCore();
 
 async function run() {
-  const res = await adminRefreshGravatar(sdk, "Jody_Pfannerstill");
+  const res = await adminRefreshGravatar(sdk, "Frances39");
 
   if (!res.ok) {
     throw res.error;
@@ -610,7 +610,7 @@ import { adminSilenceUser } from "@lukehagar/discoursejs/funcs/adminSilenceUser.
 const sdk = new SDKCore();
 
 async function run() {
-  const res = await adminSilenceUser(sdk, 212223, {
+  const res = await adminSilenceUser(sdk, 606247, {
     postAction: "delete",
     silencedTill: "2022-06-01T08:00:00.000Z",
   });
@@ -687,7 +687,7 @@ import { adminSuspendUser } from "@lukehagar/discoursejs/funcs/adminSuspendUser.
 const sdk = new SDKCore();
 
 async function run() {
-  const res = await adminSuspendUser(sdk, 192215, {
+  const res = await adminSuspendUser(sdk, 970832, {
     postAction: "delete",
     reason: "<value>",
     suspendUntil: "2121-02-22",

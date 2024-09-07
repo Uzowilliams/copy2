@@ -179,7 +179,7 @@ import { badgesDeleteBadge } from "@lukehagar/discoursejs/funcs/badgesDeleteBadg
 const sdk = new SDKCore();
 
 async function run() {
-  const res = await badgesDeleteBadge(sdk, 402816);
+  const res = await badgesDeleteBadge(sdk, 32345);
 
   if (!res.ok) {
     throw res.error;
@@ -247,7 +247,7 @@ import { badgesListUserBadges } from "@lukehagar/discoursejs/funcs/badgesListUse
 const sdk = new SDKCore();
 
 async function run() {
-  const res = await badgesListUserBadges(sdk, "Eloisa_Davis");
+  const res = await badgesListUserBadges(sdk, "Faustino28");
 
   if (!res.ok) {
     throw res.error;
@@ -316,7 +316,7 @@ import { badgesUpdateBadge } from "@lukehagar/discoursejs/funcs/badgesUpdateBadg
 const sdk = new SDKCore();
 
 async function run() {
-  const res = await badgesUpdateBadge(sdk, 569102);
+  const res = await badgesUpdateBadge(sdk, 280628);
 
   if (!res.ok) {
     throw res.error;

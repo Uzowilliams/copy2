@@ -124,7 +124,7 @@ import { postsDeletePost } from "@lukehagar/discoursejs/funcs/postsDeletePost.js
 const sdk = new SDKCore();
 
 async function run() {
-  const res = await postsDeletePost(sdk, 928159, {
+  const res = await postsDeletePost(sdk, 188146, {
     forceDestroy: true,
   });
 

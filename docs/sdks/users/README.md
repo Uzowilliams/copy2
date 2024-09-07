@@ -64,7 +64,7 @@ import { usersActivateUser } from "@lukehagar/discoursejs/funcs/usersActivateUse
 const sdk = new SDKCore();
 
 async function run() {
-  const res = await usersActivateUser(sdk, 458565);
+  const res = await usersActivateUser(sdk, 203554);
 
   if (!res.ok) {
     throw res.error;
@@ -133,7 +133,7 @@ import { usersAdminGetUser } from "@lukehagar/discoursejs/funcs/usersAdminGetUse
 const sdk = new SDKCore();
 
 async function run() {
-  const res = await usersAdminGetUser(sdk, 641278);
+  const res = await usersAdminGetUser(sdk, 386776);
 
   if (!res.ok) {
     throw res.error;
@@ -205,7 +205,7 @@ const sdk = new SDKCore();
 
 async function run() {
   const res = await usersAdminListUsers(sdk, {
-    flag: "blocked",
+    flag: "new",
   });
 
   if (!res.ok) {
@@ -275,7 +275,7 @@ import { usersAnonymizeUser } from "@lukehagar/discoursejs/funcs/usersAnonymizeU
 const sdk = new SDKCore();
 
 async function run() {
-  const res = await usersAnonymizeUser(sdk, 976366);
+  const res = await usersAnonymizeUser(sdk, 418778);
 
   if (!res.ok) {
     throw res.error;
@@ -481,7 +481,7 @@ import { usersDeactivateUser } from "@lukehagar/discoursejs/funcs/usersDeactivat
 const sdk = new SDKCore();
 
 async function run() {
-  const res = await usersDeactivateUser(sdk, 495555);
+  const res = await usersDeactivateUser(sdk, 143950);
 
   if (!res.ok) {
     throw res.error;
@@ -550,7 +550,7 @@ import { usersDeleteUser } from "@lukehagar/discoursejs/funcs/usersDeleteUser.js
 const sdk = new SDKCore();
 
 async function run() {
-  const res = await usersDeleteUser(sdk, 335223);
+  const res = await usersDeleteUser(sdk, 251343);
 
   if (!res.ok) {
     throw res.error;
@@ -620,7 +620,7 @@ import { usersGetUser } from "@lukehagar/discoursejs/funcs/usersGetUser.js";
 const sdk = new SDKCore();
 
 async function run() {
-  const res = await usersGetUser(sdk, "<value>", "<value>", "Herta61");
+  const res = await usersGetUser(sdk, "<value>", "<value>", "Ned56");
 
   if (!res.ok) {
     throw res.error;
@@ -691,7 +691,7 @@ import { usersGetUserEmails } from "@lukehagar/discoursejs/funcs/usersGetUserEma
 const sdk = new SDKCore();
 
 async function run() {
-  const res = await usersGetUserEmails(sdk, "Blair_Luettgen46");
+  const res = await usersGetUserEmails(sdk, "Winifred_OConner64");
 
   if (!res.ok) {
     throw res.error;
@@ -903,7 +903,7 @@ import { usersListUserActions } from "@lukehagar/discoursejs/funcs/usersListUser
 const sdk = new SDKCore();
 
 async function run() {
-  const res = await usersListUserActions(sdk, "<value>", 13410, "Augustus_Wuckert48");
+  const res = await usersListUserActions(sdk, "<value>", 620550, "Deondre75");
 
   if (!res.ok) {
     throw res.error;
@@ -974,7 +974,7 @@ import { usersListUserBadges } from "@lukehagar/discoursejs/funcs/usersListUserB
 const sdk = new SDKCore();
 
 async function run() {
-  const res = await usersListUserBadges(sdk, "Eloisa_Davis");
+  const res = await usersListUserBadges(sdk, "Faustino28");
 
   if (!res.ok) {
     throw res.error;
@@ -1043,7 +1043,7 @@ import { usersListUsersPublic } from "@lukehagar/discoursejs/funcs/usersListUser
 const sdk = new SDKCore();
 
 async function run() {
-  const res = await usersListUsersPublic(sdk, "likes_given", "quarterly");
+  const res = await usersListUsersPublic(sdk, "topic_count", "monthly");
 
   if (!res.ok) {
     throw res.error;
@@ -1115,7 +1115,7 @@ import { usersLogOutUser } from "@lukehagar/discoursejs/funcs/usersLogOutUser.js
 const sdk = new SDKCore();
 
 async function run() {
-  const res = await usersLogOutUser(sdk, 141178);
+  const res = await usersLogOutUser(sdk, 379568);
 
   if (!res.ok) {
     throw res.error;
@@ -1184,7 +1184,7 @@ import { usersRefreshGravatar } from "@lukehagar/discoursejs/funcs/usersRefreshG
 const sdk = new SDKCore();
 
 async function run() {
-  const res = await usersRefreshGravatar(sdk, "Jody_Pfannerstill");
+  const res = await usersRefreshGravatar(sdk, "Frances39");
 
   if (!res.ok) {
     throw res.error;
@@ -1325,7 +1325,7 @@ import { usersSilenceUser } from "@lukehagar/discoursejs/funcs/usersSilenceUser.
 const sdk = new SDKCore();
 
 async function run() {
-  const res = await usersSilenceUser(sdk, 212223, {
+  const res = await usersSilenceUser(sdk, 606247, {
     postAction: "delete",
     silencedTill: "2022-06-01T08:00:00.000Z",
   });
@@ -1402,7 +1402,7 @@ import { usersSuspendUser } from "@lukehagar/discoursejs/funcs/usersSuspendUser.
 const sdk = new SDKCore();
 
 async function run() {
-  const res = await usersSuspendUser(sdk, 192215, {
+  const res = await usersSuspendUser(sdk, 970832, {
     postAction: "delete",
     reason: "<value>",
     suspendUntil: "2121-02-22",
@@ -1476,7 +1476,7 @@ import { usersUpdateAvatar } from "@lukehagar/discoursejs/funcs/usersUpdateAvata
 const sdk = new SDKCore();
 
 async function run() {
-  const res = await usersUpdateAvatar(sdk, "Zion66");
+  const res = await usersUpdateAvatar(sdk, "Kadin32");
 
   if (!res.ok) {
     throw res.error;
@@ -1543,7 +1543,7 @@ import { usersUpdateEmail } from "@lukehagar/discoursejs/funcs/usersUpdateEmail.
 const sdk = new SDKCore();
 
 async function run() {
-  const res = await usersUpdateEmail(sdk, "Madalyn90");
+  const res = await usersUpdateEmail(sdk, "Hobart_Lakin34");
 
   if (!res.ok) {
     throw res.error;
@@ -1612,7 +1612,7 @@ import { usersUpdateUser } from "@lukehagar/discoursejs/funcs/usersUpdateUser.js
 const sdk = new SDKCore();
 
 async function run() {
-  const res = await usersUpdateUser(sdk, "<value>", "<value>", "Cora.Gislason");
+  const res = await usersUpdateUser(sdk, "<value>", "<value>", "Dandre.Jast32");
 
   if (!res.ok) {
     throw res.error;
@@ -1681,7 +1681,7 @@ import { usersUpdateUsername } from "@lukehagar/discoursejs/funcs/usersUpdateUse
 const sdk = new SDKCore();
 
 async function run() {
-  const res = await usersUpdateUsername(sdk, "Taurean_Flatley");
+  const res = await usersUpdateUsername(sdk, "Avis_Tremblay74");
 
   if (!res.ok) {
     throw res.error;

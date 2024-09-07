@@ -29,6 +29,9 @@ async function run() {
     name: "<value>",
     permissions: {
       everyone: 1,
+      additionalProperties: {
+  
+      },
     },
     textColor: "f0fcfd",
   });
@@ -58,6 +61,9 @@ async function run() {
     name: "<value>",
     permissions: {
       everyone: 1,
+      additionalProperties: {
+  
+      },
     },
     textColor: "f0fcfd",
   });
@@ -129,7 +135,7 @@ import { categoriesGetCategory } from "@lukehagar/discoursejs/funcs/categoriesGe
 const sdk = new SDKCore();
 
 async function run() {
-  const res = await categoriesGetCategory(sdk, 687295);
+  const res = await categoriesGetCategory(sdk, 39147);
 
   if (!res.ok) {
     throw res.error;
@@ -335,7 +341,7 @@ import { categoriesListCategoryTopics } from "@lukehagar/discoursejs/funcs/categ
 const sdk = new SDKCore();
 
 async function run() {
-  const res = await categoriesListCategoryTopics(sdk, 671891, "<value>");
+  const res = await categoriesListCategoryTopics(sdk, 394133, "<value>");
 
   if (!res.ok) {
     throw res.error;
@@ -388,6 +394,9 @@ async function run() {
     name: "<value>",
     permissions: {
       everyone: 1,
+      additionalProperties: {
+  
+      },
     },
     textColor: "f0fcfd",
   });
@@ -412,11 +421,14 @@ import { categoriesUpdateCategory } from "@lukehagar/discoursejs/funcs/categorie
 const sdk = new SDKCore();
 
 async function run() {
-  const res = await categoriesUpdateCategory(sdk, 999337, {
+  const res = await categoriesUpdateCategory(sdk, 353500, {
     color: "49d9e9",
     name: "<value>",
     permissions: {
       everyone: 1,
+      additionalProperties: {
+  
+      },
     },
     textColor: "f0fcfd",
   });
