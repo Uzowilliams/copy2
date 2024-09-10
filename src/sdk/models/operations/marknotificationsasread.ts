@@ -5,40 +5,40 @@
 import * as z from "zod";
 
 export type MarkNotificationsAsReadRequestBody = {
-    /**
-     * (optional) Leave off to mark all notifications as read
-     */
-    id?: number | undefined;
+  /**
+   * (optional) Leave off to mark all notifications as read
+   */
+  id?: number | undefined;
 };
 
 /**
  * notifications marked read
  */
 export type MarkNotificationsAsReadResponseBody = {
-    success?: string | undefined;
+  success?: string | undefined;
 };
 
 /** @internal */
 export const MarkNotificationsAsReadRequestBody$inboundSchema: z.ZodType<
-    MarkNotificationsAsReadRequestBody,
-    z.ZodTypeDef,
-    unknown
+  MarkNotificationsAsReadRequestBody,
+  z.ZodTypeDef,
+  unknown
 > = z.object({
-    id: z.number().int().optional(),
+  id: z.number().int().optional(),
 });
 
 /** @internal */
 export type MarkNotificationsAsReadRequestBody$Outbound = {
-    id?: number | undefined;
+  id?: number | undefined;
 };
 
 /** @internal */
 export const MarkNotificationsAsReadRequestBody$outboundSchema: z.ZodType<
-    MarkNotificationsAsReadRequestBody$Outbound,
-    z.ZodTypeDef,
-    MarkNotificationsAsReadRequestBody
+  MarkNotificationsAsReadRequestBody$Outbound,
+  z.ZodTypeDef,
+  MarkNotificationsAsReadRequestBody
 > = z.object({
-    id: z.number().int().optional(),
+  id: z.number().int().optional(),
 });
 
 /**
@@ -46,35 +46,36 @@ export const MarkNotificationsAsReadRequestBody$outboundSchema: z.ZodType<
  * @deprecated This namespace will be removed in future versions. Use schemas and types that are exported directly from this module.
  */
 export namespace MarkNotificationsAsReadRequestBody$ {
-    /** @deprecated use `MarkNotificationsAsReadRequestBody$inboundSchema` instead. */
-    export const inboundSchema = MarkNotificationsAsReadRequestBody$inboundSchema;
-    /** @deprecated use `MarkNotificationsAsReadRequestBody$outboundSchema` instead. */
-    export const outboundSchema = MarkNotificationsAsReadRequestBody$outboundSchema;
-    /** @deprecated use `MarkNotificationsAsReadRequestBody$Outbound` instead. */
-    export type Outbound = MarkNotificationsAsReadRequestBody$Outbound;
+  /** @deprecated use `MarkNotificationsAsReadRequestBody$inboundSchema` instead. */
+  export const inboundSchema = MarkNotificationsAsReadRequestBody$inboundSchema;
+  /** @deprecated use `MarkNotificationsAsReadRequestBody$outboundSchema` instead. */
+  export const outboundSchema =
+    MarkNotificationsAsReadRequestBody$outboundSchema;
+  /** @deprecated use `MarkNotificationsAsReadRequestBody$Outbound` instead. */
+  export type Outbound = MarkNotificationsAsReadRequestBody$Outbound;
 }
 
 /** @internal */
 export const MarkNotificationsAsReadResponseBody$inboundSchema: z.ZodType<
-    MarkNotificationsAsReadResponseBody,
-    z.ZodTypeDef,
-    unknown
+  MarkNotificationsAsReadResponseBody,
+  z.ZodTypeDef,
+  unknown
 > = z.object({
-    success: z.string().optional(),
+  success: z.string().optional(),
 });
 
 /** @internal */
 export type MarkNotificationsAsReadResponseBody$Outbound = {
-    success?: string | undefined;
+  success?: string | undefined;
 };
 
 /** @internal */
 export const MarkNotificationsAsReadResponseBody$outboundSchema: z.ZodType<
-    MarkNotificationsAsReadResponseBody$Outbound,
-    z.ZodTypeDef,
-    MarkNotificationsAsReadResponseBody
+  MarkNotificationsAsReadResponseBody$Outbound,
+  z.ZodTypeDef,
+  MarkNotificationsAsReadResponseBody
 > = z.object({
-    success: z.string().optional(),
+  success: z.string().optional(),
 });
 
 /**
@@ -82,10 +83,12 @@ export const MarkNotificationsAsReadResponseBody$outboundSchema: z.ZodType<
  * @deprecated This namespace will be removed in future versions. Use schemas and types that are exported directly from this module.
  */
 export namespace MarkNotificationsAsReadResponseBody$ {
-    /** @deprecated use `MarkNotificationsAsReadResponseBody$inboundSchema` instead. */
-    export const inboundSchema = MarkNotificationsAsReadResponseBody$inboundSchema;
-    /** @deprecated use `MarkNotificationsAsReadResponseBody$outboundSchema` instead. */
-    export const outboundSchema = MarkNotificationsAsReadResponseBody$outboundSchema;
-    /** @deprecated use `MarkNotificationsAsReadResponseBody$Outbound` instead. */
-    export type Outbound = MarkNotificationsAsReadResponseBody$Outbound;
+  /** @deprecated use `MarkNotificationsAsReadResponseBody$inboundSchema` instead. */
+  export const inboundSchema =
+    MarkNotificationsAsReadResponseBody$inboundSchema;
+  /** @deprecated use `MarkNotificationsAsReadResponseBody$outboundSchema` instead. */
+  export const outboundSchema =
+    MarkNotificationsAsReadResponseBody$outboundSchema;
+  /** @deprecated use `MarkNotificationsAsReadResponseBody$Outbound` instead. */
+  export type Outbound = MarkNotificationsAsReadResponseBody$Outbound;
 }

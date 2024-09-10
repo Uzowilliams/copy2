@@ -6,13 +6,13 @@
 import { PostActionTypes } from "@lukehagar/discoursejs/sdk/models/operations";
 
 let value: PostActionTypes = {
-    description: "Function-based discrete neural-net",
-    id: 200364,
-    isCustomFlag: false,
-    isFlag: false,
-    name: "<value>",
-    nameKey: "<value>",
-    shortDescription: "<value>",
+  description: "Function-based discrete neural-net",
+  id: 200364,
+  isCustomFlag: false,
+  isFlag: false,
+  name: "<value>",
+  nameKey: "<value>",
+  shortDescription: "<value>",
 };
 ```
 

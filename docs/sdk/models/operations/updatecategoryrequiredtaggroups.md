@@ -6,8 +6,8 @@
 import { UpdateCategoryRequiredTagGroups } from "@lukehagar/discoursejs/sdk/models/operations";
 
 let value: UpdateCategoryRequiredTagGroups = {
-    minCount: 355225,
-    name: "<value>",
+  minCount: 355225,
+  name: "<value>",
 };
 ```
 

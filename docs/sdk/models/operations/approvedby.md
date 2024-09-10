@@ -6,10 +6,10 @@
 import { ApprovedBy } from "@lukehagar/discoursejs/sdk/models/operations";
 
 let value: ApprovedBy = {
-    avatarTemplate: "<value>",
-    id: 692532,
-    name: "<value>",
-    username: "Lafayette_Reinger",
+  avatarTemplate: "<value>",
+  id: 692532,
+  name: "<value>",
+  username: "Lafayette_Reinger",
 };
 ```
 

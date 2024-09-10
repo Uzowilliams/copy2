@@ -6,8 +6,8 @@
 import { GetCategoryRequiredTagGroups } from "@lukehagar/discoursejs/sdk/models/operations";
 
 let value: GetCategoryRequiredTagGroups = {
-    minCount: 871786,
-    name: "<value>",
+  minCount: 871786,
+  name: "<value>",
 };
 ```
 

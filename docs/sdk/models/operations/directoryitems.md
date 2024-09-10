@@ -6,21 +6,21 @@
 import { DirectoryItems } from "@lukehagar/discoursejs/sdk/models/operations";
 
 let value: DirectoryItems = {
-    daysVisited: 455444,
-    id: 970076,
-    likesGiven: 401713,
-    likesReceived: 25497,
-    postCount: 248413,
-    postsRead: 888044,
-    topicCount: 505866,
-    topicsEntered: 708609,
-    user: {
-        avatarTemplate: "<value>",
-        id: 310381,
-        name: "<value>",
-        title: "<value>",
-        username: "Drew_Hintz2",
-    },
+  daysVisited: 455444,
+  id: 970076,
+  likesGiven: 401713,
+  likesReceived: 25497,
+  postCount: 248413,
+  postsRead: 888044,
+  topicCount: 505866,
+  topicsEntered: 708609,
+  user: {
+    avatarTemplate: "<value>",
+    id: 310381,
+    name: "<value>",
+    title: "<value>",
+    username: "Drew_Hintz2",
+  },
 };
 ```
 

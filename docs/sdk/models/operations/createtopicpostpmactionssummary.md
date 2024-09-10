@@ -6,8 +6,8 @@
 import { CreateTopicPostPMActionsSummary } from "@lukehagar/discoursejs/sdk/models/operations";
 
 let value: CreateTopicPostPMActionsSummary = {
-    canAct: false,
-    id: 773456,
+  canAct: false,
+  id: 773456,
 };
 ```
 

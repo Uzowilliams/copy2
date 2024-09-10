@@ -5,37 +5,37 @@
 import * as z from "zod";
 
 export type ActivateUserRequest = {
-    id: number;
+  id: number;
 };
 
 /**
  * response
  */
 export type ActivateUserResponseBody = {
-    success: string;
+  success: string;
 };
 
 /** @internal */
 export const ActivateUserRequest$inboundSchema: z.ZodType<
-    ActivateUserRequest,
-    z.ZodTypeDef,
-    unknown
+  ActivateUserRequest,
+  z.ZodTypeDef,
+  unknown
 > = z.object({
-    id: z.number().int(),
+  id: z.number().int(),
 });
 
 /** @internal */
 export type ActivateUserRequest$Outbound = {
-    id: number;
+  id: number;
 };
 
 /** @internal */
 export const ActivateUserRequest$outboundSchema: z.ZodType<
-    ActivateUserRequest$Outbound,
-    z.ZodTypeDef,
-    ActivateUserRequest
+  ActivateUserRequest$Outbound,
+  z.ZodTypeDef,
+  ActivateUserRequest
 > = z.object({
-    id: z.number().int(),
+  id: z.number().int(),
 });
 
 /**
@@ -43,35 +43,35 @@ export const ActivateUserRequest$outboundSchema: z.ZodType<
  * @deprecated This namespace will be removed in future versions. Use schemas and types that are exported directly from this module.
  */
 export namespace ActivateUserRequest$ {
-    /** @deprecated use `ActivateUserRequest$inboundSchema` instead. */
-    export const inboundSchema = ActivateUserRequest$inboundSchema;
-    /** @deprecated use `ActivateUserRequest$outboundSchema` instead. */
-    export const outboundSchema = ActivateUserRequest$outboundSchema;
-    /** @deprecated use `ActivateUserRequest$Outbound` instead. */
-    export type Outbound = ActivateUserRequest$Outbound;
+  /** @deprecated use `ActivateUserRequest$inboundSchema` instead. */
+  export const inboundSchema = ActivateUserRequest$inboundSchema;
+  /** @deprecated use `ActivateUserRequest$outboundSchema` instead. */
+  export const outboundSchema = ActivateUserRequest$outboundSchema;
+  /** @deprecated use `ActivateUserRequest$Outbound` instead. */
+  export type Outbound = ActivateUserRequest$Outbound;
 }
 
 /** @internal */
 export const ActivateUserResponseBody$inboundSchema: z.ZodType<
-    ActivateUserResponseBody,
-    z.ZodTypeDef,
-    unknown
+  ActivateUserResponseBody,
+  z.ZodTypeDef,
+  unknown
 > = z.object({
-    success: z.string(),
+  success: z.string(),
 });
 
 /** @internal */
 export type ActivateUserResponseBody$Outbound = {
-    success: string;
+  success: string;
 };
 
 /** @internal */
 export const ActivateUserResponseBody$outboundSchema: z.ZodType<
-    ActivateUserResponseBody$Outbound,
-    z.ZodTypeDef,
-    ActivateUserResponseBody
+  ActivateUserResponseBody$Outbound,
+  z.ZodTypeDef,
+  ActivateUserResponseBody
 > = z.object({
-    success: z.string(),
+  success: z.string(),
 });
 
 /**
@@ -79,10 +79,10 @@ export const ActivateUserResponseBody$outboundSchema: z.ZodType<
  * @deprecated This namespace will be removed in future versions. Use schemas and types that are exported directly from this module.
  */
 export namespace ActivateUserResponseBody$ {
-    /** @deprecated use `ActivateUserResponseBody$inboundSchema` instead. */
-    export const inboundSchema = ActivateUserResponseBody$inboundSchema;
-    /** @deprecated use `ActivateUserResponseBody$outboundSchema` instead. */
-    export const outboundSchema = ActivateUserResponseBody$outboundSchema;
-    /** @deprecated use `ActivateUserResponseBody$Outbound` instead. */
-    export type Outbound = ActivateUserResponseBody$Outbound;
+  /** @deprecated use `ActivateUserResponseBody$inboundSchema` instead. */
+  export const inboundSchema = ActivateUserResponseBody$inboundSchema;
+  /** @deprecated use `ActivateUserResponseBody$outboundSchema` instead. */
+  export const outboundSchema = ActivateUserResponseBody$outboundSchema;
+  /** @deprecated use `ActivateUserResponseBody$Outbound` instead. */
+  export type Outbound = ActivateUserResponseBody$Outbound;
 }

@@ -8,7 +8,7 @@ success response
 import { UpdateGroupResponseBody } from "@lukehagar/discoursejs/sdk/models/operations";
 
 let value: UpdateGroupResponseBody = {
-    success: "OK",
+  success: "OK",
 };
 ```
 

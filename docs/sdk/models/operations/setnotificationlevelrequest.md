@@ -6,9 +6,9 @@
 import { SetNotificationLevelRequest } from "@lukehagar/discoursejs/sdk/models/operations";
 
 let value: SetNotificationLevelRequest = {
-    apiKey: "<value>",
-    apiUsername: "<value>",
-    id: "<id>",
+  apiKey: "<value>",
+  apiUsername: "<value>",
+  id: "<id>",
 };
 ```
 

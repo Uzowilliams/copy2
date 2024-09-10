@@ -6,7 +6,7 @@
 import { UpdateUsernameRequest } from "@lukehagar/discoursejs/sdk/models/operations";
 
 let value: UpdateUsernameRequest = {
-    username: "Vincent66",
+  username: "Vincent66",
 };
 ```
 

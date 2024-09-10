@@ -6,7 +6,7 @@
 import { GetGroupRequest } from "@lukehagar/discoursejs/sdk/models/operations";
 
 let value: GetGroupRequest = {
-    id: "name",
+  id: "name",
 };
 ```
 

@@ -6,7 +6,7 @@
 import { UpdateCategoryPermissions } from "@lukehagar/discoursejs/sdk/models/operations";
 
 let value: UpdateCategoryPermissions = {
-    everyone: 1,
+  everyone: 1,
 };
 ```
 

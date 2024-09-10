@@ -6,11 +6,11 @@
 import { ListUsersPublicUser } from "@lukehagar/discoursejs/sdk/models/operations";
 
 let value: ListUsersPublicUser = {
-    avatarTemplate: "<value>",
-    id: 406733,
-    name: "<value>",
-    title: "<value>",
-    username: "Kory.Lueilwitz27",
+  avatarTemplate: "<value>",
+  id: 406733,
+  name: "<value>",
+  title: "<value>",
+  username: "Kory.Lueilwitz27",
 };
 ```
 

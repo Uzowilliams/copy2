@@ -8,8 +8,8 @@ response
 import { AnonymizeUserResponseBody } from "@lukehagar/discoursejs/sdk/models/operations";
 
 let value: AnonymizeUserResponseBody = {
-    success: "<value>",
-    username: "Casimer.Kutch",
+  success: "<value>",
+  username: "Casimer.Kutch",
 };
 ```
 

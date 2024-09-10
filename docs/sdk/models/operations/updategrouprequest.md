@@ -6,7 +6,7 @@
 import { UpdateGroupRequest } from "@lukehagar/discoursejs/sdk/models/operations";
 
 let value: UpdateGroupRequest = {
-    id: 313218,
+  id: 313218,
 };
 ```
 

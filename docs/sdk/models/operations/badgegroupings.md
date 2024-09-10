@@ -6,11 +6,11 @@
 import { BadgeGroupings } from "@lukehagar/discoursejs/sdk/models/operations";
 
 let value: BadgeGroupings = {
-    description: "Innovative grid-enabled encoding",
-    id: 891773,
-    name: "<value>",
-    position: 56713,
-    system: false,
+  description: "Innovative grid-enabled encoding",
+  id: 891773,
+  name: "<value>",
+  position: 56713,
+  system: false,
 };
 ```
 

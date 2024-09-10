@@ -6,7 +6,7 @@
 import { AnonymizeUserRequest } from "@lukehagar/discoursejs/sdk/models/operations";
 
 let value: AnonymizeUserRequest = {
-    id: 783645,
+  id: 783645,
 };
 ```
 

@@ -9,22 +9,29 @@ import * as operations from "./models/operations/index.js";
 import { unwrapAsync } from "./types/fp.js";
 
 export class Notifications extends ClientSDK {
-    /**
-     * Get the notifications that belong to the current user
-     */
-    async getNotifications(
-        options?: RequestOptions
-    ): Promise<operations.GetNotificationsResponseBody> {
-        return unwrapAsync(notificationsGetNotifications(this, options));
-    }
+  /**
+   * Get the notifications that belong to the current user
+   */
+  async getNotifications(
+    options?: RequestOptions,
+  ): Promise<operations.GetNotificationsResponseBody> {
+    return unwrapAsync(notificationsGetNotifications(
+      this,
+      options,
+    ));
+  }
 
-    /**
-     * Mark notifications as read
-     */
-    async markNotificationsAsRead(
-        request?: operations.MarkNotificationsAsReadRequestBody | undefined,
-        options?: RequestOptions
-    ): Promise<operations.MarkNotificationsAsReadResponseBody> {
-        return unwrapAsync(notificationsMarkNotificationsAsRead(this, request, options));
-    }
+  /**
+   * Mark notifications as read
+   */
+  async markNotificationsAsRead(
+    request?: operations.MarkNotificationsAsReadRequestBody | undefined,
+    options?: RequestOptions,
+  ): Promise<operations.MarkNotificationsAsReadResponseBody> {
+    return unwrapAsync(notificationsMarkNotificationsAsRead(
+      this,
+      request,
+      options,
+    ));
+  }
 }

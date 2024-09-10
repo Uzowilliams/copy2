@@ -6,7 +6,7 @@
 import { UpdateAvatarRequest } from "@lukehagar/discoursejs/sdk/models/operations";
 
 let value: UpdateAvatarRequest = {
-    username: "Mason57",
+  username: "Mason57",
 };
 ```
 

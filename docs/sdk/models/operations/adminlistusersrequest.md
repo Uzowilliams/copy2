@@ -6,7 +6,7 @@
 import { AdminListUsersRequest } from "@lukehagar/discoursejs/sdk/models/operations";
 
 let value: AdminListUsersRequest = {
-    flag: "new",
+  flag: "new",
 };
 ```
 

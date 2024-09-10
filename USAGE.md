@@ -5,10 +5,10 @@ import { SDK } from "@lukehagar/discoursejs";
 const sdk = new SDK();
 
 async function run() {
-    const result = await sdk.backups.createBackup();
+  const result = await sdk.backups.createBackup();
 
-    // Handle the result
-    console.log(result);
+  // Handle the result
+  console.log(result);
 }
 
 run();

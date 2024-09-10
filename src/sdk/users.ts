@@ -31,278 +31,387 @@ import * as operations from "./models/operations/index.js";
 import { unwrapAsync } from "./types/fp.js";
 
 export class Users extends ClientSDK {
-    /**
-     * Activate a user
-     */
-    async activateUser(
-        id: number,
-        options?: RequestOptions
-    ): Promise<operations.ActivateUserResponseBody> {
-        return unwrapAsync(usersActivateUser(this, id, options));
-    }
+  /**
+   * Activate a user
+   */
+  async activateUser(
+    id: number,
+    options?: RequestOptions,
+  ): Promise<operations.ActivateUserResponseBody> {
+    return unwrapAsync(usersActivateUser(
+      this,
+      id,
+      options,
+    ));
+  }
 
-    /**
-     * Get a user by id
-     */
-    async adminGetUser(
-        id: number,
-        options?: RequestOptions
-    ): Promise<operations.AdminGetUserResponseBody> {
-        return unwrapAsync(usersAdminGetUser(this, id, options));
-    }
+  /**
+   * Get a user by id
+   */
+  async adminGetUser(
+    id: number,
+    options?: RequestOptions,
+  ): Promise<operations.AdminGetUserResponseBody> {
+    return unwrapAsync(usersAdminGetUser(
+      this,
+      id,
+      options,
+    ));
+  }
 
-    /**
-     * Get a list of users
-     */
-    async adminListUsers(
-        request: operations.AdminListUsersRequest,
-        options?: RequestOptions
-    ): Promise<Array<operations.AdminListUsersResponseBody>> {
-        return unwrapAsync(usersAdminListUsers(this, request, options));
-    }
+  /**
+   * Get a list of users
+   */
+  async adminListUsers(
+    request: operations.AdminListUsersRequest,
+    options?: RequestOptions,
+  ): Promise<Array<operations.AdminListUsersResponseBody>> {
+    return unwrapAsync(usersAdminListUsers(
+      this,
+      request,
+      options,
+    ));
+  }
 
-    /**
-     * Anonymize a user
-     */
-    async anonymizeUser(
-        id: number,
-        options?: RequestOptions
-    ): Promise<operations.AnonymizeUserResponseBody> {
-        return unwrapAsync(usersAnonymizeUser(this, id, options));
-    }
+  /**
+   * Anonymize a user
+   */
+  async anonymizeUser(
+    id: number,
+    options?: RequestOptions,
+  ): Promise<operations.AnonymizeUserResponseBody> {
+    return unwrapAsync(usersAnonymizeUser(
+      this,
+      id,
+      options,
+    ));
+  }
 
-    /**
-     * Change password
-     */
-    async changePassword(
-        token: string,
-        requestBody?: operations.ChangePasswordRequestBody | undefined,
-        options?: RequestOptions
-    ): Promise<void> {
-        return unwrapAsync(usersChangePassword(this, token, requestBody, options));
-    }
+  /**
+   * Change password
+   */
+  async changePassword(
+    token: string,
+    requestBody?: operations.ChangePasswordRequestBody | undefined,
+    options?: RequestOptions,
+  ): Promise<void> {
+    return unwrapAsync(usersChangePassword(
+      this,
+      token,
+      requestBody,
+      options,
+    ));
+  }
 
-    /**
-     * Creates a user
-     */
-    async createUser(
-        apiKey: string,
-        apiUsername: string,
-        requestBody?: operations.CreateUserRequestBody | undefined,
-        options?: RequestOptions
-    ): Promise<operations.CreateUserResponseBody> {
-        return unwrapAsync(usersCreateUser(this, apiKey, apiUsername, requestBody, options));
-    }
+  /**
+   * Creates a user
+   */
+  async createUser(
+    apiKey: string,
+    apiUsername: string,
+    requestBody?: operations.CreateUserRequestBody | undefined,
+    options?: RequestOptions,
+  ): Promise<operations.CreateUserResponseBody> {
+    return unwrapAsync(usersCreateUser(
+      this,
+      apiKey,
+      apiUsername,
+      requestBody,
+      options,
+    ));
+  }
 
-    /**
-     * Deactivate a user
-     */
-    async deactivateUser(
-        id: number,
-        options?: RequestOptions
-    ): Promise<operations.DeactivateUserResponseBody> {
-        return unwrapAsync(usersDeactivateUser(this, id, options));
-    }
+  /**
+   * Deactivate a user
+   */
+  async deactivateUser(
+    id: number,
+    options?: RequestOptions,
+  ): Promise<operations.DeactivateUserResponseBody> {
+    return unwrapAsync(usersDeactivateUser(
+      this,
+      id,
+      options,
+    ));
+  }
 
-    /**
-     * Delete a user
-     */
-    async deleteUser(
-        id: number,
-        requestBody?: operations.DeleteUserRequestBody | undefined,
-        options?: RequestOptions
-    ): Promise<operations.DeleteUserResponseBody> {
-        return unwrapAsync(usersDeleteUser(this, id, requestBody, options));
-    }
+  /**
+   * Delete a user
+   */
+  async deleteUser(
+    id: number,
+    requestBody?: operations.DeleteUserRequestBody | undefined,
+    options?: RequestOptions,
+  ): Promise<operations.DeleteUserResponseBody> {
+    return unwrapAsync(usersDeleteUser(
+      this,
+      id,
+      requestBody,
+      options,
+    ));
+  }
 
-    /**
-     * Get a single user by username
-     */
-    async getUser(
-        apiKey: string,
-        apiUsername: string,
-        username: string,
-        options?: RequestOptions
-    ): Promise<operations.GetUserResponseBody> {
-        return unwrapAsync(usersGetUser(this, apiKey, apiUsername, username, options));
-    }
+  /**
+   * Get a single user by username
+   */
+  async getUser(
+    apiKey: string,
+    apiUsername: string,
+    username: string,
+    options?: RequestOptions,
+  ): Promise<operations.GetUserResponseBody> {
+    return unwrapAsync(usersGetUser(
+      this,
+      apiKey,
+      apiUsername,
+      username,
+      options,
+    ));
+  }
 
-    /**
-     * Get email addresses belonging to a user
-     */
-    async getUserEmails(
-        username: string,
-        options?: RequestOptions
-    ): Promise<operations.GetUserEmailsResponseBody> {
-        return unwrapAsync(usersGetUserEmails(this, username, options));
-    }
+  /**
+   * Get email addresses belonging to a user
+   */
+  async getUserEmails(
+    username: string,
+    options?: RequestOptions,
+  ): Promise<operations.GetUserEmailsResponseBody> {
+    return unwrapAsync(usersGetUserEmails(
+      this,
+      username,
+      options,
+    ));
+  }
 
-    /**
-     * Get a user by external_id
-     */
-    async getUserExternalId(
-        apiKey: string,
-        apiUsername: string,
-        externalId: string,
-        options?: RequestOptions
-    ): Promise<operations.GetUserExternalIdResponseBody> {
-        return unwrapAsync(usersGetUserExternalId(this, apiKey, apiUsername, externalId, options));
-    }
+  /**
+   * Get a user by external_id
+   */
+  async getUserExternalId(
+    apiKey: string,
+    apiUsername: string,
+    externalId: string,
+    options?: RequestOptions,
+  ): Promise<operations.GetUserExternalIdResponseBody> {
+    return unwrapAsync(usersGetUserExternalId(
+      this,
+      apiKey,
+      apiUsername,
+      externalId,
+      options,
+    ));
+  }
 
-    /**
-     * Get a user by identity provider external ID
-     */
-    async getUserIdentiyProviderExternalId(
-        apiKey: string,
-        apiUsername: string,
-        externalId: string,
-        provider: string,
-        options?: RequestOptions
-    ): Promise<operations.GetUserIdentiyProviderExternalIdResponseBody> {
-        return unwrapAsync(
-            usersGetUserIdentiyProviderExternalId(
-                this,
-                apiKey,
-                apiUsername,
-                externalId,
-                provider,
-                options
-            )
-        );
-    }
+  /**
+   * Get a user by identity provider external ID
+   */
+  async getUserIdentiyProviderExternalId(
+    apiKey: string,
+    apiUsername: string,
+    externalId: string,
+    provider: string,
+    options?: RequestOptions,
+  ): Promise<operations.GetUserIdentiyProviderExternalIdResponseBody> {
+    return unwrapAsync(usersGetUserIdentiyProviderExternalId(
+      this,
+      apiKey,
+      apiUsername,
+      externalId,
+      provider,
+      options,
+    ));
+  }
 
-    /**
-     * Get a list of user actions
-     */
-    async listUserActions(
-        filter: string,
-        offset: number,
-        username: string,
-        options?: RequestOptions
-    ): Promise<operations.ListUserActionsResponseBody> {
-        return unwrapAsync(usersListUserActions(this, filter, offset, username, options));
-    }
+  /**
+   * Get a list of user actions
+   */
+  async listUserActions(
+    filter: string,
+    offset: number,
+    username: string,
+    options?: RequestOptions,
+  ): Promise<operations.ListUserActionsResponseBody> {
+    return unwrapAsync(usersListUserActions(
+      this,
+      filter,
+      offset,
+      username,
+      options,
+    ));
+  }
 
-    /**
-     * List badges for a user
-     */
-    async listUserBadges(
-        username: string,
-        options?: RequestOptions
-    ): Promise<operations.ListUserBadgesResponseBody> {
-        return unwrapAsync(usersListUserBadges(this, username, options));
-    }
+  /**
+   * List badges for a user
+   */
+  async listUserBadges(
+    username: string,
+    options?: RequestOptions,
+  ): Promise<operations.ListUserBadgesResponseBody> {
+    return unwrapAsync(usersListUserBadges(
+      this,
+      username,
+      options,
+    ));
+  }
 
-    /**
-     * Get a public list of users
-     */
-    async listUsersPublic(
-        order: operations.Order,
-        period: operations.Period,
-        asc?: operations.Asc | undefined,
-        page?: number | undefined,
-        options?: RequestOptions
-    ): Promise<operations.ListUsersPublicResponseBody> {
-        return unwrapAsync(usersListUsersPublic(this, order, period, asc, page, options));
-    }
+  /**
+   * Get a public list of users
+   */
+  async listUsersPublic(
+    order: operations.Order,
+    period: operations.Period,
+    asc?: operations.Asc | undefined,
+    page?: number | undefined,
+    options?: RequestOptions,
+  ): Promise<operations.ListUsersPublicResponseBody> {
+    return unwrapAsync(usersListUsersPublic(
+      this,
+      order,
+      period,
+      asc,
+      page,
+      options,
+    ));
+  }
 
-    /**
-     * Log a user out
-     */
-    async logOutUser(
-        id: number,
-        options?: RequestOptions
-    ): Promise<operations.LogOutUserResponseBody> {
-        return unwrapAsync(usersLogOutUser(this, id, options));
-    }
+  /**
+   * Log a user out
+   */
+  async logOutUser(
+    id: number,
+    options?: RequestOptions,
+  ): Promise<operations.LogOutUserResponseBody> {
+    return unwrapAsync(usersLogOutUser(
+      this,
+      id,
+      options,
+    ));
+  }
 
-    /**
-     * Refresh gravatar
-     */
-    async refreshGravatar(
-        username: string,
-        options?: RequestOptions
-    ): Promise<operations.RefreshGravatarResponseBody> {
-        return unwrapAsync(usersRefreshGravatar(this, username, options));
-    }
+  /**
+   * Refresh gravatar
+   */
+  async refreshGravatar(
+    username: string,
+    options?: RequestOptions,
+  ): Promise<operations.RefreshGravatarResponseBody> {
+    return unwrapAsync(usersRefreshGravatar(
+      this,
+      username,
+      options,
+    ));
+  }
 
-    /**
-     * Send password reset email
-     */
-    async sendPasswordResetEmail(
-        request?: operations.SendPasswordResetEmailRequestBody | undefined,
-        options?: RequestOptions
-    ): Promise<operations.SendPasswordResetEmailResponseBody> {
-        return unwrapAsync(usersSendPasswordResetEmail(this, request, options));
-    }
+  /**
+   * Send password reset email
+   */
+  async sendPasswordResetEmail(
+    request?: operations.SendPasswordResetEmailRequestBody | undefined,
+    options?: RequestOptions,
+  ): Promise<operations.SendPasswordResetEmailResponseBody> {
+    return unwrapAsync(usersSendPasswordResetEmail(
+      this,
+      request,
+      options,
+    ));
+  }
 
-    /**
-     * Silence a user
-     */
-    async silenceUser(
-        id: number,
-        requestBody?: operations.SilenceUserRequestBody | undefined,
-        options?: RequestOptions
-    ): Promise<operations.SilenceUserResponseBody> {
-        return unwrapAsync(usersSilenceUser(this, id, requestBody, options));
-    }
+  /**
+   * Silence a user
+   */
+  async silenceUser(
+    id: number,
+    requestBody?: operations.SilenceUserRequestBody | undefined,
+    options?: RequestOptions,
+  ): Promise<operations.SilenceUserResponseBody> {
+    return unwrapAsync(usersSilenceUser(
+      this,
+      id,
+      requestBody,
+      options,
+    ));
+  }
 
-    /**
-     * Suspend a user
-     */
-    async suspendUser(
-        id: number,
-        requestBody?: operations.SuspendUserRequestBody | undefined,
-        options?: RequestOptions
-    ): Promise<operations.SuspendUserResponseBody> {
-        return unwrapAsync(usersSuspendUser(this, id, requestBody, options));
-    }
+  /**
+   * Suspend a user
+   */
+  async suspendUser(
+    id: number,
+    requestBody?: operations.SuspendUserRequestBody | undefined,
+    options?: RequestOptions,
+  ): Promise<operations.SuspendUserResponseBody> {
+    return unwrapAsync(usersSuspendUser(
+      this,
+      id,
+      requestBody,
+      options,
+    ));
+  }
 
-    /**
-     * Update avatar
-     */
-    async updateAvatar(
-        username: string,
-        requestBody?: operations.UpdateAvatarRequestBody | undefined,
-        options?: RequestOptions
-    ): Promise<operations.UpdateAvatarResponseBody> {
-        return unwrapAsync(usersUpdateAvatar(this, username, requestBody, options));
-    }
+  /**
+   * Update avatar
+   */
+  async updateAvatar(
+    username: string,
+    requestBody?: operations.UpdateAvatarRequestBody | undefined,
+    options?: RequestOptions,
+  ): Promise<operations.UpdateAvatarResponseBody> {
+    return unwrapAsync(usersUpdateAvatar(
+      this,
+      username,
+      requestBody,
+      options,
+    ));
+  }
 
-    /**
-     * Update email
-     */
-    async updateEmail(
-        username: string,
-        requestBody?: operations.UpdateEmailRequestBody | undefined,
-        options?: RequestOptions
-    ): Promise<void> {
-        return unwrapAsync(usersUpdateEmail(this, username, requestBody, options));
-    }
+  /**
+   * Update email
+   */
+  async updateEmail(
+    username: string,
+    requestBody?: operations.UpdateEmailRequestBody | undefined,
+    options?: RequestOptions,
+  ): Promise<void> {
+    return unwrapAsync(usersUpdateEmail(
+      this,
+      username,
+      requestBody,
+      options,
+    ));
+  }
 
-    /**
-     * Update a user
-     */
-    async updateUser(
-        apiKey: string,
-        apiUsername: string,
-        username: string,
-        requestBody?: operations.UpdateUserRequestBody | undefined,
-        options?: RequestOptions
-    ): Promise<operations.UpdateUserResponseBody> {
-        return unwrapAsync(
-            usersUpdateUser(this, apiKey, apiUsername, username, requestBody, options)
-        );
-    }
+  /**
+   * Update a user
+   */
+  async updateUser(
+    apiKey: string,
+    apiUsername: string,
+    username: string,
+    requestBody?: operations.UpdateUserRequestBody | undefined,
+    options?: RequestOptions,
+  ): Promise<operations.UpdateUserResponseBody> {
+    return unwrapAsync(usersUpdateUser(
+      this,
+      apiKey,
+      apiUsername,
+      username,
+      requestBody,
+      options,
+    ));
+  }
 
-    /**
-     * Update username
-     */
-    async updateUsername(
-        username: string,
-        requestBody?: operations.UpdateUsernameRequestBody | undefined,
-        options?: RequestOptions
-    ): Promise<void> {
-        return unwrapAsync(usersUpdateUsername(this, username, requestBody, options));
-    }
+  /**
+   * Update username
+   */
+  async updateUsername(
+    username: string,
+    requestBody?: operations.UpdateUsernameRequestBody | undefined,
+    options?: RequestOptions,
+  ): Promise<void> {
+    return unwrapAsync(usersUpdateUsername(
+      this,
+      username,
+      requestBody,
+      options,
+    ));
+  }
 }

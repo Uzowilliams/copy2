@@ -6,9 +6,9 @@
 import { UpdateTopicStatusRequestBody } from "@lukehagar/discoursejs/sdk/models/operations";
 
 let value: UpdateTopicStatusRequestBody = {
-    enabled: "true",
-    status: "closed",
-    until: "2030-12-31",
+  enabled: "true",
+  status: "closed",
+  until: "2030-12-31",
 };
 ```
 

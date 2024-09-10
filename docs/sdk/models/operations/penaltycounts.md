@@ -6,8 +6,8 @@
 import { PenaltyCounts } from "@lukehagar/discoursejs/sdk/models/operations";
 
 let value: PenaltyCounts = {
-    silenced: 618016,
-    suspended: 749170,
+  silenced: 618016,
+  suspended: 749170,
 };
 ```
 

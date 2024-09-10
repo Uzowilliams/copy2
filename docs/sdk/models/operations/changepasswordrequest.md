@@ -6,7 +6,7 @@
 import { ChangePasswordRequest } from "@lukehagar/discoursejs/sdk/models/operations";
 
 let value: ChangePasswordRequest = {
-    token: "<value>",
+  token: "<value>",
 };
 ```
 

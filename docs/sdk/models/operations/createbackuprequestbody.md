@@ -6,7 +6,7 @@
 import { CreateBackupRequestBody } from "@lukehagar/discoursejs/sdk/models/operations";
 
 let value: CreateBackupRequestBody = {
-    withUploads: false,
+  withUploads: false,
 };
 ```
 

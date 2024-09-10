@@ -6,9 +6,9 @@
 import { GetUserExternalIdGroupUsers } from "@lukehagar/discoursejs/sdk/models/operations";
 
 let value: GetUserExternalIdGroupUsers = {
-    groupId: 301831,
-    notificationLevel: 407241,
-    userId: 775220,
+  groupId: 301831,
+  notificationLevel: 407241,
+  userId: 775220,
 };
 ```
 

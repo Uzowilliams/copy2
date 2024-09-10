@@ -6,9 +6,9 @@
 import { ListUsersPublicMeta } from "@lukehagar/discoursejs/sdk/models/operations";
 
 let value: ListUsersPublicMeta = {
-    lastUpdatedAt: "<value>",
-    loadMoreDirectoryItems: "<value>",
-    totalRowsDirectoryItems: 750595,
+  lastUpdatedAt: "<value>",
+  loadMoreDirectoryItems: "<value>",
+  totalRowsDirectoryItems: 750595,
 };
 ```
 

@@ -6,13 +6,13 @@
 import { UserBadges } from "@lukehagar/discoursejs/sdk/models/operations";
 
 let value: UserBadges = {
-    badgeId: 60225,
-    canFavorite: false,
-    grantedAt: "<value>",
-    grantedById: 969810,
-    groupingPosition: 666767,
-    id: 653140,
-    isFavorite: "<value>",
+  badgeId: 60225,
+  canFavorite: false,
+  grantedAt: "<value>",
+  grantedById: 969810,
+  groupingPosition: 666767,
+  id: 653140,
+  isFavorite: "<value>",
 };
 ```
 

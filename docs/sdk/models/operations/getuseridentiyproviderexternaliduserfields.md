@@ -6,8 +6,8 @@
 import { GetUserIdentiyProviderExternalIdUserFields } from "@lukehagar/discoursejs/sdk/models/operations";
 
 let value: GetUserIdentiyProviderExternalIdUserFields = {
-    one: "<value>",
-    two: "<value>",
+  one: "<value>",
+  two: "<value>",
 };
 ```
 

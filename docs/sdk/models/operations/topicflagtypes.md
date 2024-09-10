@@ -6,13 +6,13 @@
 import { TopicFlagTypes } from "@lukehagar/discoursejs/sdk/models/operations";
 
 let value: TopicFlagTypes = {
-    description: "Multi-layered foreground emulation",
-    id: 633062,
-    isCustomFlag: false,
-    isFlag: false,
-    name: "<value>",
-    nameKey: "<value>",
-    shortDescription: "<value>",
+  description: "Multi-layered foreground emulation",
+  id: 633062,
+  isCustomFlag: false,
+  isFlag: false,
+  name: "<value>",
+  nameKey: "<value>",
+  shortDescription: "<value>",
 };
 ```
 

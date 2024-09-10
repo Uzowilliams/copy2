@@ -8,9 +8,9 @@ user created
 import { CreateUserResponseBody } from "@lukehagar/discoursejs/sdk/models/operations";
 
 let value: CreateUserResponseBody = {
-    active: false,
-    message: "<value>",
-    success: false,
+  active: false,
+  message: "<value>",
+  success: false,
 };
 ```
 

@@ -6,8 +6,8 @@
 import { SilenceUserRequestBody } from "@lukehagar/discoursejs/sdk/models/operations";
 
 let value: SilenceUserRequestBody = {
-    postAction: "delete",
-    silencedTill: "2022-06-01T08:00:00.000Z",
+  postAction: "delete",
+  silencedTill: "2022-06-01T08:00:00.000Z",
 };
 ```
 

@@ -6,10 +6,10 @@
 import { LastPoster } from "@lukehagar/discoursejs/sdk/models/operations";
 
 let value: LastPoster = {
-    avatarTemplate: "<value>",
-    id: 987349,
-    name: "<value>",
-    username: "Terrence.Rowe",
+  avatarTemplate: "<value>",
+  id: 987349,
+  name: "<value>",
+  username: "Terrence.Rowe",
 };
 ```
 

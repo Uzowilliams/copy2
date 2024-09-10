@@ -6,7 +6,7 @@
 import { ListGroupMembersRequest } from "@lukehagar/discoursejs/sdk/models/operations";
 
 let value: ListGroupMembersRequest = {
-    id: "name",
+  id: "name",
 };
 ```
 

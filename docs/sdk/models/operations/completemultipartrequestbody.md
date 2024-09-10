@@ -6,17 +6,17 @@
 import { CompleteMultipartRequestBody } from "@lukehagar/discoursejs/sdk/models/operations";
 
 let value: CompleteMultipartRequestBody = {
-    parts: [
-        {
-            part_number: 1,
-            etag: "0c376dcfcc2606f4335bbc732de93344",
-        },
-        {
-            part_number: 2,
-            etag: "09ert8cfcc2606f4335bbc732de91122",
-        },
-    ],
-    uniqueIdentifier: "66e86218-80d9-4bda-b4d5-2b6def968705",
+  parts: [
+    {
+      "part_number": 1,
+      "etag": "0c376dcfcc2606f4335bbc732de93344",
+    },
+    {
+      "part_number": 2,
+      "etag": "09ert8cfcc2606f4335bbc732de91122",
+    },
+  ],
+  uniqueIdentifier: "66e86218-80d9-4bda-b4d5-2b6def968705",
 };
 ```
 

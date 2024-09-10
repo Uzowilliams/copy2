@@ -17,106 +17,149 @@ import * as operations from "./models/operations/index.js";
 import { unwrapAsync } from "./types/fp.js";
 
 export class Admin extends ClientSDK {
-    /**
-     * Activate a user
-     */
-    async activateUser(
-        id: number,
-        options?: RequestOptions
-    ): Promise<operations.ActivateUserResponseBody> {
-        return unwrapAsync(adminActivateUser(this, id, options));
-    }
+  /**
+   * Activate a user
+   */
+  async activateUser(
+    id: number,
+    options?: RequestOptions,
+  ): Promise<operations.ActivateUserResponseBody> {
+    return unwrapAsync(adminActivateUser(
+      this,
+      id,
+      options,
+    ));
+  }
 
-    /**
-     * Get a user by id
-     */
-    async adminGetUser(
-        id: number,
-        options?: RequestOptions
-    ): Promise<operations.AdminGetUserResponseBody> {
-        return unwrapAsync(adminAdminGetUser(this, id, options));
-    }
+  /**
+   * Get a user by id
+   */
+  async adminGetUser(
+    id: number,
+    options?: RequestOptions,
+  ): Promise<operations.AdminGetUserResponseBody> {
+    return unwrapAsync(adminAdminGetUser(
+      this,
+      id,
+      options,
+    ));
+  }
 
-    /**
-     * Get a list of users
-     */
-    async adminListUsers(
-        request: operations.AdminListUsersRequest,
-        options?: RequestOptions
-    ): Promise<Array<operations.AdminListUsersResponseBody>> {
-        return unwrapAsync(adminAdminListUsers(this, request, options));
-    }
+  /**
+   * Get a list of users
+   */
+  async adminListUsers(
+    request: operations.AdminListUsersRequest,
+    options?: RequestOptions,
+  ): Promise<Array<operations.AdminListUsersResponseBody>> {
+    return unwrapAsync(adminAdminListUsers(
+      this,
+      request,
+      options,
+    ));
+  }
 
-    /**
-     * Anonymize a user
-     */
-    async anonymizeUser(
-        id: number,
-        options?: RequestOptions
-    ): Promise<operations.AnonymizeUserResponseBody> {
-        return unwrapAsync(adminAnonymizeUser(this, id, options));
-    }
+  /**
+   * Anonymize a user
+   */
+  async anonymizeUser(
+    id: number,
+    options?: RequestOptions,
+  ): Promise<operations.AnonymizeUserResponseBody> {
+    return unwrapAsync(adminAnonymizeUser(
+      this,
+      id,
+      options,
+    ));
+  }
 
-    /**
-     * Deactivate a user
-     */
-    async deactivateUser(
-        id: number,
-        options?: RequestOptions
-    ): Promise<operations.DeactivateUserResponseBody> {
-        return unwrapAsync(adminDeactivateUser(this, id, options));
-    }
+  /**
+   * Deactivate a user
+   */
+  async deactivateUser(
+    id: number,
+    options?: RequestOptions,
+  ): Promise<operations.DeactivateUserResponseBody> {
+    return unwrapAsync(adminDeactivateUser(
+      this,
+      id,
+      options,
+    ));
+  }
 
-    /**
-     * Delete a user
-     */
-    async deleteUser(
-        id: number,
-        requestBody?: operations.DeleteUserRequestBody | undefined,
-        options?: RequestOptions
-    ): Promise<operations.DeleteUserResponseBody> {
-        return unwrapAsync(adminDeleteUser(this, id, requestBody, options));
-    }
+  /**
+   * Delete a user
+   */
+  async deleteUser(
+    id: number,
+    requestBody?: operations.DeleteUserRequestBody | undefined,
+    options?: RequestOptions,
+  ): Promise<operations.DeleteUserResponseBody> {
+    return unwrapAsync(adminDeleteUser(
+      this,
+      id,
+      requestBody,
+      options,
+    ));
+  }
 
-    /**
-     * Log a user out
-     */
-    async logOutUser(
-        id: number,
-        options?: RequestOptions
-    ): Promise<operations.LogOutUserResponseBody> {
-        return unwrapAsync(adminLogOutUser(this, id, options));
-    }
+  /**
+   * Log a user out
+   */
+  async logOutUser(
+    id: number,
+    options?: RequestOptions,
+  ): Promise<operations.LogOutUserResponseBody> {
+    return unwrapAsync(adminLogOutUser(
+      this,
+      id,
+      options,
+    ));
+  }
 
-    /**
-     * Refresh gravatar
-     */
-    async refreshGravatar(
-        username: string,
-        options?: RequestOptions
-    ): Promise<operations.RefreshGravatarResponseBody> {
-        return unwrapAsync(adminRefreshGravatar(this, username, options));
-    }
+  /**
+   * Refresh gravatar
+   */
+  async refreshGravatar(
+    username: string,
+    options?: RequestOptions,
+  ): Promise<operations.RefreshGravatarResponseBody> {
+    return unwrapAsync(adminRefreshGravatar(
+      this,
+      username,
+      options,
+    ));
+  }
 
-    /**
-     * Silence a user
-     */
-    async silenceUser(
-        id: number,
-        requestBody?: operations.SilenceUserRequestBody | undefined,
-        options?: RequestOptions
-    ): Promise<operations.SilenceUserResponseBody> {
-        return unwrapAsync(adminSilenceUser(this, id, requestBody, options));
-    }
+  /**
+   * Silence a user
+   */
+  async silenceUser(
+    id: number,
+    requestBody?: operations.SilenceUserRequestBody | undefined,
+    options?: RequestOptions,
+  ): Promise<operations.SilenceUserResponseBody> {
+    return unwrapAsync(adminSilenceUser(
+      this,
+      id,
+      requestBody,
+      options,
+    ));
+  }
 
-    /**
-     * Suspend a user
-     */
-    async suspendUser(
-        id: number,
-        requestBody?: operations.SuspendUserRequestBody | undefined,
-        options?: RequestOptions
-    ): Promise<operations.SuspendUserResponseBody> {
-        return unwrapAsync(adminSuspendUser(this, id, requestBody, options));
-    }
+  /**
+   * Suspend a user
+   */
+  async suspendUser(
+    id: number,
+    requestBody?: operations.SuspendUserRequestBody | undefined,
+    options?: RequestOptions,
+  ): Promise<operations.SuspendUserResponseBody> {
+    return unwrapAsync(adminSuspendUser(
+      this,
+      id,
+      requestBody,
+      options,
+    ));
+  }
 }

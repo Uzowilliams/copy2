@@ -8,7 +8,7 @@ topic updated
 import { SetNotificationLevelResponseBody } from "@lukehagar/discoursejs/sdk/models/operations";
 
 let value: SetNotificationLevelResponseBody = {
-    success: "OK",
+  success: "OK",
 };
 ```
 

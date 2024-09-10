@@ -6,7 +6,7 @@
 import { GetUserEmailsRequest } from "@lukehagar/discoursejs/sdk/models/operations";
 
 let value: GetUserEmailsRequest = {
-    username: "Everett_Willms41",
+  username: "Everett_Willms41",
 };
 ```
 

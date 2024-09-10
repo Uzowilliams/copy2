@@ -6,9 +6,9 @@
 import { GeneratePresignedPutRequestBody } from "@lukehagar/discoursejs/sdk/models/operations";
 
 let value: GeneratePresignedPutRequestBody = {
-    fileName: "IMG_2021.jpeg",
-    fileSize: 4096,
-    type: "profile_background",
+  fileName: "IMG_2021.jpeg",
+  fileSize: 4096,
+  type: "profile_background",
 };
 ```
 

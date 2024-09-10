@@ -20,78 +20,78 @@ import { Uploads } from "./uploads.js";
 import { Users } from "./users.js";
 
 export class SDK extends ClientSDK {
-    private _backups?: Backups;
-    get backups(): Backups {
-        return (this._backups ??= new Backups(this.options$));
-    }
+  private _backups?: Backups;
+  get backups(): Backups {
+    return (this._backups ??= new Backups(this.options$));
+  }
 
-    private _badges?: Badges;
-    get badges(): Badges {
-        return (this._badges ??= new Badges(this.options$));
-    }
+  private _badges?: Badges;
+  get badges(): Badges {
+    return (this._badges ??= new Badges(this.options$));
+  }
 
-    private _groups?: Groups;
-    get groups(): Groups {
-        return (this._groups ??= new Groups(this.options$));
-    }
+  private _groups?: Groups;
+  get groups(): Groups {
+    return (this._groups ??= new Groups(this.options$));
+  }
 
-    private _users?: Users;
-    get users(): Users {
-        return (this._users ??= new Users(this.options$));
-    }
+  private _users?: Users;
+  get users(): Users {
+    return (this._users ??= new Users(this.options$));
+  }
 
-    private _admin?: Admin;
-    get admin(): Admin {
-        return (this._admin ??= new Admin(this.options$));
-    }
+  private _admin?: Admin;
+  get admin(): Admin {
+    return (this._admin ??= new Admin(this.options$));
+  }
 
-    private _categories?: Categories;
-    get categories(): Categories {
-        return (this._categories ??= new Categories(this.options$));
-    }
+  private _categories?: Categories;
+  get categories(): Categories {
+    return (this._categories ??= new Categories(this.options$));
+  }
 
-    private _invites?: Invites;
-    get invites(): Invites {
-        return (this._invites ??= new Invites(this.options$));
-    }
+  private _invites?: Invites;
+  get invites(): Invites {
+    return (this._invites ??= new Invites(this.options$));
+  }
 
-    private _topics?: Topics;
-    get topics(): Topics {
-        return (this._topics ??= new Topics(this.options$));
-    }
+  private _topics?: Topics;
+  get topics(): Topics {
+    return (this._topics ??= new Topics(this.options$));
+  }
 
-    private _notifications?: Notifications;
-    get notifications(): Notifications {
-        return (this._notifications ??= new Notifications(this.options$));
-    }
+  private _notifications?: Notifications;
+  get notifications(): Notifications {
+    return (this._notifications ??= new Notifications(this.options$));
+  }
 
-    private _posts?: Posts;
-    get posts(): Posts {
-        return (this._posts ??= new Posts(this.options$));
-    }
+  private _posts?: Posts;
+  get posts(): Posts {
+    return (this._posts ??= new Posts(this.options$));
+  }
 
-    private _privateMessages?: PrivateMessages;
-    get privateMessages(): PrivateMessages {
-        return (this._privateMessages ??= new PrivateMessages(this.options$));
-    }
+  private _privateMessages?: PrivateMessages;
+  get privateMessages(): PrivateMessages {
+    return (this._privateMessages ??= new PrivateMessages(this.options$));
+  }
 
-    private _search?: Search;
-    get search(): Search {
-        return (this._search ??= new Search(this.options$));
-    }
+  private _search?: Search;
+  get search(): Search {
+    return (this._search ??= new Search(this.options$));
+  }
 
-    private _site?: Site;
-    get site(): Site {
-        return (this._site ??= new Site(this.options$));
-    }
+  private _site?: Site;
+  get site(): Site {
+    return (this._site ??= new Site(this.options$));
+  }
 
-    private _tags?: Tags;
-    get tags(): Tags {
-        return (this._tags ??= new Tags(this.options$));
-    }
+  private _tags?: Tags;
+  get tags(): Tags {
+    return (this._tags ??= new Tags(this.options$));
+  }
 
-    private _uploads?: Uploads;
-    get uploads(): Uploads {
-        return (this._uploads ??= new Uploads(this.options$));
-    }
+  private _uploads?: Uploads;
+  get uploads(): Uploads {
+    return (this._uploads ??= new Uploads(this.options$));
+  }
 }

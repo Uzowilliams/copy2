@@ -6,16 +6,16 @@
 import { GetUserIdentiyProviderExternalIdUserAuthTokens } from "@lukehagar/discoursejs/sdk/models/operations";
 
 let value: GetUserIdentiyProviderExternalIdUserAuthTokens = {
-    browser: "<value>",
-    clientIp: "<value>",
-    createdAt: "<value>",
-    device: "<value>",
-    icon: "<value>",
-    id: 401259,
-    isActive: false,
-    location: "<value>",
-    os: "<value>",
-    seenAt: "<value>",
+  browser: "<value>",
+  clientIp: "<value>",
+  createdAt: "<value>",
+  device: "<value>",
+  icon: "<value>",
+  id: 401259,
+  isActive: false,
+  location: "<value>",
+  os: "<value>",
+  seenAt: "<value>",
 };
 ```
 

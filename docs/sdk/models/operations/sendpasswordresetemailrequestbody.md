@@ -6,7 +6,7 @@
 import { SendPasswordResetEmailRequestBody } from "@lukehagar/discoursejs/sdk/models/operations";
 
 let value: SendPasswordResetEmailRequestBody = {
-    login: "Lilyan_Welch20",
+  login: "Lilyan_Welch20",
 };
 ```
 

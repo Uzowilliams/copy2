@@ -8,7 +8,7 @@ topic updated
 import { UpdateTopicTimestampResponseBody } from "@lukehagar/discoursejs/sdk/models/operations";
 
 let value: UpdateTopicTimestampResponseBody = {
-    success: "OK",
+  success: "OK",
 };
 ```
 

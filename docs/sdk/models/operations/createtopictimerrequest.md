@@ -6,12 +6,12 @@
 import { CreateTopicTimerRequest } from "@lukehagar/discoursejs/sdk/models/operations";
 
 let value: CreateTopicTimerRequest = {
-    apiKey: "<value>",
-    apiUsername: "<value>",
-    requestBody: {
-        time: "",
-    },
-    id: "<id>",
+  apiKey: "<value>",
+  apiUsername: "<value>",
+  requestBody: {
+    time: "",
+  },
+  id: "<id>",
 };
 ```
 

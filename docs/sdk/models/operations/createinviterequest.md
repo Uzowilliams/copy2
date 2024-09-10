@@ -6,14 +6,14 @@
 import { CreateInviteRequest } from "@lukehagar/discoursejs/sdk/models/operations";
 
 let value: CreateInviteRequest = {
-    apiKey: "<value>",
-    apiUsername: "<value>",
-    requestBody: {
-        email: "not-a-user-yet@example.com",
-        groupIds: "42,43",
-        groupNames: "foo,bar",
-        maxRedemptionsAllowed: 5,
-    },
+  apiKey: "<value>",
+  apiUsername: "<value>",
+  requestBody: {
+    email: "not-a-user-yet@example.com",
+    groupIds: "42,43",
+    groupNames: "foo,bar",
+    maxRedemptionsAllowed: 5,
+  },
 };
 ```
 

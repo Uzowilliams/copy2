@@ -3,10 +3,10 @@ id: 599a9576-4665-431e-be1e-44cc13ef28aa
 management:
   docChecksum: dd4d04e62622de8f631720b5be68964d
   docVersion: latest
-  speakeasyVersion: 1.392.1
-  generationVersion: 2.411.9
-  releaseVersion: 0.8.2
-  configChecksum: a578620a51a141cfb038d8ff4ad464ac
+  speakeasyVersion: 1.394.0
+  generationVersion: 2.413.0
+  releaseVersion: 0.9.0
+  configChecksum: 030c268f7981a3d3ccfa57503ecb1d6a
   repoURL: https://github.com/LukeHagar/discoursejs.git
   repoSubDirectory: .
   installationURL: https://github.com/LukeHagar/discoursejs
@@ -16,7 +16,7 @@ features:
     additionalDependencies: 0.1.0
     additionalProperties: 0.1.1
     constsAndDefaults: 0.1.11
-    core: 3.16.4
+    core: 3.17.0
     defaultEnabledRetries: 0.1.0
     deprecations: 2.81.1
     envVarSecurityUsage: 0.1.1
@@ -669,16 +669,25 @@ examples:
         query:
           token: "<value>"
   getBackups:
-    speakeasy-default-get-backups: {}
+    speakeasy-default-get-backups:
+      responses:
+        "200":
+          application/json: []
   sendDownloadBackupEmail:
     speakeasy-default-send-download-backup-email:
       parameters:
         path:
           filename: "your_file_here"
   adminListBadges:
-    speakeasy-default-admin-list-badges: {}
+    speakeasy-default-admin-list-badges:
+      responses:
+        "200":
+          application/json: {"admin_badges": {"badge_grouping_ids": [], "badge_ids": [], "badge_type_ids": [], "protected_system_fields": [], "triggers": {"none": 387044, "post_action": 432656, "post_revision": 889440, "trust_level_change": 105780, "user_change": 410911}}, "badge_groupings": [], "badge_types": [], "badges": []}
   createBadge:
-    speakeasy-default-create-badge: {}
+    speakeasy-default-create-badge:
+      responses:
+        "200":
+          application/json: {"badge": {"allow_title": true, "auto_revoke": true, "badge_grouping_id": 298569, "badge_type_id": 394222, "description": "Optional upward-trending projection", "enabled": true, "grant_count": 364499, "icon": "<value>", "id": 317037, "image_url": "<value>", "listable": true, "long_description": "<value>", "manually_grantable": true, "multiple_grant": true, "name": "<value>", "query": "<value>", "show_posts": false, "slug": "<value>", "system": true, "target_posts": true, "trigger": "<value>"}, "badge_types": []}
   deleteBadge:
     speakeasy-default-delete-badge:
       parameters:
@@ -689,11 +698,17 @@ examples:
       parameters:
         path:
           username: "Faustino28"
+      responses:
+        "200":
+          application/json: {"user_badges": []}
   updateBadge:
     speakeasy-default-update-badge:
       parameters:
         path:
           id: 280628
+      responses:
+        "200":
+          application/json: {"badge": {"allow_title": false, "auto_revoke": true, "badge_grouping_id": 569102, "badge_type_id": 247389, "description": "Balanced user-facing alliance", "enabled": false, "grant_count": 934168, "icon": "<value>", "id": 471527, "image_url": "<value>", "listable": true, "long_description": "<value>", "manually_grantable": false, "multiple_grant": true, "name": "<value>", "query": "<value>", "show_posts": true, "slug": "<value>", "system": false, "target_posts": false, "trigger": "<value>"}, "badge_types": []}
   addGroupMembers:
     speakeasy-default-add-group-members:
       parameters:
@@ -701,8 +716,14 @@ examples:
           id: 985975
       requestBody:
         application/json: {"usernames": "username1,username2"}
+      responses:
+        "200":
+          application/json: {"emails": [], "success": "<value>", "usernames": []}
   createGroup:
-    speakeasy-default-create-group: {}
+    speakeasy-default-create-group:
+      responses:
+        "200":
+          application/json: {"basic_group": {"allow_membership_requests": true, "automatic": false, "bio_cooked": "<value>", "bio_excerpt": "<value>", "bio_raw": "<value>", "can_admin_group": true, "can_see_members": false, "default_notification_level": 831661, "flair_bg_color": "<value>", "flair_color": "<value>", "flair_url": "<value>", "full_name": "Tracy Kris", "grant_trust_level": "<value>", "has_messages": false, "id": 491938, "incoming_email": "<value>", "members_visibility_level": 817346, "membership_request_template": "<value>", "mentionable_level": 644356, "messageable_level": 883516, "name": "<value>", "primary_group": false, "public_admission": true, "public_exit": true, "publish_read_state": false, "title": "<value>", "user_count": 302911, "visibility_level": 712589}}
   deleteGroup:
     speakeasy-default-delete-group:
       parameters:
@@ -716,13 +737,22 @@ examples:
       parameters:
         path:
           id: "name"
+      responses:
+        "200":
+          application/json: {"extras": {"visible_group_names": []}, "group": {"allow_membership_requests": false, "allow_unknown_sender_topic_replies": true, "automatic": false, "automatic_membership_email_domains": "<value>", "bio_cooked": "<value>", "bio_excerpt": "<value>", "bio_raw": "<value>", "can_admin_group": true, "can_see_members": false, "default_notification_level": 677524, "email_password": "<value>", "email_username": "<value>", "flair_bg_color": "<value>", "flair_color": "<value>", "flair_url": "<value>", "full_name": "Wendy Rowe", "grant_trust_level": "<value>", "has_messages": false, "id": 91266, "imap_last_error": "<value>", "imap_mailbox_name": "<value>", "imap_mailboxes": [], "imap_new_emails": "<value>", "imap_old_emails": "<value>", "imap_port": "<value>", "imap_server": "<value>", "imap_ssl": "<value>", "incoming_email": "<value>", "is_group_owner_display": false, "is_group_user": false, "members_visibility_level": 559262, "membership_request_template": "<value>", "mentionable": false, "mentionable_level": 370583, "message_count": 513531, "messageable": false, "messageable_level": 157142, "muted_category_ids": [], "name": "<value>", "primary_group": false, "public_admission": true, "public_exit": false, "publish_read_state": false, "regular_category_ids": [], "smtp_port": "<value>", "smtp_server": "<value>", "smtp_ssl": "<value>", "title": "<value>", "tracking_category_ids": [], "user_count": 617607, "visibility_level": 423050, "watching_category_ids": [], "watching_first_post_category_ids": []}}
   listGroupMembers:
     "":
       parameters:
         path:
           id: "name"
+      responses:
+        "200":
+          application/json: {"members": [], "meta": {"limit": 425642, "offset": 856025, "total": 251404}, "owners": []}
   listGroups:
-    speakeasy-default-list-groups: {}
+    speakeasy-default-list-groups:
+      responses:
+        "200":
+          application/json: {"extras": {"type_filters": []}, "groups": [], "load_more_groups": "<value>", "total_rows_groups": 302778}
   removeGroupMembers:
     speakeasy-default-remove-group-members:
       parameters:
@@ -730,6 +760,9 @@ examples:
           id: 649523
       requestBody:
         application/json: {"usernames": "username1,username2"}
+      responses:
+        "200":
+          application/json: {"skipped_usernames": [], "success": "<value>", "usernames": []}
   updateGroup:
     speakeasy-default-update-group:
       parameters:
@@ -751,17 +784,26 @@ examples:
       parameters:
         path:
           id: 386776
+      responses:
+        "200":
+          application/json: {"active": false, "admin": false, "api_key_count": 641278, "approved_by": {"avatar_template": "<value>", "id": 197613, "name": "<value>", "username": "Madelyn.Schoen"}, "avatar_template": "<value>", "badge_count": 248574, "bounce_score": 227654, "can_activate": false, "can_be_anonymized": true, "can_be_deleted": false, "can_be_merged": true, "can_deactivate": true, "can_delete_all_posts": false, "can_delete_sso_record": false, "can_disable_second_factor": true, "can_grant_admin": false, "can_grant_moderation": false, "can_impersonate": true, "can_revoke_admin": false, "can_revoke_moderation": true, "can_send_activation_email": false, "can_view_action_logs": false, "created_at": "<value>", "created_at_age": "5288.46", "days_visited": 186654, "flags_given_count": 7445, "flags_received_count": 385749, "full_suspend_reason": "<value>", "groups": [], "id": 42319, "ip_address": "208.161.92.82", "last_emailed_age": "4169.5", "last_emailed_at": "<value>", "last_seen_age": "6444.18", "last_seen_at": "<value>", "like_count": 372881, "like_given_count": 434797, "manual_locked_trust_level": "<value>", "moderator": true, "name": "<value>", "post_count": 185274, "posts_read_count": 743147, "primary_group_id": "<value>", "private_topics_count": 514610, "registration_ip_address": "<value>", "reset_bounce_score_after": "<value>", "silence_reason": "<value>", "silenced_by": "<value>", "single_sign_on_record": "<value>", "staged": true, "suspended_by": "<value>", "time_read": 375804, "title": "<value>", "topic_count": 872928, "topics_entered": 493495, "trust_level": 286065, "username": "Rachael.Cummerata", "warnings_received_count": 72244}
   adminListUsers:
     speakeasy-default-admin-list-users:
       parameters:
         path:
           flag: "new"
         query: {}
+      responses:
+        "200":
+          application/json: []
   anonymizeUser:
     speakeasy-default-anonymize-user:
       parameters:
         path:
           id: 418778
+      responses:
+        "200":
+          application/json: {"success": "<value>", "username": "Heather_Schinner29"}
   changePassword:
     speakeasy-default-change-password:
       parameters:
@@ -773,6 +815,9 @@ examples:
         header:
           Api-Key: "<value>"
           Api-Username: "<value>"
+      responses:
+        "200":
+          application/json: {"active": true, "message": "<value>", "success": false}
   deactivateUser:
     speakeasy-default-deactivate-user:
       parameters:
@@ -786,6 +831,9 @@ examples:
       parameters:
         path:
           id: 251343
+      responses:
+        "200":
+          application/json: {"deleted": true}
   getUser:
     speakeasy-default-get-user:
       parameters:
@@ -794,11 +842,17 @@ examples:
         header:
           Api-Key: "<value>"
           Api-Username: "<value>"
+      responses:
+        "200":
+          application/json: {"user": {"admin": true, "allowed_pm_usernames": [], "avatar_template": "<value>", "badge_count": 942250, "can_be_deleted": true, "can_change_bio": true, "can_change_location": false, "can_change_tracking_preferences": true, "can_change_website": true, "can_delete_all_posts": true, "can_edit": false, "can_edit_email": true, "can_edit_name": true, "can_edit_username": true, "can_ignore_user": true, "can_mute_user": false, "can_send_private_message_to_user": false, "can_send_private_messages": true, "can_upload_profile_header": false, "can_upload_user_card_background": false, "created_at": "<value>", "featured_topic": "<value>", "featured_user_badge_ids": [], "flair_bg_color": "<value>", "flair_color": "<value>", "flair_group_id": "<value>", "flair_name": "<value>", "flair_url": "<value>", "group_users": [], "groups": [], "has_title_badges": true, "id": 228025, "ignored": false, "ignored_usernames": [], "invited_by": "<value>", "last_posted_at": "<value>", "last_seen_at": "<value>", "locale": "nl", "mailing_list_posts_per_day": 540531, "moderator": true, "muted": false, "muted_category_ids": [], "muted_tags": [], "muted_usernames": [], "name": "<value>", "pending_count": 261819, "post_count": 215372, "primary_group_id": "<value>", "primary_group_name": "<value>", "profile_view_count": 731773, "recent_time_read": 825238, "regular_category_ids": [], "second_factor_enabled": false, "staged": false, "system_avatar_template": "<value>", "system_avatar_upload_id": "<value>", "time_read": 153902, "title": "<value>", "tracked_category_ids": [], "tracked_tags": [], "trust_level": 832569, "uploaded_avatar_id": "<value>", "use_logo_small_as_avatar": false, "user_api_keys": "<value>", "user_auth_tokens": [], "user_notification_schedule": {"day_0_end_time": 218196, "day_0_start_time": 894430, "day_1_end_time": 138091, "day_1_start_time": 537138, "day_2_end_time": 237845, "day_2_start_time": 141991, "day_3_end_time": 794266, "day_3_start_time": 746075, "day_4_end_time": 852580, "day_4_start_time": 356921, "day_5_end_time": 606039, "day_5_start_time": 635306, "day_6_end_time": 208257, "day_6_start_time": 644767, "enabled": true}, "user_option": {"allow_private_messages": true, "auto_track_topics_after_msecs": 163422, "automatically_unpin_topics": false, "color_scheme_id": "<value>", "dark_scheme_id": "<value>", "digest_after_minutes": 666713, "dynamic_favicon": true, "email_digests": true, "email_in_reply_to": true, "email_level": 107350, "email_messages_level": 843464, "email_previous_replies": 562742, "enable_allowed_pm_users": true, "enable_defer": true, "enable_quoting": false, "external_links_in_new_tab": true, "hide_profile_and_presence": true, "homepage_id": "<value>", "include_tl0_in_digests": true, "like_notification_frequency": 164221, "mailing_list_mode": false, "mailing_list_mode_frequency": 627269, "new_topic_duration_minutes": 664047, "notification_level_when_replying": 186836, "skip_new_user_tips": false, "text_size": "<value>", "text_size_seq": 690559, "theme_ids": [], "theme_key_seq": 76962, "timezone": "Europe/Sarajevo", "title_count_mode": "<value>", "user_id": 268612}, "username": "Adolphus2", "watched_category_ids": [], "watched_first_post_category_ids": [], "watched_tags": [], "watching_first_post_tags": []}, "user_badges": []}
   getUserEmails:
     speakeasy-default-get-user-emails:
       parameters:
         path:
           username: "Winifred_OConner64"
+      responses:
+        "200":
+          application/json: {"associated_accounts": [], "email": "Macey_Purdy41@hotmail.com", "secondary_emails": [], "unconfirmed_emails": []}
   getUserExternalId:
     speakeasy-default-get-user-external-id:
       parameters:
@@ -807,6 +861,9 @@ examples:
         header:
           Api-Key: "<value>"
           Api-Username: "<value>"
+      responses:
+        "200":
+          application/json: {"user": {"admin": true, "allowed_pm_usernames": [], "avatar_template": "<value>", "badge_count": 382257, "can_be_deleted": true, "can_change_bio": true, "can_change_location": true, "can_change_tracking_preferences": false, "can_change_website": true, "can_delete_all_posts": false, "can_edit": true, "can_edit_email": false, "can_edit_name": false, "can_edit_username": false, "can_ignore_user": false, "can_mute_user": false, "can_send_private_message_to_user": true, "can_send_private_messages": true, "can_upload_profile_header": true, "can_upload_user_card_background": true, "created_at": "<value>", "featured_topic": "<value>", "featured_user_badge_ids": [], "flair_bg_color": "<value>", "flair_color": "<value>", "flair_group_id": "<value>", "flair_name": "<value>", "flair_url": "<value>", "group_users": [], "groups": [], "has_title_badges": false, "id": 655637, "ignored": true, "ignored_usernames": [], "invited_by": "<value>", "last_posted_at": "<value>", "last_seen_at": "<value>", "locale": "en_AU_ocker", "mailing_list_posts_per_day": 773497, "moderator": false, "muted": true, "muted_category_ids": [], "muted_tags": [], "muted_usernames": [], "name": "<value>", "pending_count": 438889, "post_count": 587339, "primary_group_id": "<value>", "primary_group_name": "<value>", "profile_view_count": 535710, "recent_time_read": 726013, "regular_category_ids": [], "second_factor_enabled": true, "staged": false, "system_avatar_template": "<value>", "system_avatar_upload_id": "<value>", "time_read": 758196, "title": "<value>", "tracked_category_ids": [], "tracked_tags": [], "trust_level": 543959, "uploaded_avatar_id": "<value>", "use_logo_small_as_avatar": true, "user_api_keys": "<value>", "user_auth_tokens": [], "user_notification_schedule": {"day_0_end_time": 429974, "day_0_start_time": 864367, "day_1_end_time": 397390, "day_1_start_time": 973233, "day_2_end_time": 571577, "day_2_start_time": 332379, "day_3_end_time": 993187, "day_3_start_time": 122806, "day_4_end_time": 860371, "day_4_start_time": 527833, "day_5_end_time": 492716, "day_5_start_time": 861327, "day_6_end_time": 335540, "day_6_start_time": 821980, "enabled": true}, "user_option": {"allow_private_messages": true, "auto_track_topics_after_msecs": 58261, "automatically_unpin_topics": true, "color_scheme_id": "<value>", "dark_scheme_id": "<value>", "digest_after_minutes": 996201, "dynamic_favicon": true, "email_digests": false, "email_in_reply_to": true, "email_level": 140410, "email_messages_level": 445021, "email_previous_replies": 732222, "enable_allowed_pm_users": false, "enable_defer": true, "enable_quoting": true, "external_links_in_new_tab": false, "hide_profile_and_presence": false, "homepage_id": "<value>", "include_tl0_in_digests": true, "like_notification_frequency": 667224, "mailing_list_mode": false, "mailing_list_mode_frequency": 851298, "new_topic_duration_minutes": 410338, "notification_level_when_replying": 122815, "skip_new_user_tips": true, "text_size": "<value>", "text_size_seq": 142352, "theme_ids": [], "theme_key_seq": 972133, "timezone": "Asia/Kathmandu", "title_count_mode": "<value>", "user_id": 789110}, "username": "Drake.Blanda5", "watched_category_ids": [], "watched_first_post_category_ids": [], "watched_tags": [], "watching_first_post_tags": []}, "user_badges": []}
   getUserIdentiyProviderExternalId:
     speakeasy-default-get-user-identiy-provider-external-id:
       parameters:
@@ -816,6 +873,9 @@ examples:
         header:
           Api-Key: "<value>"
           Api-Username: "<value>"
+      responses:
+        "200":
+          application/json: {"user": {"admin": true, "allowed_pm_usernames": [], "avatar_template": "<value>", "badge_count": 814693, "can_be_deleted": true, "can_change_bio": false, "can_change_location": true, "can_change_tracking_preferences": false, "can_change_website": true, "can_delete_all_posts": false, "can_edit": false, "can_edit_email": true, "can_edit_name": false, "can_edit_username": false, "can_ignore_user": true, "can_mute_user": true, "can_send_private_message_to_user": true, "can_send_private_messages": true, "can_upload_profile_header": false, "can_upload_user_card_background": false, "created_at": "<value>", "featured_topic": "<value>", "featured_user_badge_ids": [], "flair_bg_color": "<value>", "flair_color": "<value>", "flair_group_id": "<value>", "flair_name": "<value>", "flair_url": "<value>", "group_users": [], "groups": [], "has_title_badges": true, "id": 149789, "ignored": true, "ignored_usernames": [], "invited_by": "<value>", "last_posted_at": "<value>", "last_seen_at": "<value>", "locale": "en_IND", "mailing_list_posts_per_day": 357601, "moderator": false, "muted": true, "muted_category_ids": [], "muted_tags": [], "muted_usernames": [], "name": "<value>", "pending_count": 839652, "post_count": 445789, "primary_group_id": "<value>", "primary_group_name": "<value>", "profile_view_count": 812368, "recent_time_read": 816187, "regular_category_ids": [], "second_factor_enabled": true, "staged": false, "system_avatar_template": "<value>", "system_avatar_upload_id": "<value>", "time_read": 373844, "title": "<value>", "tracked_category_ids": [], "tracked_tags": [], "trust_level": 359433, "uploaded_avatar_id": "<value>", "use_logo_small_as_avatar": false, "user_api_keys": "<value>", "user_auth_tokens": [], "user_notification_schedule": {"day_0_end_time": 860936, "day_0_start_time": 449560, "day_1_end_time": 687506, "day_1_start_time": 890578, "day_2_end_time": 176772, "day_2_start_time": 931155, "day_3_end_time": 419697, "day_3_start_time": 350097, "day_4_end_time": 977288, "day_4_start_time": 241415, "day_5_end_time": 547242, "day_5_start_time": 410996, "day_6_end_time": 635248, "day_6_start_time": 644469, "enabled": false}, "user_option": {"allow_private_messages": false, "auto_track_topics_after_msecs": 285447, "automatically_unpin_topics": true, "color_scheme_id": "<value>", "dark_scheme_id": "<value>", "digest_after_minutes": 945448, "dynamic_favicon": false, "email_digests": true, "email_in_reply_to": false, "email_level": 884100, "email_messages_level": 398013, "email_previous_replies": 679780, "enable_allowed_pm_users": false, "enable_defer": false, "enable_quoting": true, "external_links_in_new_tab": true, "hide_profile_and_presence": false, "homepage_id": "<value>", "include_tl0_in_digests": true, "like_notification_frequency": 568247, "mailing_list_mode": true, "mailing_list_mode_frequency": 45697, "new_topic_duration_minutes": 382105, "notification_level_when_replying": 710442, "skip_new_user_tips": true, "text_size": "<value>", "text_size_seq": 759801, "theme_ids": [], "theme_key_seq": 203355, "timezone": "Asia/Almaty", "title_count_mode": "<value>", "user_id": 40695}, "username": "Austin.Bashirian", "watched_category_ids": [], "watched_first_post_category_ids": [], "watched_tags": [], "watching_first_post_tags": []}, "user_badges": []}
   listUserActions:
     speakeasy-default-list-user-actions:
       parameters:
@@ -823,12 +883,18 @@ examples:
           offset: 620550
           username: "Deondre75"
           filter: "<value>"
+      responses:
+        "200":
+          application/json: {"user_actions": []}
   listUsersPublic:
     speakeasy-default-list-users-public:
       parameters:
         query:
           period: "monthly"
           order: "topic_count"
+      responses:
+        "200":
+          application/json: {"directory_items": [], "meta": {"last_updated_at": "<value>", "load_more_directory_items": "<value>", "total_rows_directory_items": 387659}}
   logOutUser:
     speakeasy-default-log-out-user:
       parameters:
@@ -842,8 +908,14 @@ examples:
       parameters:
         path:
           username: "Frances39"
+      responses:
+        "200":
+          application/json: {"gravatar_avatar_template": "<value>", "gravatar_upload_id": 361623}
   sendPasswordResetEmail:
-    speakeasy-default-send-password-reset-email: {}
+    speakeasy-default-send-password-reset-email:
+      responses:
+        "200":
+          application/json: {"success": "<value>", "user_found": false}
   silenceUser:
     speakeasy-default-silence-user:
       parameters:
@@ -851,6 +923,9 @@ examples:
           id: 606247
       requestBody:
         application/json: {"post_action": "delete", "silenced_till": "2022-06-01T08:00:00.000Z"}
+      responses:
+        "200":
+          application/json: {"silence": {"silence_reason": "<value>", "silenced": true, "silenced_at": "<value>", "silenced_by": {"avatar_template": "<value>", "id": 170425, "name": "<value>", "username": "Courtney.Schneider"}, "silenced_till": "<value>"}}
   suspendUser:
     speakeasy-default-suspend-user:
       parameters:
@@ -858,6 +933,9 @@ examples:
           id: 970832
       requestBody:
         application/json: {"post_action": "delete", "reason": "<value>", "suspend_until": "2121-02-22"}
+      responses:
+        "200":
+          application/json: {"suspension": {"full_suspend_reason": "<value>", "suspend_reason": "<value>", "suspended_at": "<value>", "suspended_by": {"avatar_template": "<value>", "id": 970832, "name": "<value>", "username": "Myron50"}, "suspended_till": "<value>"}}
   updateAvatar:
     speakeasy-default-update-avatar:
       parameters:
@@ -879,6 +957,9 @@ examples:
         header:
           Api-Key: "<value>"
           Api-Username: "<value>"
+      responses:
+        "200":
+          application/json: {"success": "<value>"}
   updateUsername:
     speakeasy-default-update-username:
       parameters:
@@ -888,21 +969,36 @@ examples:
     speakeasy-default-create-category:
       requestBody:
         application/json: {"color": "49d9e9", "name": "<value>", "permissions": {"everyone": 1}, "text_color": "f0fcfd"}
+      responses:
+        "200":
+          application/json: {"category": {"all_topics_wiki": true, "allow_badges": false, "allow_unlimited_owner_edits_on_first_post": false, "auto_close_based_on_last_post": false, "auto_close_hours": "<value>", "available_groups": [], "can_delete": true, "can_edit": false, "color": "lavender", "default_list_filter": "<value>", "default_slow_mode_seconds": "<value>", "default_top_period": "<value>", "default_view": "<value>", "description": "Secured hybrid moratorium", "description_excerpt": "<value>", "description_text": "<value>", "email_in": "<value>", "email_in_allow_strangers": true, "group_permissions": [], "has_children": false, "id": 576329, "mailinglist_mirror": true, "minimum_required_tags": 49066, "name": "<value>", "navigate_to_first_post_after_read": false, "notification_level": 62502, "num_featured_topics": 973129, "permission": 817435, "position": 505865, "post_count": 432953, "read_only_banner": "<value>", "read_restricted": true, "required_tag_groups": [], "search_priority": 8064, "show_subcategory_list": true, "slug": "<value>", "sort_ascending": "<value>", "sort_order": "<value>", "subcategory_list_style": "<value>", "text_color": "<value>", "topic_count": 409207, "topic_featured_link_allowed": true, "topic_template": "<value>", "topic_url": "<value>", "uploaded_background": "<value>", "uploaded_background_dark": "<value>", "uploaded_logo": "<value>", "uploaded_logo_dark": "<value>"}}
   getCategory:
     speakeasy-default-get-category:
       parameters:
         path:
           id: 39147
+      responses:
+        "200":
+          application/json: {"category": {"all_topics_wiki": true, "allow_badges": false, "allow_unlimited_owner_edits_on_first_post": true, "auto_close_based_on_last_post": true, "auto_close_hours": "<value>", "available_groups": [], "can_delete": false, "can_edit": true, "color": "violet", "default_list_filter": "<value>", "default_slow_mode_seconds": "<value>", "default_top_period": "<value>", "default_view": "<value>", "description": "Multi-layered 5th generation Graphic Interface", "description_excerpt": "<value>", "description_text": "<value>", "email_in": "<value>", "email_in_allow_strangers": true, "group_permissions": [], "has_children": false, "id": 533818, "mailinglist_mirror": false, "minimum_required_tags": 585665, "name": "<value>", "navigate_to_first_post_after_read": false, "notification_level": 733753, "num_featured_topics": 373231, "permission": 543613, "position": 471104, "post_count": 639692, "read_only_banner": "<value>", "read_restricted": true, "required_tag_groups": [], "search_priority": 498406, "show_subcategory_list": false, "slug": "<value>", "sort_ascending": "<value>", "sort_order": "<value>", "subcategory_list_style": "<value>", "text_color": "<value>", "topic_count": 749595, "topic_featured_link_allowed": true, "topic_template": "<value>", "topic_url": "<value>", "uploaded_background": "<value>", "uploaded_background_dark": "<value>", "uploaded_logo": "<value>", "uploaded_logo_dark": "<value>"}}
   getSite:
-    speakeasy-default-get-site: {}
+    speakeasy-default-get-site:
+      responses:
+        "200":
+          application/json: {"anonymous_top_menu_items": [], "archetypes": [], "auth_providers": [], "can_create_tag": false, "can_tag_pms": false, "can_tag_topics": false, "categories": [], "censored_regexp": [], "default_archetype": "<value>", "filters": [], "groups": [], "notification_types": {"bookmark_reminder": 549755, "chat_group_mention": 172835, "chat_invitation": 459147, "chat_mention": 556553, "chat_message": 268348, "code_review_commit_approved": 792595, "custom": 959012, "edited": 839204, "event_invitation": 463313, "event_reminder": 618012, "granted_badge": 471528, "group_mentioned": 410226, "group_message_summary": 862033, "invited_to_private_message": 761618, "invited_to_topic": 57168, "invitee_accepted": 568137, "liked": 613365, "liked_consolidated": 82987, "linked": 994399, "membership_request_accepted": 695132, "membership_request_consolidated": 29756, "mentioned": 434597, "moved_post": 998177, "post_approved": 689563, "posted": 394494, "private_message": 258200, "quoted": 93950, "reaction": 274712, "replied": 207463, "topic_reminder": 326487, "votes_released": 803079, "watching_category_or_tag": 969101, "watching_first_post": 111981}, "periods": [], "post_action_types": [], "post_types": {"moderator_action": 188994, "regular": 3865, "small_action": 833226, "whisper": 524656}, "tags_filter_regexp": "<value>", "top_menu_items": [], "top_tags": [], "topic_featured_link_allowed_category_ids": [], "topic_flag_types": [], "trust_levels": {"basic": 76043, "leader": 236554, "member": 655582, "newuser": 841833, "regular": 507052}, "uncategorized_category_id": 79728, "user_color_schemes": [], "user_field_max_length": 865876, "user_fields": [], "user_themes": [], "watched_words_link": "<value>", "watched_words_replace": "<value>"}
   listCategories:
-    speakeasy-default-list-categories: {}
+    speakeasy-default-list-categories:
+      responses:
+        "200":
+          application/json: {"category_list": {"can_create_category": false, "can_create_topic": false, "categories": []}}
   listCategoryTopics:
     speakeasy-default-list-category-topics:
       parameters:
         path:
           slug: "<value>"
           id: 394133
+      responses:
+        "200":
+          application/json: {"topic_list": {"can_create_topic": true, "per_page": 513170, "topics": []}}
   updateCategory:
     speakeasy-default-update-category:
       parameters:
@@ -910,6 +1006,9 @@ examples:
           id: 353500
       requestBody:
         application/json: {"color": "49d9e9", "name": "<value>", "permissions": {"everyone": 1}, "text_color": "f0fcfd"}
+      responses:
+        "200":
+          application/json: {"category": {"all_topics_wiki": false, "allow_badges": false, "allow_unlimited_owner_edits_on_first_post": true, "auto_close_based_on_last_post": false, "auto_close_hours": "<value>", "available_groups": [], "can_delete": false, "can_edit": false, "color": "mint green", "default_list_filter": "<value>", "default_slow_mode_seconds": "<value>", "default_top_period": "<value>", "default_view": "<value>", "description": "Open-source demand-driven forecast", "description_excerpt": "<value>", "description_text": "<value>", "email_in": "<value>", "email_in_allow_strangers": true, "form_template_ids": [], "group_permissions": [], "has_children": true, "id": 404301, "mailinglist_mirror": false, "minimum_required_tags": 765787, "name": "<value>", "navigate_to_first_post_after_read": true, "notification_level": 506566, "num_featured_topics": 573945, "permission": 537500, "position": 818896, "post_count": 966055, "read_only_banner": "<value>", "read_restricted": true, "required_tag_groups": [], "search_priority": 574545, "show_subcategory_list": false, "slug": "<value>", "sort_ascending": "<value>", "sort_order": "<value>", "subcategory_list_style": "<value>", "text_color": "<value>", "topic_count": 946944, "topic_featured_link_allowed": false, "topic_template": "<value>", "topic_url": "<value>", "uploaded_background": "<value>", "uploaded_background_dark": "<value>", "uploaded_logo": "<value>", "uploaded_logo_dark": "<value>"}, "success": "<value>"}
   createInvite:
     speakeasy-default-create-invite:
       parameters:
@@ -941,6 +1040,9 @@ examples:
     speakeasy-default-create-topic-post-PM:
       requestBody:
         application/json: {"archetype": "private_message", "raw": "<value>", "target_recipients": "blake,sam"}
+      responses:
+        "200":
+          application/json: {"actions_summary": [], "admin": true, "avatar_template": "<value>", "bookmarked": true, "can_delete": false, "can_edit": true, "can_recover": false, "can_view_edit_history": true, "can_wiki": false, "cooked": "<value>", "created_at": "<value>", "deleted_at": "<value>", "display_username": "<value>", "draft_sequence": 177252, "edit_reason": "<value>", "flair_bg_color": "<value>", "flair_color": "<value>", "flair_name": "<value>", "flair_url": "<value>", "hidden": true, "id": 114547, "incoming_link_count": 74808, "moderator": true, "name": "<value>", "post_number": 240122, "post_type": 625045, "primary_group_name": "<value>", "quote_count": 159237, "readers_count": 157793, "reads": 948621, "reply_count": 489264, "reply_to_post_number": "<value>", "reviewable_id": "<value>", "reviewable_score_count": 923875, "reviewable_score_pending_count": 49016, "score": 693419, "staff": true, "topic_id": 861941, "topic_slug": "<value>", "trust_level": 336833, "updated_at": "<value>", "user_deleted": false, "user_id": 869518, "user_title": "<value>", "username": "Kiera_OHara53", "version": 333433, "wiki": false, "yours": false}
   createTopicTimer:
     speakeasy-default-create-topic-timer:
       parameters:
@@ -962,6 +1064,9 @@ examples:
         header:
           Api-Key: "<value>"
           Api-Username: "<value>"
+      responses:
+        "200":
+          application/json: {"actions_summary": [], "archetype": "<value>", "archived": false, "bookmarked": true, "bookmarks": [], "category_id": 21052, "chunk_size": 947957, "closed": true, "created_at": "<value>", "deleted_at": "<value>", "deleted_by": "<value>", "details": {"can_archive_topic": true, "can_close_topic": true, "can_convert_topic": true, "can_create_post": false, "can_delete": false, "can_edit": false, "can_edit_staff_notes": true, "can_moderate_category": false, "can_move_posts": false, "can_pin_unpin_topic": true, "can_remove_allowed_users": false, "can_remove_self_id": 326000, "can_reply_as_new_topic": true, "can_review_topic": true, "can_split_merge_topic": true, "can_toggle_topic_visibility": false, "created_by": {"avatar_template": "<value>", "id": 12547, "name": "<value>", "username": "Alexandra.Dickinson"}, "last_poster": {"avatar_template": "<value>", "id": 275899, "name": "<value>", "username": "Frank.Bergnaum47"}, "notification_level": 820547}, "draft": "<value>", "draft_key": "<value>", "draft_sequence": 536811, "fancy_title": "<value>", "featured_link": "<value>", "has_deleted": false, "has_summary": false, "highest_post_number": 803817, "id": 113565, "image_url": "<value>", "last_posted_at": "<value>", "like_count": 39261, "message_bus_last_id": 832960, "participant_count": 440011, "pinned": true, "pinned_at": "<value>", "pinned_globally": true, "pinned_until": "<value>", "post_stream": {"posts": [], "stream": []}, "posts_count": 286296, "reply_count": 724372, "show_read_indicator": true, "slow_mode_enabled_until": "<value>", "slow_mode_seconds": 462346, "slug": "<value>", "suggested_topics": [], "summarizable": true, "tags": [], "thumbnails": "<value>", "timeline_lookup": [], "title": "<value>", "topic_timer": "<value>", "unpinned": "<value>", "user_id": 258928, "views": 815673, "visible": true, "word_count": 317030}
   getTopicByExternalId:
     speakeasy-default-get-topic-by-external-id:
       parameters:
@@ -970,12 +1075,14 @@ examples:
   listLatestTopics:
     speakeasy-default-list-latest-topics:
       parameters:
+        query: {}
         header:
           Api-Key: "<value>"
           Api-Username: "<value>"
   listTopTopics:
     speakeasy-default-list-top-topics:
       parameters:
+        query: {}
         header:
           Api-Key: "<value>"
           Api-Username: "<value>"
@@ -1048,9 +1155,13 @@ examples:
       parameters:
         path:
           id: "<id>"
+      responses:
+        "200":
+          application/json: {"actions_summary": [], "admin": true, "avatar_template": "<value>", "bookmarked": false, "can_delete": false, "can_edit": false, "can_recover": false, "can_view_edit_history": false, "can_wiki": true, "cooked": "<value>", "created_at": "<value>", "deleted_at": "<value>", "edit_reason": "<value>", "flair_bg_color": "<value>", "flair_color": "<value>", "flair_name": "<value>", "flair_url": "<value>", "hidden": true, "id": 274969, "incoming_link_count": 569040, "moderator": true, "post_number": 601256, "post_type": 309263, "primary_group_name": "<value>", "quote_count": 778933, "raw": "<value>", "readers_count": 539682, "reads": 613671, "reply_count": 315298, "reply_to_post_number": "<value>", "reviewable_id": "<value>", "reviewable_score_count": 415792, "reviewable_score_pending_count": 436283, "score": 630377, "staff": true, "topic_id": 448930, "topic_slug": "<value>", "trust_level": 627491, "updated_at": "<value>", "user_deleted": true, "user_id": 26419, "user_title": "<value>", "username": "Myah_Hintz", "version": 119307, "wiki": true, "yours": true, "key": "<value>", "key1": "<value>"}
   listPosts:
     speakeasy-default-list-posts:
       parameters:
+        query: {}
         header:
           Api-Key: "<value>"
           Api-Username: "<value>"
@@ -1073,11 +1184,17 @@ examples:
       parameters:
         path:
           id: "<id>"
+      responses:
+        "200":
+          application/json: []
   updatePost:
     speakeasy-default-update-post:
       parameters:
         path:
           id: "<id>"
+      responses:
+        "200":
+          application/json: {"post": {"actions_summary": [], "admin": true, "avatar_template": "<value>", "bookmarked": false, "can_delete": false, "can_edit": true, "can_recover": true, "can_view_edit_history": false, "can_wiki": true, "cooked": "<value>", "created_at": "<value>", "deleted_at": "<value>", "draft_sequence": 569421, "edit_reason": "<value>", "flair_bg_color": "<value>", "flair_color": "<value>", "flair_name": "<value>", "flair_url": "<value>", "hidden": false, "id": 437966, "incoming_link_count": 537165, "moderator": true, "post_number": 280082, "post_type": 212729, "primary_group_name": "<value>", "quote_count": 880040, "raw": "<value>", "readers_count": 506220, "reads": 778785, "reply_count": 188399, "reply_to_post_number": "<value>", "reviewable_id": "<value>", "reviewable_score_count": 1835, "reviewable_score_pending_count": 766049, "score": 49732, "staff": false, "topic_id": 179027, "topic_slug": "<value>", "trust_level": 424745, "updated_at": "<value>", "user_deleted": false, "user_id": 527776, "user_title": "<value>", "username": "Adrien.Hackett16", "version": 478363, "wiki": true, "yours": false}}
   getUserSentPrivateMessages:
     speakeasy-default-get-user-sent-private-messages:
       parameters:
@@ -1094,8 +1211,14 @@ examples:
         query:
           q: "api @blake #support tags:api after:2021-06-04 in:unseen in:open order:latest_topic"
           page: 1
+      responses:
+        "200":
+          application/json: {"categories": [], "grouped_search_result": {"can_create_topic": true, "category_ids": [], "error": "<value>", "group_ids": [], "more_categories": "<value>", "more_full_page_results": "<value>", "more_posts": "<value>", "more_users": "<value>", "post_ids": [], "search_log_id": 263492, "tag_ids": [], "term": "<value>", "user_ids": []}, "groups": [], "posts": [], "tags": [], "users": []}
   createTagGroup:
-    speakeasy-default-create-tag-group: {}
+    speakeasy-default-create-tag-group:
+      responses:
+        "200":
+          application/json: {"tag_group": {"id": 10533, "name": "<value>", "one_per_topic": true, "parent_tag_name": [], "tag_names": []}}
   getTag:
     speakeasy-default-get-tag:
       parameters:
@@ -1133,10 +1256,16 @@ examples:
     speakeasy-default-complete-external-upload:
       requestBody:
         application/json: {"for_private_message": "true", "for_site_setting": "true", "pasted": "true", "unique_identifier": "66e86218-80d9-4bda-b4d5-2b6def968705"}
+      responses:
+        "200":
+          application/json: {"extension": "png", "filesize": 655183, "height": 19001, "human_filesize": "<value>", "id": 511225, "original_filename": "<value>", "retain_hours": "<value>", "short_path": "<value>", "short_url": "<value>", "thumbnail_height": 131321, "thumbnail_width": 995440, "url": "https://aggressive-watch.net", "width": 41079}
   completeMultipart:
     speakeasy-default-complete-multipart:
       requestBody:
         application/json: {"parts": [{"part_number": 1, "etag": "0c376dcfcc2606f4335bbc732de93344"}, {"part_number": 2, "etag": "09ert8cfcc2606f4335bbc732de91122"}], "unique_identifier": "66e86218-80d9-4bda-b4d5-2b6def968705"}
+      responses:
+        "200":
+          application/json: {"extension": "pdf", "filesize": 349952, "height": 720712, "human_filesize": "<value>", "id": 849047, "original_filename": "<value>", "retain_hours": "<value>", "short_path": "<value>", "short_url": "<value>", "thumbnail_height": 230034, "thumbnail_width": 233676, "url": "http://everlasting-clearance.com", "width": 492751}
   createMultipartUpload:
     speakeasy-default-create-multipart-upload:
       requestBody:
@@ -1145,7 +1274,10 @@ examples:
         "200":
           application/json: {"external_upload_identifier": "84x83tmxy398t3y._Q_z8CoJYVr69bE6D7f8J6Oo0434QquLFoYdGVerWFx9X5HDEI_TP_95c34n853495x35345394.d.ghQ", "key": "temp/site/uploads/default/12345/67890.jpg", "unique_identifier": "66e86218-80d9-4bda-b4d5-2b6def968705"}
   createUpload:
-    speakeasy-default-create-upload: {}
+    speakeasy-default-create-upload:
+      responses:
+        "200":
+          application/json: {"extension": "wav", "filesize": 630853, "height": 272980, "human_filesize": "<value>", "id": 541628, "original_filename": "<value>", "retain_hours": "<value>", "short_path": "<value>", "short_url": "<value>", "thumbnail_height": 676159, "thumbnail_width": 904119, "url": "http://well-lit-physics.com", "width": 942703}
   generatePresignedPut:
     speakeasy-default-generate-presigned-put:
       requestBody:

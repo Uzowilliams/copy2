@@ -6,12 +6,12 @@
 import { UpdateTopicTimestampRequest } from "@lukehagar/discoursejs/sdk/models/operations";
 
 let value: UpdateTopicTimestampRequest = {
-    apiKey: "<value>",
-    apiUsername: "<value>",
-    requestBody: {
-        timestamp: "1594291380",
-    },
-    id: "<id>",
+  apiKey: "<value>",
+  apiUsername: "<value>",
+  requestBody: {
+    timestamp: "1594291380",
+  },
+  id: "<id>",
 };
 ```
 

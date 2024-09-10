@@ -5,38 +5,38 @@
 import * as z from "zod";
 
 export type AnonymizeUserRequest = {
-    id: number;
+  id: number;
 };
 
 /**
  * response
  */
 export type AnonymizeUserResponseBody = {
-    success: string;
-    username: string;
+  success: string;
+  username: string;
 };
 
 /** @internal */
 export const AnonymizeUserRequest$inboundSchema: z.ZodType<
-    AnonymizeUserRequest,
-    z.ZodTypeDef,
-    unknown
+  AnonymizeUserRequest,
+  z.ZodTypeDef,
+  unknown
 > = z.object({
-    id: z.number().int(),
+  id: z.number().int(),
 });
 
 /** @internal */
 export type AnonymizeUserRequest$Outbound = {
-    id: number;
+  id: number;
 };
 
 /** @internal */
 export const AnonymizeUserRequest$outboundSchema: z.ZodType<
-    AnonymizeUserRequest$Outbound,
-    z.ZodTypeDef,
-    AnonymizeUserRequest
+  AnonymizeUserRequest$Outbound,
+  z.ZodTypeDef,
+  AnonymizeUserRequest
 > = z.object({
-    id: z.number().int(),
+  id: z.number().int(),
 });
 
 /**
@@ -44,38 +44,38 @@ export const AnonymizeUserRequest$outboundSchema: z.ZodType<
  * @deprecated This namespace will be removed in future versions. Use schemas and types that are exported directly from this module.
  */
 export namespace AnonymizeUserRequest$ {
-    /** @deprecated use `AnonymizeUserRequest$inboundSchema` instead. */
-    export const inboundSchema = AnonymizeUserRequest$inboundSchema;
-    /** @deprecated use `AnonymizeUserRequest$outboundSchema` instead. */
-    export const outboundSchema = AnonymizeUserRequest$outboundSchema;
-    /** @deprecated use `AnonymizeUserRequest$Outbound` instead. */
-    export type Outbound = AnonymizeUserRequest$Outbound;
+  /** @deprecated use `AnonymizeUserRequest$inboundSchema` instead. */
+  export const inboundSchema = AnonymizeUserRequest$inboundSchema;
+  /** @deprecated use `AnonymizeUserRequest$outboundSchema` instead. */
+  export const outboundSchema = AnonymizeUserRequest$outboundSchema;
+  /** @deprecated use `AnonymizeUserRequest$Outbound` instead. */
+  export type Outbound = AnonymizeUserRequest$Outbound;
 }
 
 /** @internal */
 export const AnonymizeUserResponseBody$inboundSchema: z.ZodType<
-    AnonymizeUserResponseBody,
-    z.ZodTypeDef,
-    unknown
+  AnonymizeUserResponseBody,
+  z.ZodTypeDef,
+  unknown
 > = z.object({
-    success: z.string(),
-    username: z.string(),
+  success: z.string(),
+  username: z.string(),
 });
 
 /** @internal */
 export type AnonymizeUserResponseBody$Outbound = {
-    success: string;
-    username: string;
+  success: string;
+  username: string;
 };
 
 /** @internal */
 export const AnonymizeUserResponseBody$outboundSchema: z.ZodType<
-    AnonymizeUserResponseBody$Outbound,
-    z.ZodTypeDef,
-    AnonymizeUserResponseBody
+  AnonymizeUserResponseBody$Outbound,
+  z.ZodTypeDef,
+  AnonymizeUserResponseBody
 > = z.object({
-    success: z.string(),
-    username: z.string(),
+  success: z.string(),
+  username: z.string(),
 });
 
 /**
@@ -83,10 +83,10 @@ export const AnonymizeUserResponseBody$outboundSchema: z.ZodType<
  * @deprecated This namespace will be removed in future versions. Use schemas and types that are exported directly from this module.
  */
 export namespace AnonymizeUserResponseBody$ {
-    /** @deprecated use `AnonymizeUserResponseBody$inboundSchema` instead. */
-    export const inboundSchema = AnonymizeUserResponseBody$inboundSchema;
-    /** @deprecated use `AnonymizeUserResponseBody$outboundSchema` instead. */
-    export const outboundSchema = AnonymizeUserResponseBody$outboundSchema;
-    /** @deprecated use `AnonymizeUserResponseBody$Outbound` instead. */
-    export type Outbound = AnonymizeUserResponseBody$Outbound;
+  /** @deprecated use `AnonymizeUserResponseBody$inboundSchema` instead. */
+  export const inboundSchema = AnonymizeUserResponseBody$inboundSchema;
+  /** @deprecated use `AnonymizeUserResponseBody$outboundSchema` instead. */
+  export const outboundSchema = AnonymizeUserResponseBody$outboundSchema;
+  /** @deprecated use `AnonymizeUserResponseBody$Outbound` instead. */
+  export type Outbound = AnonymizeUserResponseBody$Outbound;
 }

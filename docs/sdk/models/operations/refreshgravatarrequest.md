@@ -6,7 +6,7 @@
 import { RefreshGravatarRequest } from "@lukehagar/discoursejs/sdk/models/operations";
 
 let value: RefreshGravatarRequest = {
-    username: "Faustino.Langosh68",
+  username: "Faustino.Langosh68",
 };
 ```
 

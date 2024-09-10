@@ -8,7 +8,7 @@ response
 import { LogOutUserResponseBody } from "@lukehagar/discoursejs/sdk/models/operations";
 
 let value: LogOutUserResponseBody = {
-    success: "OK",
+  success: "OK",
 };
 ```
 

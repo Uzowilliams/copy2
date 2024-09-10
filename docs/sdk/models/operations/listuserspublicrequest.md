@@ -6,8 +6,8 @@
 import { ListUsersPublicRequest } from "@lukehagar/discoursejs/sdk/models/operations";
 
 let value: ListUsersPublicRequest = {
-    order: "days_visited",
-    period: "weekly",
+  order: "days_visited",
+  period: "weekly",
 };
 ```
 

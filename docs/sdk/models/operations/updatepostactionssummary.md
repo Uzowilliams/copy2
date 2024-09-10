@@ -6,8 +6,8 @@
 import { UpdatePostActionsSummary } from "@lukehagar/discoursejs/sdk/models/operations";
 
 let value: UpdatePostActionsSummary = {
-    canAct: false,
-    id: 972912,
+  canAct: false,
+  id: 972912,
 };
 ```
 

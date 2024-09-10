@@ -8,7 +8,7 @@ avatar updated
 import { UpdateAvatarResponseBody } from "@lukehagar/discoursejs/sdk/models/operations";
 
 let value: UpdateAvatarResponseBody = {
-    success: "OK",
+  success: "OK",
 };
 ```
 

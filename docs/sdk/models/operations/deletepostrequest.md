@@ -6,10 +6,10 @@
 import { DeletePostRequest } from "@lukehagar/discoursejs/sdk/models/operations";
 
 let value: DeletePostRequest = {
-    requestBody: {
-        forceDestroy: true,
-    },
-    id: 64435,
+  requestBody: {
+    forceDestroy: true,
+  },
+  id: 64435,
 };
 ```
 

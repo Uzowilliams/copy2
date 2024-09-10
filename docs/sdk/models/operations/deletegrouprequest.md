@@ -6,7 +6,7 @@
 import { DeleteGroupRequest } from "@lukehagar/discoursejs/sdk/models/operations";
 
 let value: DeleteGroupRequest = {
-    id: 971945,
+  id: 971945,
 };
 ```
 

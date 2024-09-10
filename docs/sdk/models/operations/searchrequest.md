@@ -6,8 +6,8 @@
 import { SearchRequest } from "@lukehagar/discoursejs/sdk/models/operations";
 
 let value: SearchRequest = {
-    page: 1,
-    q: "api @blake #support tags:api after:2021-06-04 in:unseen in:open order:latest_topic",
+  page: 1,
+  q: "api @blake #support tags:api after:2021-06-04 in:unseen in:open order:latest_topic",
 };
 ```
 

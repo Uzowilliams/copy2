@@ -8,7 +8,7 @@ response
 import { DeleteUserResponseBody } from "@lukehagar/discoursejs/sdk/models/operations";
 
 let value: DeleteUserResponseBody = {
-    deleted: false,
+  deleted: false,
 };
 ```
 

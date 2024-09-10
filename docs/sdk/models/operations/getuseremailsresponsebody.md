@@ -8,10 +8,16 @@ success response
 import { GetUserEmailsResponseBody } from "@lukehagar/discoursejs/sdk/models/operations";
 
 let value: GetUserEmailsResponseBody = {
-    associatedAccounts: ["<value>"],
-    email: "Flossie.Hartmann@hotmail.com",
-    secondaryEmails: ["<value>"],
-    unconfirmedEmails: ["<value>"],
+  associatedAccounts: [
+    "<value>",
+  ],
+  email: "Flossie.Hartmann@hotmail.com",
+  secondaryEmails: [
+    "<value>",
+  ],
+  unconfirmedEmails: [
+    "<value>",
+  ],
 };
 ```
 

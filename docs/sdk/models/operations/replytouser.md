@@ -6,8 +6,8 @@
 import { ReplyToUser } from "@lukehagar/discoursejs/sdk/models/operations";
 
 let value: ReplyToUser = {
-    avatarTemplate: "<value>",
-    username: "Anastacio4",
+  avatarTemplate: "<value>",
+  username: "Anastacio4",
 };
 ```
 

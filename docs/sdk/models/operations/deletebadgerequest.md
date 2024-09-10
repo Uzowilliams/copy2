@@ -6,7 +6,7 @@
 import { DeleteBadgeRequest } from "@lukehagar/discoursejs/sdk/models/operations";
 
 let value: DeleteBadgeRequest = {
-    id: 216550,
+  id: 216550,
 };
 ```
 

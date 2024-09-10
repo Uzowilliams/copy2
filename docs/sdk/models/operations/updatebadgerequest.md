@@ -6,7 +6,7 @@
 import { UpdateBadgeRequest } from "@lukehagar/discoursejs/sdk/models/operations";
 
 let value: UpdateBadgeRequest = {
-    id: 750686,
+  id: 750686,
 };
 ```
 

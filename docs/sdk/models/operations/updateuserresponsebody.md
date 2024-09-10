@@ -8,8 +8,8 @@ user updated
 import { UpdateUserResponseBody } from "@lukehagar/discoursejs/sdk/models/operations";
 
 let value: UpdateUserResponseBody = {
-    success: "<value>",
-    user: {},
+  success: "<value>",
+  user: {},
 };
 ```
 

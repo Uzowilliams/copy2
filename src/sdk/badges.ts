@@ -12,50 +12,73 @@ import * as operations from "./models/operations/index.js";
 import { unwrapAsync } from "./types/fp.js";
 
 export class Badges extends ClientSDK {
-    /**
-     * List badges
-     */
-    async adminListBadges(
-        options?: RequestOptions
-    ): Promise<operations.AdminListBadgesResponseBody> {
-        return unwrapAsync(badgesAdminListBadges(this, options));
-    }
+  /**
+   * List badges
+   */
+  async adminListBadges(
+    options?: RequestOptions,
+  ): Promise<operations.AdminListBadgesResponseBody> {
+    return unwrapAsync(badgesAdminListBadges(
+      this,
+      options,
+    ));
+  }
 
-    /**
-     * Create badge
-     */
-    async createBadge(
-        request?: operations.CreateBadgeRequestBody | undefined,
-        options?: RequestOptions
-    ): Promise<operations.CreateBadgeResponseBody> {
-        return unwrapAsync(badgesCreateBadge(this, request, options));
-    }
+  /**
+   * Create badge
+   */
+  async createBadge(
+    request?: operations.CreateBadgeRequestBody | undefined,
+    options?: RequestOptions,
+  ): Promise<operations.CreateBadgeResponseBody> {
+    return unwrapAsync(badgesCreateBadge(
+      this,
+      request,
+      options,
+    ));
+  }
 
-    /**
-     * Delete badge
-     */
-    async deleteBadge(id: number, options?: RequestOptions): Promise<void> {
-        return unwrapAsync(badgesDeleteBadge(this, id, options));
-    }
+  /**
+   * Delete badge
+   */
+  async deleteBadge(
+    id: number,
+    options?: RequestOptions,
+  ): Promise<void> {
+    return unwrapAsync(badgesDeleteBadge(
+      this,
+      id,
+      options,
+    ));
+  }
 
-    /**
-     * List badges for a user
-     */
-    async listUserBadges(
-        username: string,
-        options?: RequestOptions
-    ): Promise<operations.ListUserBadgesResponseBody> {
-        return unwrapAsync(badgesListUserBadges(this, username, options));
-    }
+  /**
+   * List badges for a user
+   */
+  async listUserBadges(
+    username: string,
+    options?: RequestOptions,
+  ): Promise<operations.ListUserBadgesResponseBody> {
+    return unwrapAsync(badgesListUserBadges(
+      this,
+      username,
+      options,
+    ));
+  }
 
-    /**
-     * Update badge
-     */
-    async updateBadge(
-        id: number,
-        requestBody?: operations.UpdateBadgeRequestBody | undefined,
-        options?: RequestOptions
-    ): Promise<operations.UpdateBadgeResponseBody> {
-        return unwrapAsync(badgesUpdateBadge(this, id, requestBody, options));
-    }
+  /**
+   * Update badge
+   */
+  async updateBadge(
+    id: number,
+    requestBody?: operations.UpdateBadgeRequestBody | undefined,
+    options?: RequestOptions,
+  ): Promise<operations.UpdateBadgeResponseBody> {
+    return unwrapAsync(badgesUpdateBadge(
+      this,
+      id,
+      requestBody,
+      options,
+    ));
+  }
 }

@@ -8,19 +8,19 @@ file uploaded
 import { CreateUploadResponseBody } from "@lukehagar/discoursejs/sdk/models/operations";
 
 let value: CreateUploadResponseBody = {
-    extension: "jpg",
-    filesize: 567846,
-    height: 172195,
-    humanFilesize: "<value>",
-    id: 621169,
-    originalFilename: "<value>",
-    retainHours: "<value>",
-    shortPath: "<value>",
-    shortUrl: "<value>",
-    thumbnailHeight: 85076,
-    thumbnailWidth: 498180,
-    url: "http://tragic-tuba.name",
-    width: 763165,
+  extension: "jpg",
+  filesize: 567846,
+  height: 172195,
+  humanFilesize: "<value>",
+  id: 621169,
+  originalFilename: "<value>",
+  retainHours: "<value>",
+  shortPath: "<value>",
+  shortUrl: "<value>",
+  thumbnailHeight: 85076,
+  thumbnailWidth: 498180,
+  url: "http://tragic-tuba.name",
+  width: 763165,
 };
 ```
 

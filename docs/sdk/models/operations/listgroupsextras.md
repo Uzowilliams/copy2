@@ -6,7 +6,9 @@
 import { ListGroupsExtras } from "@lukehagar/discoursejs/sdk/models/operations";
 
 let value: ListGroupsExtras = {
-    typeFilters: ["<value>"],
+  typeFilters: [
+    "<value>",
+  ],
 };
 ```
 

@@ -6,12 +6,12 @@
 import { UserTips } from "@lukehagar/discoursejs/sdk/models/operations";
 
 let value: UserTips = {
-    adminGuide: 337477,
-    firstNotification: 431785,
-    postMenu: 970494,
-    suggestedTopics: 592780,
-    topicNotificationLevels: 133439,
-    topicTimeline: 354506,
+  adminGuide: 337477,
+  firstNotification: 431785,
+  postMenu: 970494,
+  suggestedTopics: 592780,
+  topicNotificationLevels: 133439,
+  topicTimeline: 354506,
 };
 ```
 

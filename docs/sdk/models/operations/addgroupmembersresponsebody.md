@@ -8,9 +8,13 @@ success response
 import { AddGroupMembersResponseBody } from "@lukehagar/discoursejs/sdk/models/operations";
 
 let value: AddGroupMembersResponseBody = {
-    emails: ["<value>"],
-    success: "<value>",
-    usernames: ["<value>"],
+  emails: [
+    "<value>",
+  ],
+  success: "<value>",
+  usernames: [
+    "<value>",
+  ],
 };
 ```
 

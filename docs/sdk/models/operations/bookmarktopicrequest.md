@@ -6,9 +6,9 @@
 import { BookmarkTopicRequest } from "@lukehagar/discoursejs/sdk/models/operations";
 
 let value: BookmarkTopicRequest = {
-    apiKey: "<value>",
-    apiUsername: "<value>",
-    id: "<id>",
+  apiKey: "<value>",
+  apiUsername: "<value>",
+  id: "<id>",
 };
 ```
 

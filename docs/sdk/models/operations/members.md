@@ -6,15 +6,15 @@
 import { Members } from "@lukehagar/discoursejs/sdk/models/operations";
 
 let value: Members = {
-    addedAt: "<value>",
-    avatarTemplate: "<value>",
-    id: 566602,
-    lastPostedAt: "<value>",
-    lastSeenAt: "<value>",
-    name: "<value>",
-    timezone: "Australia/Adelaide",
-    title: "<value>",
-    username: "Dimitri_Lang",
+  addedAt: "<value>",
+  avatarTemplate: "<value>",
+  id: 566602,
+  lastPostedAt: "<value>",
+  lastSeenAt: "<value>",
+  name: "<value>",
+  timezone: "Australia/Adelaide",
+  title: "<value>",
+  username: "Dimitri_Lang",
 };
 ```
 

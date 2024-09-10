@@ -6,10 +6,10 @@
 import { GetTopicUser } from "@lukehagar/discoursejs/sdk/models/operations";
 
 let value: GetTopicUser = {
-    avatarTemplate: "<value>",
-    id: 65082,
-    name: "<value>",
-    username: "Paxton.Pfannerstill24",
+  avatarTemplate: "<value>",
+  id: 65082,
+  name: "<value>",
+  username: "Paxton.Pfannerstill24",
 };
 ```
 

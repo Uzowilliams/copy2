@@ -6,9 +6,9 @@
 import { GetUserRequest } from "@lukehagar/discoursejs/sdk/models/operations";
 
 let value: GetUserRequest = {
-    apiKey: "<value>",
-    apiUsername: "<value>",
-    username: "Makenzie13",
+  apiKey: "<value>",
+  apiUsername: "<value>",
+  username: "Makenzie13",
 };
 ```
 

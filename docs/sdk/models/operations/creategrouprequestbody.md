@@ -6,9 +6,9 @@
 import { CreateGroupRequestBody } from "@lukehagar/discoursejs/sdk/models/operations";
 
 let value: CreateGroupRequestBody = {
-    group: {
-        name: "<value>",
-    },
+  group: {
+    name: "<value>",
+  },
 };
 ```
 

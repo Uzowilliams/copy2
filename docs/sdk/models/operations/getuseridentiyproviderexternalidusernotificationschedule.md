@@ -6,21 +6,21 @@
 import { GetUserIdentiyProviderExternalIdUserNotificationSchedule } from "@lukehagar/discoursejs/sdk/models/operations";
 
 let value: GetUserIdentiyProviderExternalIdUserNotificationSchedule = {
-    day0EndTime: 536275,
-    day0StartTime: 929292,
-    day1EndTime: 680270,
-    day1StartTime: 99615,
-    day2EndTime: 609178,
-    day2StartTime: 945302,
-    day3EndTime: 98478,
-    day3StartTime: 869489,
-    day4EndTime: 92027,
-    day4StartTime: 454162,
-    day5EndTime: 55965,
-    day5StartTime: 326701,
-    day6EndTime: 86532,
-    day6StartTime: 232744,
-    enabled: false,
+  day0EndTime: 536275,
+  day0StartTime: 929292,
+  day1EndTime: 680270,
+  day1StartTime: 99615,
+  day2EndTime: 609178,
+  day2StartTime: 945302,
+  day3EndTime: 98478,
+  day3StartTime: 869489,
+  day4EndTime: 92027,
+  day4StartTime: 454162,
+  day5EndTime: 55965,
+  day5StartTime: 326701,
+  day6EndTime: 86532,
+  day6StartTime: 232744,
+  enabled: false,
 };
 ```
 

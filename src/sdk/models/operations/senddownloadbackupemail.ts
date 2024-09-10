@@ -5,30 +5,30 @@
 import * as z from "zod";
 
 export type SendDownloadBackupEmailRequest = {
-    filename: string;
+  filename: string;
 };
 
 /** @internal */
 export const SendDownloadBackupEmailRequest$inboundSchema: z.ZodType<
-    SendDownloadBackupEmailRequest,
-    z.ZodTypeDef,
-    unknown
+  SendDownloadBackupEmailRequest,
+  z.ZodTypeDef,
+  unknown
 > = z.object({
-    filename: z.string(),
+  filename: z.string(),
 });
 
 /** @internal */
 export type SendDownloadBackupEmailRequest$Outbound = {
-    filename: string;
+  filename: string;
 };
 
 /** @internal */
 export const SendDownloadBackupEmailRequest$outboundSchema: z.ZodType<
-    SendDownloadBackupEmailRequest$Outbound,
-    z.ZodTypeDef,
-    SendDownloadBackupEmailRequest
+  SendDownloadBackupEmailRequest$Outbound,
+  z.ZodTypeDef,
+  SendDownloadBackupEmailRequest
 > = z.object({
-    filename: z.string(),
+  filename: z.string(),
 });
 
 /**
@@ -36,10 +36,10 @@ export const SendDownloadBackupEmailRequest$outboundSchema: z.ZodType<
  * @deprecated This namespace will be removed in future versions. Use schemas and types that are exported directly from this module.
  */
 export namespace SendDownloadBackupEmailRequest$ {
-    /** @deprecated use `SendDownloadBackupEmailRequest$inboundSchema` instead. */
-    export const inboundSchema = SendDownloadBackupEmailRequest$inboundSchema;
-    /** @deprecated use `SendDownloadBackupEmailRequest$outboundSchema` instead. */
-    export const outboundSchema = SendDownloadBackupEmailRequest$outboundSchema;
-    /** @deprecated use `SendDownloadBackupEmailRequest$Outbound` instead. */
-    export type Outbound = SendDownloadBackupEmailRequest$Outbound;
+  /** @deprecated use `SendDownloadBackupEmailRequest$inboundSchema` instead. */
+  export const inboundSchema = SendDownloadBackupEmailRequest$inboundSchema;
+  /** @deprecated use `SendDownloadBackupEmailRequest$outboundSchema` instead. */
+  export const outboundSchema = SendDownloadBackupEmailRequest$outboundSchema;
+  /** @deprecated use `SendDownloadBackupEmailRequest$Outbound` instead. */
+  export type Outbound = SendDownloadBackupEmailRequest$Outbound;
 }

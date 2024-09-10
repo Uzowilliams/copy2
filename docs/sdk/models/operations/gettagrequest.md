@@ -6,7 +6,7 @@
 import { GetTagRequest } from "@lukehagar/discoursejs/sdk/models/operations";
 
 let value: GetTagRequest = {
-    name: "<value>",
+  name: "<value>",
 };
 ```
 

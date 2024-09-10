@@ -6,9 +6,9 @@
 import { CreateTopicPostPMRequestBody } from "@lukehagar/discoursejs/sdk/models/operations";
 
 let value: CreateTopicPostPMRequestBody = {
-    archetype: "private_message",
-    raw: "<value>",
-    targetRecipients: "blake,sam",
+  archetype: "private_message",
+  raw: "<value>",
+  targetRecipients: "blake,sam",
 };
 ```
 

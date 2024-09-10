@@ -8,7 +8,7 @@ response
 import { ActivateUserResponseBody } from "@lukehagar/discoursejs/sdk/models/operations";
 
 let value: ActivateUserResponseBody = {
-    success: "OK",
+  success: "OK",
 };
 ```
 

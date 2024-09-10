@@ -10,33 +10,45 @@ import * as operations from "./models/operations/index.js";
 import { unwrapAsync } from "./types/fp.js";
 
 export class PrivateMessages extends ClientSDK {
-    /**
-     * Creates a new topic, a new post, or a private message
-     */
-    async createTopicPostPM(
-        request?: operations.CreateTopicPostPMRequestBody | undefined,
-        options?: RequestOptions
-    ): Promise<operations.CreateTopicPostPMResponseBody> {
-        return unwrapAsync(privateMessagesCreateTopicPostPM(this, request, options));
-    }
+  /**
+   * Creates a new topic, a new post, or a private message
+   */
+  async createTopicPostPM(
+    request?: operations.CreateTopicPostPMRequestBody | undefined,
+    options?: RequestOptions,
+  ): Promise<operations.CreateTopicPostPMResponseBody> {
+    return unwrapAsync(privateMessagesCreateTopicPostPM(
+      this,
+      request,
+      options,
+    ));
+  }
 
-    /**
-     * Get a list of private messages sent for a user
-     */
-    async getUserSentPrivateMessages(
-        username: string,
-        options?: RequestOptions
-    ): Promise<operations.GetUserSentPrivateMessagesResponseBody> {
-        return unwrapAsync(privateMessagesGetUserSentPrivateMessages(this, username, options));
-    }
+  /**
+   * Get a list of private messages sent for a user
+   */
+  async getUserSentPrivateMessages(
+    username: string,
+    options?: RequestOptions,
+  ): Promise<operations.GetUserSentPrivateMessagesResponseBody> {
+    return unwrapAsync(privateMessagesGetUserSentPrivateMessages(
+      this,
+      username,
+      options,
+    ));
+  }
 
-    /**
-     * Get a list of private messages for a user
-     */
-    async listUserPrivateMessages(
-        username: string,
-        options?: RequestOptions
-    ): Promise<operations.ListUserPrivateMessagesResponseBody> {
-        return unwrapAsync(privateMessagesListUserPrivateMessages(this, username, options));
-    }
+  /**
+   * Get a list of private messages for a user
+   */
+  async listUserPrivateMessages(
+    username: string,
+    options?: RequestOptions,
+  ): Promise<operations.ListUserPrivateMessagesResponseBody> {
+    return unwrapAsync(privateMessagesListUserPrivateMessages(
+      this,
+      username,
+      options,
+    ));
+  }
 }

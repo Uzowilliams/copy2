@@ -6,7 +6,7 @@
 import { DeleteUserRequest } from "@lukehagar/discoursejs/sdk/models/operations";
 
 let value: DeleteUserRequest = {
-    id: 456015,
+  id: 456015,
 };
 ```
 

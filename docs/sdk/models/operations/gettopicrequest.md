@@ -6,9 +6,9 @@
 import { GetTopicRequest } from "@lukehagar/discoursejs/sdk/models/operations";
 
 let value: GetTopicRequest = {
-    apiKey: "<value>",
-    apiUsername: "<value>",
-    id: "<id>",
+  apiKey: "<value>",
+  apiUsername: "<value>",
+  id: "<id>",
 };
 ```
 

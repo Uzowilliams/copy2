@@ -20,171 +20,243 @@ import * as operations from "./models/operations/index.js";
 import { unwrapAsync } from "./types/fp.js";
 
 export class Topics extends ClientSDK {
-    /**
-     * Bookmark topic
-     */
-    async bookmarkTopic(
-        apiKey: string,
-        apiUsername: string,
-        id: string,
-        options?: RequestOptions
-    ): Promise<void> {
-        return unwrapAsync(topicsBookmarkTopic(this, apiKey, apiUsername, id, options));
-    }
+  /**
+   * Bookmark topic
+   */
+  async bookmarkTopic(
+    apiKey: string,
+    apiUsername: string,
+    id: string,
+    options?: RequestOptions,
+  ): Promise<void> {
+    return unwrapAsync(topicsBookmarkTopic(
+      this,
+      apiKey,
+      apiUsername,
+      id,
+      options,
+    ));
+  }
 
-    /**
-     * Creates a new topic, a new post, or a private message
-     */
-    async createTopicPostPM(
-        request?: operations.CreateTopicPostPMRequestBody | undefined,
-        options?: RequestOptions
-    ): Promise<operations.CreateTopicPostPMResponseBody> {
-        return unwrapAsync(topicsCreateTopicPostPM(this, request, options));
-    }
+  /**
+   * Creates a new topic, a new post, or a private message
+   */
+  async createTopicPostPM(
+    request?: operations.CreateTopicPostPMRequestBody | undefined,
+    options?: RequestOptions,
+  ): Promise<operations.CreateTopicPostPMResponseBody> {
+    return unwrapAsync(topicsCreateTopicPostPM(
+      this,
+      request,
+      options,
+    ));
+  }
 
-    /**
-     * Create topic timer
-     */
-    async createTopicTimer(
-        apiKey: string,
-        apiUsername: string,
-        id: string,
-        requestBody?: operations.CreateTopicTimerRequestBody | undefined,
-        options?: RequestOptions
-    ): Promise<operations.CreateTopicTimerResponseBody> {
-        return unwrapAsync(
-            topicsCreateTopicTimer(this, apiKey, apiUsername, id, requestBody, options)
-        );
-    }
+  /**
+   * Create topic timer
+   */
+  async createTopicTimer(
+    apiKey: string,
+    apiUsername: string,
+    id: string,
+    requestBody?: operations.CreateTopicTimerRequestBody | undefined,
+    options?: RequestOptions,
+  ): Promise<operations.CreateTopicTimerResponseBody> {
+    return unwrapAsync(topicsCreateTopicTimer(
+      this,
+      apiKey,
+      apiUsername,
+      id,
+      requestBody,
+      options,
+    ));
+  }
 
-    /**
-     * Get a single topic
-     */
-    async getTopic(
-        apiKey: string,
-        apiUsername: string,
-        id: string,
-        options?: RequestOptions
-    ): Promise<operations.GetTopicResponseBody> {
-        return unwrapAsync(topicsGetTopic(this, apiKey, apiUsername, id, options));
-    }
+  /**
+   * Get a single topic
+   */
+  async getTopic(
+    apiKey: string,
+    apiUsername: string,
+    id: string,
+    options?: RequestOptions,
+  ): Promise<operations.GetTopicResponseBody> {
+    return unwrapAsync(topicsGetTopic(
+      this,
+      apiKey,
+      apiUsername,
+      id,
+      options,
+    ));
+  }
 
-    /**
-     * Get topic by external_id
-     */
-    async getTopicByExternalId(externalId: string, options?: RequestOptions): Promise<void> {
-        return unwrapAsync(topicsGetTopicByExternalId(this, externalId, options));
-    }
+  /**
+   * Get topic by external_id
+   */
+  async getTopicByExternalId(
+    externalId: string,
+    options?: RequestOptions,
+  ): Promise<void> {
+    return unwrapAsync(topicsGetTopicByExternalId(
+      this,
+      externalId,
+      options,
+    ));
+  }
 
-    /**
-     * Invite to topic
-     */
-    async inviteToTopic(
-        apiKey: string,
-        apiUsername: string,
-        id: string,
-        requestBody?: operations.InviteToTopicRequestBody | undefined,
-        options?: RequestOptions
-    ): Promise<operations.InviteToTopicResponseBody> {
-        return unwrapAsync(
-            topicsInviteToTopic(this, apiKey, apiUsername, id, requestBody, options)
-        );
-    }
+  /**
+   * Invite to topic
+   */
+  async inviteToTopic(
+    apiKey: string,
+    apiUsername: string,
+    id: string,
+    requestBody?: operations.InviteToTopicRequestBody | undefined,
+    options?: RequestOptions,
+  ): Promise<operations.InviteToTopicResponseBody> {
+    return unwrapAsync(topicsInviteToTopic(
+      this,
+      apiKey,
+      apiUsername,
+      id,
+      requestBody,
+      options,
+    ));
+  }
 
-    /**
-     * Get the latest topics
-     */
-    async listLatestTopics(
-        apiKey: string,
-        apiUsername: string,
-        ascending?: string | undefined,
-        order?: string | undefined,
-        options?: RequestOptions
-    ): Promise<operations.ListLatestTopicsResponseBody> {
-        return unwrapAsync(
-            topicsListLatestTopics(this, apiKey, apiUsername, ascending, order, options)
-        );
-    }
+  /**
+   * Get the latest topics
+   */
+  async listLatestTopics(
+    apiKey: string,
+    apiUsername: string,
+    ascending?: string | undefined,
+    order?: string | undefined,
+    options?: RequestOptions,
+  ): Promise<operations.ListLatestTopicsResponseBody> {
+    return unwrapAsync(topicsListLatestTopics(
+      this,
+      apiKey,
+      apiUsername,
+      ascending,
+      order,
+      options,
+    ));
+  }
 
-    /**
-     * Get the top topics filtered by period
-     */
-    async listTopTopics(
-        apiKey: string,
-        apiUsername: string,
-        period?: string | undefined,
-        options?: RequestOptions
-    ): Promise<operations.ListTopTopicsResponseBody> {
-        return unwrapAsync(topicsListTopTopics(this, apiKey, apiUsername, period, options));
-    }
+  /**
+   * Get the top topics filtered by period
+   */
+  async listTopTopics(
+    apiKey: string,
+    apiUsername: string,
+    period?: string | undefined,
+    options?: RequestOptions,
+  ): Promise<operations.ListTopTopicsResponseBody> {
+    return unwrapAsync(topicsListTopTopics(
+      this,
+      apiKey,
+      apiUsername,
+      period,
+      options,
+    ));
+  }
 
-    /**
-     * Remove a topic
-     */
-    async removeTopic(
-        apiKey: string,
-        apiUsername: string,
-        id: string,
-        options?: RequestOptions
-    ): Promise<void> {
-        return unwrapAsync(topicsRemoveTopic(this, apiKey, apiUsername, id, options));
-    }
+  /**
+   * Remove a topic
+   */
+  async removeTopic(
+    apiKey: string,
+    apiUsername: string,
+    id: string,
+    options?: RequestOptions,
+  ): Promise<void> {
+    return unwrapAsync(topicsRemoveTopic(
+      this,
+      apiKey,
+      apiUsername,
+      id,
+      options,
+    ));
+  }
 
-    /**
-     * Set notification level
-     */
-    async setNotificationLevel(
-        apiKey: string,
-        apiUsername: string,
-        id: string,
-        requestBody?: operations.SetNotificationLevelRequestBody | undefined,
-        options?: RequestOptions
-    ): Promise<operations.SetNotificationLevelResponseBody> {
-        return unwrapAsync(
-            topicsSetNotificationLevel(this, apiKey, apiUsername, id, requestBody, options)
-        );
-    }
+  /**
+   * Set notification level
+   */
+  async setNotificationLevel(
+    apiKey: string,
+    apiUsername: string,
+    id: string,
+    requestBody?: operations.SetNotificationLevelRequestBody | undefined,
+    options?: RequestOptions,
+  ): Promise<operations.SetNotificationLevelResponseBody> {
+    return unwrapAsync(topicsSetNotificationLevel(
+      this,
+      apiKey,
+      apiUsername,
+      id,
+      requestBody,
+      options,
+    ));
+  }
 
-    /**
-     * Update a topic
-     */
-    async updateTopic(
-        apiKey: string,
-        apiUsername: string,
-        id: string,
-        requestBody?: operations.UpdateTopicRequestBody | undefined,
-        options?: RequestOptions
-    ): Promise<operations.UpdateTopicResponseBody> {
-        return unwrapAsync(topicsUpdateTopic(this, apiKey, apiUsername, id, requestBody, options));
-    }
+  /**
+   * Update a topic
+   */
+  async updateTopic(
+    apiKey: string,
+    apiUsername: string,
+    id: string,
+    requestBody?: operations.UpdateTopicRequestBody | undefined,
+    options?: RequestOptions,
+  ): Promise<operations.UpdateTopicResponseBody> {
+    return unwrapAsync(topicsUpdateTopic(
+      this,
+      apiKey,
+      apiUsername,
+      id,
+      requestBody,
+      options,
+    ));
+  }
 
-    /**
-     * Update the status of a topic
-     */
-    async updateTopicStatus(
-        apiKey: string,
-        apiUsername: string,
-        id: string,
-        requestBody?: operations.UpdateTopicStatusRequestBody | undefined,
-        options?: RequestOptions
-    ): Promise<operations.UpdateTopicStatusResponseBody> {
-        return unwrapAsync(
-            topicsUpdateTopicStatus(this, apiKey, apiUsername, id, requestBody, options)
-        );
-    }
+  /**
+   * Update the status of a topic
+   */
+  async updateTopicStatus(
+    apiKey: string,
+    apiUsername: string,
+    id: string,
+    requestBody?: operations.UpdateTopicStatusRequestBody | undefined,
+    options?: RequestOptions,
+  ): Promise<operations.UpdateTopicStatusResponseBody> {
+    return unwrapAsync(topicsUpdateTopicStatus(
+      this,
+      apiKey,
+      apiUsername,
+      id,
+      requestBody,
+      options,
+    ));
+  }
 
-    /**
-     * Update topic timestamp
-     */
-    async updateTopicTimestamp(
-        apiKey: string,
-        apiUsername: string,
-        id: string,
-        requestBody?: operations.UpdateTopicTimestampRequestBody | undefined,
-        options?: RequestOptions
-    ): Promise<operations.UpdateTopicTimestampResponseBody> {
-        return unwrapAsync(
-            topicsUpdateTopicTimestamp(this, apiKey, apiUsername, id, requestBody, options)
-        );
-    }
+  /**
+   * Update topic timestamp
+   */
+  async updateTopicTimestamp(
+    apiKey: string,
+    apiUsername: string,
+    id: string,
+    requestBody?: operations.UpdateTopicTimestampRequestBody | undefined,
+    options?: RequestOptions,
+  ): Promise<operations.UpdateTopicTimestampResponseBody> {
+    return unwrapAsync(topicsUpdateTopicTimestamp(
+      this,
+      apiKey,
+      apiUsername,
+      id,
+      requestBody,
+      options,
+    ));
+  }
 }

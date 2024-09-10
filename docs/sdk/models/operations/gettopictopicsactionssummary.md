@@ -6,8 +6,8 @@
 import { GetTopicTopicsActionsSummary } from "@lukehagar/discoursejs/sdk/models/operations";
 
 let value: GetTopicTopicsActionsSummary = {
-    canAct: false,
-    id: 233078,
+  canAct: false,
+  id: 233078,
 };
 ```
 

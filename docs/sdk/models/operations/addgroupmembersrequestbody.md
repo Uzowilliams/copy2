@@ -6,7 +6,7 @@
 import { AddGroupMembersRequestBody } from "@lukehagar/discoursejs/sdk/models/operations";
 
 let value: AddGroupMembersRequestBody = {
-    usernames: "username1,username2",
+  usernames: "username1,username2",
 };
 ```
 

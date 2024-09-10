@@ -6,10 +6,10 @@
 import { GetTopicActionsSummary } from "@lukehagar/discoursejs/sdk/models/operations";
 
 let value: GetTopicActionsSummary = {
-    canAct: false,
-    count: 895692,
-    hidden: false,
-    id: 95619,
+  canAct: false,
+  count: 895692,
+  hidden: false,
+  id: 95619,
 };
 ```
 

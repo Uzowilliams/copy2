@@ -6,16 +6,16 @@
 import { Silence } from "@lukehagar/discoursejs/sdk/models/operations";
 
 let value: Silence = {
-    silenceReason: "<value>",
-    silenced: false,
-    silencedAt: "<value>",
-    silencedBy: {
-        avatarTemplate: "<value>",
-        id: 272683,
-        name: "<value>",
-        username: "Karina85",
-    },
-    silencedTill: "<value>",
+  silenceReason: "<value>",
+  silenced: false,
+  silencedAt: "<value>",
+  silencedBy: {
+    avatarTemplate: "<value>",
+    id: 272683,
+    name: "<value>",
+    username: "Karina85",
+  },
+  silencedTill: "<value>",
 };
 ```
 

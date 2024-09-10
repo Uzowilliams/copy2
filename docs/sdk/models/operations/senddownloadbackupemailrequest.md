@@ -6,7 +6,7 @@
 import { SendDownloadBackupEmailRequest } from "@lukehagar/discoursejs/sdk/models/operations";
 
 let value: SendDownloadBackupEmailRequest = {
-    filename: "your_file_here",
+  filename: "your_file_here",
 };
 ```
 

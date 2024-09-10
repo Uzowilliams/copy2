@@ -6,7 +6,7 @@
 import { UpdateGroupGroup } from "@lukehagar/discoursejs/sdk/models/operations";
 
 let value: UpdateGroupGroup = {
-    name: "<value>",
+  name: "<value>",
 };
 ```
 

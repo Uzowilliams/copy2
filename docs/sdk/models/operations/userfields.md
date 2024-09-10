@@ -6,8 +6,8 @@
 import { UserFields } from "@lukehagar/discoursejs/sdk/models/operations";
 
 let value: UserFields = {
-    one: "<value>",
-    two: "<value>",
+  one: "<value>",
+  two: "<value>",
 };
 ```
 

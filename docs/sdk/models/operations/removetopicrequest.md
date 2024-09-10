@@ -6,9 +6,9 @@
 import { RemoveTopicRequest } from "@lukehagar/discoursejs/sdk/models/operations";
 
 let value: RemoveTopicRequest = {
-    apiKey: "<value>",
-    apiUsername: "<value>",
-    id: "<id>",
+  apiKey: "<value>",
+  apiUsername: "<value>",
+  id: "<id>",
 };
 ```
 

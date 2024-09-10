@@ -6,7 +6,7 @@
 import { ActionsSummary } from "@lukehagar/discoursejs/sdk/models/operations";
 
 let value: ActionsSummary = {
-    id: 63553,
+  id: 63553,
 };
 ```
 

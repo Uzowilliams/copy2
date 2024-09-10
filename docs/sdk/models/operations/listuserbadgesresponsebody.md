@@ -8,17 +8,17 @@ success response
 import { ListUserBadgesResponseBody } from "@lukehagar/discoursejs/sdk/models/operations";
 
 let value: ListUserBadgesResponseBody = {
-    userBadges: [
-        {
-            badgeId: 670638,
-            canFavorite: false,
-            grantedAt: "<value>",
-            grantedById: 170909,
-            groupingPosition: 210382,
-            id: 358152,
-            isFavorite: "<value>",
-        },
-    ],
+  userBadges: [
+    {
+      badgeId: 670638,
+      canFavorite: false,
+      grantedAt: "<value>",
+      grantedById: 170909,
+      groupingPosition: 210382,
+      id: 358152,
+      isFavorite: "<value>",
+    },
+  ],
 };
 ```
 

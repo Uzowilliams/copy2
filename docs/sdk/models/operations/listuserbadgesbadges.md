@@ -6,21 +6,21 @@
 import { ListUserBadgesBadges } from "@lukehagar/discoursejs/sdk/models/operations";
 
 let value: ListUserBadgesBadges = {
-    allowTitle: false,
-    badgeGroupingId: 612096,
-    badgeTypeId: 222321,
-    description: "Polarised fault-tolerant throughput",
-    enabled: false,
-    grantCount: 902599,
-    icon: "<value>",
-    id: 681820,
-    imageUrl: "<value>",
-    listable: false,
-    manuallyGrantable: false,
-    multipleGrant: false,
-    name: "<value>",
-    slug: "<value>",
-    system: false,
+  allowTitle: false,
+  badgeGroupingId: 612096,
+  badgeTypeId: 222321,
+  description: "Polarised fault-tolerant throughput",
+  enabled: false,
+  grantCount: 902599,
+  icon: "<value>",
+  id: 681820,
+  imageUrl: "<value>",
+  listable: false,
+  manuallyGrantable: false,
+  multipleGrant: false,
+  name: "<value>",
+  slug: "<value>",
+  system: false,
 };
 ```
 

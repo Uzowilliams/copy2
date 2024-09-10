@@ -6,10 +6,10 @@
 import { SilencedBy } from "@lukehagar/discoursejs/sdk/models/operations";
 
 let value: SilencedBy = {
-    avatarTemplate: "<value>",
-    id: 341698,
-    name: "<value>",
-    username: "Lucas_Padberg",
+  avatarTemplate: "<value>",
+  id: 341698,
+  name: "<value>",
+  username: "Lucas_Padberg",
 };
 ```
 

@@ -4,19 +4,19 @@
 
 import { SDKCore } from "../core.js";
 import {
-    encodeFormQuery as encodeFormQuery$,
-    encodeSimple as encodeSimple$,
+  encodeFormQuery as encodeFormQuery$,
+  encodeSimple as encodeSimple$,
 } from "../lib/encodings.js";
 import * as m$ from "../lib/matchers.js";
 import * as schemas$ from "../lib/schemas.js";
 import { RequestOptions } from "../lib/sdks.js";
 import { pathToFunc } from "../lib/url.js";
 import {
-    ConnectionError,
-    InvalidRequestError,
-    RequestAbortedError,
-    RequestTimeoutError,
-    UnexpectedClientError,
+  ConnectionError,
+  InvalidRequestError,
+  RequestAbortedError,
+  RequestTimeoutError,
+  UnexpectedClientError,
 } from "../sdk/models/errors/httpclienterrors.js";
 import { SDKError } from "../sdk/models/errors/sdkerror.js";
 import { SDKValidationError } from "../sdk/models/errors/sdkvalidationerror.js";
@@ -27,104 +27,107 @@ import { Result } from "../sdk/types/fp.js";
  * Get the latest topics
  */
 export async function topicsListLatestTopics(
-    client$: SDKCore,
-    apiKey: string,
-    apiUsername: string,
-    ascending?: string | undefined,
-    order?: string | undefined,
-    options?: RequestOptions
+  client$: SDKCore,
+  apiKey: string,
+  apiUsername: string,
+  ascending?: string | undefined,
+  order?: string | undefined,
+  options?: RequestOptions,
 ): Promise<
-    Result<
-        operations.ListLatestTopicsResponseBody,
-        | SDKError
-        | SDKValidationError
-        | UnexpectedClientError
-        | InvalidRequestError
-        | RequestAbortedError
-        | RequestTimeoutError
-        | ConnectionError
-    >
+  Result<
+    operations.ListLatestTopicsResponseBody,
+    | SDKError
+    | SDKValidationError
+    | UnexpectedClientError
+    | InvalidRequestError
+    | RequestAbortedError
+    | RequestTimeoutError
+    | ConnectionError
+  >
 > {
-    const input$: operations.ListLatestTopicsRequest = {
-        apiKey: apiKey,
-        apiUsername: apiUsername,
-        ascending: ascending,
-        order: order,
-    };
+  const input$: operations.ListLatestTopicsRequest = {
+    apiKey: apiKey,
+    apiUsername: apiUsername,
+    ascending: ascending,
+    order: order,
+  };
 
-    const parsed$ = schemas$.safeParse(
-        input$,
-        (value$) => operations.ListLatestTopicsRequest$outboundSchema.parse(value$),
-        "Input validation failed"
-    );
-    if (!parsed$.ok) {
-        return parsed$;
-    }
-    const payload$ = parsed$.value;
-    const body$ = null;
+  const parsed$ = schemas$.safeParse(
+    input$,
+    (value$) => operations.ListLatestTopicsRequest$outboundSchema.parse(value$),
+    "Input validation failed",
+  );
+  if (!parsed$.ok) {
+    return parsed$;
+  }
+  const payload$ = parsed$.value;
+  const body$ = null;
 
-    const path$ = pathToFunc("/latest.json")();
+  const path$ = pathToFunc("/latest.json")();
 
-    const query$ = encodeFormQuery$({
-        ascending: payload$.ascending,
-        order: payload$.order,
-    });
+  const query$ = encodeFormQuery$({
+    "ascending": payload$.ascending,
+    "order": payload$.order,
+  });
 
-    const headers$ = new Headers({
-        Accept: "application/json",
-        "Api-Key": encodeSimple$("Api-Key", payload$["Api-Key"], {
-            explode: false,
-            charEncoding: "none",
-        }),
-        "Api-Username": encodeSimple$("Api-Username", payload$["Api-Username"], {
-            explode: false,
-            charEncoding: "none",
-        }),
-    });
+  const headers$ = new Headers({
+    Accept: "application/json",
+    "Api-Key": encodeSimple$("Api-Key", payload$["Api-Key"], {
+      explode: false,
+      charEncoding: "none",
+    }),
+    "Api-Username": encodeSimple$("Api-Username", payload$["Api-Username"], {
+      explode: false,
+      charEncoding: "none",
+    }),
+  });
 
-    const context = { operationID: "listLatestTopics", oAuth2Scopes: [], securitySource: null };
+  const context = {
+    operationID: "listLatestTopics",
+    oAuth2Scopes: [],
+    securitySource: null,
+  };
 
-    const requestRes = client$.createRequest$(
-        context,
-        {
-            method: "GET",
-            path: path$,
-            headers: headers$,
-            query: query$,
-            body: body$,
-            timeoutMs: options?.timeoutMs || client$.options$.timeoutMs || -1,
-        },
-        options
-    );
-    if (!requestRes.ok) {
-        return requestRes;
-    }
-    const request$ = requestRes.value;
+  const requestRes = client$.createRequest$(context, {
+    method: "GET",
+    path: path$,
+    headers: headers$,
+    query: query$,
+    body: body$,
+    timeoutMs: options?.timeoutMs || client$.options$.timeoutMs || -1,
+  }, options);
+  if (!requestRes.ok) {
+    return requestRes;
+  }
+  const request$ = requestRes.value;
 
-    const doResult = await client$.do$(request$, {
-        context,
-        errorCodes: [],
-        retryConfig: options?.retries || client$.options$.retryConfig,
-        retryCodes: options?.retryCodes || ["429", "500", "502", "503", "504"],
-    });
-    if (!doResult.ok) {
-        return doResult;
-    }
-    const response = doResult.value;
+  const doResult = await client$.do$(request$, {
+    context,
+    errorCodes: [],
+    retryConfig: options?.retries
+      || client$.options$.retryConfig,
+    retryCodes: options?.retryCodes || ["429", "500", "502", "503", "504"],
+  });
+  if (!doResult.ok) {
+    return doResult;
+  }
+  const response = doResult.value;
 
-    const [result$] = await m$.match<
-        operations.ListLatestTopicsResponseBody,
-        | SDKError
-        | SDKValidationError
-        | UnexpectedClientError
-        | InvalidRequestError
-        | RequestAbortedError
-        | RequestTimeoutError
-        | ConnectionError
-    >(m$.json(200, operations.ListLatestTopicsResponseBody$inboundSchema))(response);
-    if (!result$.ok) {
-        return result$;
-    }
-
+  const [result$] = await m$.match<
+    operations.ListLatestTopicsResponseBody,
+    | SDKError
+    | SDKValidationError
+    | UnexpectedClientError
+    | InvalidRequestError
+    | RequestAbortedError
+    | RequestTimeoutError
+    | ConnectionError
+  >(
+    m$.json(200, operations.ListLatestTopicsResponseBody$inboundSchema),
+  )(response);
+  if (!result$.ok) {
     return result$;
+  }
+
+  return result$;
 }

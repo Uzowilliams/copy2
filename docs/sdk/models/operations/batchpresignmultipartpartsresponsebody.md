@@ -8,7 +8,7 @@ external upload initialized
 import { BatchPresignMultipartPartsResponseBody } from "@lukehagar/discoursejs/sdk/models/operations";
 
 let value: BatchPresignMultipartPartsResponseBody = {
-    presignedUrls: {},
+  presignedUrls: {},
 };
 ```
 

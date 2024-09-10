@@ -5,34 +5,34 @@
 import * as z from "zod";
 
 export type DownloadBackupRequest = {
-    filename: string;
-    token: string;
+  filename: string;
+  token: string;
 };
 
 /** @internal */
 export const DownloadBackupRequest$inboundSchema: z.ZodType<
-    DownloadBackupRequest,
-    z.ZodTypeDef,
-    unknown
+  DownloadBackupRequest,
+  z.ZodTypeDef,
+  unknown
 > = z.object({
-    filename: z.string(),
-    token: z.string(),
+  filename: z.string(),
+  token: z.string(),
 });
 
 /** @internal */
 export type DownloadBackupRequest$Outbound = {
-    filename: string;
-    token: string;
+  filename: string;
+  token: string;
 };
 
 /** @internal */
 export const DownloadBackupRequest$outboundSchema: z.ZodType<
-    DownloadBackupRequest$Outbound,
-    z.ZodTypeDef,
-    DownloadBackupRequest
+  DownloadBackupRequest$Outbound,
+  z.ZodTypeDef,
+  DownloadBackupRequest
 > = z.object({
-    filename: z.string(),
-    token: z.string(),
+  filename: z.string(),
+  token: z.string(),
 });
 
 /**
@@ -40,10 +40,10 @@ export const DownloadBackupRequest$outboundSchema: z.ZodType<
  * @deprecated This namespace will be removed in future versions. Use schemas and types that are exported directly from this module.
  */
 export namespace DownloadBackupRequest$ {
-    /** @deprecated use `DownloadBackupRequest$inboundSchema` instead. */
-    export const inboundSchema = DownloadBackupRequest$inboundSchema;
-    /** @deprecated use `DownloadBackupRequest$outboundSchema` instead. */
-    export const outboundSchema = DownloadBackupRequest$outboundSchema;
-    /** @deprecated use `DownloadBackupRequest$Outbound` instead. */
-    export type Outbound = DownloadBackupRequest$Outbound;
+  /** @deprecated use `DownloadBackupRequest$inboundSchema` instead. */
+  export const inboundSchema = DownloadBackupRequest$inboundSchema;
+  /** @deprecated use `DownloadBackupRequest$outboundSchema` instead. */
+  export const outboundSchema = DownloadBackupRequest$outboundSchema;
+  /** @deprecated use `DownloadBackupRequest$Outbound` instead. */
+  export type Outbound = DownloadBackupRequest$Outbound;
 }

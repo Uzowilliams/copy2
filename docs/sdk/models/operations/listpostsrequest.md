@@ -6,8 +6,8 @@
 import { ListPostsRequest } from "@lukehagar/discoursejs/sdk/models/operations";
 
 let value: ListPostsRequest = {
-    apiKey: "<value>",
-    apiUsername: "<value>",
+  apiKey: "<value>",
+  apiUsername: "<value>",
 };
 ```
 

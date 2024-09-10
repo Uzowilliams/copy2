@@ -6,8 +6,8 @@
 import { UpdateAvatarRequestBody } from "@lukehagar/discoursejs/sdk/models/operations";
 
 let value: UpdateAvatarRequestBody = {
-    type: "system",
-    uploadId: 209750,
+  type: "system",
+  uploadId: 209750,
 };
 ```
 

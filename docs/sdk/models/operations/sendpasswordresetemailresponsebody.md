@@ -8,8 +8,8 @@ success response
 import { SendPasswordResetEmailResponseBody } from "@lukehagar/discoursejs/sdk/models/operations";
 
 let value: SendPasswordResetEmailResponseBody = {
-    success: "<value>",
-    userFound: false,
+  success: "<value>",
+  userFound: false,
 };
 ```
 

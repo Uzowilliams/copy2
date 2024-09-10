@@ -128,10 +128,10 @@ import { SDK } from "@lukehagar/discoursejs";
 const sdk = new SDK();
 
 async function run() {
-    const result = await sdk.backups.createBackup();
+  const result = await sdk.backups.createBackup();
 
-    // Handle the result
-    console.log(result);
+  // Handle the result
+  console.log(result);
 }
 
 run();
@@ -307,26 +307,26 @@ import { SDKValidationError } from "@lukehagar/discoursejs/sdk/models/errors";
 const sdk = new SDK();
 
 async function run() {
-    let result;
-    try {
-        result = await sdk.backups.createBackup();
+  let result;
+  try {
+    result = await sdk.backups.createBackup();
 
-        // Handle the result
-        console.log(result);
-    } catch (err) {
-        switch (true) {
-            case err instanceof SDKValidationError: {
-                // Validation errors can be pretty-printed
-                console.error(err.pretty());
-                // Raw value may also be inspected
-                console.error(err.rawValue);
-                return;
-            }
-            default: {
-                throw err;
-            }
-        }
+    // Handle the result
+    console.log(result);
+  } catch (err) {
+    switch (true) {
+      case (err instanceof SDKValidationError): {
+        // Validation errors can be pretty-printed
+        console.error(err.pretty());
+        // Raw value may also be inspected
+        console.error(err.rawValue);
+        return;
+      }
+      default: {
+        throw err;
+      }
     }
+  }
 }
 
 run();
@@ -349,14 +349,14 @@ You can override the default server globally by passing a server index to the `s
 import { SDK } from "@lukehagar/discoursejs";
 
 const sdk = new SDK({
-    serverIdx: 0,
+  serverIdx: 0,
 });
 
 async function run() {
-    const result = await sdk.backups.createBackup();
+  const result = await sdk.backups.createBackup();
 
-    // Handle the result
-    console.log(result);
+  // Handle the result
+  console.log(result);
 }
 
 run();
@@ -376,14 +376,14 @@ The default server can also be overridden globally by passing a URL to the `serv
 import { SDK } from "@lukehagar/discoursejs";
 
 const sdk = new SDK({
-    serverURL: "https://{defaultHost}",
+  serverURL: "https://{defaultHost}",
 });
 
 async function run() {
-    const result = await sdk.backups.createBackup();
+  const result = await sdk.backups.createBackup();
 
-    // Handle the result
-    console.log(result);
+  // Handle the result
+  console.log(result);
 }
 
 run();
@@ -466,10 +466,10 @@ import { SDK } from "@lukehagar/discoursejs";
 const sdk = new SDK();
 
 async function run() {
-    const result = await sdk.uploads.createUpload();
+  const result = await sdk.uploads.createUpload();
 
-    // Handle the result
-    console.log(result);
+  // Handle the result
+  console.log(result);
 }
 
 run();
@@ -489,21 +489,21 @@ import { SDK } from "@lukehagar/discoursejs";
 const sdk = new SDK();
 
 async function run() {
-    const result = await sdk.backups.createBackup({
-        retries: {
-            strategy: "backoff",
-            backoff: {
-                initialInterval: 1,
-                maxInterval: 50,
-                exponent: 1.1,
-                maxElapsedTime: 100,
-            },
-            retryConnectionErrors: false,
-        },
-    });
+  const result = await sdk.backups.createBackup({
+    retries: {
+      strategy: "backoff",
+      backoff: {
+        initialInterval: 1,
+        maxInterval: 50,
+        exponent: 1.1,
+        maxElapsedTime: 100,
+      },
+      retryConnectionErrors: false,
+    },
+  });
 
-    // Handle the result
-    console.log(result);
+  // Handle the result
+  console.log(result);
 }
 
 run();
@@ -515,23 +515,23 @@ If you'd like to override the default retry strategy for all operations that sup
 import { SDK } from "@lukehagar/discoursejs";
 
 const sdk = new SDK({
-    retryConfig: {
-        strategy: "backoff",
-        backoff: {
-            initialInterval: 1,
-            maxInterval: 50,
-            exponent: 1.1,
-            maxElapsedTime: 100,
-        },
-        retryConnectionErrors: false,
+  retryConfig: {
+    strategy: "backoff",
+    backoff: {
+      initialInterval: 1,
+      maxInterval: 50,
+      exponent: 1.1,
+      maxElapsedTime: 100,
     },
+    retryConnectionErrors: false,
+  },
 });
 
 async function run() {
-    const result = await sdk.backups.createBackup();
+  const result = await sdk.backups.createBackup();
 
-    // Handle the result
-    console.log(result);
+  // Handle the result
+  console.log(result);
 }
 
 run();

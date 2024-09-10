@@ -11,34 +11,59 @@ import * as operations from "./models/operations/index.js";
 import { unwrapAsync } from "./types/fp.js";
 
 export class Backups extends ClientSDK {
-    /**
-     * Create backup
-     */
-    async createBackup(
-        request?: operations.CreateBackupRequestBody | undefined,
-        options?: RequestOptions
-    ): Promise<operations.CreateBackupResponseBody> {
-        return unwrapAsync(backupsCreateBackup(this, request, options));
-    }
+  /**
+   * Create backup
+   */
+  async createBackup(
+    request?: operations.CreateBackupRequestBody | undefined,
+    options?: RequestOptions,
+  ): Promise<operations.CreateBackupResponseBody> {
+    return unwrapAsync(backupsCreateBackup(
+      this,
+      request,
+      options,
+    ));
+  }
 
-    /**
-     * Download backup
-     */
-    async downloadBackup(filename: string, token: string, options?: RequestOptions): Promise<void> {
-        return unwrapAsync(backupsDownloadBackup(this, filename, token, options));
-    }
+  /**
+   * Download backup
+   */
+  async downloadBackup(
+    filename: string,
+    token: string,
+    options?: RequestOptions,
+  ): Promise<void> {
+    return unwrapAsync(backupsDownloadBackup(
+      this,
+      filename,
+      token,
+      options,
+    ));
+  }
 
-    /**
-     * List backups
-     */
-    async getBackups(options?: RequestOptions): Promise<Array<operations.ResponseBody>> {
-        return unwrapAsync(backupsGetBackups(this, options));
-    }
+  /**
+   * List backups
+   */
+  async getBackups(
+    options?: RequestOptions,
+  ): Promise<Array<operations.ResponseBody>> {
+    return unwrapAsync(backupsGetBackups(
+      this,
+      options,
+    ));
+  }
 
-    /**
-     * Send download backup email
-     */
-    async sendDownloadBackupEmail(filename: string, options?: RequestOptions): Promise<void> {
-        return unwrapAsync(backupsSendDownloadBackupEmail(this, filename, options));
-    }
+  /**
+   * Send download backup email
+   */
+  async sendDownloadBackupEmail(
+    filename: string,
+    options?: RequestOptions,
+  ): Promise<void> {
+    return unwrapAsync(backupsSendDownloadBackupEmail(
+      this,
+      filename,
+      options,
+    ));
+  }
 }

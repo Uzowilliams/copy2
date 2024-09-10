@@ -6,10 +6,10 @@
 import { ListCategoryTopicsPosters } from "@lukehagar/discoursejs/sdk/models/operations";
 
 let value: ListCategoryTopicsPosters = {
-    description: "Centralized modular secured line",
-    extras: "<value>",
-    primaryGroupId: "<value>",
-    userId: 913992,
+  description: "Centralized modular secured line",
+  extras: "<value>",
+  primaryGroupId: "<value>",
+  userId: 913992,
 };
 ```
 

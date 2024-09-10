@@ -6,9 +6,9 @@
 import { UpdateBadgeBadgeTypes } from "@lukehagar/discoursejs/sdk/models/operations";
 
 let value: UpdateBadgeBadgeTypes = {
-    id: 634274,
-    name: "<value>",
-    sortOrder: 988374,
+  id: 634274,
+  name: "<value>",
+  sortOrder: 988374,
 };
 ```
 

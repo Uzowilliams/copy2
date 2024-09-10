@@ -6,8 +6,8 @@
 import { CreateUserRequest } from "@lukehagar/discoursejs/sdk/models/operations";
 
 let value: CreateUserRequest = {
-    apiKey: "<value>",
-    apiUsername: "<value>",
+  apiKey: "<value>",
+  apiUsername: "<value>",
 };
 ```
 

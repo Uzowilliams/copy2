@@ -6,7 +6,7 @@
 import { UpdateTagGroupRequest } from "@lukehagar/discoursejs/sdk/models/operations";
 
 let value: UpdateTagGroupRequest = {
-    id: "<id>",
+  id: "<id>",
 };
 ```
 

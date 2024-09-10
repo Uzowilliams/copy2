@@ -8,7 +8,7 @@ success response
 import { CreateBackupResponseBody } from "@lukehagar/discoursejs/sdk/models/operations";
 
 let value: CreateBackupResponseBody = {
-    success: "OK",
+  success: "OK",
 };
 ```
 

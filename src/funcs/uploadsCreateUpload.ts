@@ -9,11 +9,11 @@ import * as schemas$ from "../lib/schemas.js";
 import { RequestOptions } from "../lib/sdks.js";
 import { pathToFunc } from "../lib/url.js";
 import {
-    ConnectionError,
-    InvalidRequestError,
-    RequestAbortedError,
-    RequestTimeoutError,
-    UnexpectedClientError,
+  ConnectionError,
+  InvalidRequestError,
+  RequestAbortedError,
+  RequestTimeoutError,
+  UnexpectedClientError,
 } from "../sdk/models/errors/httpclienterrors.js";
 import { SDKError } from "../sdk/models/errors/sdkerror.js";
 import { SDKValidationError } from "../sdk/models/errors/sdkvalidationerror.js";
@@ -26,106 +26,116 @@ import { isReadableStream } from "../sdk/types/streams.js";
  * Creates an upload
  */
 export async function uploadsCreateUpload(
-    client$: SDKCore,
-    request?: operations.CreateUploadRequestBody | undefined,
-    options?: RequestOptions
+  client$: SDKCore,
+  request?: operations.CreateUploadRequestBody | undefined,
+  options?: RequestOptions,
 ): Promise<
-    Result<
-        operations.CreateUploadResponseBody,
-        | SDKError
-        | SDKValidationError
-        | UnexpectedClientError
-        | InvalidRequestError
-        | RequestAbortedError
-        | RequestTimeoutError
-        | ConnectionError
-    >
+  Result<
+    operations.CreateUploadResponseBody,
+    | SDKError
+    | SDKValidationError
+    | UnexpectedClientError
+    | InvalidRequestError
+    | RequestAbortedError
+    | RequestTimeoutError
+    | ConnectionError
+  >
 > {
-    const input$ = request;
+  const input$ = request;
 
-    const parsed$ = schemas$.safeParse(
-        input$,
-        (value$) => operations.CreateUploadRequestBody$outboundSchema.optional().parse(value$),
-        "Input validation failed"
-    );
-    if (!parsed$.ok) {
-        return parsed$;
+  const parsed$ = schemas$.safeParse(
+    input$,
+    (value$) =>
+      operations.CreateUploadRequestBody$outboundSchema.optional().parse(
+        value$,
+      ),
+    "Input validation failed",
+  );
+  if (!parsed$.ok) {
+    return parsed$;
+  }
+  const payload$ = parsed$.value;
+  const body$ = new FormData();
+  if (payload$ != null) {
+    body$.append("type", payload$?.type);
+    if (payload$?.file !== undefined) {
+      if (isBlobLike(payload$?.file)) {
+        body$.append("file", payload$?.file);
+      } else if (isReadableStream(payload$?.file.content)) {
+        const buffer = await readableStreamToArrayBuffer(
+          payload$?.file.content,
+        );
+        const blob = new Blob([buffer], { type: "application/octet-stream" });
+        body$.append("file", blob);
+      } else {
+        body$.append(
+          "file",
+          new Blob([payload$?.file.content], {
+            type: "application/octet-stream",
+          }),
+          payload$?.file.fileName,
+        );
+      }
     }
-    const payload$ = parsed$.value;
-    const body$ = new FormData();
-    if (payload$ != null) {
-        body$.append("type", payload$?.type);
-        if (payload$?.file !== undefined) {
-            if (isBlobLike(payload$?.file)) {
-                body$.append("file", payload$?.file);
-            } else if (isReadableStream(payload$?.file.content)) {
-                const buffer = await readableStreamToArrayBuffer(payload$?.file.content);
-                const blob = new Blob([buffer], { type: "application/octet-stream" });
-                body$.append("file", blob);
-            } else {
-                body$.append(
-                    "file",
-                    new Blob([payload$?.file.content], { type: "application/octet-stream" }),
-                    payload$?.file.fileName
-                );
-            }
-        }
-        if (payload$?.synchronous !== undefined) {
-            body$.append("synchronous", String(payload$?.synchronous));
-        }
-        if (payload$?.user_id !== undefined) {
-            body$.append("user_id", String(payload$?.user_id));
-        }
+    if (payload$?.synchronous !== undefined) {
+      body$.append("synchronous", String(payload$?.synchronous));
     }
-
-    const path$ = pathToFunc("/uploads.json")();
-
-    const headers$ = new Headers({
-        Accept: "application/json",
-    });
-
-    const context = { operationID: "createUpload", oAuth2Scopes: [], securitySource: null };
-
-    const requestRes = client$.createRequest$(
-        context,
-        {
-            method: "POST",
-            path: path$,
-            headers: headers$,
-            body: body$,
-            timeoutMs: options?.timeoutMs || client$.options$.timeoutMs || -1,
-        },
-        options
-    );
-    if (!requestRes.ok) {
-        return requestRes;
+    if (payload$?.user_id !== undefined) {
+      body$.append("user_id", String(payload$?.user_id));
     }
-    const request$ = requestRes.value;
+  }
 
-    const doResult = await client$.do$(request$, {
-        context,
-        errorCodes: [],
-        retryConfig: options?.retries || client$.options$.retryConfig,
-        retryCodes: options?.retryCodes || ["429", "500", "502", "503", "504"],
-    });
-    if (!doResult.ok) {
-        return doResult;
-    }
-    const response = doResult.value;
+  const path$ = pathToFunc("/uploads.json")();
 
-    const [result$] = await m$.match<
-        operations.CreateUploadResponseBody,
-        | SDKError
-        | SDKValidationError
-        | UnexpectedClientError
-        | InvalidRequestError
-        | RequestAbortedError
-        | RequestTimeoutError
-        | ConnectionError
-    >(m$.json(200, operations.CreateUploadResponseBody$inboundSchema))(response);
-    if (!result$.ok) {
-        return result$;
-    }
+  const headers$ = new Headers({
+    Accept: "application/json",
+  });
 
+  const context = {
+    operationID: "createUpload",
+    oAuth2Scopes: [],
+    securitySource: null,
+  };
+
+  const requestRes = client$.createRequest$(context, {
+    method: "POST",
+    path: path$,
+    headers: headers$,
+    body: body$,
+    timeoutMs: options?.timeoutMs || client$.options$.timeoutMs || -1,
+  }, options);
+  if (!requestRes.ok) {
+    return requestRes;
+  }
+  const request$ = requestRes.value;
+
+  const doResult = await client$.do$(request$, {
+    context,
+    errorCodes: [],
+    retryConfig: options?.retries
+      || client$.options$.retryConfig,
+    retryCodes: options?.retryCodes || ["429", "500", "502", "503", "504"],
+  });
+  if (!doResult.ok) {
+    return doResult;
+  }
+  const response = doResult.value;
+
+  const [result$] = await m$.match<
+    operations.CreateUploadResponseBody,
+    | SDKError
+    | SDKValidationError
+    | UnexpectedClientError
+    | InvalidRequestError
+    | RequestAbortedError
+    | RequestTimeoutError
+    | ConnectionError
+  >(
+    m$.json(200, operations.CreateUploadResponseBody$inboundSchema),
+  )(response);
+  if (!result$.ok) {
     return result$;
+  }
+
+  return result$;
 }

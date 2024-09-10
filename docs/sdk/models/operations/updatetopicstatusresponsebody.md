@@ -8,7 +8,7 @@ topic updated
 import { UpdateTopicStatusResponseBody } from "@lukehagar/discoursejs/sdk/models/operations";
 
 let value: UpdateTopicStatusResponseBody = {
-    success: "OK",
+  success: "OK",
 };
 ```
 

@@ -6,12 +6,12 @@
 import { SuspendUserRequest } from "@lukehagar/discoursejs/sdk/models/operations";
 
 let value: SuspendUserRequest = {
-    requestBody: {
-        postAction: "delete",
-        reason: "<value>",
-        suspendUntil: "2121-02-22",
-    },
-    id: 460220,
+  requestBody: {
+    postAction: "delete",
+    reason: "<value>",
+    suspendUntil: "2121-02-22",
+  },
+  id: 460220,
 };
 ```
 

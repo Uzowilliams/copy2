@@ -6,7 +6,7 @@
 import { GetCategoryRequest } from "@lukehagar/discoursejs/sdk/models/operations";
 
 let value: GetCategoryRequest = {
-    id: 980581,
+  id: 980581,
 };
 ```
 

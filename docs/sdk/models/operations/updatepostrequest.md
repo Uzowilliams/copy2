@@ -6,7 +6,7 @@
 import { UpdatePostRequest } from "@lukehagar/discoursejs/sdk/models/operations";
 
 let value: UpdatePostRequest = {
-    id: "<id>",
+  id: "<id>",
 };
 ```
 

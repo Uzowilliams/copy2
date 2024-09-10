@@ -6,7 +6,7 @@
 import { UpdateTopicTimestampRequestBody } from "@lukehagar/discoursejs/sdk/models/operations";
 
 let value: UpdateTopicTimestampRequestBody = {
-    timestamp: "1594291380",
+  timestamp: "1594291380",
 };
 ```
 

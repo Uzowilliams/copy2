@@ -6,8 +6,8 @@
 import { GetSiteRequiredTagGroups } from "@lukehagar/discoursejs/sdk/models/operations";
 
 let value: GetSiteRequiredTagGroups = {
-    minCount: 238043,
-    name: "<value>",
+  minCount: 238043,
+  name: "<value>",
 };
 ```
 

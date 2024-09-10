@@ -6,8 +6,8 @@
 import { ListTopTopicsRequest } from "@lukehagar/discoursejs/sdk/models/operations";
 
 let value: ListTopTopicsRequest = {
-    apiKey: "<value>",
-    apiUsername: "<value>",
+  apiKey: "<value>",
+  apiUsername: "<value>",
 };
 ```
 

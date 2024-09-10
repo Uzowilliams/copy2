@@ -6,7 +6,7 @@
 import { AdminGetUserRequest } from "@lukehagar/discoursejs/sdk/models/operations";
 
 let value: AdminGetUserRequest = {
-    id: 965417,
+  id: 965417,
 };
 ```
 

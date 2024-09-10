@@ -6,7 +6,7 @@
 import { LockPostRequestBody } from "@lukehagar/discoursejs/sdk/models/operations";
 
 let value: LockPostRequestBody = {
-    locked: "<value>",
+  locked: "<value>",
 };
 ```
 

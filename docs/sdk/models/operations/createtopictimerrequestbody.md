@@ -6,7 +6,7 @@
 import { CreateTopicTimerRequestBody } from "@lukehagar/discoursejs/sdk/models/operations";
 
 let value: CreateTopicTimerRequestBody = {
-    time: "",
+  time: "",
 };
 ```
 

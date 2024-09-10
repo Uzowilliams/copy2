@@ -6,10 +6,10 @@
 import { CreatedBy } from "@lukehagar/discoursejs/sdk/models/operations";
 
 let value: CreatedBy = {
-    avatarTemplate: "<value>",
-    id: 392569,
-    name: "<value>",
-    username: "Sasha_Thiel19",
+  avatarTemplate: "<value>",
+  id: 392569,
+  name: "<value>",
+  username: "Sasha_Thiel19",
 };
 ```
 

@@ -6,9 +6,9 @@
 import { UserColorSchemes } from "@lukehagar/discoursejs/sdk/models/operations";
 
 let value: UserColorSchemes = {
-    id: 928219,
-    isDark: false,
-    name: "<value>",
+  id: 928219,
+  isDark: false,
+  name: "<value>",
 };
 ```
 

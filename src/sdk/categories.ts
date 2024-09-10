@@ -13,65 +13,92 @@ import * as operations from "./models/operations/index.js";
 import { unwrapAsync } from "./types/fp.js";
 
 export class Categories extends ClientSDK {
-    /**
-     * Creates a category
-     */
-    async createCategory(
-        request?: operations.CreateCategoryRequestBody | undefined,
-        options?: RequestOptions
-    ): Promise<operations.CreateCategoryResponseBody> {
-        return unwrapAsync(categoriesCreateCategory(this, request, options));
-    }
+  /**
+   * Creates a category
+   */
+  async createCategory(
+    request?: operations.CreateCategoryRequestBody | undefined,
+    options?: RequestOptions,
+  ): Promise<operations.CreateCategoryResponseBody> {
+    return unwrapAsync(categoriesCreateCategory(
+      this,
+      request,
+      options,
+    ));
+  }
 
-    /**
-     * Show category
-     */
-    async getCategory(
-        id: number,
-        options?: RequestOptions
-    ): Promise<operations.GetCategoryResponseBody> {
-        return unwrapAsync(categoriesGetCategory(this, id, options));
-    }
+  /**
+   * Show category
+   */
+  async getCategory(
+    id: number,
+    options?: RequestOptions,
+  ): Promise<operations.GetCategoryResponseBody> {
+    return unwrapAsync(categoriesGetCategory(
+      this,
+      id,
+      options,
+    ));
+  }
 
-    /**
-     * Get site info
-     *
-     * @remarks
-     * Can be used to fetch all categories and subcategories
-     */
-    async getSite(options?: RequestOptions): Promise<operations.GetSiteResponseBody> {
-        return unwrapAsync(categoriesGetSite(this, options));
-    }
+  /**
+   * Get site info
+   *
+   * @remarks
+   * Can be used to fetch all categories and subcategories
+   */
+  async getSite(
+    options?: RequestOptions,
+  ): Promise<operations.GetSiteResponseBody> {
+    return unwrapAsync(categoriesGetSite(
+      this,
+      options,
+    ));
+  }
 
-    /**
-     * Retrieves a list of categories
-     */
-    async listCategories(
-        includeSubcategories?: boolean | undefined,
-        options?: RequestOptions
-    ): Promise<operations.ListCategoriesResponseBody> {
-        return unwrapAsync(categoriesListCategories(this, includeSubcategories, options));
-    }
+  /**
+   * Retrieves a list of categories
+   */
+  async listCategories(
+    includeSubcategories?: boolean | undefined,
+    options?: RequestOptions,
+  ): Promise<operations.ListCategoriesResponseBody> {
+    return unwrapAsync(categoriesListCategories(
+      this,
+      includeSubcategories,
+      options,
+    ));
+  }
 
-    /**
-     * List topics
-     */
-    async listCategoryTopics(
-        id: number,
-        slug: string,
-        options?: RequestOptions
-    ): Promise<operations.ListCategoryTopicsResponseBody> {
-        return unwrapAsync(categoriesListCategoryTopics(this, id, slug, options));
-    }
+  /**
+   * List topics
+   */
+  async listCategoryTopics(
+    id: number,
+    slug: string,
+    options?: RequestOptions,
+  ): Promise<operations.ListCategoryTopicsResponseBody> {
+    return unwrapAsync(categoriesListCategoryTopics(
+      this,
+      id,
+      slug,
+      options,
+    ));
+  }
 
-    /**
-     * Updates a category
-     */
-    async updateCategory(
-        id: number,
-        requestBody?: operations.UpdateCategoryRequestBody | undefined,
-        options?: RequestOptions
-    ): Promise<operations.UpdateCategoryResponseBody> {
-        return unwrapAsync(categoriesUpdateCategory(this, id, requestBody, options));
-    }
+  /**
+   * Updates a category
+   */
+  async updateCategory(
+    id: number,
+    requestBody?: operations.UpdateCategoryRequestBody | undefined,
+    options?: RequestOptions,
+  ): Promise<operations.UpdateCategoryResponseBody> {
+    return unwrapAsync(categoriesUpdateCategory(
+      this,
+      id,
+      requestBody,
+      options,
+    ));
+  }
 }

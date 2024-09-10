@@ -6,7 +6,7 @@
 import { GetTopicByExternalIdRequest } from "@lukehagar/discoursejs/sdk/models/operations";
 
 let value: GetTopicByExternalIdRequest = {
-    externalId: "<value>",
+  externalId: "<value>",
 };
 ```
 

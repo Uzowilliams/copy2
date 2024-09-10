@@ -6,7 +6,7 @@
 import { UpdateEmailRequestBody } from "@lukehagar/discoursejs/sdk/models/operations";
 
 let value: UpdateEmailRequestBody = {
-    email: "Maureen_Lind94@gmail.com",
+  email: "Maureen_Lind94@gmail.com",
 };
 ```
 

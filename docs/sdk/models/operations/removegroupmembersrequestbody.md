@@ -6,7 +6,7 @@
 import { RemoveGroupMembersRequestBody } from "@lukehagar/discoursejs/sdk/models/operations";
 
 let value: RemoveGroupMembersRequestBody = {
-    usernames: "username1,username2",
+  usernames: "username1,username2",
 };
 ```
 

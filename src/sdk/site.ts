@@ -8,13 +8,18 @@ import * as operations from "./models/operations/index.js";
 import { unwrapAsync } from "./types/fp.js";
 
 export class Site extends ClientSDK {
-    /**
-     * Get site info
-     *
-     * @remarks
-     * Can be used to fetch all categories and subcategories
-     */
-    async getSite(options?: RequestOptions): Promise<operations.GetSiteResponseBody> {
-        return unwrapAsync(siteGetSite(this, options));
-    }
+  /**
+   * Get site info
+   *
+   * @remarks
+   * Can be used to fetch all categories and subcategories
+   */
+  async getSite(
+    options?: RequestOptions,
+  ): Promise<operations.GetSiteResponseBody> {
+    return unwrapAsync(siteGetSite(
+      this,
+      options,
+    ));
+  }
 }

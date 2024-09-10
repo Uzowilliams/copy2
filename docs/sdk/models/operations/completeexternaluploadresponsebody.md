@@ -8,19 +8,19 @@ external upload initialized
 import { CompleteExternalUploadResponseBody } from "@lukehagar/discoursejs/sdk/models/operations";
 
 let value: CompleteExternalUploadResponseBody = {
-    extension: "mp4",
-    filesize: 727547,
-    height: 189753,
-    humanFilesize: "<value>",
-    id: 289913,
-    originalFilename: "<value>",
-    retainHours: "<value>",
-    shortPath: "<value>",
-    shortUrl: "<value>",
-    thumbnailHeight: 520875,
-    thumbnailWidth: 577709,
-    url: "http://sore-death.net",
-    width: 684553,
+  extension: "mp4",
+  filesize: 727547,
+  height: 189753,
+  humanFilesize: "<value>",
+  id: 289913,
+  originalFilename: "<value>",
+  retainHours: "<value>",
+  shortPath: "<value>",
+  shortUrl: "<value>",
+  thumbnailHeight: 520875,
+  thumbnailWidth: 577709,
+  url: "http://sore-death.net",
+  width: 684553,
 };
 ```
 
