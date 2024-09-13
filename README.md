@@ -142,6 +142,22 @@ run();
 <!-- Start Available Resources and Operations [operations] -->
 ## Available Resources and Operations
 
+<details open>
+<summary>Available methods</summary>
+
+### [admin](docs/sdks/admin/README.md)
+
+* [activateUser](docs/sdks/admin/README.md#activateuser) - Activate a user
+* [adminGetUser](docs/sdks/admin/README.md#admingetuser) - Get a user by id
+* [adminListUsers](docs/sdks/admin/README.md#adminlistusers) - Get a list of users
+* [anonymizeUser](docs/sdks/admin/README.md#anonymizeuser) - Anonymize a user
+* [deactivateUser](docs/sdks/admin/README.md#deactivateuser) - Deactivate a user
+* [deleteUser](docs/sdks/admin/README.md#deleteuser) - Delete a user
+* [logOutUser](docs/sdks/admin/README.md#logoutuser) - Log a user out
+* [refreshGravatar](docs/sdks/admin/README.md#refreshgravatar) - Refresh gravatar
+* [silenceUser](docs/sdks/admin/README.md#silenceuser) - Silence a user
+* [suspendUser](docs/sdks/admin/README.md#suspenduser) - Suspend a user
+
 ### [backups](docs/sdks/backups/README.md)
 
 * [createBackup](docs/sdks/backups/README.md#createbackup) - Create backup
@@ -157,6 +173,15 @@ run();
 * [listUserBadges](docs/sdks/badges/README.md#listuserbadges) - List badges for a user
 * [updateBadge](docs/sdks/badges/README.md#updatebadge) - Update badge
 
+### [categories](docs/sdks/categories/README.md)
+
+* [createCategory](docs/sdks/categories/README.md#createcategory) - Creates a category
+* [getCategory](docs/sdks/categories/README.md#getcategory) - Show category
+* [getSite](docs/sdks/categories/README.md#getsite) - Get site info
+* [listCategories](docs/sdks/categories/README.md#listcategories) - Retrieves a list of categories
+* [listCategoryTopics](docs/sdks/categories/README.md#listcategorytopics) - List topics
+* [updateCategory](docs/sdks/categories/README.md#updatecategory) - Updates a category
+
 ### [groups](docs/sdks/groups/README.md)
 
 * [addGroupMembers](docs/sdks/groups/README.md#addgroupmembers) - Add group members
@@ -167,6 +192,77 @@ run();
 * [listGroups](docs/sdks/groups/README.md#listgroups) - List groups
 * [removeGroupMembers](docs/sdks/groups/README.md#removegroupmembers) - Remove group members
 * [updateGroup](docs/sdks/groups/README.md#updategroup) - Update a group
+
+### [invites](docs/sdks/invites/README.md)
+
+* [createInvite](docs/sdks/invites/README.md#createinvite) - Create an invite
+* [inviteToTopic](docs/sdks/invites/README.md#invitetotopic) - Invite to topic
+
+### [notifications](docs/sdks/notifications/README.md)
+
+* [getNotifications](docs/sdks/notifications/README.md#getnotifications) - Get the notifications that belong to the current user
+* [markNotificationsAsRead](docs/sdks/notifications/README.md#marknotificationsasread) - Mark notifications as read
+
+### [posts](docs/sdks/posts/README.md)
+
+* [createTopicPostPM](docs/sdks/posts/README.md#createtopicpostpm) - Creates a new topic, a new post, or a private message
+* [deletePost](docs/sdks/posts/README.md#deletepost) - delete a single post
+* [getPost](docs/sdks/posts/README.md#getpost) - Retrieve a single post
+* [listPosts](docs/sdks/posts/README.md#listposts) - List latest posts across topics
+* [lockPost](docs/sdks/posts/README.md#lockpost) - Lock a post from being edited
+* [performPostAction](docs/sdks/posts/README.md#performpostaction) - Like a post and other actions
+* [postReplies](docs/sdks/posts/README.md#postreplies) - List replies to a post
+* [updatePost](docs/sdks/posts/README.md#updatepost) - Update a single post
+
+### [privateMessages](docs/sdks/privatemessages/README.md)
+
+* [createTopicPostPM](docs/sdks/privatemessages/README.md#createtopicpostpm) - Creates a new topic, a new post, or a private message
+* [getUserSentPrivateMessages](docs/sdks/privatemessages/README.md#getusersentprivatemessages) - Get a list of private messages sent for a user
+* [listUserPrivateMessages](docs/sdks/privatemessages/README.md#listuserprivatemessages) - Get a list of private messages for a user
+
+
+### [search](docs/sdks/search/README.md)
+
+* [search](docs/sdks/search/README.md#search) - Search for a term
+
+### [site](docs/sdks/site/README.md)
+
+* [getSite](docs/sdks/site/README.md#getsite) - Get site info
+
+### [tags](docs/sdks/tags/README.md)
+
+* [createTagGroup](docs/sdks/tags/README.md#createtaggroup) - Creates a tag group
+* [getTag](docs/sdks/tags/README.md#gettag) - Get a specific tag
+* [getTagGroup](docs/sdks/tags/README.md#gettaggroup) - Get a single tag group
+* [listTagGroups](docs/sdks/tags/README.md#listtaggroups) - Get a list of tag groups
+* [listTags](docs/sdks/tags/README.md#listtags) - Get a list of tags
+* [updateTagGroup](docs/sdks/tags/README.md#updatetaggroup) - Update tag group
+
+### [topics](docs/sdks/topics/README.md)
+
+* [bookmarkTopic](docs/sdks/topics/README.md#bookmarktopic) - Bookmark topic
+* [createTopicPostPM](docs/sdks/topics/README.md#createtopicpostpm) - Creates a new topic, a new post, or a private message
+* [createTopicTimer](docs/sdks/topics/README.md#createtopictimer) - Create topic timer
+* [getTopic](docs/sdks/topics/README.md#gettopic) - Get a single topic
+* [getTopicByExternalId](docs/sdks/topics/README.md#gettopicbyexternalid) - Get topic by external_id
+* [inviteToTopic](docs/sdks/topics/README.md#invitetotopic) - Invite to topic
+* [listLatestTopics](docs/sdks/topics/README.md#listlatesttopics) - Get the latest topics
+* [listTopTopics](docs/sdks/topics/README.md#listtoptopics) - Get the top topics filtered by period
+* [removeTopic](docs/sdks/topics/README.md#removetopic) - Remove a topic
+* [setNotificationLevel](docs/sdks/topics/README.md#setnotificationlevel) - Set notification level
+* [updateTopic](docs/sdks/topics/README.md#updatetopic) - Update a topic
+* [updateTopicStatus](docs/sdks/topics/README.md#updatetopicstatus) - Update the status of a topic
+* [updateTopicTimestamp](docs/sdks/topics/README.md#updatetopictimestamp) - Update topic timestamp
+
+### [uploads](docs/sdks/uploads/README.md)
+
+* [abortMultipart](docs/sdks/uploads/README.md#abortmultipart) - Abort multipart upload
+* [batchPresignMultipartParts](docs/sdks/uploads/README.md#batchpresignmultipartparts) - Generates batches of presigned URLs for multipart parts
+* [completeExternalUpload](docs/sdks/uploads/README.md#completeexternalupload) - Completes a direct external upload
+* [completeMultipart](docs/sdks/uploads/README.md#completemultipart) - Complete multipart upload
+* [createMultipartUpload](docs/sdks/uploads/README.md#createmultipartupload) - Creates a multipart external upload
+* [createUpload](docs/sdks/uploads/README.md#createupload) - Creates an upload
+* [generatePresignedPut](docs/sdks/uploads/README.md#generatepresignedput) - Initiates a direct external upload
 
 ### [users](docs/sdks/users/README.md)
 
@@ -195,97 +291,7 @@ run();
 * [updateUser](docs/sdks/users/README.md#updateuser) - Update a user
 * [updateUsername](docs/sdks/users/README.md#updateusername) - Update username
 
-### [admin](docs/sdks/admin/README.md)
-
-* [activateUser](docs/sdks/admin/README.md#activateuser) - Activate a user
-* [adminGetUser](docs/sdks/admin/README.md#admingetuser) - Get a user by id
-* [adminListUsers](docs/sdks/admin/README.md#adminlistusers) - Get a list of users
-* [anonymizeUser](docs/sdks/admin/README.md#anonymizeuser) - Anonymize a user
-* [deactivateUser](docs/sdks/admin/README.md#deactivateuser) - Deactivate a user
-* [deleteUser](docs/sdks/admin/README.md#deleteuser) - Delete a user
-* [logOutUser](docs/sdks/admin/README.md#logoutuser) - Log a user out
-* [refreshGravatar](docs/sdks/admin/README.md#refreshgravatar) - Refresh gravatar
-* [silenceUser](docs/sdks/admin/README.md#silenceuser) - Silence a user
-* [suspendUser](docs/sdks/admin/README.md#suspenduser) - Suspend a user
-
-### [categories](docs/sdks/categories/README.md)
-
-* [createCategory](docs/sdks/categories/README.md#createcategory) - Creates a category
-* [getCategory](docs/sdks/categories/README.md#getcategory) - Show category
-* [getSite](docs/sdks/categories/README.md#getsite) - Get site info
-* [listCategories](docs/sdks/categories/README.md#listcategories) - Retrieves a list of categories
-* [listCategoryTopics](docs/sdks/categories/README.md#listcategorytopics) - List topics
-* [updateCategory](docs/sdks/categories/README.md#updatecategory) - Updates a category
-
-### [invites](docs/sdks/invites/README.md)
-
-* [createInvite](docs/sdks/invites/README.md#createinvite) - Create an invite
-* [inviteToTopic](docs/sdks/invites/README.md#invitetotopic) - Invite to topic
-
-### [topics](docs/sdks/topics/README.md)
-
-* [bookmarkTopic](docs/sdks/topics/README.md#bookmarktopic) - Bookmark topic
-* [createTopicPostPM](docs/sdks/topics/README.md#createtopicpostpm) - Creates a new topic, a new post, or a private message
-* [createTopicTimer](docs/sdks/topics/README.md#createtopictimer) - Create topic timer
-* [getTopic](docs/sdks/topics/README.md#gettopic) - Get a single topic
-* [getTopicByExternalId](docs/sdks/topics/README.md#gettopicbyexternalid) - Get topic by external_id
-* [inviteToTopic](docs/sdks/topics/README.md#invitetotopic) - Invite to topic
-* [listLatestTopics](docs/sdks/topics/README.md#listlatesttopics) - Get the latest topics
-* [listTopTopics](docs/sdks/topics/README.md#listtoptopics) - Get the top topics filtered by period
-* [removeTopic](docs/sdks/topics/README.md#removetopic) - Remove a topic
-* [setNotificationLevel](docs/sdks/topics/README.md#setnotificationlevel) - Set notification level
-* [updateTopic](docs/sdks/topics/README.md#updatetopic) - Update a topic
-* [updateTopicStatus](docs/sdks/topics/README.md#updatetopicstatus) - Update the status of a topic
-* [updateTopicTimestamp](docs/sdks/topics/README.md#updatetopictimestamp) - Update topic timestamp
-
-### [notifications](docs/sdks/notifications/README.md)
-
-* [getNotifications](docs/sdks/notifications/README.md#getnotifications) - Get the notifications that belong to the current user
-* [markNotificationsAsRead](docs/sdks/notifications/README.md#marknotificationsasread) - Mark notifications as read
-
-### [posts](docs/sdks/posts/README.md)
-
-* [createTopicPostPM](docs/sdks/posts/README.md#createtopicpostpm) - Creates a new topic, a new post, or a private message
-* [deletePost](docs/sdks/posts/README.md#deletepost) - delete a single post
-* [getPost](docs/sdks/posts/README.md#getpost) - Retrieve a single post
-* [listPosts](docs/sdks/posts/README.md#listposts) - List latest posts across topics
-* [lockPost](docs/sdks/posts/README.md#lockpost) - Lock a post from being edited
-* [performPostAction](docs/sdks/posts/README.md#performpostaction) - Like a post and other actions
-* [postReplies](docs/sdks/posts/README.md#postreplies) - List replies to a post
-* [updatePost](docs/sdks/posts/README.md#updatepost) - Update a single post
-
-### [privateMessages](docs/sdks/privatemessages/README.md)
-
-* [createTopicPostPM](docs/sdks/privatemessages/README.md#createtopicpostpm) - Creates a new topic, a new post, or a private message
-* [getUserSentPrivateMessages](docs/sdks/privatemessages/README.md#getusersentprivatemessages) - Get a list of private messages sent for a user
-* [listUserPrivateMessages](docs/sdks/privatemessages/README.md#listuserprivatemessages) - Get a list of private messages for a user
-
-### [search](docs/sdks/search/README.md)
-
-* [search](docs/sdks/search/README.md#search) - Search for a term
-
-### [site](docs/sdks/site/README.md)
-
-* [getSite](docs/sdks/site/README.md#getsite) - Get site info
-
-### [tags](docs/sdks/tags/README.md)
-
-* [createTagGroup](docs/sdks/tags/README.md#createtaggroup) - Creates a tag group
-* [getTag](docs/sdks/tags/README.md#gettag) - Get a specific tag
-* [getTagGroup](docs/sdks/tags/README.md#gettaggroup) - Get a single tag group
-* [listTagGroups](docs/sdks/tags/README.md#listtaggroups) - Get a list of tag groups
-* [listTags](docs/sdks/tags/README.md#listtags) - Get a list of tags
-* [updateTagGroup](docs/sdks/tags/README.md#updatetaggroup) - Update tag group
-
-### [uploads](docs/sdks/uploads/README.md)
-
-* [abortMultipart](docs/sdks/uploads/README.md#abortmultipart) - Abort multipart upload
-* [batchPresignMultipartParts](docs/sdks/uploads/README.md#batchpresignmultipartparts) - Generates batches of presigned URLs for multipart parts
-* [completeExternalUpload](docs/sdks/uploads/README.md#completeexternalupload) - Completes a direct external upload
-* [completeMultipart](docs/sdks/uploads/README.md#completemultipart) - Complete multipart upload
-* [createMultipartUpload](docs/sdks/uploads/README.md#createmultipartupload) - Creates a multipart external upload
-* [createUpload](docs/sdks/uploads/README.md#createupload) - Creates an upload
-* [generatePresignedPut](docs/sdks/uploads/README.md#generatepresignedput) - Initiates a direct external upload
+</details>
 <!-- End Available Resources and Operations [operations] -->
 
 <!-- Start Error Handling [errors] -->

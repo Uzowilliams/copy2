@@ -6,7 +6,7 @@
 import { ResponseBody } from "@lukehagar/discoursejs/sdk/models/operations";
 
 let value: ResponseBody = {
-  filename: "your_file_here",
+  filename: "example.file",
   lastModified: "<value>",
   size: 548814,
 };
