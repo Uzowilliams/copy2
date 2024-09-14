@@ -8,7 +8,7 @@ import { blobLikeSchema } from "../../types/blobs.js";
 import { ClosedEnum } from "../../types/enums.js";
 
 export type FileT = {
-  content: ReadableStream<Uint8Array> | Blob | ArrayBuffer | Buffer;
+  content: ReadableStream<Uint8Array> | Blob | ArrayBuffer;
   fileName: string;
 };
 
@@ -61,14 +61,13 @@ export const FileT$inboundSchema: z.ZodType<FileT, z.ZodTypeDef, unknown> = z
       z.instanceof(ReadableStream<Uint8Array>),
       z.instanceof(Blob),
       z.instanceof(ArrayBuffer),
-      z.instanceof(Buffer),
     ]),
     fileName: z.string(),
   });
 
 /** @internal */
 export type FileT$Outbound = {
-  content: ReadableStream<Uint8Array> | Blob | ArrayBuffer | Buffer;
+  content: ReadableStream<Uint8Array> | Blob | ArrayBuffer;
   fileName: string;
 };
 
@@ -82,7 +81,6 @@ export const FileT$outboundSchema: z.ZodType<
     z.instanceof(ReadableStream<Uint8Array>),
     z.instanceof(Blob),
     z.instanceof(ArrayBuffer),
-    z.instanceof(Buffer),
   ]),
   fileName: z.string(),
 });
